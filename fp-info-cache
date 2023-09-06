@@ -1,4 +1,4 @@
-22468082283808502
+21781856333324203
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -53374,6 +53374,251 @@ One digit LED 7 segment SA39-11 SC39-11 SA39-12 SC39-12
 0
 10
 10
+Espressif
+ESP32-C3-MINI-1
+ESP32-C3-MINI-1: https://www.espressif.com/sites/default/files/documentation/esp32-c3-mini-1_datasheet_en.pdf
+ESP32-C3
+0
+61
+53
+Espressif
+ESP32-C3-MINI-1U
+ESP32-C3-MINI-1U: https://www.espressif.com/sites/default/files/documentation/esp32-c3-mini-1_datasheet_en.pdf
+ESP32-C3
+0
+61
+53
+Espressif
+ESP32-C3-MINI-1_HandSoldering
+ESP32-C3-MINI-1: https://www.espressif.com/sites/default/files/documentation/esp32-c3-mini-1_datasheet_en.pdf
+ESP32-C3
+0
+61
+53
+Espressif
+ESP32-C3-WROOM-02
+ESP32-C3-WROOM-02: https://www.espressif.com/sites/default/files/documentation/esp32-c3-wroom-02_datasheet_en.pdf
+ESP32-C3
+0
+27
+19
+Espressif
+ESP32-C3-WROOM-02U
+ESP32-C3-WROOM-02: https://www.espressif.com/sites/default/files/documentation/esp32-c3-wroom-02_datasheet_en.pdf
+ESP32-C3
+0
+27
+19
+Espressif
+ESP32-C6-DevKitC-1
+ESP32-C6 general-purpose development board, based on ESP32-2-WROOM-1,It has all the ESP32-C6 pins exposed and is easy to connect and use.
+ESP32-C6
+0
+32
+32
+Espressif
+ESP32-C6-MINI-1
+ESP32-C6-MINI-1: https://www.espressif.com/sites/default/files/documentation/esp32-c6-mini-1_datasheet_en.pdf
+ESP32-C6
+0
+61
+53
+Espressif
+ESP32-C6-MINI-1U
+ESP32-C6-MINI-1U: https://www.espressif.com/sites/default/files/documentation/esp32-c6-mini-1_datasheet_en.pdf
+ESP32-C6
+0
+61
+53
+Espressif
+ESP32-C6-WROOM-1
+ESP32-C6-WROOM-1: https://www.espressif.com/sites/default/files/documentation/esp32-c6-wroom-1_datasheet_en.pdf
+esp32-c6
+0
+37
+29
+Espressif
+ESP32-DevKitC
+ESP32-DevKitC: https://docs.espressif.com/projects/esp-idf/en/latest/esp32/hw-reference/esp32/get-started-devkitc.html
+ESP32
+0
+38
+38
+Espressif
+ESP32-MINI-1
+ESP32-MINI-1: https://www.espressif.com/sites/default/files/documentation/esp32-mini-1_datasheet_en.pdf
+ESP32-MINI-1
+0
+63
+55
+Espressif
+ESP32-MINI-1U
+ESP32-MINI-1U: https://www.espressif.com/sites/default/files/documentation/esp32-mini-1_datasheet_en.pdf
+ESP32-MINI-1U
+0
+63
+55
+Espressif
+ESP32-PICO-MINI-02
+ESP32-PICO-MINI-02: https://www.espressif.com/sites/default/files/documentation/esp32-pico-mini-02_datasheet_en.pdf
+ESP32-PICO-MINI-02
+0
+61
+53
+Espressif
+ESP32-PICO-MINI-02U
+ESP32-PICO-MINI-02U: https://www.espressif.com/sites/default/files/documentation/esp32-pico-mini-02_datasheet_en.pdf
+ESP32-PICO-MINI-02U
+0
+61
+53
+Espressif
+ESP32-PICO-MINI-02_HandSoldering
+ESP32-PICO-MINI-02: https://www.espressif.com/sites/default/files/documentation/esp32-pico-mini-02_datasheet_en.pdf
+ESP32-PICO-MINI-02
+0
+61
+53
+Espressif
+ESP32-S2-DevKitC-1
+ESP32-S2 general-purpose development board, based on ESP32-S2-SOLO or ESP32-S2-SOLO-U,It has all the ESP32-S2 pins exposed and is easy to connect and use.
+ESP32-S2
+0
+44
+44
+Espressif
+ESP32-S2-DevKitM
+ESP32-S2 general-purpose development board
+ESP32-S2
+0
+42
+42
+Espressif
+ESP32-S2-MINI-1
+ESP32-S2-MINI-1 and ESP32-S2-MINI-1U: https://www.espressif.com/sites/default/files/documentation/esp32-s2-mini-1_esp32-s2-mini-1u_datasheet_en.pdf
+ESP32-S2
+0
+73
+65
+Espressif
+ESP32-S2-MINI-1U
+ESP32-S2-MINI-1 and ESP32-S2-MINI-1U: https://www.espressif.com/sites/default/files/documentation/esp32-s2-mini-1_esp32-s2-mini-1u_datasheet_en.pdf
+ESP32-S2
+0
+73
+65
+Espressif
+ESP32-S2-MINI-1_HandSoldering
+ESP32-S2-MINI-1 and ESP32-S2-MINI-1U: https://www.espressif.com/sites/default/files/documentation/esp32-s2-mini-1_esp32-s2-mini-1u_datasheet_en.pdf
+ESP32-S2 Hand Soldering
+0
+73
+65
+Espressif
+ESP32-S2-SOLO
+ESP32-S2-SOLO https://www.espressif.com/sites/default/files/documentation/esp32-s2-solo_esp32-s2-solo-u_datasheet_en.pdf
+esp32-s2 module
+0
+49
+41
+Espressif
+ESP32-S2-Saola-1
+Espressif ESP32-S2-Saola-1 Development Kit: https://docs.espressif.com/projects/esp-idf/en/latest/esp32s2/hw-reference/esp32s2/user-guide-saola-1-v1.2.html
+esp32-s2 devkit
+0
+42
+42
+Espressif
+ESP32-S2-WROOM
+ESP32-S2-WROOM and ESP32-S2-WROOM-I: https://www.espressif.com/sites/default/files/documentation/esp32-s2-wroom_esp32-s2-wroom-i_datasheet_en.pdf
+ESP32-S2
+0
+49
+43
+Espressif
+ESP32-S2-WROVER
+ESP32-S2-WROVER and ESP32-S2-WROVER-I: https://www.espressif.com/sites/default/files/documentation/esp32-s2-wrover_esp32-s2-wrover-i_datasheet_en.pdf
+ESP32-S2
+0
+55
+43
+Espressif
+ESP32-S3-DevKitC
+ESP32-S3 general-purpose development board, based on ESP32-S3-WROOM-1 or ESP32-S3-WROOM-1U,It has all the ESP32-S3 pins exposed and is easy to connect and use.
+ESP32-S3
+0
+44
+44
+Espressif
+ESP32-S3-MINI-1
+ESP32-S3-MINI-1
+esp32-s3
+0
+73
+65
+Espressif
+ESP32-S3-MINI-1U
+ESP32-S3-MINI-1 and ESP32-S3-MINI-1U
+esp32-s3
+0
+73
+65
+Espressif
+ESP32-S3-WROOM-1
+ESP32-S3-WROOM-1 is a powerful, generic Wi-Fi + Bluetooth LE MCU modules that have Dual core CPU , a rich set of peripherals, provides acceleration for neural network computing and signal processing workloads. They are an ideal choice for a wide variety of application scenarios related to AI + Internet of Things (AIoT), such as wake word detection and speech commands recognition , face detection and recognition, smart home, smart appliance, smart control panel, smart speaker etc.
+esp32-s3
+0
+51
+41
+Espressif
+ESP32-S3-WROOM-1U
+ESP32-S3-WROOM-1 is a powerful, generic Wi-Fi + Bluetooth LE MCU modules that have Dual core CPU , a rich set of peripherals, provides acceleration for neural network computing and signal processing workloads. They are an ideal choice for a wide variety of application scenarios related to AI + Internet of Things (AIoT), such as wake word detection and speech commands recognition , face detection and recognition, smart home, smart appliance, smart control panel, smart speaker etc.
+esp32-s3
+0
+49
+41
+Espressif
+ESP32-S3-WROOM-2
+ESP32-S3-WROOM-2 is a powerful, generic Wi-Fi + Bluetooth LE MCU modules that have Dual core CPU , a rich set of peripherals, provides acceleration for neural network computing and signal processing workloads. They are an ideal choice for a wide variety of application scenarios related to AI + Internet of Things (AIoT), such as wake word detection and speech commands recognition , face detection and recognition, smart home, smart appliance, smart control panel, smart speaker etc.
+esp32-s3
+0
+51
+41
+Espressif
+ESP32-WROOM-32E
+ESP32-WROOM-32E and ESP32-WROOM-32UE: https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+ESP32
+0
+50
+39
+Espressif
+ESP32-WROOM-32UE
+ESP32-WROOM-32E and ESP32-WROOM-32UE: https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+ESP32
+0
+47
+39
+Espressif
+ESP32-WROOM-DA
+ESP32-WROOM-DA: https://www.espressif.com/sites/default/files/documentation/esp32-wroom-da_datasheet_en.pdf
+ESP32 Dual Antenna DA
+0
+49
+41
+Espressif
+ESP32-WROVER-E
+ESP32-WROVER-E: https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+esp32 module
+0
+47
+39
+Espressif
+ESP32-WROVER-E_ThermalVias
+ESP32-WROVER-E: https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+esp32 module thermal vias
+0
+59
+39
 Ferrite_THT
 LairdTech_28C0236-0JW-10
 Ferrite, vertical, LairdTech 28C0236-0JW-10, https://assets.lairdtech.com/home/brandworld/files/28C0236-0JW-10.pdf, JW Miller core https://www.bourns.com/products/magnetic-products/j.w.-miller-through-hole-ferrite-beads-emi-filters
@@ -59492,34 +59737,6 @@ THT
 0
 4
 2
-Interface_logo
-logo
-
-
-0
-0
-0
-Interface_logo
-logo2
-
-
-0
-0
-0
-Interface_logo
-yagamo_8mm
-
-
-0
-0
-0
-Interface_logo
-yagamo_10mm
-
-
-0
-0
-0
 Jumper
 SolderJumper-2_P1.3mm_Bridged2Bar_Pad1.0x1.5mm
 SMD Solder Jumper, 1x1.5mm Pads, 0.3mm gap, bridged with 2 copper strips
@@ -63391,6 +63608,90 @@ Mounting 4.5mm 9774100982
 0
 8
 1
+MyLibrary
+DIP762W55P254L2286H480Q18N_with_solderjumper
+DIP18-300-2.54-001
+Integrated Circuit
+0
+34
+18
+MyLibrary
+DIP762W60P254L1975H445Q16N_solderjumper
+DIP16-P-300-2.54A
+Transistor
+0
+30
+16
+MyLibrary
+EP204-150G1R1B1-CA
+
+
+0
+6
+6
+MyLibrary
+OSL60362-LR-with-allpin
+7-Segment Display, LTS67x0, http://optoelectronics.liteon.com/upload/download/DS30-2001-355/S6760jd.pdf
+7Segment LED LTS6760 LTS6780
+0
+14
+14
+MyLibrary
+Pmod
+Through hole angled pin header, 2x06, 2.54mm pitch, 6mm pin length, double rows
+Through hole angled pin header THT 2x06 2.54mm double row
+0
+12
+12
+MyLibrary
+Pmod_socket
+Through hole angled socket strip, 2x06, 2.54mm pitch, 8.51mm socket length, double cols (from Kicad 4.0.7), script generated
+Through hole angled socket strip THT 2x06 2.54mm double row
+0
+12
+12
+MyLibrary
+Potentiometer
+Through hole angled pin header, 2x08, 2.54mm pitch, 6mm pin length, double rows
+Through hole angled pin header THT 2x08 2.54mm double row
+0
+3
+3
+MyLibrary
+RX62N
+Through hole straight pin header, 2x40, 2.54mm pitch, double rows
+Through hole pin header THT 2x40 2.54mm double row
+0
+120
+40
+MyLibrary
+RX62N_Board
+Through hole straight socket strip, 2x20, 2.54mm pitch, double cols (from Kicad 4.0.7), script generated
+Through hole socket strip THT 2x20 2.54mm double row
+0
+120
+120
+MyLibrary
+TFT_320QVT
+Through hole straight pin header, 2x20, 2.54mm pitch, double rows
+Through hole pin header THT 2x20 2.54mm double row
+0
+40
+40
+MyLibrary
+kamo20
+
+
+0
+0
+0
+MyLibrary
+logo_kamo_ss
+
+
+0
+0
+0
 NetTie
 NetTie-2_SMD_Pad0.5mm
 Net tie, 2 pin, 0.5mm square SMD pads
@@ -64518,3156 +64819,34 @@ DIL DIP PDIP 2.54mm 7.62mm 300mil
 0
 4
 4
-PCM_Mounting_Keyboard_Stabilizer
-Stabilizer_Cherry_MX_2.00u
-Cherry MX PCB Stabilizer 2.00u 2.25u 2.50u 2.75u
-Cherry MX Keyboard Stabilizer 2.00u 2.25u 2.50u 2.75u Cutout
+PCM_kikit
+Board
+Mark board for extraction
+
 0
 0
 0
-PCM_Mounting_Keyboard_Stabilizer
-Stabilizer_Cherry_MX_3.00u
-Cherry MX PCB Stabilizer 3.00u
-Cherry MX Keyboard Stabilizer 3.00u Cutout
+PCM_kikit
+Fiducial
+Circular Fiducial
+fiducial
 0
+1
 0
+PCM_kikit
+NPTH
+
+
 0
-PCM_Mounting_Keyboard_Stabilizer
-Stabilizer_Cherry_MX_6.00u
-Cherry MX PCB Stabilizer 6.00u
-Cherry MX Keyboard Stabilizer 6.00u Cutout
 0
 0
+PCM_kikit
+Tab
+A symbol representing annotation for tab placement
+
 0
-PCM_Mounting_Keyboard_Stabilizer
-Stabilizer_Cherry_MX_6.25u
-Cherry MX PCB Stabilizer 6.25u
-Cherry MX Keyboard Stabilizer 6.25u Cutout
 0
 0
-0
-PCM_Mounting_Keyboard_Stabilizer
-Stabilizer_Cherry_MX_7.00u
-Cherry MX PCB Stabilizer 7.00u
-Cherry MX Keyboard Stabilizer 7.00u Cutout
-0
-0
-0
-PCM_Mounting_Keyboard_Stabilizer
-Stabilizer_Cherry_MX_8.00u
-Cherry MX PCB Stabilizer 8.00u 9.00u 10.00u
-Cherry MX Keyboard Stabilizer 8.00u 9.00u 10.00u Cutout
-0
-0
-0
-PCM_Switch_Keyboard_Alps_Matias
-SW_Alps_Matias
-Alps/Matias keyswitch
-Alps Matias Keyboard Keyswitch Switch Plate Cutout
-0
-4
-2
-PCM_Switch_Keyboard_Alps_Matias
-SW_Alps_Matias_1.00u
-Alps/Matias keyswitch with 1.00u keycap
-Alps Matias Keyboard Keyswitch Switch Plate Cutout 1.00u
-0
-4
-2
-PCM_Switch_Keyboard_Alps_Matias
-SW_Alps_Matias_1.25u
-Alps/Matias keyswitch with 1.25u keycap
-Alps Matias Keyboard Keyswitch Switch Plate Cutout 1.25u
-0
-4
-2
-PCM_Switch_Keyboard_Alps_Matias
-SW_Alps_Matias_1.50u
-Alps/Matias keyswitch with 1.50u keycap
-Alps Matias Keyboard Keyswitch Switch Plate Cutout 1.50u
-0
-4
-2
-PCM_Switch_Keyboard_Alps_Matias
-SW_Alps_Matias_1.75u
-Alps/Matias keyswitch with 1.75u keycap
-Alps Matias Keyboard Keyswitch Switch Plate Cutout 1.75u
-0
-4
-2
-PCM_Switch_Keyboard_Alps_Matias
-SW_Alps_Matias_2.00u
-Alps/Matias keyswitch with 2.00u keycap
-Alps Matias Keyboard Keyswitch Switch Plate Cutout 2.00u
-0
-4
-2
-PCM_Switch_Keyboard_Alps_Matias
-SW_Alps_Matias_2.25u
-Alps/Matias keyswitch with 2.25u keycap
-Alps Matias Keyboard Keyswitch Switch Plate Cutout 2.25u
-0
-4
-2
-PCM_Switch_Keyboard_Alps_Matias
-SW_Alps_Matias_2.50u
-Alps/Matias keyswitch with 2.50u keycap
-Alps Matias Keyboard Keyswitch Switch Plate Cutout 2.50u
-0
-4
-2
-PCM_Switch_Keyboard_Alps_Matias
-SW_Alps_Matias_2.75u
-Alps/Matias keyswitch with 2.75u keycap
-Alps Matias Keyboard Keyswitch Switch Plate Cutout 2.75u
-0
-4
-2
-PCM_Switch_Keyboard_Alps_Matias
-SW_Alps_Matias_3.00u
-Alps/Matias keyswitch with 3.00u keycap
-Alps Matias Keyboard Keyswitch Switch Plate Cutout 3.00u
-0
-4
-2
-PCM_Switch_Keyboard_Alps_Matias
-SW_Alps_Matias_4.00u
-Alps/Matias keyswitch with 4.00u keycap
-Alps Matias Keyboard Keyswitch Switch Plate Cutout 4.00u
-0
-4
-2
-PCM_Switch_Keyboard_Alps_Matias
-SW_Alps_Matias_4.50u
-Alps/Matias keyswitch with 4.50u keycap
-Alps Matias Keyboard Keyswitch Switch Plate Cutout 4.50u
-0
-4
-2
-PCM_Switch_Keyboard_Alps_Matias
-SW_Alps_Matias_5.50u
-Alps/Matias keyswitch with 5.50u keycap
-Alps Matias Keyboard Keyswitch Switch Plate Cutout 5.50u
-0
-4
-2
-PCM_Switch_Keyboard_Alps_Matias
-SW_Alps_Matias_6.00u
-Alps/Matias keyswitch with 6.00u keycap
-Alps Matias Keyboard Keyswitch Switch Plate Cutout 6.00u
-0
-4
-2
-PCM_Switch_Keyboard_Alps_Matias
-SW_Alps_Matias_6.25u
-Alps/Matias keyswitch with 6.25u keycap
-Alps Matias Keyboard Keyswitch Switch Plate Cutout 6.25u
-0
-4
-2
-PCM_Switch_Keyboard_Alps_Matias
-SW_Alps_Matias_6.50u
-Alps/Matias keyswitch with 6.50u keycap
-Alps Matias Keyboard Keyswitch Switch Plate Cutout 6.50u
-0
-4
-2
-PCM_Switch_Keyboard_Alps_Matias
-SW_Alps_Matias_7.00u
-Alps/Matias keyswitch with 7.00u keycap
-Alps Matias Keyboard Keyswitch Switch Plate Cutout 7.00u
-0
-4
-2
-PCM_Switch_Keyboard_Alps_Matias
-SW_Alps_Matias_ISOEnter
-Alps/Matias keyswitch with ISOEnter keycap
-Alps Matias Keyboard Keyswitch Switch Plate Cutout ISOEnter
-0
-4
-2
-PCM_Switch_Keyboard_Cherry_MX
-SW_Cherry_MX_PCB
-Cherry MX keyswitch PCB Mount
-Cherry MX Keyboard Keyswitch Switch PCB Cutout
-0
-4
-2
-PCM_Switch_Keyboard_Cherry_MX
-SW_Cherry_MX_PCB_1.00u
-Cherry MX keyswitch PCB Mount with 1.00u keycap
-Cherry MX Keyboard Keyswitch Switch PCB Cutout 1.00u
-0
-4
-2
-PCM_Switch_Keyboard_Cherry_MX
-SW_Cherry_MX_PCB_1.25u
-Cherry MX keyswitch PCB Mount with 1.25u keycap
-Cherry MX Keyboard Keyswitch Switch PCB Cutout 1.25u
-0
-4
-2
-PCM_Switch_Keyboard_Cherry_MX
-SW_Cherry_MX_PCB_1.25u_90deg
-Cherry MX keyswitch PCB Mount with 1.25u 90deg keycap
-Cherry MX Keyboard Keyswitch Switch PCB Cutout 1.25u 90deg
-0
-4
-2
-PCM_Switch_Keyboard_Cherry_MX
-SW_Cherry_MX_PCB_1.50u
-Cherry MX keyswitch PCB Mount with 1.50u keycap
-Cherry MX Keyboard Keyswitch Switch PCB Cutout 1.50u
-0
-4
-2
-PCM_Switch_Keyboard_Cherry_MX
-SW_Cherry_MX_PCB_1.50u_90deg
-Cherry MX keyswitch PCB Mount with 1.50u 90deg keycap
-Cherry MX Keyboard Keyswitch Switch PCB Cutout 1.50u 90deg
-0
-4
-2
-PCM_Switch_Keyboard_Cherry_MX
-SW_Cherry_MX_PCB_1.75u
-Cherry MX keyswitch PCB Mount with 1.75u keycap
-Cherry MX Keyboard Keyswitch Switch PCB Cutout 1.75u
-0
-4
-2
-PCM_Switch_Keyboard_Cherry_MX
-SW_Cherry_MX_PCB_1.75u_90deg
-Cherry MX keyswitch PCB Mount with 1.75u 90deg keycap
-Cherry MX Keyboard Keyswitch Switch PCB Cutout 1.75u 90deg
-0
-4
-2
-PCM_Switch_Keyboard_Cherry_MX
-SW_Cherry_MX_PCB_2.00u
-Cherry MX keyswitch PCB Mount with 2.00u keycap
-Cherry MX Keyboard Keyswitch Switch PCB Cutout 2.00u
-0
-4
-2
-PCM_Switch_Keyboard_Cherry_MX
-SW_Cherry_MX_PCB_2.00u_90deg
-Cherry MX keyswitch PCB Mount with 2.00u 90deg keycap
-Cherry MX Keyboard Keyswitch Switch PCB Cutout 2.00u 90deg
-0
-4
-2
-PCM_Switch_Keyboard_Cherry_MX
-SW_Cherry_MX_PCB_2.25u
-Cherry MX keyswitch PCB Mount with 2.25u keycap
-Cherry MX Keyboard Keyswitch Switch PCB Cutout 2.25u
-0
-4
-2
-PCM_Switch_Keyboard_Cherry_MX
-SW_Cherry_MX_PCB_2.25u_90deg
-Cherry MX keyswitch PCB Mount with 2.25u 90deg keycap
-Cherry MX Keyboard Keyswitch Switch PCB Cutout 2.25u 90deg
-0
-4
-2
-PCM_Switch_Keyboard_Cherry_MX
-SW_Cherry_MX_PCB_2.50u
-Cherry MX keyswitch PCB Mount with 2.50u keycap
-Cherry MX Keyboard Keyswitch Switch PCB Cutout 2.50u
-0
-4
-2
-PCM_Switch_Keyboard_Cherry_MX
-SW_Cherry_MX_PCB_2.50u_90deg
-Cherry MX keyswitch PCB Mount with 2.50u 90deg keycap
-Cherry MX Keyboard Keyswitch Switch PCB Cutout 2.50u 90deg
-0
-4
-2
-PCM_Switch_Keyboard_Cherry_MX
-SW_Cherry_MX_PCB_2.75u
-Cherry MX keyswitch PCB Mount with 2.75u keycap
-Cherry MX Keyboard Keyswitch Switch PCB Cutout 2.75u
-0
-4
-2
-PCM_Switch_Keyboard_Cherry_MX
-SW_Cherry_MX_PCB_2.75u_90deg
-Cherry MX keyswitch PCB Mount with 2.75u 90deg keycap
-Cherry MX Keyboard Keyswitch Switch PCB Cutout 2.75u 90deg
-0
-4
-2
-PCM_Switch_Keyboard_Cherry_MX
-SW_Cherry_MX_PCB_3.00u
-Cherry MX keyswitch PCB Mount with 3.00u keycap
-Cherry MX Keyboard Keyswitch Switch PCB Cutout 3.00u
-0
-4
-2
-PCM_Switch_Keyboard_Cherry_MX
-SW_Cherry_MX_PCB_3.00u_90deg
-Cherry MX keyswitch PCB Mount with 3.00u 90deg keycap
-Cherry MX Keyboard Keyswitch Switch PCB Cutout 3.00u 90deg
-0
-4
-2
-PCM_Switch_Keyboard_Cherry_MX
-SW_Cherry_MX_PCB_4.00u
-Cherry MX keyswitch PCB Mount with 4.00u keycap
-Cherry MX Keyboard Keyswitch Switch PCB Cutout 4.00u
-0
-4
-2
-PCM_Switch_Keyboard_Cherry_MX
-SW_Cherry_MX_PCB_4.50u
-Cherry MX keyswitch PCB Mount with 4.50u keycap
-Cherry MX Keyboard Keyswitch Switch PCB Cutout 4.50u
-0
-4
-2
-PCM_Switch_Keyboard_Cherry_MX
-SW_Cherry_MX_PCB_5.50u
-Cherry MX keyswitch PCB Mount with 5.50u keycap
-Cherry MX Keyboard Keyswitch Switch PCB Cutout 5.50u
-0
-4
-2
-PCM_Switch_Keyboard_Cherry_MX
-SW_Cherry_MX_PCB_6.00u
-Cherry MX keyswitch PCB Mount with 6.00u keycap
-Cherry MX Keyboard Keyswitch Switch PCB Cutout 6.00u
-0
-4
-2
-PCM_Switch_Keyboard_Cherry_MX
-SW_Cherry_MX_PCB_6.00u_Offset
-Cherry MX keyswitch PCB Mount with 6.00u Offset keycap
-Cherry MX Keyboard Keyswitch Switch PCB Cutout 6.00u Offset
-0
-4
-2
-PCM_Switch_Keyboard_Cherry_MX
-SW_Cherry_MX_PCB_6.25u
-Cherry MX keyswitch PCB Mount with 6.25u keycap
-Cherry MX Keyboard Keyswitch Switch PCB Cutout 6.25u
-0
-4
-2
-PCM_Switch_Keyboard_Cherry_MX
-SW_Cherry_MX_PCB_6.50u
-Cherry MX keyswitch PCB Mount with 6.50u keycap
-Cherry MX Keyboard Keyswitch Switch PCB Cutout 6.50u
-0
-4
-2
-PCM_Switch_Keyboard_Cherry_MX
-SW_Cherry_MX_PCB_7.00u
-Cherry MX keyswitch PCB Mount with 7.00u keycap
-Cherry MX Keyboard Keyswitch Switch PCB Cutout 7.00u
-0
-4
-2
-PCM_Switch_Keyboard_Cherry_MX
-SW_Cherry_MX_PCB_ISOEnter
-Cherry MX keyswitch PCB Mount with ISOEnter keycap
-Cherry MX Keyboard Keyswitch Switch PCB Cutout ISOEnter
-0
-4
-2
-PCM_Switch_Keyboard_Cherry_MX
-SW_Cherry_MX_PCB_ISOEnter_90deg
-Cherry MX keyswitch PCB Mount with ISOEnter 90deg keycap
-Cherry MX Keyboard Keyswitch Switch PCB Cutout ISOEnter 90deg
-0
-4
-2
-PCM_Switch_Keyboard_Cherry_MX
-SW_Cherry_MX_PCB_ISOEnter_180deg
-Cherry MX keyswitch PCB Mount with ISOEnter 180deg keycap
-Cherry MX Keyboard Keyswitch Switch PCB Cutout ISOEnter 180deg
-0
-4
-2
-PCM_Switch_Keyboard_Cherry_MX
-SW_Cherry_MX_PCB_ISOEnter_270deg
-Cherry MX keyswitch PCB Mount with ISOEnter 270deg keycap
-Cherry MX Keyboard Keyswitch Switch PCB Cutout ISOEnter 270deg
-0
-4
-2
-PCM_Switch_Keyboard_Cherry_MX
-SW_Cherry_MX_Plate
-Cherry MX keyswitch Plate Mount
-Cherry MX Keyboard Keyswitch Switch Plate Cutout
-0
-4
-2
-PCM_Switch_Keyboard_Cherry_MX
-SW_Cherry_MX_Plate_1.00u
-Cherry MX keyswitch Plate Mount with 1.00u keycap
-Cherry MX Keyboard Keyswitch Switch Plate Cutout 1.00u
-0
-4
-2
-PCM_Switch_Keyboard_Cherry_MX
-SW_Cherry_MX_Plate_1.25u
-Cherry MX keyswitch Plate Mount with 1.25u keycap
-Cherry MX Keyboard Keyswitch Switch Plate Cutout 1.25u
-0
-4
-2
-PCM_Switch_Keyboard_Cherry_MX
-SW_Cherry_MX_Plate_1.25u_90deg
-Cherry MX keyswitch Plate Mount with 1.25u 90deg keycap
-Cherry MX Keyboard Keyswitch Switch Plate Cutout 1.25u 90deg
-0
-4
-2
-PCM_Switch_Keyboard_Cherry_MX
-SW_Cherry_MX_Plate_1.50u
-Cherry MX keyswitch Plate Mount with 1.50u keycap
-Cherry MX Keyboard Keyswitch Switch Plate Cutout 1.50u
-0
-4
-2
-PCM_Switch_Keyboard_Cherry_MX
-SW_Cherry_MX_Plate_1.50u_90deg
-Cherry MX keyswitch Plate Mount with 1.50u 90deg keycap
-Cherry MX Keyboard Keyswitch Switch Plate Cutout 1.50u 90deg
-0
-4
-2
-PCM_Switch_Keyboard_Cherry_MX
-SW_Cherry_MX_Plate_1.75u
-Cherry MX keyswitch Plate Mount with 1.75u keycap
-Cherry MX Keyboard Keyswitch Switch Plate Cutout 1.75u
-0
-4
-2
-PCM_Switch_Keyboard_Cherry_MX
-SW_Cherry_MX_Plate_1.75u_90deg
-Cherry MX keyswitch Plate Mount with 1.75u 90deg keycap
-Cherry MX Keyboard Keyswitch Switch Plate Cutout 1.75u 90deg
-0
-4
-2
-PCM_Switch_Keyboard_Cherry_MX
-SW_Cherry_MX_Plate_2.00u
-Cherry MX keyswitch Plate Mount with 2.00u keycap
-Cherry MX Keyboard Keyswitch Switch Plate Cutout 2.00u
-0
-4
-2
-PCM_Switch_Keyboard_Cherry_MX
-SW_Cherry_MX_Plate_2.00u_90deg
-Cherry MX keyswitch Plate Mount with 2.00u 90deg keycap
-Cherry MX Keyboard Keyswitch Switch Plate Cutout 2.00u 90deg
-0
-4
-2
-PCM_Switch_Keyboard_Cherry_MX
-SW_Cherry_MX_Plate_2.25u
-Cherry MX keyswitch Plate Mount with 2.25u keycap
-Cherry MX Keyboard Keyswitch Switch Plate Cutout 2.25u
-0
-4
-2
-PCM_Switch_Keyboard_Cherry_MX
-SW_Cherry_MX_Plate_2.25u_90deg
-Cherry MX keyswitch Plate Mount with 2.25u 90deg keycap
-Cherry MX Keyboard Keyswitch Switch Plate Cutout 2.25u 90deg
-0
-4
-2
-PCM_Switch_Keyboard_Cherry_MX
-SW_Cherry_MX_Plate_2.50u
-Cherry MX keyswitch Plate Mount with 2.50u keycap
-Cherry MX Keyboard Keyswitch Switch Plate Cutout 2.50u
-0
-4
-2
-PCM_Switch_Keyboard_Cherry_MX
-SW_Cherry_MX_Plate_2.50u_90deg
-Cherry MX keyswitch Plate Mount with 2.50u 90deg keycap
-Cherry MX Keyboard Keyswitch Switch Plate Cutout 2.50u 90deg
-0
-4
-2
-PCM_Switch_Keyboard_Cherry_MX
-SW_Cherry_MX_Plate_2.75u
-Cherry MX keyswitch Plate Mount with 2.75u keycap
-Cherry MX Keyboard Keyswitch Switch Plate Cutout 2.75u
-0
-4
-2
-PCM_Switch_Keyboard_Cherry_MX
-SW_Cherry_MX_Plate_2.75u_90deg
-Cherry MX keyswitch Plate Mount with 2.75u 90deg keycap
-Cherry MX Keyboard Keyswitch Switch Plate Cutout 2.75u 90deg
-0
-4
-2
-PCM_Switch_Keyboard_Cherry_MX
-SW_Cherry_MX_Plate_3.00u
-Cherry MX keyswitch Plate Mount with 3.00u keycap
-Cherry MX Keyboard Keyswitch Switch Plate Cutout 3.00u
-0
-4
-2
-PCM_Switch_Keyboard_Cherry_MX
-SW_Cherry_MX_Plate_3.00u_90deg
-Cherry MX keyswitch Plate Mount with 3.00u 90deg keycap
-Cherry MX Keyboard Keyswitch Switch Plate Cutout 3.00u 90deg
-0
-4
-2
-PCM_Switch_Keyboard_Cherry_MX
-SW_Cherry_MX_Plate_4.00u
-Cherry MX keyswitch Plate Mount with 4.00u keycap
-Cherry MX Keyboard Keyswitch Switch Plate Cutout 4.00u
-0
-4
-2
-PCM_Switch_Keyboard_Cherry_MX
-SW_Cherry_MX_Plate_4.50u
-Cherry MX keyswitch Plate Mount with 4.50u keycap
-Cherry MX Keyboard Keyswitch Switch Plate Cutout 4.50u
-0
-4
-2
-PCM_Switch_Keyboard_Cherry_MX
-SW_Cherry_MX_Plate_5.50u
-Cherry MX keyswitch Plate Mount with 5.50u keycap
-Cherry MX Keyboard Keyswitch Switch Plate Cutout 5.50u
-0
-4
-2
-PCM_Switch_Keyboard_Cherry_MX
-SW_Cherry_MX_Plate_6.00u
-Cherry MX keyswitch Plate Mount with 6.00u keycap
-Cherry MX Keyboard Keyswitch Switch Plate Cutout 6.00u
-0
-4
-2
-PCM_Switch_Keyboard_Cherry_MX
-SW_Cherry_MX_Plate_6.00u_Offset
-Cherry MX keyswitch Plate Mount with 6.00u Offset keycap
-Cherry MX Keyboard Keyswitch Switch Plate Cutout 6.00u Offset
-0
-4
-2
-PCM_Switch_Keyboard_Cherry_MX
-SW_Cherry_MX_Plate_6.25u
-Cherry MX keyswitch Plate Mount with 6.25u keycap
-Cherry MX Keyboard Keyswitch Switch Plate Cutout 6.25u
-0
-4
-2
-PCM_Switch_Keyboard_Cherry_MX
-SW_Cherry_MX_Plate_6.50u
-Cherry MX keyswitch Plate Mount with 6.50u keycap
-Cherry MX Keyboard Keyswitch Switch Plate Cutout 6.50u
-0
-4
-2
-PCM_Switch_Keyboard_Cherry_MX
-SW_Cherry_MX_Plate_7.00u
-Cherry MX keyswitch Plate Mount with 7.00u keycap
-Cherry MX Keyboard Keyswitch Switch Plate Cutout 7.00u
-0
-4
-2
-PCM_Switch_Keyboard_Cherry_MX
-SW_Cherry_MX_Plate_ISOEnter
-Cherry MX keyswitch Plate Mount with ISOEnter keycap
-Cherry MX Keyboard Keyswitch Switch Plate Cutout ISOEnter
-0
-4
-2
-PCM_Switch_Keyboard_Cherry_MX
-SW_Cherry_MX_Plate_ISOEnter_90deg
-Cherry MX keyswitch Plate Mount with ISOEnter 90deg keycap
-Cherry MX Keyboard Keyswitch Switch Plate Cutout ISOEnter 90deg
-0
-4
-2
-PCM_Switch_Keyboard_Cherry_MX
-SW_Cherry_MX_Plate_ISOEnter_180deg
-Cherry MX keyswitch Plate Mount with ISOEnter 180deg keycap
-Cherry MX Keyboard Keyswitch Switch Plate Cutout ISOEnter 180deg
-0
-4
-2
-PCM_Switch_Keyboard_Cherry_MX
-SW_Cherry_MX_Plate_ISOEnter_270deg
-Cherry MX keyswitch Plate Mount with ISOEnter 270deg keycap
-Cherry MX Keyboard Keyswitch Switch Plate Cutout ISOEnter 270deg
-0
-4
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1
-Kailh keyswitch Hotswap Socket
-Kailh Keyboard Choc V1 keyswitch Keyswitch Switch Hotswap Socket Cutout
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1V2
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 Hotswap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1V2_1.00u
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 Hotswap with 1.00u keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout 1.00u
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1V2_1.25u
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 Hotswap with 1.25u keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout 1.25u
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1V2_1.25u_90deg
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 Hotswap with 1.25u 90deg keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout 1.25u 90deg
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1V2_1.50u
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 Hotswap with 1.50u keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout 1.50u
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1V2_1.50u_90deg
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 Hotswap with 1.50u 90deg keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout 1.50u 90deg
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1V2_1.75u
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 Hotswap with 1.75u keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout 1.75u
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1V2_1.75u_90deg
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 Hotswap with 1.75u 90deg keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout 1.75u 90deg
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1V2_2.00u
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 Hotswap with 2.00u keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout 2.00u
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1V2_2.00u_90deg
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 Hotswap with 2.00u 90deg keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout 2.00u 90deg
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1V2_2.25u
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 Hotswap with 2.25u keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout 2.25u
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1V2_2.25u_90deg
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 Hotswap with 2.25u 90deg keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout 2.25u 90deg
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1V2_2.50u
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 Hotswap with 2.50u keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout 2.50u
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1V2_2.50u_90deg
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 Hotswap with 2.50u 90deg keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout 2.50u 90deg
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1V2_2.75u
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 Hotswap with 2.75u keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout 2.75u
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1V2_2.75u_90deg
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 Hotswap with 2.75u 90deg keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout 2.75u 90deg
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1V2_3.00u
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 Hotswap with 3.00u keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout 3.00u
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1V2_3.00u_90deg
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 Hotswap with 3.00u 90deg keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout 3.00u 90deg
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1V2_4.00u
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 Hotswap with 4.00u keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout 4.00u
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1V2_4.50u
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 Hotswap with 4.50u keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout 4.50u
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1V2_5.50u
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 Hotswap with 5.50u keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout 5.50u
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1V2_6.00u
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 Hotswap with 6.00u keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout 6.00u
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1V2_6.00u_Offset
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 Hotswap with 6.00u Offset keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout 6.00u Offset
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1V2_6.25u
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 Hotswap with 6.25u keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout 6.25u
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1V2_6.50u
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 Hotswap with 6.50u keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout 6.50u
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1V2_7.00u
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 Hotswap with 7.00u keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout 7.00u
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1V2_ISOEnter
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 Hotswap with ISOEnter keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout ISOEnter
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1V2_ISOEnter_90deg
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 Hotswap with ISOEnter 90deg keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout ISOEnter 90deg
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1V2_ISOEnter_180deg
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 Hotswap with ISOEnter 180deg keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout ISOEnter 180deg
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1V2_ISOEnter_270deg
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 Hotswap with ISOEnter 270deg keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout ISOEnter 270deg
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1V2_Plated
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 Hotswap Plated
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Plated Cutout
-0
-10
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1V2_Plated_1.00u
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 Hotswap Plated with 1.00u keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Plated Cutout 1.00u
-0
-10
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1V2_Plated_1.25u
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 Hotswap Plated with 1.25u keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Plated Cutout 1.25u
-0
-10
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1V2_Plated_1.25u_90deg
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 Hotswap Plated with 1.25u 90deg keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Plated Cutout 1.25u 90deg
-0
-10
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1V2_Plated_1.50u
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 Hotswap Plated with 1.50u keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Plated Cutout 1.50u
-0
-10
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1V2_Plated_1.50u_90deg
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 Hotswap Plated with 1.50u 90deg keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Plated Cutout 1.50u 90deg
-0
-10
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1V2_Plated_1.75u
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 Hotswap Plated with 1.75u keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Plated Cutout 1.75u
-0
-10
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1V2_Plated_1.75u_90deg
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 Hotswap Plated with 1.75u 90deg keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Plated Cutout 1.75u 90deg
-0
-10
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1V2_Plated_2.00u
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 Hotswap Plated with 2.00u keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Plated Cutout 2.00u
-0
-10
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1V2_Plated_2.00u_90deg
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 Hotswap Plated with 2.00u 90deg keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Plated Cutout 2.00u 90deg
-0
-10
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1V2_Plated_2.25u
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 Hotswap Plated with 2.25u keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Plated Cutout 2.25u
-0
-10
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1V2_Plated_2.25u_90deg
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 Hotswap Plated with 2.25u 90deg keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Plated Cutout 2.25u 90deg
-0
-10
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1V2_Plated_2.50u
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 Hotswap Plated with 2.50u keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Plated Cutout 2.50u
-0
-10
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1V2_Plated_2.50u_90deg
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 Hotswap Plated with 2.50u 90deg keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Plated Cutout 2.50u 90deg
-0
-10
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1V2_Plated_2.75u
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 Hotswap Plated with 2.75u keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Plated Cutout 2.75u
-0
-10
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1V2_Plated_2.75u_90deg
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 Hotswap Plated with 2.75u 90deg keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Plated Cutout 2.75u 90deg
-0
-10
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1V2_Plated_3.00u
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 Hotswap Plated with 3.00u keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Plated Cutout 3.00u
-0
-10
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1V2_Plated_3.00u_90deg
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 Hotswap Plated with 3.00u 90deg keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Plated Cutout 3.00u 90deg
-0
-10
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1V2_Plated_4.00u
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 Hotswap Plated with 4.00u keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Plated Cutout 4.00u
-0
-10
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1V2_Plated_4.50u
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 Hotswap Plated with 4.50u keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Plated Cutout 4.50u
-0
-10
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1V2_Plated_5.50u
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 Hotswap Plated with 5.50u keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Plated Cutout 5.50u
-0
-10
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1V2_Plated_6.00u
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 Hotswap Plated with 6.00u keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Plated Cutout 6.00u
-0
-10
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1V2_Plated_6.00u_Offset
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 Hotswap Plated with 6.00u Offset keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Plated Cutout 6.00u Offset
-0
-10
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1V2_Plated_6.25u
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 Hotswap Plated with 6.25u keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Plated Cutout 6.25u
-0
-10
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1V2_Plated_6.50u
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 Hotswap Plated with 6.50u keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Plated Cutout 6.50u
-0
-10
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1V2_Plated_7.00u
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 Hotswap Plated with 7.00u keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Plated Cutout 7.00u
-0
-10
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1V2_Plated_ISOEnter
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 Hotswap Plated with ISOEnter keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Plated Cutout ISOEnter
-0
-10
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1V2_Plated_ISOEnter_90deg
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 Hotswap Plated with ISOEnter 90deg keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Plated Cutout ISOEnter 90deg
-0
-10
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1V2_Plated_ISOEnter_180deg
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 Hotswap Plated with ISOEnter 180deg keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Plated Cutout ISOEnter 180deg
-0
-10
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1V2_Plated_ISOEnter_270deg
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 Hotswap Plated with ISOEnter 270deg keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Plated Cutout ISOEnter 270deg
-0
-10
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1_1.00u
-Kailh keyswitch Hotswap Socket with 1.00u keycap
-Kailh Keyboard Choc V1 keyswitch Keyswitch Switch Hotswap Socket Cutout 1.00u
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1_1.25u
-Kailh keyswitch Hotswap Socket with 1.25u keycap
-Kailh Keyboard Choc V1 keyswitch Keyswitch Switch Hotswap Socket Cutout 1.25u
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1_1.25u_90deg
-Kailh keyswitch Hotswap Socket with 1.25u 90deg keycap
-Kailh Keyboard Choc V1 keyswitch Keyswitch Switch Hotswap Socket Cutout 1.25u 90deg
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1_1.50u
-Kailh keyswitch Hotswap Socket with 1.50u keycap
-Kailh Keyboard Choc V1 keyswitch Keyswitch Switch Hotswap Socket Cutout 1.50u
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1_1.50u_90deg
-Kailh keyswitch Hotswap Socket with 1.50u 90deg keycap
-Kailh Keyboard Choc V1 keyswitch Keyswitch Switch Hotswap Socket Cutout 1.50u 90deg
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1_1.75u
-Kailh keyswitch Hotswap Socket with 1.75u keycap
-Kailh Keyboard Choc V1 keyswitch Keyswitch Switch Hotswap Socket Cutout 1.75u
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1_1.75u_90deg
-Kailh keyswitch Hotswap Socket with 1.75u 90deg keycap
-Kailh Keyboard Choc V1 keyswitch Keyswitch Switch Hotswap Socket Cutout 1.75u 90deg
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1_2.00u
-Kailh keyswitch Hotswap Socket with 2.00u keycap
-Kailh Keyboard Choc V1 keyswitch Keyswitch Switch Hotswap Socket Cutout 2.00u
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1_2.00u_90deg
-Kailh keyswitch Hotswap Socket with 2.00u 90deg keycap
-Kailh Keyboard Choc V1 keyswitch Keyswitch Switch Hotswap Socket Cutout 2.00u 90deg
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1_2.25u
-Kailh keyswitch Hotswap Socket with 2.25u keycap
-Kailh Keyboard Choc V1 keyswitch Keyswitch Switch Hotswap Socket Cutout 2.25u
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1_2.25u_90deg
-Kailh keyswitch Hotswap Socket with 2.25u 90deg keycap
-Kailh Keyboard Choc V1 keyswitch Keyswitch Switch Hotswap Socket Cutout 2.25u 90deg
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1_2.50u
-Kailh keyswitch Hotswap Socket with 2.50u keycap
-Kailh Keyboard Choc V1 keyswitch Keyswitch Switch Hotswap Socket Cutout 2.50u
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1_2.50u_90deg
-Kailh keyswitch Hotswap Socket with 2.50u 90deg keycap
-Kailh Keyboard Choc V1 keyswitch Keyswitch Switch Hotswap Socket Cutout 2.50u 90deg
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1_2.75u
-Kailh keyswitch Hotswap Socket with 2.75u keycap
-Kailh Keyboard Choc V1 keyswitch Keyswitch Switch Hotswap Socket Cutout 2.75u
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1_2.75u_90deg
-Kailh keyswitch Hotswap Socket with 2.75u 90deg keycap
-Kailh Keyboard Choc V1 keyswitch Keyswitch Switch Hotswap Socket Cutout 2.75u 90deg
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1_3.00u
-Kailh keyswitch Hotswap Socket with 3.00u keycap
-Kailh Keyboard Choc V1 keyswitch Keyswitch Switch Hotswap Socket Cutout 3.00u
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1_3.00u_90deg
-Kailh keyswitch Hotswap Socket with 3.00u 90deg keycap
-Kailh Keyboard Choc V1 keyswitch Keyswitch Switch Hotswap Socket Cutout 3.00u 90deg
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1_4.00u
-Kailh keyswitch Hotswap Socket with 4.00u keycap
-Kailh Keyboard Choc V1 keyswitch Keyswitch Switch Hotswap Socket Cutout 4.00u
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1_4.50u
-Kailh keyswitch Hotswap Socket with 4.50u keycap
-Kailh Keyboard Choc V1 keyswitch Keyswitch Switch Hotswap Socket Cutout 4.50u
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1_5.50u
-Kailh keyswitch Hotswap Socket with 5.50u keycap
-Kailh Keyboard Choc V1 keyswitch Keyswitch Switch Hotswap Socket Cutout 5.50u
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1_6.00u
-Kailh keyswitch Hotswap Socket with 6.00u keycap
-Kailh Keyboard Choc V1 keyswitch Keyswitch Switch Hotswap Socket Cutout 6.00u
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1_6.00u_Offset
-Kailh keyswitch Hotswap Socket with 6.00u Offset keycap
-Kailh Keyboard Choc V1 keyswitch Keyswitch Switch Hotswap Socket Cutout 6.00u Offset
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1_6.25u
-Kailh keyswitch Hotswap Socket with 6.25u keycap
-Kailh Keyboard Choc V1 keyswitch Keyswitch Switch Hotswap Socket Cutout 6.25u
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1_6.50u
-Kailh keyswitch Hotswap Socket with 6.50u keycap
-Kailh Keyboard Choc V1 keyswitch Keyswitch Switch Hotswap Socket Cutout 6.50u
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1_7.00u
-Kailh keyswitch Hotswap Socket with 7.00u keycap
-Kailh Keyboard Choc V1 keyswitch Keyswitch Switch Hotswap Socket Cutout 7.00u
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1_ISOEnter
-Kailh keyswitch Hotswap Socket with ISOEnter keycap
-Kailh Keyboard Choc V1 keyswitch Keyswitch Switch Hotswap Socket Cutout ISOEnter
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1_ISOEnter_90deg
-Kailh keyswitch Hotswap Socket with ISOEnter 90deg keycap
-Kailh Keyboard Choc V1 keyswitch Keyswitch Switch Hotswap Socket Cutout ISOEnter 90deg
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1_ISOEnter_180deg
-Kailh keyswitch Hotswap Socket with ISOEnter 180deg keycap
-Kailh Keyboard Choc V1 keyswitch Keyswitch Switch Hotswap Socket Cutout ISOEnter 180deg
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1_ISOEnter_270deg
-Kailh keyswitch Hotswap Socket with ISOEnter 270deg keycap
-Kailh Keyboard Choc V1 keyswitch Keyswitch Switch Hotswap Socket Cutout ISOEnter 270deg
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1_plated
-Kailh keyswitch Hotswap Socket plated holes
-Kailh Keyboard Choc V1 keyswitch Keyswitch Switch Hotswap Socket plated Cutout
-0
-6
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1_plated_1.00u
-Kailh keyswitch Hotswap Socket plated holes with 1.00u keycap
-Kailh Keyboard Choc V1 keyswitch Keyswitch Switch Hotswap Socket plated Cutout 1.00u
-0
-6
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1_plated_1.25u
-Kailh keyswitch Hotswap Socket plated holes with 1.25u keycap
-Kailh Keyboard Choc V1 keyswitch Keyswitch Switch Hotswap Socket plated Cutout 1.25u
-0
-6
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1_plated_1.25u_90deg
-Kailh keyswitch Hotswap Socket plated holes with 1.25u 90deg keycap
-Kailh Keyboard Choc V1 keyswitch Keyswitch Switch Hotswap Socket plated Cutout 1.25u 90deg
-0
-6
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1_plated_1.50u
-Kailh keyswitch Hotswap Socket plated holes with 1.50u keycap
-Kailh Keyboard Choc V1 keyswitch Keyswitch Switch Hotswap Socket plated Cutout 1.50u
-0
-6
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1_plated_1.50u_90deg
-Kailh keyswitch Hotswap Socket plated holes with 1.50u 90deg keycap
-Kailh Keyboard Choc V1 keyswitch Keyswitch Switch Hotswap Socket plated Cutout 1.50u 90deg
-0
-6
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1_plated_1.75u
-Kailh keyswitch Hotswap Socket plated holes with 1.75u keycap
-Kailh Keyboard Choc V1 keyswitch Keyswitch Switch Hotswap Socket plated Cutout 1.75u
-0
-6
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1_plated_1.75u_90deg
-Kailh keyswitch Hotswap Socket plated holes with 1.75u 90deg keycap
-Kailh Keyboard Choc V1 keyswitch Keyswitch Switch Hotswap Socket plated Cutout 1.75u 90deg
-0
-6
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1_plated_2.00u
-Kailh keyswitch Hotswap Socket plated holes with 2.00u keycap
-Kailh Keyboard Choc V1 keyswitch Keyswitch Switch Hotswap Socket plated Cutout 2.00u
-0
-6
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1_plated_2.00u_90deg
-Kailh keyswitch Hotswap Socket plated holes with 2.00u 90deg keycap
-Kailh Keyboard Choc V1 keyswitch Keyswitch Switch Hotswap Socket plated Cutout 2.00u 90deg
-0
-6
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1_plated_2.25u
-Kailh keyswitch Hotswap Socket plated holes with 2.25u keycap
-Kailh Keyboard Choc V1 keyswitch Keyswitch Switch Hotswap Socket plated Cutout 2.25u
-0
-6
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1_plated_2.25u_90deg
-Kailh keyswitch Hotswap Socket plated holes with 2.25u 90deg keycap
-Kailh Keyboard Choc V1 keyswitch Keyswitch Switch Hotswap Socket plated Cutout 2.25u 90deg
-0
-6
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1_plated_2.50u
-Kailh keyswitch Hotswap Socket plated holes with 2.50u keycap
-Kailh Keyboard Choc V1 keyswitch Keyswitch Switch Hotswap Socket plated Cutout 2.50u
-0
-6
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1_plated_2.50u_90deg
-Kailh keyswitch Hotswap Socket plated holes with 2.50u 90deg keycap
-Kailh Keyboard Choc V1 keyswitch Keyswitch Switch Hotswap Socket plated Cutout 2.50u 90deg
-0
-6
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1_plated_2.75u
-Kailh keyswitch Hotswap Socket plated holes with 2.75u keycap
-Kailh Keyboard Choc V1 keyswitch Keyswitch Switch Hotswap Socket plated Cutout 2.75u
-0
-6
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1_plated_2.75u_90deg
-Kailh keyswitch Hotswap Socket plated holes with 2.75u 90deg keycap
-Kailh Keyboard Choc V1 keyswitch Keyswitch Switch Hotswap Socket plated Cutout 2.75u 90deg
-0
-6
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1_plated_3.00u
-Kailh keyswitch Hotswap Socket plated holes with 3.00u keycap
-Kailh Keyboard Choc V1 keyswitch Keyswitch Switch Hotswap Socket plated Cutout 3.00u
-0
-6
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1_plated_3.00u_90deg
-Kailh keyswitch Hotswap Socket plated holes with 3.00u 90deg keycap
-Kailh Keyboard Choc V1 keyswitch Keyswitch Switch Hotswap Socket plated Cutout 3.00u 90deg
-0
-6
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1_plated_4.00u
-Kailh keyswitch Hotswap Socket plated holes with 4.00u keycap
-Kailh Keyboard Choc V1 keyswitch Keyswitch Switch Hotswap Socket plated Cutout 4.00u
-0
-6
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1_plated_4.50u
-Kailh keyswitch Hotswap Socket plated holes with 4.50u keycap
-Kailh Keyboard Choc V1 keyswitch Keyswitch Switch Hotswap Socket plated Cutout 4.50u
-0
-6
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1_plated_5.50u
-Kailh keyswitch Hotswap Socket plated holes with 5.50u keycap
-Kailh Keyboard Choc V1 keyswitch Keyswitch Switch Hotswap Socket plated Cutout 5.50u
-0
-6
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1_plated_6.00u
-Kailh keyswitch Hotswap Socket plated holes with 6.00u keycap
-Kailh Keyboard Choc V1 keyswitch Keyswitch Switch Hotswap Socket plated Cutout 6.00u
-0
-6
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1_plated_6.00u_Offset
-Kailh keyswitch Hotswap Socket plated holes with 6.00u Offset keycap
-Kailh Keyboard Choc V1 keyswitch Keyswitch Switch Hotswap Socket plated Cutout 6.00u Offset
-0
-6
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1_plated_6.25u
-Kailh keyswitch Hotswap Socket plated holes with 6.25u keycap
-Kailh Keyboard Choc V1 keyswitch Keyswitch Switch Hotswap Socket plated Cutout 6.25u
-0
-6
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1_plated_6.50u
-Kailh keyswitch Hotswap Socket plated holes with 6.50u keycap
-Kailh Keyboard Choc V1 keyswitch Keyswitch Switch Hotswap Socket plated Cutout 6.50u
-0
-6
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1_plated_7.00u
-Kailh keyswitch Hotswap Socket plated holes with 7.00u keycap
-Kailh Keyboard Choc V1 keyswitch Keyswitch Switch Hotswap Socket plated Cutout 7.00u
-0
-6
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1_plated_ISOEnter
-Kailh keyswitch Hotswap Socket plated holes with ISOEnter keycap
-Kailh Keyboard Choc V1 keyswitch Keyswitch Switch Hotswap Socket plated Cutout ISOEnter
-0
-6
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1_plated_ISOEnter_90deg
-Kailh keyswitch Hotswap Socket plated holes with ISOEnter 90deg keycap
-Kailh Keyboard Choc V1 keyswitch Keyswitch Switch Hotswap Socket plated Cutout ISOEnter 90deg
-0
-6
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1_plated_ISOEnter_180deg
-Kailh keyswitch Hotswap Socket plated holes with ISOEnter 180deg keycap
-Kailh Keyboard Choc V1 keyswitch Keyswitch Switch Hotswap Socket plated Cutout ISOEnter 180deg
-0
-6
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_Choc_V1_plated_ISOEnter_270deg
-Kailh keyswitch Hotswap Socket plated holes with ISOEnter 270deg keycap
-Kailh Keyboard Choc V1 keyswitch Keyswitch Switch Hotswap Socket plated Cutout ISOEnter 270deg
-0
-6
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_MX
-Kailh keyswitch Hotswap Socket
-Kailh Keyboard Keyswitch Switch Hotswap Socket Cutout
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_MX_1.00u
-Kailh keyswitch Hotswap Socket with 1.00u keycap
-Kailh Keyboard Keyswitch Switch Hotswap Socket Cutout 1.00u
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_MX_1.25u
-Kailh keyswitch Hotswap Socket with 1.25u keycap
-Kailh Keyboard Keyswitch Switch Hotswap Socket Cutout 1.25u
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_MX_1.25u_90deg
-Kailh keyswitch Hotswap Socket with 1.25u 90deg keycap
-Kailh Keyboard Keyswitch Switch Hotswap Socket Cutout 1.25u 90deg
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_MX_1.50u
-Kailh keyswitch Hotswap Socket with 1.50u keycap
-Kailh Keyboard Keyswitch Switch Hotswap Socket Cutout 1.50u
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_MX_1.50u_90deg
-Kailh keyswitch Hotswap Socket with 1.50u 90deg keycap
-Kailh Keyboard Keyswitch Switch Hotswap Socket Cutout 1.50u 90deg
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_MX_1.75u
-Kailh keyswitch Hotswap Socket with 1.75u keycap
-Kailh Keyboard Keyswitch Switch Hotswap Socket Cutout 1.75u
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_MX_1.75u_90deg
-Kailh keyswitch Hotswap Socket with 1.75u 90deg keycap
-Kailh Keyboard Keyswitch Switch Hotswap Socket Cutout 1.75u 90deg
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_MX_2.00u
-Kailh keyswitch Hotswap Socket with 2.00u keycap
-Kailh Keyboard Keyswitch Switch Hotswap Socket Cutout 2.00u
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_MX_2.00u_90deg
-Kailh keyswitch Hotswap Socket with 2.00u 90deg keycap
-Kailh Keyboard Keyswitch Switch Hotswap Socket Cutout 2.00u 90deg
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_MX_2.25u
-Kailh keyswitch Hotswap Socket with 2.25u keycap
-Kailh Keyboard Keyswitch Switch Hotswap Socket Cutout 2.25u
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_MX_2.25u_90deg
-Kailh keyswitch Hotswap Socket with 2.25u 90deg keycap
-Kailh Keyboard Keyswitch Switch Hotswap Socket Cutout 2.25u 90deg
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_MX_2.50u
-Kailh keyswitch Hotswap Socket with 2.50u keycap
-Kailh Keyboard Keyswitch Switch Hotswap Socket Cutout 2.50u
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_MX_2.50u_90deg
-Kailh keyswitch Hotswap Socket with 2.50u 90deg keycap
-Kailh Keyboard Keyswitch Switch Hotswap Socket Cutout 2.50u 90deg
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_MX_2.75u
-Kailh keyswitch Hotswap Socket with 2.75u keycap
-Kailh Keyboard Keyswitch Switch Hotswap Socket Cutout 2.75u
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_MX_2.75u_90deg
-Kailh keyswitch Hotswap Socket with 2.75u 90deg keycap
-Kailh Keyboard Keyswitch Switch Hotswap Socket Cutout 2.75u 90deg
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_MX_3.00u
-Kailh keyswitch Hotswap Socket with 3.00u keycap
-Kailh Keyboard Keyswitch Switch Hotswap Socket Cutout 3.00u
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_MX_3.00u_90deg
-Kailh keyswitch Hotswap Socket with 3.00u 90deg keycap
-Kailh Keyboard Keyswitch Switch Hotswap Socket Cutout 3.00u 90deg
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_MX_4.00u
-Kailh keyswitch Hotswap Socket with 4.00u keycap
-Kailh Keyboard Keyswitch Switch Hotswap Socket Cutout 4.00u
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_MX_4.50u
-Kailh keyswitch Hotswap Socket with 4.50u keycap
-Kailh Keyboard Keyswitch Switch Hotswap Socket Cutout 4.50u
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_MX_5.50u
-Kailh keyswitch Hotswap Socket with 5.50u keycap
-Kailh Keyboard Keyswitch Switch Hotswap Socket Cutout 5.50u
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_MX_6.00u
-Kailh keyswitch Hotswap Socket with 6.00u keycap
-Kailh Keyboard Keyswitch Switch Hotswap Socket Cutout 6.00u
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_MX_6.00u_Offset
-Kailh keyswitch Hotswap Socket with 6.00u Offset keycap
-Kailh Keyboard Keyswitch Switch Hotswap Socket Cutout 6.00u Offset
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_MX_6.25u
-Kailh keyswitch Hotswap Socket with 6.25u keycap
-Kailh Keyboard Keyswitch Switch Hotswap Socket Cutout 6.25u
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_MX_6.50u
-Kailh keyswitch Hotswap Socket with 6.50u keycap
-Kailh Keyboard Keyswitch Switch Hotswap Socket Cutout 6.50u
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_MX_7.00u
-Kailh keyswitch Hotswap Socket with 7.00u keycap
-Kailh Keyboard Keyswitch Switch Hotswap Socket Cutout 7.00u
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_MX_ISOEnter
-Kailh keyswitch Hotswap Socket with ISOEnter keycap
-Kailh Keyboard Keyswitch Switch Hotswap Socket Cutout ISOEnter
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_MX_ISOEnter_90deg
-Kailh keyswitch Hotswap Socket with ISOEnter 90deg keycap
-Kailh Keyboard Keyswitch Switch Hotswap Socket Cutout ISOEnter 90deg
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_MX_ISOEnter_180deg
-Kailh keyswitch Hotswap Socket with ISOEnter 180deg keycap
-Kailh Keyboard Keyswitch Switch Hotswap Socket Cutout ISOEnter 180deg
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_MX_ISOEnter_270deg
-Kailh keyswitch Hotswap Socket with ISOEnter 270deg keycap
-Kailh Keyboard Keyswitch Switch Hotswap Socket Cutout ISOEnter 270deg
-0
-2
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_MX_plated
-Kailh keyswitch Hotswap Socket plated holes
-Kailh Keyboard Keyswitch Switch Hotswap Socket plated Cutout
-0
-8
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_MX_plated_1.00u
-Kailh keyswitch Hotswap Socket plated holes with 1.00u keycap
-Kailh Keyboard Keyswitch Switch Hotswap Socket plated Cutout 1.00u
-0
-8
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_MX_plated_1.25u
-Kailh keyswitch Hotswap Socket plated holes with 1.25u keycap
-Kailh Keyboard Keyswitch Switch Hotswap Socket plated Cutout 1.25u
-0
-8
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_MX_plated_1.25u_90deg
-Kailh keyswitch Hotswap Socket plated holes with 1.25u 90deg keycap
-Kailh Keyboard Keyswitch Switch Hotswap Socket plated Cutout 1.25u 90deg
-0
-8
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_MX_plated_1.50u
-Kailh keyswitch Hotswap Socket plated holes with 1.50u keycap
-Kailh Keyboard Keyswitch Switch Hotswap Socket plated Cutout 1.50u
-0
-8
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_MX_plated_1.50u_90deg
-Kailh keyswitch Hotswap Socket plated holes with 1.50u 90deg keycap
-Kailh Keyboard Keyswitch Switch Hotswap Socket plated Cutout 1.50u 90deg
-0
-8
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_MX_plated_1.75u
-Kailh keyswitch Hotswap Socket plated holes with 1.75u keycap
-Kailh Keyboard Keyswitch Switch Hotswap Socket plated Cutout 1.75u
-0
-8
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_MX_plated_1.75u_90deg
-Kailh keyswitch Hotswap Socket plated holes with 1.75u 90deg keycap
-Kailh Keyboard Keyswitch Switch Hotswap Socket plated Cutout 1.75u 90deg
-0
-8
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_MX_plated_2.00u
-Kailh keyswitch Hotswap Socket plated holes with 2.00u keycap
-Kailh Keyboard Keyswitch Switch Hotswap Socket plated Cutout 2.00u
-0
-8
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_MX_plated_2.00u_90deg
-Kailh keyswitch Hotswap Socket plated holes with 2.00u 90deg keycap
-Kailh Keyboard Keyswitch Switch Hotswap Socket plated Cutout 2.00u 90deg
-0
-8
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_MX_plated_2.25u
-Kailh keyswitch Hotswap Socket plated holes with 2.25u keycap
-Kailh Keyboard Keyswitch Switch Hotswap Socket plated Cutout 2.25u
-0
-8
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_MX_plated_2.25u_90deg
-Kailh keyswitch Hotswap Socket plated holes with 2.25u 90deg keycap
-Kailh Keyboard Keyswitch Switch Hotswap Socket plated Cutout 2.25u 90deg
-0
-8
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_MX_plated_2.50u
-Kailh keyswitch Hotswap Socket plated holes with 2.50u keycap
-Kailh Keyboard Keyswitch Switch Hotswap Socket plated Cutout 2.50u
-0
-8
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_MX_plated_2.50u_90deg
-Kailh keyswitch Hotswap Socket plated holes with 2.50u 90deg keycap
-Kailh Keyboard Keyswitch Switch Hotswap Socket plated Cutout 2.50u 90deg
-0
-8
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_MX_plated_2.75u
-Kailh keyswitch Hotswap Socket plated holes with 2.75u keycap
-Kailh Keyboard Keyswitch Switch Hotswap Socket plated Cutout 2.75u
-0
-8
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_MX_plated_2.75u_90deg
-Kailh keyswitch Hotswap Socket plated holes with 2.75u 90deg keycap
-Kailh Keyboard Keyswitch Switch Hotswap Socket plated Cutout 2.75u 90deg
-0
-8
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_MX_plated_3.00u
-Kailh keyswitch Hotswap Socket plated holes with 3.00u keycap
-Kailh Keyboard Keyswitch Switch Hotswap Socket plated Cutout 3.00u
-0
-8
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_MX_plated_3.00u_90deg
-Kailh keyswitch Hotswap Socket plated holes with 3.00u 90deg keycap
-Kailh Keyboard Keyswitch Switch Hotswap Socket plated Cutout 3.00u 90deg
-0
-8
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_MX_plated_4.00u
-Kailh keyswitch Hotswap Socket plated holes with 4.00u keycap
-Kailh Keyboard Keyswitch Switch Hotswap Socket plated Cutout 4.00u
-0
-8
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_MX_plated_4.50u
-Kailh keyswitch Hotswap Socket plated holes with 4.50u keycap
-Kailh Keyboard Keyswitch Switch Hotswap Socket plated Cutout 4.50u
-0
-8
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_MX_plated_5.50u
-Kailh keyswitch Hotswap Socket plated holes with 5.50u keycap
-Kailh Keyboard Keyswitch Switch Hotswap Socket plated Cutout 5.50u
-0
-8
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_MX_plated_6.00u
-Kailh keyswitch Hotswap Socket plated holes with 6.00u keycap
-Kailh Keyboard Keyswitch Switch Hotswap Socket plated Cutout 6.00u
-0
-8
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_MX_plated_6.00u_Offset
-Kailh keyswitch Hotswap Socket plated holes with 6.00u Offset keycap
-Kailh Keyboard Keyswitch Switch Hotswap Socket plated Cutout 6.00u Offset
-0
-8
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_MX_plated_6.25u
-Kailh keyswitch Hotswap Socket plated holes with 6.25u keycap
-Kailh Keyboard Keyswitch Switch Hotswap Socket plated Cutout 6.25u
-0
-8
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_MX_plated_6.50u
-Kailh keyswitch Hotswap Socket plated holes with 6.50u keycap
-Kailh Keyboard Keyswitch Switch Hotswap Socket plated Cutout 6.50u
-0
-8
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_MX_plated_7.00u
-Kailh keyswitch Hotswap Socket plated holes with 7.00u keycap
-Kailh Keyboard Keyswitch Switch Hotswap Socket plated Cutout 7.00u
-0
-8
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_MX_plated_ISOEnter
-Kailh keyswitch Hotswap Socket plated holes with ISOEnter keycap
-Kailh Keyboard Keyswitch Switch Hotswap Socket plated Cutout ISOEnter
-0
-8
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_MX_plated_ISOEnter_90deg
-Kailh keyswitch Hotswap Socket plated holes with ISOEnter 90deg keycap
-Kailh Keyboard Keyswitch Switch Hotswap Socket plated Cutout ISOEnter 90deg
-0
-8
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_MX_plated_ISOEnter_180deg
-Kailh keyswitch Hotswap Socket plated holes with ISOEnter 180deg keycap
-Kailh Keyboard Keyswitch Switch Hotswap Socket plated Cutout ISOEnter 180deg
-0
-8
-2
-PCM_Switch_Keyboard_Hotswap_Kailh
-SW_Hotswap_Kailh_MX_plated_ISOEnter_270deg
-Kailh keyswitch Hotswap Socket plated holes with ISOEnter 270deg keycap
-Kailh Keyboard Keyswitch Switch Hotswap Socket plated Cutout ISOEnter 270deg
-0
-8
-2
-PCM_Switch_Keyboard_Hybrid
-SW_Hybrid_Cherry_MX_Alps
-Cherry MX / Alps keyswitch hybrid
-Cherry MX Alps Matias Hybrid Keyboard Keyswitch Switch PCB
-0
-6
-2
-PCM_Switch_Keyboard_Hybrid
-SW_Hybrid_Cherry_MX_Alps_1.00u
-Cherry MX / Alps keyswitch hybrid with 1.00u keycap
-Cherry MX Alps Matias Hybrid Keyboard Keyswitch Switch PCB 1.00u
-0
-6
-2
-PCM_Switch_Keyboard_Hybrid
-SW_Hybrid_Cherry_MX_Alps_1.25u
-Cherry MX / Alps keyswitch hybrid with 1.25u keycap
-Cherry MX Alps Matias Hybrid Keyboard Keyswitch Switch PCB 1.25u
-0
-6
-2
-PCM_Switch_Keyboard_Hybrid
-SW_Hybrid_Cherry_MX_Alps_1.50u
-Cherry MX / Alps keyswitch hybrid with 1.50u keycap
-Cherry MX Alps Matias Hybrid Keyboard Keyswitch Switch PCB 1.50u
-0
-6
-2
-PCM_Switch_Keyboard_Hybrid
-SW_Hybrid_Cherry_MX_Alps_1.75u
-Cherry MX / Alps keyswitch hybrid with 1.75u keycap
-Cherry MX Alps Matias Hybrid Keyboard Keyswitch Switch PCB 1.75u
-0
-6
-2
-PCM_Switch_Keyboard_Hybrid
-SW_Hybrid_Cherry_MX_Alps_2.00u
-Cherry MX / Alps keyswitch hybrid with 2.00u keycap
-Cherry MX Alps Matias Hybrid Keyboard Keyswitch Switch PCB 2.00u
-0
-6
-2
-PCM_Switch_Keyboard_Hybrid
-SW_Hybrid_Cherry_MX_Alps_2.25u
-Cherry MX / Alps keyswitch hybrid with 2.25u keycap
-Cherry MX Alps Matias Hybrid Keyboard Keyswitch Switch PCB 2.25u
-0
-6
-2
-PCM_Switch_Keyboard_Hybrid
-SW_Hybrid_Cherry_MX_Alps_2.50u
-Cherry MX / Alps keyswitch hybrid with 2.50u keycap
-Cherry MX Alps Matias Hybrid Keyboard Keyswitch Switch PCB 2.50u
-0
-6
-2
-PCM_Switch_Keyboard_Hybrid
-SW_Hybrid_Cherry_MX_Alps_2.75u
-Cherry MX / Alps keyswitch hybrid with 2.75u keycap
-Cherry MX Alps Matias Hybrid Keyboard Keyswitch Switch PCB 2.75u
-0
-6
-2
-PCM_Switch_Keyboard_Hybrid
-SW_Hybrid_Cherry_MX_Alps_3.00u
-Cherry MX / Alps keyswitch hybrid with 3.00u keycap
-Cherry MX Alps Matias Hybrid Keyboard Keyswitch Switch PCB 3.00u
-0
-6
-2
-PCM_Switch_Keyboard_Hybrid
-SW_Hybrid_Cherry_MX_Alps_4.00u
-Cherry MX / Alps keyswitch hybrid with 4.00u keycap
-Cherry MX Alps Matias Hybrid Keyboard Keyswitch Switch PCB 4.00u
-0
-6
-2
-PCM_Switch_Keyboard_Hybrid
-SW_Hybrid_Cherry_MX_Alps_4.50u
-Cherry MX / Alps keyswitch hybrid with 4.50u keycap
-Cherry MX Alps Matias Hybrid Keyboard Keyswitch Switch PCB 4.50u
-0
-6
-2
-PCM_Switch_Keyboard_Hybrid
-SW_Hybrid_Cherry_MX_Alps_5.50u
-Cherry MX / Alps keyswitch hybrid with 5.50u keycap
-Cherry MX Alps Matias Hybrid Keyboard Keyswitch Switch PCB 5.50u
-0
-6
-2
-PCM_Switch_Keyboard_Hybrid
-SW_Hybrid_Cherry_MX_Alps_6.00u
-Cherry MX / Alps keyswitch hybrid with 6.00u keycap
-Cherry MX Alps Matias Hybrid Keyboard Keyswitch Switch PCB 6.00u
-0
-6
-2
-PCM_Switch_Keyboard_Hybrid
-SW_Hybrid_Cherry_MX_Alps_6.25u
-Cherry MX / Alps keyswitch hybrid with 6.25u keycap
-Cherry MX Alps Matias Hybrid Keyboard Keyswitch Switch PCB 6.25u
-0
-6
-2
-PCM_Switch_Keyboard_Hybrid
-SW_Hybrid_Cherry_MX_Alps_6.50u
-Cherry MX / Alps keyswitch hybrid with 6.50u keycap
-Cherry MX Alps Matias Hybrid Keyboard Keyswitch Switch PCB 6.50u
-0
-6
-2
-PCM_Switch_Keyboard_Hybrid
-SW_Hybrid_Cherry_MX_Alps_7.00u
-Cherry MX / Alps keyswitch hybrid with 7.00u keycap
-Cherry MX Alps Matias Hybrid Keyboard Keyswitch Switch PCB 7.00u
-0
-6
-2
-PCM_Switch_Keyboard_Hybrid
-SW_Hybrid_Cherry_MX_Alps_ISOEnter
-Cherry MX / Alps keyswitch hybrid with ISOEnter keycap
-Cherry MX Alps Matias Hybrid Keyboard Keyswitch Switch PCB ISOEnter
-0
-6
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_Mini
-Kailh Choc Mini CPG1232 low profile keyswitch
-Kailh Choc Mini CPG1232 Keyboard Low Profile Keyswitch Switch Cutout
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_Mini_1.00u
-Kailh Choc Mini CPG1232 low profile keyswitch with 1.00u keycap
-Kailh Choc Mini CPG1232 Keyboard Low Profile Keyswitch Switch Cutout 1.00u
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_Mini_1.25u
-Kailh Choc Mini CPG1232 low profile keyswitch with 1.25u keycap
-Kailh Choc Mini CPG1232 Keyboard Low Profile Keyswitch Switch Cutout 1.25u
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_Mini_1.25u_90deg
-Kailh Choc Mini CPG1232 low profile keyswitch with 1.25u 90deg keycap
-Kailh Choc Mini CPG1232 Keyboard Low Profile Keyswitch Switch Cutout 1.25u 90deg
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_Mini_1.50u
-Kailh Choc Mini CPG1232 low profile keyswitch with 1.50u keycap
-Kailh Choc Mini CPG1232 Keyboard Low Profile Keyswitch Switch Cutout 1.50u
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_Mini_1.50u_90deg
-Kailh Choc Mini CPG1232 low profile keyswitch with 1.50u 90deg keycap
-Kailh Choc Mini CPG1232 Keyboard Low Profile Keyswitch Switch Cutout 1.50u 90deg
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_Mini_1.75u
-Kailh Choc Mini CPG1232 low profile keyswitch with 1.75u keycap
-Kailh Choc Mini CPG1232 Keyboard Low Profile Keyswitch Switch Cutout 1.75u
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_Mini_1.75u_90deg
-Kailh Choc Mini CPG1232 low profile keyswitch with 1.75u 90deg keycap
-Kailh Choc Mini CPG1232 Keyboard Low Profile Keyswitch Switch Cutout 1.75u 90deg
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_Mini_2.00u
-Kailh Choc Mini CPG1232 low profile keyswitch with 2.00u keycap
-Kailh Choc Mini CPG1232 Keyboard Low Profile Keyswitch Switch Cutout 2.00u
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_Mini_2.00u_90deg
-Kailh Choc Mini CPG1232 low profile keyswitch with 2.00u 90deg keycap
-Kailh Choc Mini CPG1232 Keyboard Low Profile Keyswitch Switch Cutout 2.00u 90deg
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_Mini_2.25u
-Kailh Choc Mini CPG1232 low profile keyswitch with 2.25u keycap
-Kailh Choc Mini CPG1232 Keyboard Low Profile Keyswitch Switch Cutout 2.25u
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_Mini_2.25u_90deg
-Kailh Choc Mini CPG1232 low profile keyswitch with 2.25u 90deg keycap
-Kailh Choc Mini CPG1232 Keyboard Low Profile Keyswitch Switch Cutout 2.25u 90deg
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_Mini_2.50u
-Kailh Choc Mini CPG1232 low profile keyswitch with 2.50u keycap
-Kailh Choc Mini CPG1232 Keyboard Low Profile Keyswitch Switch Cutout 2.50u
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_Mini_2.50u_90deg
-Kailh Choc Mini CPG1232 low profile keyswitch with 2.50u 90deg keycap
-Kailh Choc Mini CPG1232 Keyboard Low Profile Keyswitch Switch Cutout 2.50u 90deg
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_Mini_2.75u
-Kailh Choc Mini CPG1232 low profile keyswitch with 2.75u keycap
-Kailh Choc Mini CPG1232 Keyboard Low Profile Keyswitch Switch Cutout 2.75u
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_Mini_2.75u_90deg
-Kailh Choc Mini CPG1232 low profile keyswitch with 2.75u 90deg keycap
-Kailh Choc Mini CPG1232 Keyboard Low Profile Keyswitch Switch Cutout 2.75u 90deg
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_Mini_3.00u
-Kailh Choc Mini CPG1232 low profile keyswitch with 3.00u keycap
-Kailh Choc Mini CPG1232 Keyboard Low Profile Keyswitch Switch Cutout 3.00u
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_Mini_3.00u_90deg
-Kailh Choc Mini CPG1232 low profile keyswitch with 3.00u 90deg keycap
-Kailh Choc Mini CPG1232 Keyboard Low Profile Keyswitch Switch Cutout 3.00u 90deg
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_Mini_4.00u
-Kailh Choc Mini CPG1232 low profile keyswitch with 4.00u keycap
-Kailh Choc Mini CPG1232 Keyboard Low Profile Keyswitch Switch Cutout 4.00u
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_Mini_4.50u
-Kailh Choc Mini CPG1232 low profile keyswitch with 4.50u keycap
-Kailh Choc Mini CPG1232 Keyboard Low Profile Keyswitch Switch Cutout 4.50u
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_Mini_5.50u
-Kailh Choc Mini CPG1232 low profile keyswitch with 5.50u keycap
-Kailh Choc Mini CPG1232 Keyboard Low Profile Keyswitch Switch Cutout 5.50u
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_Mini_6.00u
-Kailh Choc Mini CPG1232 low profile keyswitch with 6.00u keycap
-Kailh Choc Mini CPG1232 Keyboard Low Profile Keyswitch Switch Cutout 6.00u
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_Mini_6.00u_Offset
-Kailh Choc Mini CPG1232 low profile keyswitch with 6.00u Offset keycap
-Kailh Choc Mini CPG1232 Keyboard Low Profile Keyswitch Switch Cutout 6.00u Offset
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_Mini_6.25u
-Kailh Choc Mini CPG1232 low profile keyswitch with 6.25u keycap
-Kailh Choc Mini CPG1232 Keyboard Low Profile Keyswitch Switch Cutout 6.25u
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_Mini_6.50u
-Kailh Choc Mini CPG1232 low profile keyswitch with 6.50u keycap
-Kailh Choc Mini CPG1232 Keyboard Low Profile Keyswitch Switch Cutout 6.50u
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_Mini_7.00u
-Kailh Choc Mini CPG1232 low profile keyswitch with 7.00u keycap
-Kailh Choc Mini CPG1232 Keyboard Low Profile Keyswitch Switch Cutout 7.00u
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_Mini_ISOEnter
-Kailh Choc Mini CPG1232 low profile keyswitch with ISOEnter keycap
-Kailh Choc Mini CPG1232 Keyboard Low Profile Keyswitch Switch Cutout ISOEnter
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_Mini_ISOEnter_90deg
-Kailh Choc Mini CPG1232 low profile keyswitch with ISOEnter 90deg keycap
-Kailh Choc Mini CPG1232 Keyboard Low Profile Keyswitch Switch Cutout ISOEnter 90deg
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_Mini_ISOEnter_180deg
-Kailh Choc Mini CPG1232 low profile keyswitch with ISOEnter 180deg keycap
-Kailh Choc Mini CPG1232 Keyboard Low Profile Keyswitch Switch Cutout ISOEnter 180deg
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_Mini_ISOEnter_270deg
-Kailh Choc Mini CPG1232 low profile keyswitch with ISOEnter 270deg keycap
-Kailh Choc Mini CPG1232 Keyboard Low Profile Keyswitch Switch Cutout ISOEnter 270deg
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V1
-Kailh Choc keyswitch CPG1350 V1
-Kailh Choc Keyswitch Switch CPG1350 V1 Cutout
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V1V2
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Cutout
-0
-6
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V1V2_1.00u
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 with 1.00u keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Cutout 1.00u
-0
-6
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V1V2_1.25u
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 with 1.25u keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Cutout 1.25u
-0
-6
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V1V2_1.25u_90deg
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 with 1.25u 90deg keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Cutout 1.25u 90deg
-0
-6
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V1V2_1.50u
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 with 1.50u keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Cutout 1.50u
-0
-6
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V1V2_1.50u_90deg
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 with 1.50u 90deg keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Cutout 1.50u 90deg
-0
-6
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V1V2_1.75u
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 with 1.75u keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Cutout 1.75u
-0
-6
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V1V2_1.75u_90deg
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 with 1.75u 90deg keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Cutout 1.75u 90deg
-0
-6
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V1V2_2.00u
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 with 2.00u keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Cutout 2.00u
-0
-6
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V1V2_2.00u_90deg
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 with 2.00u 90deg keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Cutout 2.00u 90deg
-0
-6
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V1V2_2.25u
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 with 2.25u keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Cutout 2.25u
-0
-6
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V1V2_2.25u_90deg
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 with 2.25u 90deg keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Cutout 2.25u 90deg
-0
-6
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V1V2_2.50u
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 with 2.50u keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Cutout 2.50u
-0
-6
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V1V2_2.50u_90deg
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 with 2.50u 90deg keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Cutout 2.50u 90deg
-0
-6
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V1V2_2.75u
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 with 2.75u keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Cutout 2.75u
-0
-6
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V1V2_2.75u_90deg
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 with 2.75u 90deg keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Cutout 2.75u 90deg
-0
-6
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V1V2_3.00u
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 with 3.00u keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Cutout 3.00u
-0
-6
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V1V2_3.00u_90deg
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 with 3.00u 90deg keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Cutout 3.00u 90deg
-0
-6
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V1V2_4.00u
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 with 4.00u keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Cutout 4.00u
-0
-6
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V1V2_4.50u
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 with 4.50u keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Cutout 4.50u
-0
-6
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V1V2_5.50u
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 with 5.50u keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Cutout 5.50u
-0
-6
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V1V2_6.00u
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 with 6.00u keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Cutout 6.00u
-0
-6
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V1V2_6.00u_Offset
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 with 6.00u Offset keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Cutout 6.00u Offset
-0
-6
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V1V2_6.25u
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 with 6.25u keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Cutout 6.25u
-0
-6
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V1V2_6.50u
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 with 6.50u keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Cutout 6.50u
-0
-6
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V1V2_7.00u
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 with 7.00u keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Cutout 7.00u
-0
-6
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V1V2_ISOEnter
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 with ISOEnter keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Cutout ISOEnter
-0
-6
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V1V2_ISOEnter_90deg
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 with ISOEnter 90deg keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Cutout ISOEnter 90deg
-0
-6
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V1V2_ISOEnter_180deg
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 with ISOEnter 180deg keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Cutout ISOEnter 180deg
-0
-6
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V1V2_ISOEnter_270deg
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 with ISOEnter 270deg keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Cutout ISOEnter 270deg
-0
-6
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V1_1.00u
-Kailh Choc keyswitch CPG1350 V1 with 1.00u keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 Cutout 1.00u
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V1_1.25u
-Kailh Choc keyswitch CPG1350 V1 with 1.25u keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 Cutout 1.25u
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V1_1.25u_90deg
-Kailh Choc keyswitch CPG1350 V1 with 1.25u 90deg keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 Cutout 1.25u 90deg
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V1_1.50u
-Kailh Choc keyswitch CPG1350 V1 with 1.50u keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 Cutout 1.50u
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V1_1.50u_90deg
-Kailh Choc keyswitch CPG1350 V1 with 1.50u 90deg keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 Cutout 1.50u 90deg
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V1_1.75u
-Kailh Choc keyswitch CPG1350 V1 with 1.75u keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 Cutout 1.75u
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V1_1.75u_90deg
-Kailh Choc keyswitch CPG1350 V1 with 1.75u 90deg keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 Cutout 1.75u 90deg
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V1_2.00u
-Kailh Choc keyswitch CPG1350 V1 with 2.00u keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 Cutout 2.00u
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V1_2.00u_90deg
-Kailh Choc keyswitch CPG1350 V1 with 2.00u 90deg keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 Cutout 2.00u 90deg
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V1_2.25u
-Kailh Choc keyswitch CPG1350 V1 with 2.25u keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 Cutout 2.25u
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V1_2.25u_90deg
-Kailh Choc keyswitch CPG1350 V1 with 2.25u 90deg keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 Cutout 2.25u 90deg
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V1_2.50u
-Kailh Choc keyswitch CPG1350 V1 with 2.50u keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 Cutout 2.50u
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V1_2.50u_90deg
-Kailh Choc keyswitch CPG1350 V1 with 2.50u 90deg keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 Cutout 2.50u 90deg
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V1_2.75u
-Kailh Choc keyswitch CPG1350 V1 with 2.75u keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 Cutout 2.75u
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V1_2.75u_90deg
-Kailh Choc keyswitch CPG1350 V1 with 2.75u 90deg keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 Cutout 2.75u 90deg
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V1_3.00u
-Kailh Choc keyswitch CPG1350 V1 with 3.00u keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 Cutout 3.00u
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V1_3.00u_90deg
-Kailh Choc keyswitch CPG1350 V1 with 3.00u 90deg keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 Cutout 3.00u 90deg
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V1_4.00u
-Kailh Choc keyswitch CPG1350 V1 with 4.00u keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 Cutout 4.00u
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V1_4.50u
-Kailh Choc keyswitch CPG1350 V1 with 4.50u keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 Cutout 4.50u
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V1_5.50u
-Kailh Choc keyswitch CPG1350 V1 with 5.50u keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 Cutout 5.50u
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V1_6.00u
-Kailh Choc keyswitch CPG1350 V1 with 6.00u keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 Cutout 6.00u
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V1_6.00u_Offset
-Kailh Choc keyswitch CPG1350 V1 with 6.00u Offset keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 Cutout 6.00u Offset
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V1_6.25u
-Kailh Choc keyswitch CPG1350 V1 with 6.25u keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 Cutout 6.25u
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V1_6.50u
-Kailh Choc keyswitch CPG1350 V1 with 6.50u keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 Cutout 6.50u
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V1_7.00u
-Kailh Choc keyswitch CPG1350 V1 with 7.00u keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 Cutout 7.00u
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V1_ISOEnter
-Kailh Choc keyswitch CPG1350 V1 with ISOEnter keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 Cutout ISOEnter
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V1_ISOEnter_90deg
-Kailh Choc keyswitch CPG1350 V1 with ISOEnter 90deg keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 Cutout ISOEnter 90deg
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V1_ISOEnter_180deg
-Kailh Choc keyswitch CPG1350 V1 with ISOEnter 180deg keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 Cutout ISOEnter 180deg
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V1_ISOEnter_270deg
-Kailh Choc keyswitch CPG1350 V1 with ISOEnter 270deg keycap
-Kailh Choc Keyswitch Switch CPG1350 V1 Cutout ISOEnter 270deg
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V2
-Kailh Choc keyswitch CPG1353 V2
-Kailh Choc Keyswitch Switch CPG1353 V2 Cutout
-0
-6
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V2_1.00u
-Kailh Choc keyswitch CPG1353 V2 with 1.00u keycap
-Kailh Choc Keyswitch Switch CPG1353 V2 Cutout 1.00u
-0
-6
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V2_1.25u
-Kailh Choc keyswitch CPG1353 V2 with 1.25u keycap
-Kailh Choc Keyswitch Switch CPG1353 V2 Cutout 1.25u
-0
-6
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V2_1.25u_90deg
-Kailh Choc keyswitch CPG1353 V2 with 1.25u 90deg keycap
-Kailh Choc Keyswitch Switch CPG1353 V2 Cutout 1.25u 90deg
-0
-6
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V2_1.50u
-Kailh Choc keyswitch CPG1353 V2 with 1.50u keycap
-Kailh Choc Keyswitch Switch CPG1353 V2 Cutout 1.50u
-0
-6
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V2_1.50u_90deg
-Kailh Choc keyswitch CPG1353 V2 with 1.50u 90deg keycap
-Kailh Choc Keyswitch Switch CPG1353 V2 Cutout 1.50u 90deg
-0
-6
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V2_1.75u
-Kailh Choc keyswitch CPG1353 V2 with 1.75u keycap
-Kailh Choc Keyswitch Switch CPG1353 V2 Cutout 1.75u
-0
-6
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V2_1.75u_90deg
-Kailh Choc keyswitch CPG1353 V2 with 1.75u 90deg keycap
-Kailh Choc Keyswitch Switch CPG1353 V2 Cutout 1.75u 90deg
-0
-6
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V2_2.00u
-Kailh Choc keyswitch CPG1353 V2 with 2.00u keycap
-Kailh Choc Keyswitch Switch CPG1353 V2 Cutout 2.00u
-0
-6
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V2_2.00u_90deg
-Kailh Choc keyswitch CPG1353 V2 with 2.00u 90deg keycap
-Kailh Choc Keyswitch Switch CPG1353 V2 Cutout 2.00u 90deg
-0
-6
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V2_2.25u
-Kailh Choc keyswitch CPG1353 V2 with 2.25u keycap
-Kailh Choc Keyswitch Switch CPG1353 V2 Cutout 2.25u
-0
-6
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V2_2.25u_90deg
-Kailh Choc keyswitch CPG1353 V2 with 2.25u 90deg keycap
-Kailh Choc Keyswitch Switch CPG1353 V2 Cutout 2.25u 90deg
-0
-6
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V2_2.50u
-Kailh Choc keyswitch CPG1353 V2 with 2.50u keycap
-Kailh Choc Keyswitch Switch CPG1353 V2 Cutout 2.50u
-0
-6
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V2_2.50u_90deg
-Kailh Choc keyswitch CPG1353 V2 with 2.50u 90deg keycap
-Kailh Choc Keyswitch Switch CPG1353 V2 Cutout 2.50u 90deg
-0
-6
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V2_2.75u
-Kailh Choc keyswitch CPG1353 V2 with 2.75u keycap
-Kailh Choc Keyswitch Switch CPG1353 V2 Cutout 2.75u
-0
-6
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V2_2.75u_90deg
-Kailh Choc keyswitch CPG1353 V2 with 2.75u 90deg keycap
-Kailh Choc Keyswitch Switch CPG1353 V2 Cutout 2.75u 90deg
-0
-6
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V2_3.00u
-Kailh Choc keyswitch CPG1353 V2 with 3.00u keycap
-Kailh Choc Keyswitch Switch CPG1353 V2 Cutout 3.00u
-0
-6
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V2_3.00u_90deg
-Kailh Choc keyswitch CPG1353 V2 with 3.00u 90deg keycap
-Kailh Choc Keyswitch Switch CPG1353 V2 Cutout 3.00u 90deg
-0
-6
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V2_4.00u
-Kailh Choc keyswitch CPG1353 V2 with 4.00u keycap
-Kailh Choc Keyswitch Switch CPG1353 V2 Cutout 4.00u
-0
-6
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V2_4.50u
-Kailh Choc keyswitch CPG1353 V2 with 4.50u keycap
-Kailh Choc Keyswitch Switch CPG1353 V2 Cutout 4.50u
-0
-6
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V2_5.50u
-Kailh Choc keyswitch CPG1353 V2 with 5.50u keycap
-Kailh Choc Keyswitch Switch CPG1353 V2 Cutout 5.50u
-0
-6
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V2_6.00u
-Kailh Choc keyswitch CPG1353 V2 with 6.00u keycap
-Kailh Choc Keyswitch Switch CPG1353 V2 Cutout 6.00u
-0
-6
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V2_6.00u_Offset
-Kailh Choc keyswitch CPG1353 V2 with 6.00u Offset keycap
-Kailh Choc Keyswitch Switch CPG1353 V2 Cutout 6.00u Offset
-0
-6
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V2_6.25u
-Kailh Choc keyswitch CPG1353 V2 with 6.25u keycap
-Kailh Choc Keyswitch Switch CPG1353 V2 Cutout 6.25u
-0
-6
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V2_6.50u
-Kailh Choc keyswitch CPG1353 V2 with 6.50u keycap
-Kailh Choc Keyswitch Switch CPG1353 V2 Cutout 6.50u
-0
-6
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V2_7.00u
-Kailh Choc keyswitch CPG1353 V2 with 7.00u keycap
-Kailh Choc Keyswitch Switch CPG1353 V2 Cutout 7.00u
-0
-6
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V2_ISOEnter
-Kailh Choc keyswitch CPG1353 V2 with ISOEnter keycap
-Kailh Choc Keyswitch Switch CPG1353 V2 Cutout ISOEnter
-0
-6
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V2_ISOEnter_90deg
-Kailh Choc keyswitch CPG1353 V2 with ISOEnter 90deg keycap
-Kailh Choc Keyswitch Switch CPG1353 V2 Cutout ISOEnter 90deg
-0
-6
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V2_ISOEnter_180deg
-Kailh Choc keyswitch CPG1353 V2 with ISOEnter 180deg keycap
-Kailh Choc Keyswitch Switch CPG1353 V2 Cutout ISOEnter 180deg
-0
-6
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_Choc_V2_ISOEnter_270deg
-Kailh Choc keyswitch CPG1353 V2 with ISOEnter 270deg keycap
-Kailh Choc Keyswitch Switch CPG1353 V2 Cutout ISOEnter 270deg
-0
-6
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_KH
-Kailh KH CPG1280 keyswitch
-Kailh KH CPG1280 Keyboard Keyswitch Switch Cutout
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_KH_1.00u
-Kailh KH CPG1280 keyswitch with 1.00u keycap
-Kailh KH CPG1280 Keyboard Keyswitch Switch Cutout 1.00u
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_KH_1.25u
-Kailh KH CPG1280 keyswitch with 1.25u keycap
-Kailh KH CPG1280 Keyboard Keyswitch Switch Cutout 1.25u
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_KH_1.25u_90deg
-Kailh KH CPG1280 keyswitch with 1.25u 90deg keycap
-Kailh KH CPG1280 Keyboard Keyswitch Switch Cutout 1.25u 90deg
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_KH_1.50u
-Kailh KH CPG1280 keyswitch with 1.50u keycap
-Kailh KH CPG1280 Keyboard Keyswitch Switch Cutout 1.50u
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_KH_1.50u_90deg
-Kailh KH CPG1280 keyswitch with 1.50u 90deg keycap
-Kailh KH CPG1280 Keyboard Keyswitch Switch Cutout 1.50u 90deg
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_KH_1.75u
-Kailh KH CPG1280 keyswitch with 1.75u keycap
-Kailh KH CPG1280 Keyboard Keyswitch Switch Cutout 1.75u
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_KH_1.75u_90deg
-Kailh KH CPG1280 keyswitch with 1.75u 90deg keycap
-Kailh KH CPG1280 Keyboard Keyswitch Switch Cutout 1.75u 90deg
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_KH_2.00u
-Kailh KH CPG1280 keyswitch with 2.00u keycap
-Kailh KH CPG1280 Keyboard Keyswitch Switch Cutout 2.00u
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_KH_2.00u_90deg
-Kailh KH CPG1280 keyswitch with 2.00u 90deg keycap
-Kailh KH CPG1280 Keyboard Keyswitch Switch Cutout 2.00u 90deg
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_KH_2.25u
-Kailh KH CPG1280 keyswitch with 2.25u keycap
-Kailh KH CPG1280 Keyboard Keyswitch Switch Cutout 2.25u
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_KH_2.25u_90deg
-Kailh KH CPG1280 keyswitch with 2.25u 90deg keycap
-Kailh KH CPG1280 Keyboard Keyswitch Switch Cutout 2.25u 90deg
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_KH_2.50u
-Kailh KH CPG1280 keyswitch with 2.50u keycap
-Kailh KH CPG1280 Keyboard Keyswitch Switch Cutout 2.50u
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_KH_2.50u_90deg
-Kailh KH CPG1280 keyswitch with 2.50u 90deg keycap
-Kailh KH CPG1280 Keyboard Keyswitch Switch Cutout 2.50u 90deg
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_KH_2.75u
-Kailh KH CPG1280 keyswitch with 2.75u keycap
-Kailh KH CPG1280 Keyboard Keyswitch Switch Cutout 2.75u
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_KH_2.75u_90deg
-Kailh KH CPG1280 keyswitch with 2.75u 90deg keycap
-Kailh KH CPG1280 Keyboard Keyswitch Switch Cutout 2.75u 90deg
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_KH_3.00u
-Kailh KH CPG1280 keyswitch with 3.00u keycap
-Kailh KH CPG1280 Keyboard Keyswitch Switch Cutout 3.00u
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_KH_3.00u_90deg
-Kailh KH CPG1280 keyswitch with 3.00u 90deg keycap
-Kailh KH CPG1280 Keyboard Keyswitch Switch Cutout 3.00u 90deg
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_KH_4.00u
-Kailh KH CPG1280 keyswitch with 4.00u keycap
-Kailh KH CPG1280 Keyboard Keyswitch Switch Cutout 4.00u
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_KH_4.50u
-Kailh KH CPG1280 keyswitch with 4.50u keycap
-Kailh KH CPG1280 Keyboard Keyswitch Switch Cutout 4.50u
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_KH_5.50u
-Kailh KH CPG1280 keyswitch with 5.50u keycap
-Kailh KH CPG1280 Keyboard Keyswitch Switch Cutout 5.50u
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_KH_6.00u
-Kailh KH CPG1280 keyswitch with 6.00u keycap
-Kailh KH CPG1280 Keyboard Keyswitch Switch Cutout 6.00u
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_KH_6.00u_Offset
-Kailh KH CPG1280 keyswitch with 6.00u Offset keycap
-Kailh KH CPG1280 Keyboard Keyswitch Switch Cutout 6.00u Offset
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_KH_6.25u
-Kailh KH CPG1280 keyswitch with 6.25u keycap
-Kailh KH CPG1280 Keyboard Keyswitch Switch Cutout 6.25u
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_KH_6.50u
-Kailh KH CPG1280 keyswitch with 6.50u keycap
-Kailh KH CPG1280 Keyboard Keyswitch Switch Cutout 6.50u
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_KH_7.00u
-Kailh KH CPG1280 keyswitch with 7.00u keycap
-Kailh KH CPG1280 Keyboard Keyswitch Switch Cutout 7.00u
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_KH_ISOEnter
-Kailh KH CPG1280 keyswitch with ISOEnter keycap
-Kailh KH CPG1280 Keyboard Keyswitch Switch Cutout ISOEnter
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_KH_ISOEnter_90deg
-Kailh KH CPG1280 keyswitch with ISOEnter 90deg keycap
-Kailh KH CPG1280 Keyboard Keyswitch Switch Cutout ISOEnter 90deg
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_KH_ISOEnter_180deg
-Kailh KH CPG1280 keyswitch with ISOEnter 180deg keycap
-Kailh KH CPG1280 Keyboard Keyswitch Switch Cutout ISOEnter 180deg
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_KH_ISOEnter_270deg
-Kailh KH CPG1280 keyswitch with ISOEnter 270deg keycap
-Kailh KH CPG1280 Keyboard Keyswitch Switch Cutout ISOEnter 270deg
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_NB
-Kailh KH CPG1425 low profile notebook keyswitch
-Kailh KH CPG1425 Keyboard Low Profile Notebook Keyswitch Switch
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_NB_1.00u
-Kailh KH CPG1425 low profile notebook keyswitch with 1.00u keycap
-Kailh KH CPG1425 Keyboard Low Profile Notebook Keyswitch Switch 1.00u
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_NB_1.25u
-Kailh KH CPG1425 low profile notebook keyswitch with 1.25u keycap
-Kailh KH CPG1425 Keyboard Low Profile Notebook Keyswitch Switch 1.25u
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_NB_1.50u
-Kailh KH CPG1425 low profile notebook keyswitch with 1.50u keycap
-Kailh KH CPG1425 Keyboard Low Profile Notebook Keyswitch Switch 1.50u
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_NB_1.75u
-Kailh KH CPG1425 low profile notebook keyswitch with 1.75u keycap
-Kailh KH CPG1425 Keyboard Low Profile Notebook Keyswitch Switch 1.75u
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_NB_2.00u
-Kailh KH CPG1425 low profile notebook keyswitch with 2.00u keycap
-Kailh KH CPG1425 Keyboard Low Profile Notebook Keyswitch Switch 2.00u
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_NB_2.25u
-Kailh KH CPG1425 low profile notebook keyswitch with 2.25u keycap
-Kailh KH CPG1425 Keyboard Low Profile Notebook Keyswitch Switch 2.25u
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_NB_2.50u
-Kailh KH CPG1425 low profile notebook keyswitch with 2.50u keycap
-Kailh KH CPG1425 Keyboard Low Profile Notebook Keyswitch Switch 2.50u
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_NB_2.75u
-Kailh KH CPG1425 low profile notebook keyswitch with 2.75u keycap
-Kailh KH CPG1425 Keyboard Low Profile Notebook Keyswitch Switch 2.75u
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_NB_3.00u
-Kailh KH CPG1425 low profile notebook keyswitch with 3.00u keycap
-Kailh KH CPG1425 Keyboard Low Profile Notebook Keyswitch Switch 3.00u
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_NB_4.00u
-Kailh KH CPG1425 low profile notebook keyswitch with 4.00u keycap
-Kailh KH CPG1425 Keyboard Low Profile Notebook Keyswitch Switch 4.00u
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_NB_4.50u
-Kailh KH CPG1425 low profile notebook keyswitch with 4.50u keycap
-Kailh KH CPG1425 Keyboard Low Profile Notebook Keyswitch Switch 4.50u
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_NB_5.50u
-Kailh KH CPG1425 low profile notebook keyswitch with 5.50u keycap
-Kailh KH CPG1425 Keyboard Low Profile Notebook Keyswitch Switch 5.50u
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_NB_6.00u
-Kailh KH CPG1425 low profile notebook keyswitch with 6.00u keycap
-Kailh KH CPG1425 Keyboard Low Profile Notebook Keyswitch Switch 6.00u
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_NB_6.25u
-Kailh KH CPG1425 low profile notebook keyswitch with 6.25u keycap
-Kailh KH CPG1425 Keyboard Low Profile Notebook Keyswitch Switch 6.25u
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_NB_6.50u
-Kailh KH CPG1425 low profile notebook keyswitch with 6.50u keycap
-Kailh KH CPG1425 Keyboard Low Profile Notebook Keyswitch Switch 6.50u
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_NB_7.00u
-Kailh KH CPG1425 low profile notebook keyswitch with 7.00u keycap
-Kailh KH CPG1425 Keyboard Low Profile Notebook Keyswitch Switch 7.00u
-0
-4
-2
-PCM_Switch_Keyboard_Kailh
-SW_Kailh_NB_ISOEnter
-Kailh KH CPG1425 low profile notebook keyswitch with ISOEnter keycap
-Kailh KH CPG1425 Keyboard Low Profile Notebook Keyswitch Switch ISOEnter
-0
-4
-2
 Package_BGA
 Analog_BGA-28_4.0x6.25mm_Layout4x7_P0.8mm_Ball0.45mm_Pad0.4
 Analog BGA-28 4.0mm x 6.25mm package, pitch 0.4mm pad, based on https://www.analog.com/media/en/technical-documentation/data-sheets/8063fa.pdf
@@ -86212,12 +83391,19 @@ rotary encoder
 7
 6
 SamacSys_Parts
-A4988MODULE
-A4988 MODULE-2
-Undefined or Miscellaneous
+AZ1117R33TRE1
+AZ1117R-3.3TRE1-2
+Integrated Circuit
 0
-16
-16
+4
+4
+SamacSys_Parts
+BP5293-33
+BP5293-33
+Power Supply
+0
+3
+3
 SamacSys_Parts
 DIP762W55P254L2286H480Q18N
 DIP18-300-2.54-001
@@ -86226,13 +83412,6 @@ Integrated Circuit
 18
 18
 SamacSys_Parts
-DIP762W56P254L880H425Q8N
-DIP8
-Integrated Circuit
-0
-8
-8
-SamacSys_Parts
 DIP762W60P254L1975H445Q16N
 DIP16-P-300-2.54A-2022
 Integrated Circuit
@@ -86240,54 +83419,19 @@ Integrated Circuit
 16
 16
 SamacSys_Parts
-DIP794W56P254L946H432Q8N
-8-Lead Plastic Dual In-line (P)  E300 mil (PDIP)
-Integrated Circuit
+DIPS1524W50P254L5030H825Q12N
+OSL40562-LR
+Display
 0
-8
-8
+12
+12
 SamacSys_Parts
-ECQE2474
-ECQE2474
-Capacitor
+EC11E1544505
+EC11E1544505
+Undefined or Miscellaneous
 0
-2
-2
-SamacSys_Parts
-ECQUBAF332MA
-ECQUBAF332MA
-Capacitor
-0
-2
-2
-SamacSys_Parts
-ECWH16472JV
-ECWH16472JV-2
-Capacitor
-0
-2
-2
-SamacSys_Parts
-MFR300AP
-MF-R300-AP-1
-Fuse
-0
-2
-2
-SamacSys_Parts
-MJ-8435
-MJ-8435
-Connector
-0
-4
-4
-SamacSys_Parts
-MJ352W0
-MJ352W-0-2
-Connector
-0
-3
-3
+7
+7
 SamacSys_Parts
 NE555DR
 D (R-PDSO-G8)
@@ -86296,19 +83440,19 @@ Integrated Circuit
 8
 8
 SamacSys_Parts
-RK09712200HA
-RK09712200HA-2
+RK0971114Z07
+RK0971114Z07-1
 Variable Resistor
 0
-6
-6
+5
+5
 SamacSys_Parts
-RK097221004C
-RK097221004C-1
-Variable Resistor
+SODFL3618X108N
+SOD 123FL
+Diode
 0
-6
-6
+2
+2
 SamacSys_Parts
 SOIC127P630X190-16N
 SOP16-P-225-1.27
@@ -86317,16 +83461,23 @@ Integrated Circuit
 16
 16
 SamacSys_Parts
-SOP65P640X155-18N
-SSOP18-P-225-0.65
+SOIC127P1020X269-28N
+SOP28
 Integrated Circuit
+0
+28
+28
+SamacSys_Parts
+SOIC127P1030X245-18N
+SOP18-P-3.75-1.27
+Transistor
 0
 18
 18
 SamacSys_Parts
-ST005G
-ST-005-G
-Connector
+TL1105PF160Q
+TL1105PF160Q-1
+Switch
 0
 4
 4
@@ -86344,13 +83495,6 @@ Power Supply
 0
 3
 3
-SamacSys_Parts
-hdsp-B05g
-hdsp-B05g
-Display
-0
-12
-12
 Sensor
 Aosong_DHT11_5.5x12.0_P2.54mm
 Temperature and humidity module, http://akizukidenshi.com/download/ds/aosong/DHT11.pdf
