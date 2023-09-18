@@ -9,10 +9,10 @@
   "SubInsts" : [
    {
     "InstFile" : "H:/git/tangnano9k_brushless_driver/sample/tangnano9k_brushless/src/top.sv",
-    "InstLine" : 21,
+    "InstLine" : 28,
     "InstName" : "inst_1",
     "ModuleFile" : "H:/git/tangnano9k_brushless_driver/sample/tangnano9k_brushless/src/top.sv",
-    "ModuleLine" : 50,
+    "ModuleLine" : 62,
     "ModuleName" : "timer"
    }
   ]
