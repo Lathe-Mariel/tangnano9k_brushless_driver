@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Module name="top" Register="9" Lut="10">
+<Module name="top" Register="15" Lut="20">
     <SubModule name="inst_1" Register="20" Alu="18" Lut="7"/>
 </Module>

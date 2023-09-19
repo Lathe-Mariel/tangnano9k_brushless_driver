@@ -3,6 +3,7 @@
 <head>
 <title>Timing Analysis Report</title>
 <style type="text/css">
+@import url(../temp/style.css);
 body { font-family: Verdana, Arial, sans-serif; font-size: 12px; }
 div#content { width: 100%; margin: }
 hr { margin-top: 30px; margin-bottom: 30px; }
@@ -26,11 +27,11 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Design File</td>
-<td>H:\git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\impl\gwsynthesis\tangnano9k_brushless.vg</td>
+<td>C:\Git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\impl\gwsynthesis\tangnano9k_brushless.vg</td>
 </tr>
 <tr>
 <td class="label">Physical Constraints File</td>
-<td>H:\git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.cst</td>
+<td>C:\Git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.cst</td>
 </tr>
 <tr>
 <td class="label">Timing Constraint File</td>
@@ -38,7 +39,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Version</td>
-<td>V1.9.8.09 Education</td>
+<td>V1.9.8.11 Education</td>
 </tr>
 <tr>
 <td class="label">Part Number</td>
@@ -46,16 +47,20 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Device</td>
-<td>GW1NR-9C</td>
+<td>GW1NR-9</td>
+</tr>
+<tr>
+<td class="label">Device Version</td>
+<td>C</td>
 </tr>
 <tr>
 <td class="label">Created Time</td>
-<td>Mon Sep 18 20:47:48 2023
+<td>Tue Sep 19 11:43:14 2023
 </td>
 </tr>
 <tr>
 <td class="label">Legal Announcement</td>
-<td>Copyright (C)2014-2022 Gowin Semiconductor Corporation. All rights reserved.</td>
+<td>Copyright (C)2014-2023 Gowin Semiconductor Corporation. All rights reserved.</td>
 </tr>
 </table>
 <h1><a name="Summary">Timing Summaries</a></h1>
@@ -71,11 +76,11 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Numbers of Paths Analyzed</td>
-<td>72</td>
+<td>82</td>
 </tr>
 <tr>
 <td class="label">Numbers of Endpoints Analyzed</td>
-<td>83</td>
+<td>90</td>
 </tr>
 <tr>
 <td class="label">Numbers of Falling Endpoints</td>
@@ -87,7 +92,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Numbers of Hold Violated Endpoints</td>
-<td>0</td>
+<td>1</td>
 </tr>
 </table>
 <h2><a name="Clock_Report">Clock Summary:</a></h2>
@@ -125,6 +130,17 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td></td>
 <td>inst_1/overflow_s0/Q </td>
 </tr>
+<tr>
+<td>rotateCLK_4</td>
+<td>Base</td>
+<td>20.000</td>
+<td>50.000
+<td>0.000</td>
+<td>10.000</td>
+<td></td>
+<td></td>
+<td>rotateCLK_s1/Q </td>
+</tr>
 </table>
 <h2><a name="Max_Frequency_Report">Max Frequency Summary:</a></h2>
 <table>
@@ -148,7 +164,15 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>2</td>
 <td>controlCLK</td>
 <td>50.000(MHz)</td>
-<td>235.250(MHz)</td>
+<td>419.926(MHz)</td>
+<td>2</td>
+<td>TOP</td>
+</tr>
+<tr>
+<td>3</td>
+<td>rotateCLK_4</td>
+<td>50.000(MHz)</td>
+<td>250.614(MHz)</td>
 <td>2</td>
 <td>TOP</td>
 </tr>
@@ -185,6 +209,18 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>0.000</td>
 <td>0</td>
 </tr>
+<tr>
+<td>rotateCLK_4</td>
+<td>Setup</td>
+<td>0.000</td>
+<td>0</td>
+</tr>
+<tr>
+<td>rotateCLK_4</td>
+<td>Hold</td>
+<td>0.000</td>
+<td>0</td>
+</tr>
 </table>
 <h1><a name="Detail">Timing Details</a></h1>
 <h2><a name="All_Path_Slack_Table">Path Slacks Table:</a></h2>
@@ -204,6 +240,17 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td>1</td>
+<td>10.379</td>
+<td>n8_s2/I0</td>
+<td>rotateCLK_s1/D</td>
+<td>rotateCLK_4:[F]</td>
+<td>controlCLK:[R]</td>
+<td>10.000</td>
+<td>-1.444</td>
+<td>0.634</td>
+</tr>
+<tr>
+<td>2</td>
 <td>13.918</td>
 <td>inst_1/counter_12_s0/Q</td>
 <td>inst_1/overflow_s0/D</td>
@@ -214,7 +261,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>5.682</td>
 </tr>
 <tr>
-<td>2</td>
+<td>3</td>
 <td>14.930</td>
 <td>inst_1/counter_12_s0/Q</td>
 <td>inst_1/counter_0_s0/RESET</td>
@@ -225,7 +272,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>5.027</td>
 </tr>
 <tr>
-<td>3</td>
+<td>4</td>
 <td>15.338</td>
 <td>inst_1/counter_12_s0/Q</td>
 <td>inst_1/counter_18_s0/RESET</td>
@@ -236,7 +283,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>4.619</td>
 </tr>
 <tr>
-<td>4</td>
+<td>5</td>
 <td>15.338</td>
 <td>inst_1/counter_12_s0/Q</td>
 <td>inst_1/counter_7_s0/RESET</td>
@@ -247,7 +294,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>4.619</td>
 </tr>
 <tr>
-<td>5</td>
+<td>6</td>
 <td>15.338</td>
 <td>inst_1/counter_12_s0/Q</td>
 <td>inst_1/counter_8_s0/RESET</td>
@@ -258,7 +305,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>4.619</td>
 </tr>
 <tr>
-<td>6</td>
+<td>7</td>
 <td>15.338</td>
 <td>inst_1/counter_12_s0/Q</td>
 <td>inst_1/counter_9_s0/RESET</td>
@@ -269,7 +316,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>4.619</td>
 </tr>
 <tr>
-<td>7</td>
+<td>8</td>
 <td>15.338</td>
 <td>inst_1/counter_12_s0/Q</td>
 <td>inst_1/counter_10_s0/RESET</td>
@@ -280,7 +327,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>4.619</td>
 </tr>
 <tr>
-<td>8</td>
+<td>9</td>
 <td>15.338</td>
 <td>inst_1/counter_12_s0/Q</td>
 <td>inst_1/counter_11_s0/RESET</td>
@@ -291,7 +338,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>4.619</td>
 </tr>
 <tr>
-<td>9</td>
+<td>10</td>
 <td>15.338</td>
 <td>inst_1/counter_12_s0/Q</td>
 <td>inst_1/counter_12_s0/RESET</td>
@@ -302,7 +349,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>4.619</td>
 </tr>
 <tr>
-<td>10</td>
+<td>11</td>
 <td>15.338</td>
 <td>inst_1/counter_12_s0/Q</td>
 <td>inst_1/counter_13_s0/RESET</td>
@@ -313,7 +360,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>4.619</td>
 </tr>
 <tr>
-<td>11</td>
+<td>12</td>
 <td>15.338</td>
 <td>inst_1/counter_12_s0/Q</td>
 <td>inst_1/counter_14_s0/RESET</td>
@@ -324,7 +371,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>4.619</td>
 </tr>
 <tr>
-<td>12</td>
+<td>13</td>
 <td>15.338</td>
 <td>inst_1/counter_12_s0/Q</td>
 <td>inst_1/counter_15_s0/RESET</td>
@@ -335,7 +382,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>4.619</td>
 </tr>
 <tr>
-<td>13</td>
+<td>14</td>
 <td>15.338</td>
 <td>inst_1/counter_12_s0/Q</td>
 <td>inst_1/counter_16_s0/RESET</td>
@@ -346,7 +393,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>4.619</td>
 </tr>
 <tr>
-<td>14</td>
+<td>15</td>
 <td>15.338</td>
 <td>inst_1/counter_12_s0/Q</td>
 <td>inst_1/counter_17_s0/RESET</td>
@@ -357,7 +404,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>4.619</td>
 </tr>
 <tr>
-<td>15</td>
+<td>16</td>
 <td>15.366</td>
 <td>inst_1/counter_12_s0/Q</td>
 <td>inst_1/counter_1_s0/RESET</td>
@@ -368,7 +415,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>4.591</td>
 </tr>
 <tr>
-<td>16</td>
+<td>17</td>
 <td>15.366</td>
 <td>inst_1/counter_12_s0/Q</td>
 <td>inst_1/counter_2_s0/RESET</td>
@@ -379,7 +426,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>4.591</td>
 </tr>
 <tr>
-<td>17</td>
+<td>18</td>
 <td>15.366</td>
 <td>inst_1/counter_12_s0/Q</td>
 <td>inst_1/counter_3_s0/RESET</td>
@@ -390,7 +437,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>4.591</td>
 </tr>
 <tr>
-<td>18</td>
+<td>19</td>
 <td>15.366</td>
 <td>inst_1/counter_12_s0/Q</td>
 <td>inst_1/counter_4_s0/RESET</td>
@@ -401,7 +448,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>4.591</td>
 </tr>
 <tr>
-<td>19</td>
+<td>20</td>
 <td>15.366</td>
 <td>inst_1/counter_12_s0/Q</td>
 <td>inst_1/counter_5_s0/RESET</td>
@@ -412,7 +459,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>4.591</td>
 </tr>
 <tr>
-<td>20</td>
+<td>21</td>
 <td>15.366</td>
 <td>inst_1/counter_12_s0/Q</td>
 <td>inst_1/counter_6_s0/RESET</td>
@@ -423,7 +470,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>4.591</td>
 </tr>
 <tr>
-<td>21</td>
+<td>22</td>
 <td>15.739</td>
 <td>inst_1/counter_8_s0/Q</td>
 <td>inst_1/counter_18_s0/D</td>
@@ -432,17 +479,6 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>20.000</td>
 <td>0.000</td>
 <td>3.861</td>
-</tr>
-<tr>
-<td>22</td>
-<td>15.749</td>
-<td>rotateState_2_s0/Q</td>
-<td>HIN_T_s3/CE</td>
-<td>controlCLK:[R]</td>
-<td>controlCLK:[R]</td>
-<td>20.000</td>
-<td>0.000</td>
-<td>4.207</td>
 </tr>
 <tr>
 <td>23</td>
@@ -457,17 +493,6 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td>24</td>
-<td>15.832</td>
-<td>rotateState_2_s0/Q</td>
-<td>HIN_S_s3/CE</td>
-<td>controlCLK:[R]</td>
-<td>controlCLK:[R]</td>
-<td>20.000</td>
-<td>0.000</td>
-<td>4.125</td>
-</tr>
-<tr>
-<td>25</td>
 <td>15.853</td>
 <td>inst_1/counter_8_s0/Q</td>
 <td>inst_1/counter_16_s0/D</td>
@@ -476,6 +501,17 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>20.000</td>
 <td>0.000</td>
 <td>3.747</td>
+</tr>
+<tr>
+<td>25</td>
+<td>15.910</td>
+<td>inst_1/counter_8_s0/Q</td>
+<td>inst_1/counter_15_s0/D</td>
+<td>clk:[R]</td>
+<td>clk:[R]</td>
+<td>20.000</td>
+<td>0.000</td>
+<td>3.690</td>
 </tr>
 </table>
 <h3><a name="Hold_Slack_Table">Hold Paths Table</a></h3>
@@ -492,30 +528,52 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <th class="label">Clock Skew</th>
 <th class="label">Data Delay</th>
 </tr>
-<tr>
+<tr style="color: #FF0000;" class = "error">
 <td>1</td>
-<td>0.708</td>
-<td>HIN_R_s5/Q</td>
-<td>HIN_R_s5/D</td>
-<td>controlCLK:[R]</td>
+<td>-0.692</td>
+<td>n8_s2/I0</td>
+<td>rotateCLK_s1/D</td>
+<td>rotateCLK_4:[R]</td>
 <td>controlCLK:[R]</td>
 <td>0.000</td>
-<td>0.000</td>
-<td>0.708</td>
+<td>-1.036</td>
+<td>0.374</td>
 </tr>
 <tr>
 <td>2</td>
 <td>0.708</td>
-<td>_LIN_S_s5/Q</td>
-<td>_LIN_S_s5/D</td>
-<td>controlCLK:[R]</td>
-<td>controlCLK:[R]</td>
+<td>_LT_s3/Q</td>
+<td>_LT_s3/D</td>
+<td>rotateCLK_4:[R]</td>
+<td>rotateCLK_4:[R]</td>
 <td>0.000</td>
 <td>0.000</td>
 <td>0.708</td>
 </tr>
 <tr>
 <td>3</td>
+<td>0.708</td>
+<td>_LR_s3/Q</td>
+<td>_LR_s3/D</td>
+<td>rotateCLK_4:[R]</td>
+<td>rotateCLK_4:[R]</td>
+<td>0.000</td>
+<td>0.000</td>
+<td>0.708</td>
+</tr>
+<tr>
+<td>4</td>
+<td>0.708</td>
+<td>rotateCounter_3_s0/Q</td>
+<td>rotateCounter_3_s0/D</td>
+<td>controlCLK:[R]</td>
+<td>controlCLK:[R]</td>
+<td>0.000</td>
+<td>0.000</td>
+<td>0.708</td>
+</tr>
+<tr>
+<td>5</td>
 <td>0.709</td>
 <td>inst_1/counter_0_s0/Q</td>
 <td>inst_1/counter_0_s0/D</td>
@@ -526,18 +584,18 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>0.709</td>
 </tr>
 <tr>
-<td>4</td>
+<td>6</td>
 <td>0.710</td>
-<td>rotateState_1_s0/Q</td>
-<td>rotateState_1_s0/D</td>
-<td>controlCLK:[R]</td>
-<td>controlCLK:[R]</td>
+<td>rotateState_0_s0/Q</td>
+<td>rotateState_0_s0/D</td>
+<td>rotateCLK_4:[R]</td>
+<td>rotateCLK_4:[R]</td>
 <td>0.000</td>
 <td>0.000</td>
 <td>0.710</td>
 </tr>
 <tr>
-<td>5</td>
+<td>7</td>
 <td>0.730</td>
 <td>inst_1/counter_3_s0/Q</td>
 <td>inst_1/counter_3_s0/D</td>
@@ -548,7 +606,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>0.730</td>
 </tr>
 <tr>
-<td>6</td>
+<td>8</td>
 <td>0.730</td>
 <td>inst_1/counter_7_s0/Q</td>
 <td>inst_1/counter_7_s0/D</td>
@@ -559,7 +617,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>0.730</td>
 </tr>
 <tr>
-<td>7</td>
+<td>9</td>
 <td>0.730</td>
 <td>inst_1/counter_9_s0/Q</td>
 <td>inst_1/counter_9_s0/D</td>
@@ -570,7 +628,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>0.730</td>
 </tr>
 <tr>
-<td>8</td>
+<td>10</td>
 <td>0.730</td>
 <td>inst_1/counter_13_s0/Q</td>
 <td>inst_1/counter_13_s0/D</td>
@@ -581,7 +639,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>0.730</td>
 </tr>
 <tr>
-<td>9</td>
+<td>11</td>
 <td>0.730</td>
 <td>inst_1/counter_15_s0/Q</td>
 <td>inst_1/counter_15_s0/D</td>
@@ -592,40 +650,51 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>0.730</td>
 </tr>
 <tr>
-<td>10</td>
-<td>0.893</td>
-<td>rotateState_0_s0/Q</td>
-<td>rotateState_0_s0/D</td>
-<td>controlCLK:[R]</td>
-<td>controlCLK:[R]</td>
-<td>0.000</td>
-<td>0.000</td>
-<td>0.893</td>
-</tr>
-<tr>
-<td>11</td>
-<td>0.950</td>
-<td>rotateState_0_s0/Q</td>
-<td>_LIN_R_s6/D</td>
-<td>controlCLK:[R]</td>
-<td>controlCLK:[R]</td>
-<td>0.000</td>
-<td>0.000</td>
-<td>0.950</td>
-</tr>
-<tr>
 <td>12</td>
-<td>0.953</td>
-<td>rotateState_1_s0/Q</td>
-<td>_LIN_T_s5/D</td>
+<td>0.893</td>
+<td>rotateCounter_2_s0/Q</td>
+<td>rotateCounter_2_s0/D</td>
 <td>controlCLK:[R]</td>
 <td>controlCLK:[R]</td>
 <td>0.000</td>
 <td>0.000</td>
-<td>0.953</td>
+<td>0.893</td>
 </tr>
 <tr>
 <td>13</td>
+<td>0.895</td>
+<td>rotateState_2_s0/Q</td>
+<td>rotateState_2_s0/D</td>
+<td>rotateCLK_4:[R]</td>
+<td>rotateCLK_4:[R]</td>
+<td>0.000</td>
+<td>0.000</td>
+<td>0.895</td>
+</tr>
+<tr>
+<td>14</td>
+<td>0.950</td>
+<td>rotateState_2_s0/Q</td>
+<td>HIN_R_s6/D</td>
+<td>rotateCLK_4:[R]</td>
+<td>rotateCLK_4:[R]</td>
+<td>0.000</td>
+<td>0.000</td>
+<td>0.950</td>
+</tr>
+<tr>
+<td>15</td>
+<td>0.953</td>
+<td>rotateState_1_s0/Q</td>
+<td>_LS_s3/D</td>
+<td>rotateCLK_4:[R]</td>
+<td>rotateCLK_4:[R]</td>
+<td>0.000</td>
+<td>0.000</td>
+<td>0.953</td>
+</tr>
+<tr>
+<td>16</td>
 <td>0.959</td>
 <td>inst_1/counter_2_s0/Q</td>
 <td>inst_1/counter_2_s0/D</td>
@@ -636,7 +705,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>0.959</td>
 </tr>
 <tr>
-<td>14</td>
+<td>17</td>
 <td>0.965</td>
 <td>inst_1/counter_12_s0/Q</td>
 <td>inst_1/counter_12_s0/D</td>
@@ -647,7 +716,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>0.965</td>
 </tr>
 <tr>
-<td>15</td>
+<td>18</td>
 <td>0.965</td>
 <td>inst_1/counter_0_s0/Q</td>
 <td>inst_1/counter_1_s0/D</td>
@@ -658,7 +727,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>0.965</td>
 </tr>
 <tr>
-<td>16</td>
+<td>19</td>
 <td>0.970</td>
 <td>inst_1/counter_18_s0/Q</td>
 <td>inst_1/counter_18_s0/D</td>
@@ -669,7 +738,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>0.970</td>
 </tr>
 <tr>
-<td>17</td>
+<td>20</td>
 <td>0.970</td>
 <td>inst_1/counter_4_s0/Q</td>
 <td>inst_1/counter_4_s0/D</td>
@@ -680,7 +749,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>0.970</td>
 </tr>
 <tr>
-<td>18</td>
+<td>21</td>
 <td>0.970</td>
 <td>inst_1/counter_5_s0/Q</td>
 <td>inst_1/counter_5_s0/D</td>
@@ -691,7 +760,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>0.970</td>
 </tr>
 <tr>
-<td>19</td>
+<td>22</td>
 <td>0.970</td>
 <td>inst_1/counter_6_s0/Q</td>
 <td>inst_1/counter_6_s0/D</td>
@@ -702,7 +771,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>0.970</td>
 </tr>
 <tr>
-<td>20</td>
+<td>23</td>
 <td>0.970</td>
 <td>inst_1/counter_10_s0/Q</td>
 <td>inst_1/counter_10_s0/D</td>
@@ -713,7 +782,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>0.970</td>
 </tr>
 <tr>
-<td>21</td>
+<td>24</td>
 <td>0.970</td>
 <td>inst_1/counter_11_s0/Q</td>
 <td>inst_1/counter_11_s0/D</td>
@@ -724,7 +793,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>0.970</td>
 </tr>
 <tr>
-<td>22</td>
+<td>25</td>
 <td>0.970</td>
 <td>inst_1/counter_16_s0/Q</td>
 <td>inst_1/counter_16_s0/D</td>
@@ -733,39 +802,6 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>0.000</td>
 <td>0.000</td>
 <td>0.970</td>
-</tr>
-<tr>
-<td>23</td>
-<td>0.970</td>
-<td>inst_1/counter_17_s0/Q</td>
-<td>inst_1/counter_17_s0/D</td>
-<td>clk:[R]</td>
-<td>clk:[R]</td>
-<td>0.000</td>
-<td>0.000</td>
-<td>0.970</td>
-</tr>
-<tr>
-<td>24</td>
-<td>1.062</td>
-<td>rotateState_2_s0/Q</td>
-<td>rotateState_2_s0/D</td>
-<td>controlCLK:[R]</td>
-<td>controlCLK:[R]</td>
-<td>0.000</td>
-<td>0.000</td>
-<td>1.062</td>
-</tr>
-<tr>
-<td>25</td>
-<td>1.064</td>
-<td>inst_1/counter_7_s0/Q</td>
-<td>inst_1/counter_8_s0/D</td>
-<td>clk:[R]</td>
-<td>clk:[R]</td>
-<td>0.000</td>
-<td>0.000</td>
-<td>1.064</td>
 </tr>
 </table>
 <h3><a name="Recovery_Slack_Table">Recovery Paths Table</a></h3>
@@ -788,99 +824,290 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <h4>Report Command:report_min_pulse_width -nworst 10 -detail</h4>
 <tr>
 <td>1</td>
-<td>7.865</td>
-<td>9.115</td>
+<td>8.008</td>
+<td>9.258</td>
 <td>1.250</td>
 <td>Low Pulse Width</td>
-<td>controlCLK</td>
+<td>rotateCLK_4</td>
 <td>rotateState_2_s0</td>
 </tr>
 <tr>
 <td>2</td>
-<td>7.865</td>
-<td>9.115</td>
+<td>8.008</td>
+<td>9.258</td>
 <td>1.250</td>
 <td>Low Pulse Width</td>
-<td>controlCLK</td>
+<td>rotateCLK_4</td>
 <td>HIN_S_s3</td>
 </tr>
 <tr>
 <td>3</td>
-<td>7.865</td>
-<td>9.115</td>
+<td>8.008</td>
+<td>9.258</td>
 <td>1.250</td>
 <td>Low Pulse Width</td>
-<td>controlCLK</td>
-<td>_LIN_T_s5</td>
+<td>rotateCLK_4</td>
+<td>_LS_s3</td>
 </tr>
 <tr>
 <td>4</td>
-<td>7.865</td>
-<td>9.115</td>
+<td>8.008</td>
+<td>9.258</td>
 <td>1.250</td>
 <td>Low Pulse Width</td>
-<td>controlCLK</td>
-<td>HIN_R_s5</td>
+<td>rotateCLK_4</td>
+<td>_LT_s3</td>
 </tr>
 <tr>
 <td>5</td>
-<td>7.865</td>
-<td>9.115</td>
+<td>8.008</td>
+<td>9.258</td>
 <td>1.250</td>
 <td>Low Pulse Width</td>
-<td>controlCLK</td>
+<td>rotateCLK_4</td>
 <td>HIN_T_s3</td>
 </tr>
 <tr>
 <td>6</td>
-<td>7.865</td>
-<td>9.115</td>
+<td>8.008</td>
+<td>9.258</td>
 <td>1.250</td>
 <td>Low Pulse Width</td>
-<td>controlCLK</td>
-<td>_LIN_R_s6</td>
+<td>rotateCLK_4</td>
+<td>HIN_R_s6</td>
 </tr>
 <tr>
 <td>7</td>
-<td>7.865</td>
-<td>9.115</td>
+<td>8.008</td>
+<td>9.258</td>
 <td>1.250</td>
 <td>Low Pulse Width</td>
-<td>controlCLK</td>
-<td>_LIN_S_s5</td>
+<td>rotateCLK_4</td>
+<td>_LR_s3</td>
 </tr>
 <tr>
 <td>8</td>
-<td>7.865</td>
-<td>9.115</td>
+<td>8.008</td>
+<td>9.258</td>
 <td>1.250</td>
 <td>Low Pulse Width</td>
-<td>controlCLK</td>
+<td>rotateCLK_4</td>
 <td>rotateState_1_s0</td>
 </tr>
 <tr>
 <td>9</td>
-<td>7.865</td>
-<td>9.115</td>
+<td>8.008</td>
+<td>9.258</td>
 <td>1.250</td>
 <td>Low Pulse Width</td>
-<td>controlCLK</td>
+<td>rotateCLK_4</td>
 <td>rotateState_0_s0</td>
 </tr>
 <tr>
 <td>10</td>
-<td>8.532</td>
-<td>9.782</td>
+<td>8.077</td>
+<td>9.327</td>
 <td>1.250</td>
 <td>Low Pulse Width</td>
-<td>clk</td>
-<td>inst_1/counter_3_s0</td>
+<td>controlCLK</td>
+<td>rotateCounter_3_s0</td>
 </tr>
 </table>
 <h2><a name="Timing_Report_by_Analysis_Type">Timing Report By Analysis Type:</a></h2>
 <h3><a name="Setup_Analysis">Setup Analysis Report</a></h3>
 <h4>Report Command:report_timing -setup -max_paths 25 -max_common_paths 1</h4>
 <h3>Path1</h3>
+<p><b>Path Summary:</b></p>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>10.379</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>10.634</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>21.014</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>n8_s2</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>rotateCLK_s1</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>rotateCLK_4:[F]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>controlCLK:[R]</td>
+</tr>
+</table>
+<p><b>Data Arrival Path:</b></p>
+<table class="detail_table">
+<tr>
+<th class="label">AT</th>
+<th class="label">DELAY</th>
+<th class="label">TYPE</th>
+<th class="label">RF</th>
+<th class="label">FANOUT</th>
+<th class="label">LOC</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>10.000</td>
+<td>10.000</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>10.000</td>
+<td>0.000</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>rotateCLK_4</td>
+</tr>
+<tr>
+<td>10.000</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>FF</td>
+<td>10</td>
+<td>R15C28[0][A]</td>
+<td>rotateCLK_s1/Q</td>
+</tr>
+<tr>
+<td>10.008</td>
+<td>0.008</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>R15C28[0][A]</td>
+<td style=" font-weight:bold;">n8_s2/I0</td>
+</tr>
+<tr>
+<td>10.634</td>
+<td>0.626</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>R15C28[0][A]</td>
+<td style=" background: #97FFFF;">n8_s2/F</td>
+</tr>
+<tr>
+<td>10.634</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>R15C28[0][A]</td>
+<td style=" font-weight:bold;">rotateCLK_s1/D</td>
+</tr>
+</table>
+<p><b>Data Required Path:</b></p>
+<table class="detail_table">
+<tr>
+<th class="label">AT</th>
+<th class="label">DELAY</th>
+<th class="label">TYPE</th>
+<th class="label">RF</th>
+<th class="label">FANOUT</th>
+<th class="label">LOC</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>20.000</td>
+<td>20.000</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>20.000</td>
+<td>0.000</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>controlCLK</td>
+</tr>
+<tr>
+<td>20.000</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>6</td>
+<td>R15C23[1][A]</td>
+<td>inst_1/overflow_s0/Q</td>
+</tr>
+<tr>
+<td>21.444</td>
+<td>1.444</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>R15C28[0][A]</td>
+<td>rotateCLK_s1/CLK</td>
+</tr>
+<tr>
+<td>21.414</td>
+<td>-0.030</td>
+<td>tUnc</td>
+<td></td>
+<td></td>
+<td></td>
+<td>rotateCLK_s1</td>
+</tr>
+<tr>
+<td>21.014</td>
+<td>-0.400</td>
+<td>tSu</td>
+<td></td>
+<td>1</td>
+<td>R15C28[0][A]</td>
+<td>rotateCLK_s1</td>
+</tr>
+</table>
+<p><b>Path Statistics:</b></p>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew</td>
+<td>1.444</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship </td>
+<td>10.000</td>
+</tr>
+<tr>
+<td class="label">Logic Level</td>
+<td>2</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay</td>
+<td>cell: 0.000, 0.000%; route: 0.000, 0.000%</td>
+</tr>
+<tr>
+<td class="label">Arrival Data Path Delay</td>
+<td>cell: 0.626, 98.708%; route: 0.000, 0.000%; tC2Q: 0.008, 1.292%</td>
+</tr>
+<tr>
+<td class="label">Required Clock Path Delay</td>
+<td>cell: 0.000, 0.000%; route: 1.444, 100.000%</td>
+</tr>
+</table>
+<h3>Path2</h3>
 <p><b>Path Summary:</b></p>
 <table class="summary_table">
 <tr>
@@ -965,7 +1192,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C26[2][B]</td>
+<td>R15C25[2][B]</td>
 <td>inst_1/counter_12_s0/CLK</td>
 </tr>
 <tr>
@@ -974,7 +1201,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tC2Q</td>
 <td>RR</td>
 <td>2</td>
-<td>R15C26[2][B]</td>
+<td>R15C25[2][B]</td>
 <td style=" font-weight:bold;">inst_1/counter_12_s0/Q</td>
 </tr>
 <tr>
@@ -983,7 +1210,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C27[3][A]</td>
+<td>R15C26[3][A]</td>
 <td>inst_1/n13_s5/I3</td>
 </tr>
 <tr>
@@ -992,7 +1219,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>RF</td>
 <td>1</td>
-<td>R15C27[3][A]</td>
+<td>R15C26[3][A]</td>
 <td style=" background: #97FFFF;">inst_1/n13_s5/F</td>
 </tr>
 <tr>
@@ -1001,7 +1228,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C27[3][B]</td>
+<td>R15C26[3][B]</td>
 <td>inst_1/n13_s4/I3</td>
 </tr>
 <tr>
@@ -1010,7 +1237,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C27[3][B]</td>
+<td>R15C26[3][B]</td>
 <td style=" background: #97FFFF;">inst_1/n13_s4/F</td>
 </tr>
 <tr>
@@ -1019,7 +1246,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C25[3][B]</td>
+<td>R15C24[3][B]</td>
 <td>inst_1/n13_s0/I3</td>
 </tr>
 <tr>
@@ -1028,7 +1255,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>FF</td>
 <td>20</td>
-<td>R15C25[3][B]</td>
+<td>R15C24[3][B]</td>
 <td style=" background: #97FFFF;">inst_1/n13_s0/F</td>
 </tr>
 <tr>
@@ -1037,7 +1264,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C24[1][A]</td>
+<td>R15C23[1][A]</td>
 <td style=" font-weight:bold;">inst_1/overflow_s0/D</td>
 </tr>
 </table>
@@ -1094,7 +1321,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C24[1][A]</td>
+<td>R15C23[1][A]</td>
 <td>inst_1/overflow_s0/CLK</td>
 </tr>
 <tr>
@@ -1103,7 +1330,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tSu</td>
 <td></td>
 <td>1</td>
-<td>R15C24[1][A]</td>
+<td>R15C23[1][A]</td>
 <td>inst_1/overflow_s0</td>
 </tr>
 </table>
@@ -1134,7 +1361,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>cell: 0.982, 80.100%; route: 0.244, 19.900%</td>
 </tr>
 </table>
-<h3>Path2</h3>
+<h3>Path3</h3>
 <p><b>Path Summary:</b></p>
 <table class="summary_table">
 <tr>
@@ -1219,7 +1446,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C26[2][B]</td>
+<td>R15C25[2][B]</td>
 <td>inst_1/counter_12_s0/CLK</td>
 </tr>
 <tr>
@@ -1228,7 +1455,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tC2Q</td>
 <td>RR</td>
 <td>2</td>
-<td>R15C26[2][B]</td>
+<td>R15C25[2][B]</td>
 <td style=" font-weight:bold;">inst_1/counter_12_s0/Q</td>
 </tr>
 <tr>
@@ -1237,7 +1464,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C27[3][A]</td>
+<td>R15C26[3][A]</td>
 <td>inst_1/n13_s5/I3</td>
 </tr>
 <tr>
@@ -1246,7 +1473,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>RF</td>
 <td>1</td>
-<td>R15C27[3][A]</td>
+<td>R15C26[3][A]</td>
 <td style=" background: #97FFFF;">inst_1/n13_s5/F</td>
 </tr>
 <tr>
@@ -1255,7 +1482,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C27[3][B]</td>
+<td>R15C26[3][B]</td>
 <td>inst_1/n13_s4/I3</td>
 </tr>
 <tr>
@@ -1264,7 +1491,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C27[3][B]</td>
+<td>R15C26[3][B]</td>
 <td style=" background: #97FFFF;">inst_1/n13_s4/F</td>
 </tr>
 <tr>
@@ -1273,7 +1500,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C25[3][B]</td>
+<td>R15C24[3][B]</td>
 <td>inst_1/n13_s0/I3</td>
 </tr>
 <tr>
@@ -1282,7 +1509,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>FR</td>
 <td>20</td>
-<td>R15C25[3][B]</td>
+<td>R15C24[3][B]</td>
 <td style=" background: #97FFFF;">inst_1/n13_s0/F</td>
 </tr>
 <tr>
@@ -1291,7 +1518,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C24[0][A]</td>
+<td>R15C23[0][A]</td>
 <td style=" font-weight:bold;">inst_1/counter_0_s0/RESET</td>
 </tr>
 </table>
@@ -1348,7 +1575,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C24[0][A]</td>
+<td>R15C23[0][A]</td>
 <td>inst_1/counter_0_s0/CLK</td>
 </tr>
 <tr>
@@ -1357,7 +1584,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tSu</td>
 <td></td>
 <td>1</td>
-<td>R15C24[0][A]</td>
+<td>R15C23[0][A]</td>
 <td>inst_1/counter_0_s0</td>
 </tr>
 </table>
@@ -1388,7 +1615,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>cell: 0.982, 80.100%; route: 0.244, 19.900%</td>
 </tr>
 </table>
-<h3>Path3</h3>
+<h3>Path4</h3>
 <p><b>Path Summary:</b></p>
 <table class="summary_table">
 <tr>
@@ -1473,7 +1700,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C26[2][B]</td>
+<td>R15C25[2][B]</td>
 <td>inst_1/counter_12_s0/CLK</td>
 </tr>
 <tr>
@@ -1482,7 +1709,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tC2Q</td>
 <td>RR</td>
 <td>2</td>
-<td>R15C26[2][B]</td>
+<td>R15C25[2][B]</td>
 <td style=" font-weight:bold;">inst_1/counter_12_s0/Q</td>
 </tr>
 <tr>
@@ -1491,7 +1718,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C27[3][A]</td>
+<td>R15C26[3][A]</td>
 <td>inst_1/n13_s5/I3</td>
 </tr>
 <tr>
@@ -1500,7 +1727,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>RF</td>
 <td>1</td>
-<td>R15C27[3][A]</td>
+<td>R15C26[3][A]</td>
 <td style=" background: #97FFFF;">inst_1/n13_s5/F</td>
 </tr>
 <tr>
@@ -1509,7 +1736,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C27[3][B]</td>
+<td>R15C26[3][B]</td>
 <td>inst_1/n13_s4/I3</td>
 </tr>
 <tr>
@@ -1518,7 +1745,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C27[3][B]</td>
+<td>R15C26[3][B]</td>
 <td style=" background: #97FFFF;">inst_1/n13_s4/F</td>
 </tr>
 <tr>
@@ -1527,7 +1754,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C25[3][B]</td>
+<td>R15C24[3][B]</td>
 <td>inst_1/n13_s0/I3</td>
 </tr>
 <tr>
@@ -1536,7 +1763,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>FR</td>
 <td>20</td>
-<td>R15C25[3][B]</td>
+<td>R15C24[3][B]</td>
 <td style=" background: #97FFFF;">inst_1/n13_s0/F</td>
 </tr>
 <tr>
@@ -1545,7 +1772,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C27[2][B]</td>
+<td>R15C26[2][B]</td>
 <td style=" font-weight:bold;">inst_1/counter_18_s0/RESET</td>
 </tr>
 </table>
@@ -1602,7 +1829,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C27[2][B]</td>
+<td>R15C26[2][B]</td>
 <td>inst_1/counter_18_s0/CLK</td>
 </tr>
 <tr>
@@ -1611,7 +1838,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tSu</td>
 <td></td>
 <td>1</td>
-<td>R15C27[2][B]</td>
+<td>R15C26[2][B]</td>
 <td>inst_1/counter_18_s0</td>
 </tr>
 </table>
@@ -1642,7 +1869,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>cell: 0.982, 80.100%; route: 0.244, 19.900%</td>
 </tr>
 </table>
-<h3>Path4</h3>
+<h3>Path5</h3>
 <p><b>Path Summary:</b></p>
 <table class="summary_table">
 <tr>
@@ -1727,7 +1954,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C26[2][B]</td>
+<td>R15C25[2][B]</td>
 <td>inst_1/counter_12_s0/CLK</td>
 </tr>
 <tr>
@@ -1736,7 +1963,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tC2Q</td>
 <td>RR</td>
 <td>2</td>
-<td>R15C26[2][B]</td>
+<td>R15C25[2][B]</td>
 <td style=" font-weight:bold;">inst_1/counter_12_s0/Q</td>
 </tr>
 <tr>
@@ -1745,7 +1972,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C27[3][A]</td>
+<td>R15C26[3][A]</td>
 <td>inst_1/n13_s5/I3</td>
 </tr>
 <tr>
@@ -1754,7 +1981,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>RF</td>
 <td>1</td>
-<td>R15C27[3][A]</td>
+<td>R15C26[3][A]</td>
 <td style=" background: #97FFFF;">inst_1/n13_s5/F</td>
 </tr>
 <tr>
@@ -1763,7 +1990,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C27[3][B]</td>
+<td>R15C26[3][B]</td>
 <td>inst_1/n13_s4/I3</td>
 </tr>
 <tr>
@@ -1772,7 +1999,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C27[3][B]</td>
+<td>R15C26[3][B]</td>
 <td style=" background: #97FFFF;">inst_1/n13_s4/F</td>
 </tr>
 <tr>
@@ -1781,7 +2008,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C25[3][B]</td>
+<td>R15C24[3][B]</td>
 <td>inst_1/n13_s0/I3</td>
 </tr>
 <tr>
@@ -1790,7 +2017,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>FR</td>
 <td>20</td>
-<td>R15C25[3][B]</td>
+<td>R15C24[3][B]</td>
 <td style=" background: #97FFFF;">inst_1/n13_s0/F</td>
 </tr>
 <tr>
@@ -1799,7 +2026,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C26[0][A]</td>
+<td>R15C25[0][A]</td>
 <td style=" font-weight:bold;">inst_1/counter_7_s0/RESET</td>
 </tr>
 </table>
@@ -1856,7 +2083,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C26[0][A]</td>
+<td>R15C25[0][A]</td>
 <td>inst_1/counter_7_s0/CLK</td>
 </tr>
 <tr>
@@ -1865,7 +2092,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tSu</td>
 <td></td>
 <td>1</td>
-<td>R15C26[0][A]</td>
+<td>R15C25[0][A]</td>
 <td>inst_1/counter_7_s0</td>
 </tr>
 </table>
@@ -1896,7 +2123,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>cell: 0.982, 80.100%; route: 0.244, 19.900%</td>
 </tr>
 </table>
-<h3>Path5</h3>
+<h3>Path6</h3>
 <p><b>Path Summary:</b></p>
 <table class="summary_table">
 <tr>
@@ -1981,7 +2208,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C26[2][B]</td>
+<td>R15C25[2][B]</td>
 <td>inst_1/counter_12_s0/CLK</td>
 </tr>
 <tr>
@@ -1990,7 +2217,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tC2Q</td>
 <td>RR</td>
 <td>2</td>
-<td>R15C26[2][B]</td>
+<td>R15C25[2][B]</td>
 <td style=" font-weight:bold;">inst_1/counter_12_s0/Q</td>
 </tr>
 <tr>
@@ -1999,7 +2226,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C27[3][A]</td>
+<td>R15C26[3][A]</td>
 <td>inst_1/n13_s5/I3</td>
 </tr>
 <tr>
@@ -2008,7 +2235,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>RF</td>
 <td>1</td>
-<td>R15C27[3][A]</td>
+<td>R15C26[3][A]</td>
 <td style=" background: #97FFFF;">inst_1/n13_s5/F</td>
 </tr>
 <tr>
@@ -2017,7 +2244,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C27[3][B]</td>
+<td>R15C26[3][B]</td>
 <td>inst_1/n13_s4/I3</td>
 </tr>
 <tr>
@@ -2026,7 +2253,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C27[3][B]</td>
+<td>R15C26[3][B]</td>
 <td style=" background: #97FFFF;">inst_1/n13_s4/F</td>
 </tr>
 <tr>
@@ -2035,7 +2262,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C25[3][B]</td>
+<td>R15C24[3][B]</td>
 <td>inst_1/n13_s0/I3</td>
 </tr>
 <tr>
@@ -2044,7 +2271,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>FR</td>
 <td>20</td>
-<td>R15C25[3][B]</td>
+<td>R15C24[3][B]</td>
 <td style=" background: #97FFFF;">inst_1/n13_s0/F</td>
 </tr>
 <tr>
@@ -2053,7 +2280,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C26[0][B]</td>
+<td>R15C25[0][B]</td>
 <td style=" font-weight:bold;">inst_1/counter_8_s0/RESET</td>
 </tr>
 </table>
@@ -2110,7 +2337,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C26[0][B]</td>
+<td>R15C25[0][B]</td>
 <td>inst_1/counter_8_s0/CLK</td>
 </tr>
 <tr>
@@ -2119,7 +2346,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tSu</td>
 <td></td>
 <td>1</td>
-<td>R15C26[0][B]</td>
+<td>R15C25[0][B]</td>
 <td>inst_1/counter_8_s0</td>
 </tr>
 </table>
@@ -2150,7 +2377,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>cell: 0.982, 80.100%; route: 0.244, 19.900%</td>
 </tr>
 </table>
-<h3>Path6</h3>
+<h3>Path7</h3>
 <p><b>Path Summary:</b></p>
 <table class="summary_table">
 <tr>
@@ -2235,7 +2462,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C26[2][B]</td>
+<td>R15C25[2][B]</td>
 <td>inst_1/counter_12_s0/CLK</td>
 </tr>
 <tr>
@@ -2244,7 +2471,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tC2Q</td>
 <td>RR</td>
 <td>2</td>
-<td>R15C26[2][B]</td>
+<td>R15C25[2][B]</td>
 <td style=" font-weight:bold;">inst_1/counter_12_s0/Q</td>
 </tr>
 <tr>
@@ -2253,7 +2480,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C27[3][A]</td>
+<td>R15C26[3][A]</td>
 <td>inst_1/n13_s5/I3</td>
 </tr>
 <tr>
@@ -2262,7 +2489,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>RF</td>
 <td>1</td>
-<td>R15C27[3][A]</td>
+<td>R15C26[3][A]</td>
 <td style=" background: #97FFFF;">inst_1/n13_s5/F</td>
 </tr>
 <tr>
@@ -2271,7 +2498,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C27[3][B]</td>
+<td>R15C26[3][B]</td>
 <td>inst_1/n13_s4/I3</td>
 </tr>
 <tr>
@@ -2280,7 +2507,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C27[3][B]</td>
+<td>R15C26[3][B]</td>
 <td style=" background: #97FFFF;">inst_1/n13_s4/F</td>
 </tr>
 <tr>
@@ -2289,7 +2516,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C25[3][B]</td>
+<td>R15C24[3][B]</td>
 <td>inst_1/n13_s0/I3</td>
 </tr>
 <tr>
@@ -2298,7 +2525,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>FR</td>
 <td>20</td>
-<td>R15C25[3][B]</td>
+<td>R15C24[3][B]</td>
 <td style=" background: #97FFFF;">inst_1/n13_s0/F</td>
 </tr>
 <tr>
@@ -2307,7 +2534,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C26[1][A]</td>
+<td>R15C25[1][A]</td>
 <td style=" font-weight:bold;">inst_1/counter_9_s0/RESET</td>
 </tr>
 </table>
@@ -2364,7 +2591,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C26[1][A]</td>
+<td>R15C25[1][A]</td>
 <td>inst_1/counter_9_s0/CLK</td>
 </tr>
 <tr>
@@ -2373,7 +2600,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tSu</td>
 <td></td>
 <td>1</td>
-<td>R15C26[1][A]</td>
+<td>R15C25[1][A]</td>
 <td>inst_1/counter_9_s0</td>
 </tr>
 </table>
@@ -2404,7 +2631,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>cell: 0.982, 80.100%; route: 0.244, 19.900%</td>
 </tr>
 </table>
-<h3>Path7</h3>
+<h3>Path8</h3>
 <p><b>Path Summary:</b></p>
 <table class="summary_table">
 <tr>
@@ -2489,7 +2716,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C26[2][B]</td>
+<td>R15C25[2][B]</td>
 <td>inst_1/counter_12_s0/CLK</td>
 </tr>
 <tr>
@@ -2498,7 +2725,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tC2Q</td>
 <td>RR</td>
 <td>2</td>
-<td>R15C26[2][B]</td>
+<td>R15C25[2][B]</td>
 <td style=" font-weight:bold;">inst_1/counter_12_s0/Q</td>
 </tr>
 <tr>
@@ -2507,7 +2734,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C27[3][A]</td>
+<td>R15C26[3][A]</td>
 <td>inst_1/n13_s5/I3</td>
 </tr>
 <tr>
@@ -2516,7 +2743,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>RF</td>
 <td>1</td>
-<td>R15C27[3][A]</td>
+<td>R15C26[3][A]</td>
 <td style=" background: #97FFFF;">inst_1/n13_s5/F</td>
 </tr>
 <tr>
@@ -2525,7 +2752,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C27[3][B]</td>
+<td>R15C26[3][B]</td>
 <td>inst_1/n13_s4/I3</td>
 </tr>
 <tr>
@@ -2534,7 +2761,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C27[3][B]</td>
+<td>R15C26[3][B]</td>
 <td style=" background: #97FFFF;">inst_1/n13_s4/F</td>
 </tr>
 <tr>
@@ -2543,7 +2770,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C25[3][B]</td>
+<td>R15C24[3][B]</td>
 <td>inst_1/n13_s0/I3</td>
 </tr>
 <tr>
@@ -2552,7 +2779,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>FR</td>
 <td>20</td>
-<td>R15C25[3][B]</td>
+<td>R15C24[3][B]</td>
 <td style=" background: #97FFFF;">inst_1/n13_s0/F</td>
 </tr>
 <tr>
@@ -2561,7 +2788,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C26[1][B]</td>
+<td>R15C25[1][B]</td>
 <td style=" font-weight:bold;">inst_1/counter_10_s0/RESET</td>
 </tr>
 </table>
@@ -2618,7 +2845,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C26[1][B]</td>
+<td>R15C25[1][B]</td>
 <td>inst_1/counter_10_s0/CLK</td>
 </tr>
 <tr>
@@ -2627,7 +2854,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tSu</td>
 <td></td>
 <td>1</td>
-<td>R15C26[1][B]</td>
+<td>R15C25[1][B]</td>
 <td>inst_1/counter_10_s0</td>
 </tr>
 </table>
@@ -2658,7 +2885,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>cell: 0.982, 80.100%; route: 0.244, 19.900%</td>
 </tr>
 </table>
-<h3>Path8</h3>
+<h3>Path9</h3>
 <p><b>Path Summary:</b></p>
 <table class="summary_table">
 <tr>
@@ -2743,7 +2970,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C26[2][B]</td>
+<td>R15C25[2][B]</td>
 <td>inst_1/counter_12_s0/CLK</td>
 </tr>
 <tr>
@@ -2752,7 +2979,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tC2Q</td>
 <td>RR</td>
 <td>2</td>
-<td>R15C26[2][B]</td>
+<td>R15C25[2][B]</td>
 <td style=" font-weight:bold;">inst_1/counter_12_s0/Q</td>
 </tr>
 <tr>
@@ -2761,7 +2988,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C27[3][A]</td>
+<td>R15C26[3][A]</td>
 <td>inst_1/n13_s5/I3</td>
 </tr>
 <tr>
@@ -2770,7 +2997,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>RF</td>
 <td>1</td>
-<td>R15C27[3][A]</td>
+<td>R15C26[3][A]</td>
 <td style=" background: #97FFFF;">inst_1/n13_s5/F</td>
 </tr>
 <tr>
@@ -2779,7 +3006,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C27[3][B]</td>
+<td>R15C26[3][B]</td>
 <td>inst_1/n13_s4/I3</td>
 </tr>
 <tr>
@@ -2788,7 +3015,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C27[3][B]</td>
+<td>R15C26[3][B]</td>
 <td style=" background: #97FFFF;">inst_1/n13_s4/F</td>
 </tr>
 <tr>
@@ -2797,7 +3024,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C25[3][B]</td>
+<td>R15C24[3][B]</td>
 <td>inst_1/n13_s0/I3</td>
 </tr>
 <tr>
@@ -2806,7 +3033,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>FR</td>
 <td>20</td>
-<td>R15C25[3][B]</td>
+<td>R15C24[3][B]</td>
 <td style=" background: #97FFFF;">inst_1/n13_s0/F</td>
 </tr>
 <tr>
@@ -2815,7 +3042,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C26[2][A]</td>
+<td>R15C25[2][A]</td>
 <td style=" font-weight:bold;">inst_1/counter_11_s0/RESET</td>
 </tr>
 </table>
@@ -2872,7 +3099,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C26[2][A]</td>
+<td>R15C25[2][A]</td>
 <td>inst_1/counter_11_s0/CLK</td>
 </tr>
 <tr>
@@ -2881,7 +3108,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tSu</td>
 <td></td>
 <td>1</td>
-<td>R15C26[2][A]</td>
+<td>R15C25[2][A]</td>
 <td>inst_1/counter_11_s0</td>
 </tr>
 </table>
@@ -2912,7 +3139,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>cell: 0.982, 80.100%; route: 0.244, 19.900%</td>
 </tr>
 </table>
-<h3>Path9</h3>
+<h3>Path10</h3>
 <p><b>Path Summary:</b></p>
 <table class="summary_table">
 <tr>
@@ -2997,7 +3224,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C26[2][B]</td>
+<td>R15C25[2][B]</td>
 <td>inst_1/counter_12_s0/CLK</td>
 </tr>
 <tr>
@@ -3006,7 +3233,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tC2Q</td>
 <td>RR</td>
 <td>2</td>
-<td>R15C26[2][B]</td>
+<td>R15C25[2][B]</td>
 <td style=" font-weight:bold;">inst_1/counter_12_s0/Q</td>
 </tr>
 <tr>
@@ -3015,7 +3242,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C27[3][A]</td>
+<td>R15C26[3][A]</td>
 <td>inst_1/n13_s5/I3</td>
 </tr>
 <tr>
@@ -3024,7 +3251,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>RF</td>
 <td>1</td>
-<td>R15C27[3][A]</td>
+<td>R15C26[3][A]</td>
 <td style=" background: #97FFFF;">inst_1/n13_s5/F</td>
 </tr>
 <tr>
@@ -3033,7 +3260,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C27[3][B]</td>
+<td>R15C26[3][B]</td>
 <td>inst_1/n13_s4/I3</td>
 </tr>
 <tr>
@@ -3042,7 +3269,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C27[3][B]</td>
+<td>R15C26[3][B]</td>
 <td style=" background: #97FFFF;">inst_1/n13_s4/F</td>
 </tr>
 <tr>
@@ -3051,7 +3278,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C25[3][B]</td>
+<td>R15C24[3][B]</td>
 <td>inst_1/n13_s0/I3</td>
 </tr>
 <tr>
@@ -3060,7 +3287,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>FR</td>
 <td>20</td>
-<td>R15C25[3][B]</td>
+<td>R15C24[3][B]</td>
 <td style=" background: #97FFFF;">inst_1/n13_s0/F</td>
 </tr>
 <tr>
@@ -3069,7 +3296,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C26[2][B]</td>
+<td>R15C25[2][B]</td>
 <td style=" font-weight:bold;">inst_1/counter_12_s0/RESET</td>
 </tr>
 </table>
@@ -3126,7 +3353,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C26[2][B]</td>
+<td>R15C25[2][B]</td>
 <td>inst_1/counter_12_s0/CLK</td>
 </tr>
 <tr>
@@ -3135,7 +3362,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tSu</td>
 <td></td>
 <td>1</td>
-<td>R15C26[2][B]</td>
+<td>R15C25[2][B]</td>
 <td>inst_1/counter_12_s0</td>
 </tr>
 </table>
@@ -3166,7 +3393,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>cell: 0.982, 80.100%; route: 0.244, 19.900%</td>
 </tr>
 </table>
-<h3>Path10</h3>
+<h3>Path11</h3>
 <p><b>Path Summary:</b></p>
 <table class="summary_table">
 <tr>
@@ -3251,7 +3478,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C26[2][B]</td>
+<td>R15C25[2][B]</td>
 <td>inst_1/counter_12_s0/CLK</td>
 </tr>
 <tr>
@@ -3260,7 +3487,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tC2Q</td>
 <td>RR</td>
 <td>2</td>
-<td>R15C26[2][B]</td>
+<td>R15C25[2][B]</td>
 <td style=" font-weight:bold;">inst_1/counter_12_s0/Q</td>
 </tr>
 <tr>
@@ -3269,7 +3496,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C27[3][A]</td>
+<td>R15C26[3][A]</td>
 <td>inst_1/n13_s5/I3</td>
 </tr>
 <tr>
@@ -3278,7 +3505,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>RF</td>
 <td>1</td>
-<td>R15C27[3][A]</td>
+<td>R15C26[3][A]</td>
 <td style=" background: #97FFFF;">inst_1/n13_s5/F</td>
 </tr>
 <tr>
@@ -3287,7 +3514,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C27[3][B]</td>
+<td>R15C26[3][B]</td>
 <td>inst_1/n13_s4/I3</td>
 </tr>
 <tr>
@@ -3296,7 +3523,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C27[3][B]</td>
+<td>R15C26[3][B]</td>
 <td style=" background: #97FFFF;">inst_1/n13_s4/F</td>
 </tr>
 <tr>
@@ -3305,7 +3532,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C25[3][B]</td>
+<td>R15C24[3][B]</td>
 <td>inst_1/n13_s0/I3</td>
 </tr>
 <tr>
@@ -3314,7 +3541,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>FR</td>
 <td>20</td>
-<td>R15C25[3][B]</td>
+<td>R15C24[3][B]</td>
 <td style=" background: #97FFFF;">inst_1/n13_s0/F</td>
 </tr>
 <tr>
@@ -3323,7 +3550,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C27[0][A]</td>
+<td>R15C26[0][A]</td>
 <td style=" font-weight:bold;">inst_1/counter_13_s0/RESET</td>
 </tr>
 </table>
@@ -3380,7 +3607,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C27[0][A]</td>
+<td>R15C26[0][A]</td>
 <td>inst_1/counter_13_s0/CLK</td>
 </tr>
 <tr>
@@ -3389,7 +3616,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tSu</td>
 <td></td>
 <td>1</td>
-<td>R15C27[0][A]</td>
+<td>R15C26[0][A]</td>
 <td>inst_1/counter_13_s0</td>
 </tr>
 </table>
@@ -3420,7 +3647,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>cell: 0.982, 80.100%; route: 0.244, 19.900%</td>
 </tr>
 </table>
-<h3>Path11</h3>
+<h3>Path12</h3>
 <p><b>Path Summary:</b></p>
 <table class="summary_table">
 <tr>
@@ -3505,7 +3732,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C26[2][B]</td>
+<td>R15C25[2][B]</td>
 <td>inst_1/counter_12_s0/CLK</td>
 </tr>
 <tr>
@@ -3514,7 +3741,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tC2Q</td>
 <td>RR</td>
 <td>2</td>
-<td>R15C26[2][B]</td>
+<td>R15C25[2][B]</td>
 <td style=" font-weight:bold;">inst_1/counter_12_s0/Q</td>
 </tr>
 <tr>
@@ -3523,7 +3750,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C27[3][A]</td>
+<td>R15C26[3][A]</td>
 <td>inst_1/n13_s5/I3</td>
 </tr>
 <tr>
@@ -3532,7 +3759,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>RF</td>
 <td>1</td>
-<td>R15C27[3][A]</td>
+<td>R15C26[3][A]</td>
 <td style=" background: #97FFFF;">inst_1/n13_s5/F</td>
 </tr>
 <tr>
@@ -3541,7 +3768,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C27[3][B]</td>
+<td>R15C26[3][B]</td>
 <td>inst_1/n13_s4/I3</td>
 </tr>
 <tr>
@@ -3550,7 +3777,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C27[3][B]</td>
+<td>R15C26[3][B]</td>
 <td style=" background: #97FFFF;">inst_1/n13_s4/F</td>
 </tr>
 <tr>
@@ -3559,7 +3786,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C25[3][B]</td>
+<td>R15C24[3][B]</td>
 <td>inst_1/n13_s0/I3</td>
 </tr>
 <tr>
@@ -3568,7 +3795,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>FR</td>
 <td>20</td>
-<td>R15C25[3][B]</td>
+<td>R15C24[3][B]</td>
 <td style=" background: #97FFFF;">inst_1/n13_s0/F</td>
 </tr>
 <tr>
@@ -3577,7 +3804,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C27[0][B]</td>
+<td>R15C26[0][B]</td>
 <td style=" font-weight:bold;">inst_1/counter_14_s0/RESET</td>
 </tr>
 </table>
@@ -3634,7 +3861,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C27[0][B]</td>
+<td>R15C26[0][B]</td>
 <td>inst_1/counter_14_s0/CLK</td>
 </tr>
 <tr>
@@ -3643,7 +3870,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tSu</td>
 <td></td>
 <td>1</td>
-<td>R15C27[0][B]</td>
+<td>R15C26[0][B]</td>
 <td>inst_1/counter_14_s0</td>
 </tr>
 </table>
@@ -3674,7 +3901,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>cell: 0.982, 80.100%; route: 0.244, 19.900%</td>
 </tr>
 </table>
-<h3>Path12</h3>
+<h3>Path13</h3>
 <p><b>Path Summary:</b></p>
 <table class="summary_table">
 <tr>
@@ -3759,7 +3986,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C26[2][B]</td>
+<td>R15C25[2][B]</td>
 <td>inst_1/counter_12_s0/CLK</td>
 </tr>
 <tr>
@@ -3768,7 +3995,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tC2Q</td>
 <td>RR</td>
 <td>2</td>
-<td>R15C26[2][B]</td>
+<td>R15C25[2][B]</td>
 <td style=" font-weight:bold;">inst_1/counter_12_s0/Q</td>
 </tr>
 <tr>
@@ -3777,7 +4004,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C27[3][A]</td>
+<td>R15C26[3][A]</td>
 <td>inst_1/n13_s5/I3</td>
 </tr>
 <tr>
@@ -3786,7 +4013,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>RF</td>
 <td>1</td>
-<td>R15C27[3][A]</td>
+<td>R15C26[3][A]</td>
 <td style=" background: #97FFFF;">inst_1/n13_s5/F</td>
 </tr>
 <tr>
@@ -3795,7 +4022,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C27[3][B]</td>
+<td>R15C26[3][B]</td>
 <td>inst_1/n13_s4/I3</td>
 </tr>
 <tr>
@@ -3804,7 +4031,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C27[3][B]</td>
+<td>R15C26[3][B]</td>
 <td style=" background: #97FFFF;">inst_1/n13_s4/F</td>
 </tr>
 <tr>
@@ -3813,7 +4040,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C25[3][B]</td>
+<td>R15C24[3][B]</td>
 <td>inst_1/n13_s0/I3</td>
 </tr>
 <tr>
@@ -3822,7 +4049,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>FR</td>
 <td>20</td>
-<td>R15C25[3][B]</td>
+<td>R15C24[3][B]</td>
 <td style=" background: #97FFFF;">inst_1/n13_s0/F</td>
 </tr>
 <tr>
@@ -3831,7 +4058,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C27[1][A]</td>
+<td>R15C26[1][A]</td>
 <td style=" font-weight:bold;">inst_1/counter_15_s0/RESET</td>
 </tr>
 </table>
@@ -3888,7 +4115,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C27[1][A]</td>
+<td>R15C26[1][A]</td>
 <td>inst_1/counter_15_s0/CLK</td>
 </tr>
 <tr>
@@ -3897,7 +4124,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tSu</td>
 <td></td>
 <td>1</td>
-<td>R15C27[1][A]</td>
+<td>R15C26[1][A]</td>
 <td>inst_1/counter_15_s0</td>
 </tr>
 </table>
@@ -3928,7 +4155,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>cell: 0.982, 80.100%; route: 0.244, 19.900%</td>
 </tr>
 </table>
-<h3>Path13</h3>
+<h3>Path14</h3>
 <p><b>Path Summary:</b></p>
 <table class="summary_table">
 <tr>
@@ -4013,7 +4240,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C26[2][B]</td>
+<td>R15C25[2][B]</td>
 <td>inst_1/counter_12_s0/CLK</td>
 </tr>
 <tr>
@@ -4022,7 +4249,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tC2Q</td>
 <td>RR</td>
 <td>2</td>
-<td>R15C26[2][B]</td>
+<td>R15C25[2][B]</td>
 <td style=" font-weight:bold;">inst_1/counter_12_s0/Q</td>
 </tr>
 <tr>
@@ -4031,7 +4258,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C27[3][A]</td>
+<td>R15C26[3][A]</td>
 <td>inst_1/n13_s5/I3</td>
 </tr>
 <tr>
@@ -4040,7 +4267,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>RF</td>
 <td>1</td>
-<td>R15C27[3][A]</td>
+<td>R15C26[3][A]</td>
 <td style=" background: #97FFFF;">inst_1/n13_s5/F</td>
 </tr>
 <tr>
@@ -4049,7 +4276,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C27[3][B]</td>
+<td>R15C26[3][B]</td>
 <td>inst_1/n13_s4/I3</td>
 </tr>
 <tr>
@@ -4058,7 +4285,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C27[3][B]</td>
+<td>R15C26[3][B]</td>
 <td style=" background: #97FFFF;">inst_1/n13_s4/F</td>
 </tr>
 <tr>
@@ -4067,7 +4294,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C25[3][B]</td>
+<td>R15C24[3][B]</td>
 <td>inst_1/n13_s0/I3</td>
 </tr>
 <tr>
@@ -4076,7 +4303,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>FR</td>
 <td>20</td>
-<td>R15C25[3][B]</td>
+<td>R15C24[3][B]</td>
 <td style=" background: #97FFFF;">inst_1/n13_s0/F</td>
 </tr>
 <tr>
@@ -4085,7 +4312,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C27[1][B]</td>
+<td>R15C26[1][B]</td>
 <td style=" font-weight:bold;">inst_1/counter_16_s0/RESET</td>
 </tr>
 </table>
@@ -4142,7 +4369,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C27[1][B]</td>
+<td>R15C26[1][B]</td>
 <td>inst_1/counter_16_s0/CLK</td>
 </tr>
 <tr>
@@ -4151,7 +4378,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tSu</td>
 <td></td>
 <td>1</td>
-<td>R15C27[1][B]</td>
+<td>R15C26[1][B]</td>
 <td>inst_1/counter_16_s0</td>
 </tr>
 </table>
@@ -4182,7 +4409,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>cell: 0.982, 80.100%; route: 0.244, 19.900%</td>
 </tr>
 </table>
-<h3>Path14</h3>
+<h3>Path15</h3>
 <p><b>Path Summary:</b></p>
 <table class="summary_table">
 <tr>
@@ -4267,7 +4494,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C26[2][B]</td>
+<td>R15C25[2][B]</td>
 <td>inst_1/counter_12_s0/CLK</td>
 </tr>
 <tr>
@@ -4276,7 +4503,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tC2Q</td>
 <td>RR</td>
 <td>2</td>
-<td>R15C26[2][B]</td>
+<td>R15C25[2][B]</td>
 <td style=" font-weight:bold;">inst_1/counter_12_s0/Q</td>
 </tr>
 <tr>
@@ -4285,7 +4512,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C27[3][A]</td>
+<td>R15C26[3][A]</td>
 <td>inst_1/n13_s5/I3</td>
 </tr>
 <tr>
@@ -4294,7 +4521,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>RF</td>
 <td>1</td>
-<td>R15C27[3][A]</td>
+<td>R15C26[3][A]</td>
 <td style=" background: #97FFFF;">inst_1/n13_s5/F</td>
 </tr>
 <tr>
@@ -4303,7 +4530,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C27[3][B]</td>
+<td>R15C26[3][B]</td>
 <td>inst_1/n13_s4/I3</td>
 </tr>
 <tr>
@@ -4312,7 +4539,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C27[3][B]</td>
+<td>R15C26[3][B]</td>
 <td style=" background: #97FFFF;">inst_1/n13_s4/F</td>
 </tr>
 <tr>
@@ -4321,7 +4548,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C25[3][B]</td>
+<td>R15C24[3][B]</td>
 <td>inst_1/n13_s0/I3</td>
 </tr>
 <tr>
@@ -4330,7 +4557,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>FR</td>
 <td>20</td>
-<td>R15C25[3][B]</td>
+<td>R15C24[3][B]</td>
 <td style=" background: #97FFFF;">inst_1/n13_s0/F</td>
 </tr>
 <tr>
@@ -4339,7 +4566,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C27[2][A]</td>
+<td>R15C26[2][A]</td>
 <td style=" font-weight:bold;">inst_1/counter_17_s0/RESET</td>
 </tr>
 </table>
@@ -4396,7 +4623,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C27[2][A]</td>
+<td>R15C26[2][A]</td>
 <td>inst_1/counter_17_s0/CLK</td>
 </tr>
 <tr>
@@ -4405,7 +4632,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tSu</td>
 <td></td>
 <td>1</td>
-<td>R15C27[2][A]</td>
+<td>R15C26[2][A]</td>
 <td>inst_1/counter_17_s0</td>
 </tr>
 </table>
@@ -4436,7 +4663,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>cell: 0.982, 80.100%; route: 0.244, 19.900%</td>
 </tr>
 </table>
-<h3>Path15</h3>
+<h3>Path16</h3>
 <p><b>Path Summary:</b></p>
 <table class="summary_table">
 <tr>
@@ -4521,7 +4748,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C26[2][B]</td>
+<td>R15C25[2][B]</td>
 <td>inst_1/counter_12_s0/CLK</td>
 </tr>
 <tr>
@@ -4530,7 +4757,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tC2Q</td>
 <td>RR</td>
 <td>2</td>
-<td>R15C26[2][B]</td>
+<td>R15C25[2][B]</td>
 <td style=" font-weight:bold;">inst_1/counter_12_s0/Q</td>
 </tr>
 <tr>
@@ -4539,7 +4766,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C27[3][A]</td>
+<td>R15C26[3][A]</td>
 <td>inst_1/n13_s5/I3</td>
 </tr>
 <tr>
@@ -4548,7 +4775,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>RF</td>
 <td>1</td>
-<td>R15C27[3][A]</td>
+<td>R15C26[3][A]</td>
 <td style=" background: #97FFFF;">inst_1/n13_s5/F</td>
 </tr>
 <tr>
@@ -4557,7 +4784,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C27[3][B]</td>
+<td>R15C26[3][B]</td>
 <td>inst_1/n13_s4/I3</td>
 </tr>
 <tr>
@@ -4566,7 +4793,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C27[3][B]</td>
+<td>R15C26[3][B]</td>
 <td style=" background: #97FFFF;">inst_1/n13_s4/F</td>
 </tr>
 <tr>
@@ -4575,7 +4802,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C25[3][B]</td>
+<td>R15C24[3][B]</td>
 <td>inst_1/n13_s0/I3</td>
 </tr>
 <tr>
@@ -4584,7 +4811,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>FR</td>
 <td>20</td>
-<td>R15C25[3][B]</td>
+<td>R15C24[3][B]</td>
 <td style=" background: #97FFFF;">inst_1/n13_s0/F</td>
 </tr>
 <tr>
@@ -4593,7 +4820,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C25[0][A]</td>
+<td>R15C24[0][A]</td>
 <td style=" font-weight:bold;">inst_1/counter_1_s0/RESET</td>
 </tr>
 </table>
@@ -4650,7 +4877,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C25[0][A]</td>
+<td>R15C24[0][A]</td>
 <td>inst_1/counter_1_s0/CLK</td>
 </tr>
 <tr>
@@ -4659,7 +4886,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tSu</td>
 <td></td>
 <td>1</td>
-<td>R15C25[0][A]</td>
+<td>R15C24[0][A]</td>
 <td>inst_1/counter_1_s0</td>
 </tr>
 </table>
@@ -4690,7 +4917,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>cell: 0.982, 80.100%; route: 0.244, 19.900%</td>
 </tr>
 </table>
-<h3>Path16</h3>
+<h3>Path17</h3>
 <p><b>Path Summary:</b></p>
 <table class="summary_table">
 <tr>
@@ -4775,7 +5002,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C26[2][B]</td>
+<td>R15C25[2][B]</td>
 <td>inst_1/counter_12_s0/CLK</td>
 </tr>
 <tr>
@@ -4784,7 +5011,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tC2Q</td>
 <td>RR</td>
 <td>2</td>
-<td>R15C26[2][B]</td>
+<td>R15C25[2][B]</td>
 <td style=" font-weight:bold;">inst_1/counter_12_s0/Q</td>
 </tr>
 <tr>
@@ -4793,7 +5020,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C27[3][A]</td>
+<td>R15C26[3][A]</td>
 <td>inst_1/n13_s5/I3</td>
 </tr>
 <tr>
@@ -4802,7 +5029,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>RF</td>
 <td>1</td>
-<td>R15C27[3][A]</td>
+<td>R15C26[3][A]</td>
 <td style=" background: #97FFFF;">inst_1/n13_s5/F</td>
 </tr>
 <tr>
@@ -4811,7 +5038,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C27[3][B]</td>
+<td>R15C26[3][B]</td>
 <td>inst_1/n13_s4/I3</td>
 </tr>
 <tr>
@@ -4820,7 +5047,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C27[3][B]</td>
+<td>R15C26[3][B]</td>
 <td style=" background: #97FFFF;">inst_1/n13_s4/F</td>
 </tr>
 <tr>
@@ -4829,7 +5056,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C25[3][B]</td>
+<td>R15C24[3][B]</td>
 <td>inst_1/n13_s0/I3</td>
 </tr>
 <tr>
@@ -4838,7 +5065,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>FR</td>
 <td>20</td>
-<td>R15C25[3][B]</td>
+<td>R15C24[3][B]</td>
 <td style=" background: #97FFFF;">inst_1/n13_s0/F</td>
 </tr>
 <tr>
@@ -4847,7 +5074,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C25[0][B]</td>
+<td>R15C24[0][B]</td>
 <td style=" font-weight:bold;">inst_1/counter_2_s0/RESET</td>
 </tr>
 </table>
@@ -4904,7 +5131,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C25[0][B]</td>
+<td>R15C24[0][B]</td>
 <td>inst_1/counter_2_s0/CLK</td>
 </tr>
 <tr>
@@ -4913,7 +5140,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tSu</td>
 <td></td>
 <td>1</td>
-<td>R15C25[0][B]</td>
+<td>R15C24[0][B]</td>
 <td>inst_1/counter_2_s0</td>
 </tr>
 </table>
@@ -4944,7 +5171,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>cell: 0.982, 80.100%; route: 0.244, 19.900%</td>
 </tr>
 </table>
-<h3>Path17</h3>
+<h3>Path18</h3>
 <p><b>Path Summary:</b></p>
 <table class="summary_table">
 <tr>
@@ -5029,7 +5256,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C26[2][B]</td>
+<td>R15C25[2][B]</td>
 <td>inst_1/counter_12_s0/CLK</td>
 </tr>
 <tr>
@@ -5038,7 +5265,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tC2Q</td>
 <td>RR</td>
 <td>2</td>
-<td>R15C26[2][B]</td>
+<td>R15C25[2][B]</td>
 <td style=" font-weight:bold;">inst_1/counter_12_s0/Q</td>
 </tr>
 <tr>
@@ -5047,7 +5274,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C27[3][A]</td>
+<td>R15C26[3][A]</td>
 <td>inst_1/n13_s5/I3</td>
 </tr>
 <tr>
@@ -5056,7 +5283,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>RF</td>
 <td>1</td>
-<td>R15C27[3][A]</td>
+<td>R15C26[3][A]</td>
 <td style=" background: #97FFFF;">inst_1/n13_s5/F</td>
 </tr>
 <tr>
@@ -5065,7 +5292,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C27[3][B]</td>
+<td>R15C26[3][B]</td>
 <td>inst_1/n13_s4/I3</td>
 </tr>
 <tr>
@@ -5074,7 +5301,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C27[3][B]</td>
+<td>R15C26[3][B]</td>
 <td style=" background: #97FFFF;">inst_1/n13_s4/F</td>
 </tr>
 <tr>
@@ -5083,7 +5310,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C25[3][B]</td>
+<td>R15C24[3][B]</td>
 <td>inst_1/n13_s0/I3</td>
 </tr>
 <tr>
@@ -5092,7 +5319,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>FR</td>
 <td>20</td>
-<td>R15C25[3][B]</td>
+<td>R15C24[3][B]</td>
 <td style=" background: #97FFFF;">inst_1/n13_s0/F</td>
 </tr>
 <tr>
@@ -5101,7 +5328,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C25[1][A]</td>
+<td>R15C24[1][A]</td>
 <td style=" font-weight:bold;">inst_1/counter_3_s0/RESET</td>
 </tr>
 </table>
@@ -5158,7 +5385,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C25[1][A]</td>
+<td>R15C24[1][A]</td>
 <td>inst_1/counter_3_s0/CLK</td>
 </tr>
 <tr>
@@ -5167,7 +5394,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tSu</td>
 <td></td>
 <td>1</td>
-<td>R15C25[1][A]</td>
+<td>R15C24[1][A]</td>
 <td>inst_1/counter_3_s0</td>
 </tr>
 </table>
@@ -5198,7 +5425,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>cell: 0.982, 80.100%; route: 0.244, 19.900%</td>
 </tr>
 </table>
-<h3>Path18</h3>
+<h3>Path19</h3>
 <p><b>Path Summary:</b></p>
 <table class="summary_table">
 <tr>
@@ -5283,7 +5510,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C26[2][B]</td>
+<td>R15C25[2][B]</td>
 <td>inst_1/counter_12_s0/CLK</td>
 </tr>
 <tr>
@@ -5292,7 +5519,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tC2Q</td>
 <td>RR</td>
 <td>2</td>
-<td>R15C26[2][B]</td>
+<td>R15C25[2][B]</td>
 <td style=" font-weight:bold;">inst_1/counter_12_s0/Q</td>
 </tr>
 <tr>
@@ -5301,7 +5528,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C27[3][A]</td>
+<td>R15C26[3][A]</td>
 <td>inst_1/n13_s5/I3</td>
 </tr>
 <tr>
@@ -5310,7 +5537,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>RF</td>
 <td>1</td>
-<td>R15C27[3][A]</td>
+<td>R15C26[3][A]</td>
 <td style=" background: #97FFFF;">inst_1/n13_s5/F</td>
 </tr>
 <tr>
@@ -5319,7 +5546,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C27[3][B]</td>
+<td>R15C26[3][B]</td>
 <td>inst_1/n13_s4/I3</td>
 </tr>
 <tr>
@@ -5328,7 +5555,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C27[3][B]</td>
+<td>R15C26[3][B]</td>
 <td style=" background: #97FFFF;">inst_1/n13_s4/F</td>
 </tr>
 <tr>
@@ -5337,7 +5564,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C25[3][B]</td>
+<td>R15C24[3][B]</td>
 <td>inst_1/n13_s0/I3</td>
 </tr>
 <tr>
@@ -5346,7 +5573,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>FR</td>
 <td>20</td>
-<td>R15C25[3][B]</td>
+<td>R15C24[3][B]</td>
 <td style=" background: #97FFFF;">inst_1/n13_s0/F</td>
 </tr>
 <tr>
@@ -5355,7 +5582,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C25[1][B]</td>
+<td>R15C24[1][B]</td>
 <td style=" font-weight:bold;">inst_1/counter_4_s0/RESET</td>
 </tr>
 </table>
@@ -5412,7 +5639,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C25[1][B]</td>
+<td>R15C24[1][B]</td>
 <td>inst_1/counter_4_s0/CLK</td>
 </tr>
 <tr>
@@ -5421,7 +5648,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tSu</td>
 <td></td>
 <td>1</td>
-<td>R15C25[1][B]</td>
+<td>R15C24[1][B]</td>
 <td>inst_1/counter_4_s0</td>
 </tr>
 </table>
@@ -5452,7 +5679,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>cell: 0.982, 80.100%; route: 0.244, 19.900%</td>
 </tr>
 </table>
-<h3>Path19</h3>
+<h3>Path20</h3>
 <p><b>Path Summary:</b></p>
 <table class="summary_table">
 <tr>
@@ -5537,7 +5764,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C26[2][B]</td>
+<td>R15C25[2][B]</td>
 <td>inst_1/counter_12_s0/CLK</td>
 </tr>
 <tr>
@@ -5546,7 +5773,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tC2Q</td>
 <td>RR</td>
 <td>2</td>
-<td>R15C26[2][B]</td>
+<td>R15C25[2][B]</td>
 <td style=" font-weight:bold;">inst_1/counter_12_s0/Q</td>
 </tr>
 <tr>
@@ -5555,7 +5782,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C27[3][A]</td>
+<td>R15C26[3][A]</td>
 <td>inst_1/n13_s5/I3</td>
 </tr>
 <tr>
@@ -5564,7 +5791,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>RF</td>
 <td>1</td>
-<td>R15C27[3][A]</td>
+<td>R15C26[3][A]</td>
 <td style=" background: #97FFFF;">inst_1/n13_s5/F</td>
 </tr>
 <tr>
@@ -5573,7 +5800,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C27[3][B]</td>
+<td>R15C26[3][B]</td>
 <td>inst_1/n13_s4/I3</td>
 </tr>
 <tr>
@@ -5582,7 +5809,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C27[3][B]</td>
+<td>R15C26[3][B]</td>
 <td style=" background: #97FFFF;">inst_1/n13_s4/F</td>
 </tr>
 <tr>
@@ -5591,7 +5818,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C25[3][B]</td>
+<td>R15C24[3][B]</td>
 <td>inst_1/n13_s0/I3</td>
 </tr>
 <tr>
@@ -5600,7 +5827,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>FR</td>
 <td>20</td>
-<td>R15C25[3][B]</td>
+<td>R15C24[3][B]</td>
 <td style=" background: #97FFFF;">inst_1/n13_s0/F</td>
 </tr>
 <tr>
@@ -5609,7 +5836,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C25[2][A]</td>
+<td>R15C24[2][A]</td>
 <td style=" font-weight:bold;">inst_1/counter_5_s0/RESET</td>
 </tr>
 </table>
@@ -5666,7 +5893,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C25[2][A]</td>
+<td>R15C24[2][A]</td>
 <td>inst_1/counter_5_s0/CLK</td>
 </tr>
 <tr>
@@ -5675,7 +5902,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tSu</td>
 <td></td>
 <td>1</td>
-<td>R15C25[2][A]</td>
+<td>R15C24[2][A]</td>
 <td>inst_1/counter_5_s0</td>
 </tr>
 </table>
@@ -5706,7 +5933,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>cell: 0.982, 80.100%; route: 0.244, 19.900%</td>
 </tr>
 </table>
-<h3>Path20</h3>
+<h3>Path21</h3>
 <p><b>Path Summary:</b></p>
 <table class="summary_table">
 <tr>
@@ -5791,7 +6018,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C26[2][B]</td>
+<td>R15C25[2][B]</td>
 <td>inst_1/counter_12_s0/CLK</td>
 </tr>
 <tr>
@@ -5800,7 +6027,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tC2Q</td>
 <td>RR</td>
 <td>2</td>
-<td>R15C26[2][B]</td>
+<td>R15C25[2][B]</td>
 <td style=" font-weight:bold;">inst_1/counter_12_s0/Q</td>
 </tr>
 <tr>
@@ -5809,7 +6036,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C27[3][A]</td>
+<td>R15C26[3][A]</td>
 <td>inst_1/n13_s5/I3</td>
 </tr>
 <tr>
@@ -5818,7 +6045,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>RF</td>
 <td>1</td>
-<td>R15C27[3][A]</td>
+<td>R15C26[3][A]</td>
 <td style=" background: #97FFFF;">inst_1/n13_s5/F</td>
 </tr>
 <tr>
@@ -5827,7 +6054,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C27[3][B]</td>
+<td>R15C26[3][B]</td>
 <td>inst_1/n13_s4/I3</td>
 </tr>
 <tr>
@@ -5836,7 +6063,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C27[3][B]</td>
+<td>R15C26[3][B]</td>
 <td style=" background: #97FFFF;">inst_1/n13_s4/F</td>
 </tr>
 <tr>
@@ -5845,7 +6072,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C25[3][B]</td>
+<td>R15C24[3][B]</td>
 <td>inst_1/n13_s0/I3</td>
 </tr>
 <tr>
@@ -5854,7 +6081,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>FR</td>
 <td>20</td>
-<td>R15C25[3][B]</td>
+<td>R15C24[3][B]</td>
 <td style=" background: #97FFFF;">inst_1/n13_s0/F</td>
 </tr>
 <tr>
@@ -5863,7 +6090,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C25[2][B]</td>
+<td>R15C24[2][B]</td>
 <td style=" font-weight:bold;">inst_1/counter_6_s0/RESET</td>
 </tr>
 </table>
@@ -5920,7 +6147,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C25[2][B]</td>
+<td>R15C24[2][B]</td>
 <td>inst_1/counter_6_s0/CLK</td>
 </tr>
 <tr>
@@ -5929,7 +6156,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tSu</td>
 <td></td>
 <td>1</td>
-<td>R15C25[2][B]</td>
+<td>R15C24[2][B]</td>
 <td>inst_1/counter_6_s0</td>
 </tr>
 </table>
@@ -5960,7 +6187,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>cell: 0.982, 80.100%; route: 0.244, 19.900%</td>
 </tr>
 </table>
-<h3>Path21</h3>
+<h3>Path22</h3>
 <p><b>Path Summary:</b></p>
 <table class="summary_table">
 <tr>
@@ -6045,7 +6272,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C26[0][B]</td>
+<td>R15C25[0][B]</td>
 <td>inst_1/counter_8_s0/CLK</td>
 </tr>
 <tr>
@@ -6054,7 +6281,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tC2Q</td>
 <td>RF</td>
 <td>2</td>
-<td>R15C26[0][B]</td>
+<td>R15C25[0][B]</td>
 <td style=" font-weight:bold;">inst_1/counter_8_s0/Q</td>
 </tr>
 <tr>
@@ -6063,7 +6290,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>2</td>
-<td>R15C26[0][B]</td>
+<td>R15C25[0][B]</td>
 <td>inst_1/n25_s/I1</td>
 </tr>
 <tr>
@@ -6072,7 +6299,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>FR</td>
 <td>1</td>
-<td>R15C26[0][B]</td>
+<td>R15C25[0][B]</td>
 <td style=" background: #97FFFF;">inst_1/n25_s/COUT</td>
 </tr>
 <tr>
@@ -6081,7 +6308,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>2</td>
-<td>R15C26[1][A]</td>
+<td>R15C25[1][A]</td>
 <td>inst_1/n24_s/CIN</td>
 </tr>
 <tr>
@@ -6090,7 +6317,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>RF</td>
 <td>1</td>
-<td>R15C26[1][A]</td>
+<td>R15C25[1][A]</td>
 <td style=" background: #97FFFF;">inst_1/n24_s/COUT</td>
 </tr>
 <tr>
@@ -6099,7 +6326,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>2</td>
-<td>R15C26[1][B]</td>
+<td>R15C25[1][B]</td>
 <td>inst_1/n23_s/CIN</td>
 </tr>
 <tr>
@@ -6108,7 +6335,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C26[1][B]</td>
+<td>R15C25[1][B]</td>
 <td style=" background: #97FFFF;">inst_1/n23_s/COUT</td>
 </tr>
 <tr>
@@ -6117,7 +6344,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>2</td>
-<td>R15C26[2][A]</td>
+<td>R15C25[2][A]</td>
 <td>inst_1/n22_s/CIN</td>
 </tr>
 <tr>
@@ -6126,7 +6353,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C26[2][A]</td>
+<td>R15C25[2][A]</td>
 <td style=" background: #97FFFF;">inst_1/n22_s/COUT</td>
 </tr>
 <tr>
@@ -6135,7 +6362,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>2</td>
-<td>R15C26[2][B]</td>
+<td>R15C25[2][B]</td>
 <td>inst_1/n21_s/CIN</td>
 </tr>
 <tr>
@@ -6144,7 +6371,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C26[2][B]</td>
+<td>R15C25[2][B]</td>
 <td style=" background: #97FFFF;">inst_1/n21_s/COUT</td>
 </tr>
 <tr>
@@ -6153,7 +6380,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>2</td>
-<td>R15C27[0][A]</td>
+<td>R15C26[0][A]</td>
 <td>inst_1/n20_s/CIN</td>
 </tr>
 <tr>
@@ -6162,7 +6389,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C27[0][A]</td>
+<td>R15C26[0][A]</td>
 <td style=" background: #97FFFF;">inst_1/n20_s/COUT</td>
 </tr>
 <tr>
@@ -6171,7 +6398,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>2</td>
-<td>R15C27[0][B]</td>
+<td>R15C26[0][B]</td>
 <td>inst_1/n19_s/CIN</td>
 </tr>
 <tr>
@@ -6180,7 +6407,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C27[0][B]</td>
+<td>R15C26[0][B]</td>
 <td style=" background: #97FFFF;">inst_1/n19_s/COUT</td>
 </tr>
 <tr>
@@ -6189,7 +6416,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>2</td>
-<td>R15C27[1][A]</td>
+<td>R15C26[1][A]</td>
 <td>inst_1/n18_s/CIN</td>
 </tr>
 <tr>
@@ -6198,7 +6425,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C27[1][A]</td>
+<td>R15C26[1][A]</td>
 <td style=" background: #97FFFF;">inst_1/n18_s/COUT</td>
 </tr>
 <tr>
@@ -6207,7 +6434,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>2</td>
-<td>R15C27[1][B]</td>
+<td>R15C26[1][B]</td>
 <td>inst_1/n17_s/CIN</td>
 </tr>
 <tr>
@@ -6216,7 +6443,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C27[1][B]</td>
+<td>R15C26[1][B]</td>
 <td style=" background: #97FFFF;">inst_1/n17_s/COUT</td>
 </tr>
 <tr>
@@ -6225,7 +6452,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>2</td>
-<td>R15C27[2][A]</td>
+<td>R15C26[2][A]</td>
 <td>inst_1/n16_s/CIN</td>
 </tr>
 <tr>
@@ -6234,7 +6461,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C27[2][A]</td>
+<td>R15C26[2][A]</td>
 <td style=" background: #97FFFF;">inst_1/n16_s/COUT</td>
 </tr>
 <tr>
@@ -6243,7 +6470,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>2</td>
-<td>R15C27[2][B]</td>
+<td>R15C26[2][B]</td>
 <td>inst_1/n15_s/CIN</td>
 </tr>
 <tr>
@@ -6252,7 +6479,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C27[2][B]</td>
+<td>R15C26[2][B]</td>
 <td style=" background: #97FFFF;">inst_1/n15_s/SUM</td>
 </tr>
 <tr>
@@ -6261,7 +6488,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C27[2][B]</td>
+<td>R15C26[2][B]</td>
 <td style=" font-weight:bold;">inst_1/counter_18_s0/D</td>
 </tr>
 </table>
@@ -6318,7 +6545,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C27[2][B]</td>
+<td>R15C26[2][B]</td>
 <td>inst_1/counter_18_s0/CLK</td>
 </tr>
 <tr>
@@ -6327,7 +6554,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tSu</td>
 <td></td>
 <td>1</td>
-<td>R15C27[2][B]</td>
+<td>R15C26[2][B]</td>
 <td>inst_1/counter_18_s0</td>
 </tr>
 </table>
@@ -6356,206 +6583,6 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <tr>
 <td class="label">Required Clock Path Delay</td>
 <td>cell: 0.982, 80.100%; route: 0.244, 19.900%</td>
-</tr>
-</table>
-<h3>Path22</h3>
-<p><b>Path Summary:</b></p>
-<table class="summary_table">
-<tr>
-<td class="label">Slack</td>
-<td>15.749</td>
-</tr>
-<tr>
-<td class="label">Data Arrival Time</td>
-<td>5.602</td>
-</tr>
-<tr>
-<td class="label">Data Required Time</td>
-<td>21.351</td>
-</tr>
-<tr>
-<td class="label">From</td>
-<td>rotateState_2_s0</td>
-</tr>
-<tr>
-<td class="label">To</td>
-<td>HIN_T_s3</td>
-</tr>
-<tr>
-<td class="label">Launch Clk</td>
-<td>controlCLK:[R]</td>
-</tr>
-<tr>
-<td class="label">Latch Clk</td>
-<td>controlCLK:[R]</td>
-</tr>
-</table>
-<p><b>Data Arrival Path:</b></p>
-<table class="detail_table">
-<tr>
-<th class="label">AT</th>
-<th class="label">DELAY</th>
-<th class="label">TYPE</th>
-<th class="label">RF</th>
-<th class="label">FANOUT</th>
-<th class="label">LOC</th>
-<th>NODE</th>
-</tr>
-<tr>
-<td>0.000</td>
-<td>0.000</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>active clock edge time</td>
-</tr>
-<tr>
-<td>0.000</td>
-<td>0.000</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>controlCLK</td>
-</tr>
-<tr>
-<td>0.000</td>
-<td>0.000</td>
-<td>tCL</td>
-<td>RR</td>
-<td>9</td>
-<td>R15C24[1][A]</td>
-<td>inst_1/overflow_s0/Q</td>
-</tr>
-<tr>
-<td>1.394</td>
-<td>1.394</td>
-<td>tNET</td>
-<td>RR</td>
-<td>1</td>
-<td>R15C28[0][B]</td>
-<td>rotateState_2_s0/CLK</td>
-</tr>
-<tr>
-<td>1.852</td>
-<td>0.458</td>
-<td>tC2Q</td>
-<td>RF</td>
-<td>8</td>
-<td>R15C28[0][B]</td>
-<td style=" font-weight:bold;">rotateState_2_s0/Q</td>
-</tr>
-<tr>
-<td>4.011</td>
-<td>2.159</td>
-<td>tNET</td>
-<td>FF</td>
-<td>1</td>
-<td>R14C46[0][A]</td>
-<td>HIN_R_s6/I1</td>
-</tr>
-<tr>
-<td>4.813</td>
-<td>0.802</td>
-<td>tINS</td>
-<td>FR</td>
-<td>2</td>
-<td>R14C46[0][A]</td>
-<td style=" background: #97FFFF;">HIN_R_s6/F</td>
-</tr>
-<tr>
-<td>5.602</td>
-<td>0.788</td>
-<td>tNET</td>
-<td>RR</td>
-<td>1</td>
-<td>IOR15[B]</td>
-<td style=" font-weight:bold;">HIN_T_s3/CE</td>
-</tr>
-</table>
-<p><b>Data Required Path:</b></p>
-<table class="detail_table">
-<tr>
-<th class="label">AT</th>
-<th class="label">DELAY</th>
-<th class="label">TYPE</th>
-<th class="label">RF</th>
-<th class="label">FANOUT</th>
-<th class="label">LOC</th>
-<th>NODE</th>
-</tr>
-<tr>
-<td>20.000</td>
-<td>20.000</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>active clock edge time</td>
-</tr>
-<tr>
-<td>20.000</td>
-<td>0.000</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>controlCLK</td>
-</tr>
-<tr>
-<td>20.000</td>
-<td>0.000</td>
-<td>tCL</td>
-<td>RR</td>
-<td>9</td>
-<td>R15C24[1][A]</td>
-<td>inst_1/overflow_s0/Q</td>
-</tr>
-<tr>
-<td>21.394</td>
-<td>1.394</td>
-<td>tNET</td>
-<td>RR</td>
-<td>1</td>
-<td>IOR15[B]</td>
-<td>HIN_T_s3/CLK</td>
-</tr>
-<tr>
-<td>21.351</td>
-<td>-0.043</td>
-<td>tSu</td>
-<td></td>
-<td>1</td>
-<td>IOR15[B]</td>
-<td>HIN_T_s3</td>
-</tr>
-</table>
-<p><b>Path Statistics:</b></p>
-<table class="summary_table">
-<tr>
-<td class="label">Clock Skew</td>
-<td>0.000</td>
-</tr>
-<tr>
-<td class="label">Setup Relationship </td>
-<td>20.000</td>
-</tr>
-<tr>
-<td class="label">Logic Level</td>
-<td>2</td>
-</tr>
-<tr>
-<td class="label">Arrival Clock Path Delay</td>
-<td>cell: 0.000, 0.000%; route: 1.394, 100.000%</td>
-</tr>
-<tr>
-<td class="label">Arrival Data Path Delay</td>
-<td>cell: 0.802, 19.061%; route: 2.947, 70.045%; tC2Q: 0.458, 10.893%</td>
-</tr>
-<tr>
-<td class="label">Required Clock Path Delay</td>
-<td>cell: 0.000, 0.000%; route: 1.394, 100.000%</td>
 </tr>
 </table>
 <h3>Path23</h3>
@@ -6643,7 +6670,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C26[0][B]</td>
+<td>R15C25[0][B]</td>
 <td>inst_1/counter_8_s0/CLK</td>
 </tr>
 <tr>
@@ -6652,7 +6679,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tC2Q</td>
 <td>RF</td>
 <td>2</td>
-<td>R15C26[0][B]</td>
+<td>R15C25[0][B]</td>
 <td style=" font-weight:bold;">inst_1/counter_8_s0/Q</td>
 </tr>
 <tr>
@@ -6661,7 +6688,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>2</td>
-<td>R15C26[0][B]</td>
+<td>R15C25[0][B]</td>
 <td>inst_1/n25_s/I1</td>
 </tr>
 <tr>
@@ -6670,7 +6697,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>FR</td>
 <td>1</td>
-<td>R15C26[0][B]</td>
+<td>R15C25[0][B]</td>
 <td style=" background: #97FFFF;">inst_1/n25_s/COUT</td>
 </tr>
 <tr>
@@ -6679,7 +6706,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>2</td>
-<td>R15C26[1][A]</td>
+<td>R15C25[1][A]</td>
 <td>inst_1/n24_s/CIN</td>
 </tr>
 <tr>
@@ -6688,7 +6715,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>RF</td>
 <td>1</td>
-<td>R15C26[1][A]</td>
+<td>R15C25[1][A]</td>
 <td style=" background: #97FFFF;">inst_1/n24_s/COUT</td>
 </tr>
 <tr>
@@ -6697,7 +6724,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>2</td>
-<td>R15C26[1][B]</td>
+<td>R15C25[1][B]</td>
 <td>inst_1/n23_s/CIN</td>
 </tr>
 <tr>
@@ -6706,7 +6733,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C26[1][B]</td>
+<td>R15C25[1][B]</td>
 <td style=" background: #97FFFF;">inst_1/n23_s/COUT</td>
 </tr>
 <tr>
@@ -6715,7 +6742,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>2</td>
-<td>R15C26[2][A]</td>
+<td>R15C25[2][A]</td>
 <td>inst_1/n22_s/CIN</td>
 </tr>
 <tr>
@@ -6724,7 +6751,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C26[2][A]</td>
+<td>R15C25[2][A]</td>
 <td style=" background: #97FFFF;">inst_1/n22_s/COUT</td>
 </tr>
 <tr>
@@ -6733,7 +6760,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>2</td>
-<td>R15C26[2][B]</td>
+<td>R15C25[2][B]</td>
 <td>inst_1/n21_s/CIN</td>
 </tr>
 <tr>
@@ -6742,7 +6769,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C26[2][B]</td>
+<td>R15C25[2][B]</td>
 <td style=" background: #97FFFF;">inst_1/n21_s/COUT</td>
 </tr>
 <tr>
@@ -6751,7 +6778,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>2</td>
-<td>R15C27[0][A]</td>
+<td>R15C26[0][A]</td>
 <td>inst_1/n20_s/CIN</td>
 </tr>
 <tr>
@@ -6760,7 +6787,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C27[0][A]</td>
+<td>R15C26[0][A]</td>
 <td style=" background: #97FFFF;">inst_1/n20_s/COUT</td>
 </tr>
 <tr>
@@ -6769,7 +6796,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>2</td>
-<td>R15C27[0][B]</td>
+<td>R15C26[0][B]</td>
 <td>inst_1/n19_s/CIN</td>
 </tr>
 <tr>
@@ -6778,7 +6805,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C27[0][B]</td>
+<td>R15C26[0][B]</td>
 <td style=" background: #97FFFF;">inst_1/n19_s/COUT</td>
 </tr>
 <tr>
@@ -6787,7 +6814,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>2</td>
-<td>R15C27[1][A]</td>
+<td>R15C26[1][A]</td>
 <td>inst_1/n18_s/CIN</td>
 </tr>
 <tr>
@@ -6796,7 +6823,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C27[1][A]</td>
+<td>R15C26[1][A]</td>
 <td style=" background: #97FFFF;">inst_1/n18_s/COUT</td>
 </tr>
 <tr>
@@ -6805,7 +6832,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>2</td>
-<td>R15C27[1][B]</td>
+<td>R15C26[1][B]</td>
 <td>inst_1/n17_s/CIN</td>
 </tr>
 <tr>
@@ -6814,7 +6841,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C27[1][B]</td>
+<td>R15C26[1][B]</td>
 <td style=" background: #97FFFF;">inst_1/n17_s/COUT</td>
 </tr>
 <tr>
@@ -6823,7 +6850,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>2</td>
-<td>R15C27[2][A]</td>
+<td>R15C26[2][A]</td>
 <td>inst_1/n16_s/CIN</td>
 </tr>
 <tr>
@@ -6832,7 +6859,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C27[2][A]</td>
+<td>R15C26[2][A]</td>
 <td style=" background: #97FFFF;">inst_1/n16_s/SUM</td>
 </tr>
 <tr>
@@ -6841,7 +6868,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C27[2][A]</td>
+<td>R15C26[2][A]</td>
 <td style=" font-weight:bold;">inst_1/counter_17_s0/D</td>
 </tr>
 </table>
@@ -6898,7 +6925,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C27[2][A]</td>
+<td>R15C26[2][A]</td>
 <td>inst_1/counter_17_s0/CLK</td>
 </tr>
 <tr>
@@ -6907,7 +6934,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tSu</td>
 <td></td>
 <td>1</td>
-<td>R15C27[2][A]</td>
+<td>R15C26[2][A]</td>
 <td>inst_1/counter_17_s0</td>
 </tr>
 </table>
@@ -6939,206 +6966,6 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 </table>
 <h3>Path24</h3>
-<p><b>Path Summary:</b></p>
-<table class="summary_table">
-<tr>
-<td class="label">Slack</td>
-<td>15.832</td>
-</tr>
-<tr>
-<td class="label">Data Arrival Time</td>
-<td>5.519</td>
-</tr>
-<tr>
-<td class="label">Data Required Time</td>
-<td>21.351</td>
-</tr>
-<tr>
-<td class="label">From</td>
-<td>rotateState_2_s0</td>
-</tr>
-<tr>
-<td class="label">To</td>
-<td>HIN_S_s3</td>
-</tr>
-<tr>
-<td class="label">Launch Clk</td>
-<td>controlCLK:[R]</td>
-</tr>
-<tr>
-<td class="label">Latch Clk</td>
-<td>controlCLK:[R]</td>
-</tr>
-</table>
-<p><b>Data Arrival Path:</b></p>
-<table class="detail_table">
-<tr>
-<th class="label">AT</th>
-<th class="label">DELAY</th>
-<th class="label">TYPE</th>
-<th class="label">RF</th>
-<th class="label">FANOUT</th>
-<th class="label">LOC</th>
-<th>NODE</th>
-</tr>
-<tr>
-<td>0.000</td>
-<td>0.000</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>active clock edge time</td>
-</tr>
-<tr>
-<td>0.000</td>
-<td>0.000</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>controlCLK</td>
-</tr>
-<tr>
-<td>0.000</td>
-<td>0.000</td>
-<td>tCL</td>
-<td>RR</td>
-<td>9</td>
-<td>R15C24[1][A]</td>
-<td>inst_1/overflow_s0/Q</td>
-</tr>
-<tr>
-<td>1.394</td>
-<td>1.394</td>
-<td>tNET</td>
-<td>RR</td>
-<td>1</td>
-<td>R15C28[0][B]</td>
-<td>rotateState_2_s0/CLK</td>
-</tr>
-<tr>
-<td>1.852</td>
-<td>0.458</td>
-<td>tC2Q</td>
-<td>RF</td>
-<td>8</td>
-<td>R15C28[0][B]</td>
-<td style=" font-weight:bold;">rotateState_2_s0/Q</td>
-</tr>
-<tr>
-<td>4.011</td>
-<td>2.159</td>
-<td>tNET</td>
-<td>FF</td>
-<td>1</td>
-<td>R14C46[0][A]</td>
-<td>HIN_R_s6/I1</td>
-</tr>
-<tr>
-<td>4.813</td>
-<td>0.802</td>
-<td>tINS</td>
-<td>FR</td>
-<td>2</td>
-<td>R14C46[0][A]</td>
-<td style=" background: #97FFFF;">HIN_R_s6/F</td>
-</tr>
-<tr>
-<td>5.519</td>
-<td>0.706</td>
-<td>tNET</td>
-<td>RR</td>
-<td>1</td>
-<td>IOR14[B]</td>
-<td style=" font-weight:bold;">HIN_S_s3/CE</td>
-</tr>
-</table>
-<p><b>Data Required Path:</b></p>
-<table class="detail_table">
-<tr>
-<th class="label">AT</th>
-<th class="label">DELAY</th>
-<th class="label">TYPE</th>
-<th class="label">RF</th>
-<th class="label">FANOUT</th>
-<th class="label">LOC</th>
-<th>NODE</th>
-</tr>
-<tr>
-<td>20.000</td>
-<td>20.000</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>active clock edge time</td>
-</tr>
-<tr>
-<td>20.000</td>
-<td>0.000</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>controlCLK</td>
-</tr>
-<tr>
-<td>20.000</td>
-<td>0.000</td>
-<td>tCL</td>
-<td>RR</td>
-<td>9</td>
-<td>R15C24[1][A]</td>
-<td>inst_1/overflow_s0/Q</td>
-</tr>
-<tr>
-<td>21.394</td>
-<td>1.394</td>
-<td>tNET</td>
-<td>RR</td>
-<td>1</td>
-<td>IOR14[B]</td>
-<td>HIN_S_s3/CLK</td>
-</tr>
-<tr>
-<td>21.351</td>
-<td>-0.043</td>
-<td>tSu</td>
-<td></td>
-<td>1</td>
-<td>IOR14[B]</td>
-<td>HIN_S_s3</td>
-</tr>
-</table>
-<p><b>Path Statistics:</b></p>
-<table class="summary_table">
-<tr>
-<td class="label">Clock Skew</td>
-<td>0.000</td>
-</tr>
-<tr>
-<td class="label">Setup Relationship </td>
-<td>20.000</td>
-</tr>
-<tr>
-<td class="label">Logic Level</td>
-<td>2</td>
-</tr>
-<tr>
-<td class="label">Arrival Clock Path Delay</td>
-<td>cell: 0.000, 0.000%; route: 1.394, 100.000%</td>
-</tr>
-<tr>
-<td class="label">Arrival Data Path Delay</td>
-<td>cell: 0.802, 19.443%; route: 2.865, 69.445%; tC2Q: 0.458, 11.112%</td>
-</tr>
-<tr>
-<td class="label">Required Clock Path Delay</td>
-<td>cell: 0.000, 0.000%; route: 1.394, 100.000%</td>
-</tr>
-</table>
-<h3>Path25</h3>
 <p><b>Path Summary:</b></p>
 <table class="summary_table">
 <tr>
@@ -7223,7 +7050,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C26[0][B]</td>
+<td>R15C25[0][B]</td>
 <td>inst_1/counter_8_s0/CLK</td>
 </tr>
 <tr>
@@ -7232,7 +7059,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tC2Q</td>
 <td>RF</td>
 <td>2</td>
-<td>R15C26[0][B]</td>
+<td>R15C25[0][B]</td>
 <td style=" font-weight:bold;">inst_1/counter_8_s0/Q</td>
 </tr>
 <tr>
@@ -7241,7 +7068,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>2</td>
-<td>R15C26[0][B]</td>
+<td>R15C25[0][B]</td>
 <td>inst_1/n25_s/I1</td>
 </tr>
 <tr>
@@ -7250,7 +7077,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>FR</td>
 <td>1</td>
-<td>R15C26[0][B]</td>
+<td>R15C25[0][B]</td>
 <td style=" background: #97FFFF;">inst_1/n25_s/COUT</td>
 </tr>
 <tr>
@@ -7259,7 +7086,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>2</td>
-<td>R15C26[1][A]</td>
+<td>R15C25[1][A]</td>
 <td>inst_1/n24_s/CIN</td>
 </tr>
 <tr>
@@ -7268,7 +7095,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>RF</td>
 <td>1</td>
-<td>R15C26[1][A]</td>
+<td>R15C25[1][A]</td>
 <td style=" background: #97FFFF;">inst_1/n24_s/COUT</td>
 </tr>
 <tr>
@@ -7277,7 +7104,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>2</td>
-<td>R15C26[1][B]</td>
+<td>R15C25[1][B]</td>
 <td>inst_1/n23_s/CIN</td>
 </tr>
 <tr>
@@ -7286,7 +7113,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C26[1][B]</td>
+<td>R15C25[1][B]</td>
 <td style=" background: #97FFFF;">inst_1/n23_s/COUT</td>
 </tr>
 <tr>
@@ -7295,7 +7122,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>2</td>
-<td>R15C26[2][A]</td>
+<td>R15C25[2][A]</td>
 <td>inst_1/n22_s/CIN</td>
 </tr>
 <tr>
@@ -7304,7 +7131,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C26[2][A]</td>
+<td>R15C25[2][A]</td>
 <td style=" background: #97FFFF;">inst_1/n22_s/COUT</td>
 </tr>
 <tr>
@@ -7313,7 +7140,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>2</td>
-<td>R15C26[2][B]</td>
+<td>R15C25[2][B]</td>
 <td>inst_1/n21_s/CIN</td>
 </tr>
 <tr>
@@ -7322,7 +7149,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C26[2][B]</td>
+<td>R15C25[2][B]</td>
 <td style=" background: #97FFFF;">inst_1/n21_s/COUT</td>
 </tr>
 <tr>
@@ -7331,7 +7158,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>2</td>
-<td>R15C27[0][A]</td>
+<td>R15C26[0][A]</td>
 <td>inst_1/n20_s/CIN</td>
 </tr>
 <tr>
@@ -7340,7 +7167,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C27[0][A]</td>
+<td>R15C26[0][A]</td>
 <td style=" background: #97FFFF;">inst_1/n20_s/COUT</td>
 </tr>
 <tr>
@@ -7349,7 +7176,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>2</td>
-<td>R15C27[0][B]</td>
+<td>R15C26[0][B]</td>
 <td>inst_1/n19_s/CIN</td>
 </tr>
 <tr>
@@ -7358,7 +7185,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C27[0][B]</td>
+<td>R15C26[0][B]</td>
 <td style=" background: #97FFFF;">inst_1/n19_s/COUT</td>
 </tr>
 <tr>
@@ -7367,7 +7194,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>2</td>
-<td>R15C27[1][A]</td>
+<td>R15C26[1][A]</td>
 <td>inst_1/n18_s/CIN</td>
 </tr>
 <tr>
@@ -7376,7 +7203,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C27[1][A]</td>
+<td>R15C26[1][A]</td>
 <td style=" background: #97FFFF;">inst_1/n18_s/COUT</td>
 </tr>
 <tr>
@@ -7385,7 +7212,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>2</td>
-<td>R15C27[1][B]</td>
+<td>R15C26[1][B]</td>
 <td>inst_1/n17_s/CIN</td>
 </tr>
 <tr>
@@ -7394,7 +7221,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C27[1][B]</td>
+<td>R15C26[1][B]</td>
 <td style=" background: #97FFFF;">inst_1/n17_s/SUM</td>
 </tr>
 <tr>
@@ -7403,7 +7230,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C27[1][B]</td>
+<td>R15C26[1][B]</td>
 <td style=" font-weight:bold;">inst_1/counter_16_s0/D</td>
 </tr>
 </table>
@@ -7460,7 +7287,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C27[1][B]</td>
+<td>R15C26[1][B]</td>
 <td>inst_1/counter_16_s0/CLK</td>
 </tr>
 <tr>
@@ -7469,7 +7296,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tSu</td>
 <td></td>
 <td>1</td>
-<td>R15C27[1][B]</td>
+<td>R15C26[1][B]</td>
 <td>inst_1/counter_16_s0</td>
 </tr>
 </table>
@@ -7500,6 +7327,350 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>cell: 0.982, 80.100%; route: 0.244, 19.900%</td>
 </tr>
 </table>
+<h3>Path25</h3>
+<p><b>Path Summary:</b></p>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>15.910</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>4.915</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>20.826</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>inst_1/counter_8_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>inst_1/counter_15_s0</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>clk:[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>clk:[R]</td>
+</tr>
+</table>
+<p><b>Data Arrival Path:</b></p>
+<table class="detail_table">
+<tr>
+<th class="label">AT</th>
+<th class="label">DELAY</th>
+<th class="label">TYPE</th>
+<th class="label">RF</th>
+<th class="label">FANOUT</th>
+<th class="label">LOC</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>clk</td>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>1</td>
+<td>IOR17[A]</td>
+<td>clk_ibuf/I</td>
+</tr>
+<tr>
+<td>0.982</td>
+<td>0.982</td>
+<td>tINS</td>
+<td>RR</td>
+<td>20</td>
+<td>IOR17[A]</td>
+<td>clk_ibuf/O</td>
+</tr>
+<tr>
+<td>1.226</td>
+<td>0.244</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>R15C25[0][B]</td>
+<td>inst_1/counter_8_s0/CLK</td>
+</tr>
+<tr>
+<td>1.684</td>
+<td>0.458</td>
+<td>tC2Q</td>
+<td>RF</td>
+<td>2</td>
+<td>R15C25[0][B]</td>
+<td style=" font-weight:bold;">inst_1/counter_8_s0/Q</td>
+</tr>
+<tr>
+<td>3.460</td>
+<td>1.776</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>R15C25[0][B]</td>
+<td>inst_1/n25_s/I1</td>
+</tr>
+<tr>
+<td>4.010</td>
+<td>0.550</td>
+<td>tINS</td>
+<td>FR</td>
+<td>1</td>
+<td>R15C25[0][B]</td>
+<td style=" background: #97FFFF;">inst_1/n25_s/COUT</td>
+</tr>
+<tr>
+<td>4.010</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>R15C25[1][A]</td>
+<td>inst_1/n24_s/CIN</td>
+</tr>
+<tr>
+<td>4.067</td>
+<td>0.057</td>
+<td>tINS</td>
+<td>RF</td>
+<td>1</td>
+<td>R15C25[1][A]</td>
+<td style=" background: #97FFFF;">inst_1/n24_s/COUT</td>
+</tr>
+<tr>
+<td>4.067</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>R15C25[1][B]</td>
+<td>inst_1/n23_s/CIN</td>
+</tr>
+<tr>
+<td>4.124</td>
+<td>0.057</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>R15C25[1][B]</td>
+<td style=" background: #97FFFF;">inst_1/n23_s/COUT</td>
+</tr>
+<tr>
+<td>4.124</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>R15C25[2][A]</td>
+<td>inst_1/n22_s/CIN</td>
+</tr>
+<tr>
+<td>4.181</td>
+<td>0.057</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>R15C25[2][A]</td>
+<td style=" background: #97FFFF;">inst_1/n22_s/COUT</td>
+</tr>
+<tr>
+<td>4.181</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>R15C25[2][B]</td>
+<td>inst_1/n21_s/CIN</td>
+</tr>
+<tr>
+<td>4.238</td>
+<td>0.057</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>R15C25[2][B]</td>
+<td style=" background: #97FFFF;">inst_1/n21_s/COUT</td>
+</tr>
+<tr>
+<td>4.238</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>R15C26[0][A]</td>
+<td>inst_1/n20_s/CIN</td>
+</tr>
+<tr>
+<td>4.295</td>
+<td>0.057</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>R15C26[0][A]</td>
+<td style=" background: #97FFFF;">inst_1/n20_s/COUT</td>
+</tr>
+<tr>
+<td>4.295</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>R15C26[0][B]</td>
+<td>inst_1/n19_s/CIN</td>
+</tr>
+<tr>
+<td>4.352</td>
+<td>0.057</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>R15C26[0][B]</td>
+<td style=" background: #97FFFF;">inst_1/n19_s/COUT</td>
+</tr>
+<tr>
+<td>4.352</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>R15C26[1][A]</td>
+<td>inst_1/n18_s/CIN</td>
+</tr>
+<tr>
+<td>4.915</td>
+<td>0.563</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>R15C26[1][A]</td>
+<td style=" background: #97FFFF;">inst_1/n18_s/SUM</td>
+</tr>
+<tr>
+<td>4.915</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>R15C26[1][A]</td>
+<td style=" font-weight:bold;">inst_1/counter_15_s0/D</td>
+</tr>
+</table>
+<p><b>Data Required Path:</b></p>
+<table class="detail_table">
+<tr>
+<th class="label">AT</th>
+<th class="label">DELAY</th>
+<th class="label">TYPE</th>
+<th class="label">RF</th>
+<th class="label">FANOUT</th>
+<th class="label">LOC</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>20.000</td>
+<td>20.000</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>20.000</td>
+<td>0.000</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>clk</td>
+</tr>
+<tr>
+<td>20.000</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>1</td>
+<td>IOR17[A]</td>
+<td>clk_ibuf/I</td>
+</tr>
+<tr>
+<td>20.982</td>
+<td>0.982</td>
+<td>tINS</td>
+<td>RR</td>
+<td>20</td>
+<td>IOR17[A]</td>
+<td>clk_ibuf/O</td>
+</tr>
+<tr>
+<td>21.226</td>
+<td>0.244</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>R15C26[1][A]</td>
+<td>inst_1/counter_15_s0/CLK</td>
+</tr>
+<tr>
+<td>20.826</td>
+<td>-0.400</td>
+<td>tSu</td>
+<td></td>
+<td>1</td>
+<td>R15C26[1][A]</td>
+<td>inst_1/counter_15_s0</td>
+</tr>
+</table>
+<p><b>Path Statistics:</b></p>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship </td>
+<td>20.000</td>
+</tr>
+<tr>
+<td class="label">Logic Level</td>
+<td>4</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay</td>
+<td>cell: 0.982, 80.100%; route: 0.244, 19.900%</td>
+</tr>
+<tr>
+<td class="label">Arrival Data Path Delay</td>
+<td>cell: 1.455, 39.436%; route: 1.776, 48.141%; tC2Q: 0.458, 12.423%</td>
+</tr>
+<tr>
+<td class="label">Required Clock Path Delay</td>
+<td>cell: 0.982, 80.100%; route: 0.244, 19.900%</td>
+</tr>
+</table>
 <h3><a name="Hold_Analysis">Hold Analysis Report</a></h3>
 <h4>Report Command:report_timing -hold -max_paths 25 -max_common_paths 1</h4>
 <h3>Path1</h3>
@@ -7507,27 +7678,27 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <table class="summary_table">
 <tr>
 <td class="label">Slack</td>
-<td>0.708</td>
+<td>-0.692</td>
 </tr>
 <tr>
 <td class="label">Data Arrival Time</td>
-<td>1.702</td>
+<td>0.374</td>
 </tr>
 <tr>
 <td class="label">Data Required Time</td>
-<td>0.994</td>
+<td>1.066</td>
 </tr>
 <tr>
 <td class="label">From</td>
-<td>HIN_R_s5</td>
+<td>n8_s2</td>
 </tr>
 <tr>
 <td class="label">To</td>
-<td>HIN_R_s5</td>
+<td>rotateCLK_s1</td>
 </tr>
 <tr>
 <td class="label">Launch Clk</td>
-<td>controlCLK:[R]</td>
+<td>rotateCLK_4:[R]</td>
 </tr>
 <tr>
 <td class="label">Latch Clk</td>
@@ -7561,61 +7732,43 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td></td>
 <td></td>
 <td></td>
-<td>controlCLK</td>
+<td>rotateCLK_4</td>
 </tr>
 <tr>
 <td>0.000</td>
 <td>0.000</td>
 <td>tCL</td>
 <td>RR</td>
-<td>9</td>
-<td>R15C24[1][A]</td>
-<td>inst_1/overflow_s0/Q</td>
+<td>10</td>
+<td>R15C28[0][A]</td>
+<td>rotateCLK_s1/Q</td>
 </tr>
 <tr>
-<td>0.994</td>
-<td>0.994</td>
-<td>tNET</td>
-<td>RR</td>
-<td>1</td>
-<td>R14C28[0][A]</td>
-<td>HIN_R_s5/CLK</td>
-</tr>
-<tr>
-<td>1.328</td>
-<td>0.333</td>
-<td>tC2Q</td>
-<td>RR</td>
-<td>2</td>
-<td>R14C28[0][A]</td>
-<td style=" font-weight:bold;">HIN_R_s5/Q</td>
-</tr>
-<tr>
-<td>1.330</td>
+<td>0.002</td>
 <td>0.002</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R14C28[0][A]</td>
-<td>n6_s7/I2</td>
+<td>R15C28[0][A]</td>
+<td style=" font-weight:bold;">n8_s2/I0</td>
 </tr>
 <tr>
-<td>1.702</td>
+<td>0.374</td>
 <td>0.372</td>
 <td>tINS</td>
 <td>RF</td>
 <td>1</td>
-<td>R14C28[0][A]</td>
-<td style=" background: #97FFFF;">n6_s7/F</td>
+<td>R15C28[0][A]</td>
+<td style=" background: #97FFFF;">n8_s2/F</td>
 </tr>
 <tr>
-<td>1.702</td>
+<td>0.374</td>
 <td>0.000</td>
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>R14C28[0][A]</td>
-<td style=" font-weight:bold;">HIN_R_s5/D</td>
+<td>R15C28[0][A]</td>
+<td style=" font-weight:bold;">rotateCLK_s1/D</td>
 </tr>
 </table>
 <p><b>Data Required Path:</b></p>
@@ -7652,34 +7805,43 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>0.000</td>
 <td>tCL</td>
 <td>RR</td>
-<td>9</td>
-<td>R15C24[1][A]</td>
+<td>6</td>
+<td>R15C23[1][A]</td>
 <td>inst_1/overflow_s0/Q</td>
 </tr>
 <tr>
-<td>0.994</td>
-<td>0.994</td>
+<td>1.036</td>
+<td>1.036</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R14C28[0][A]</td>
-<td>HIN_R_s5/CLK</td>
+<td>R15C28[0][A]</td>
+<td>rotateCLK_s1/CLK</td>
 </tr>
 <tr>
-<td>0.994</td>
+<td>1.066</td>
+<td>0.030</td>
+<td>tUnc</td>
+<td></td>
+<td></td>
+<td></td>
+<td>rotateCLK_s1</td>
+</tr>
+<tr>
+<td>1.066</td>
 <td>0.000</td>
 <td>tHld</td>
 <td></td>
 <td>1</td>
-<td>R14C28[0][A]</td>
-<td>HIN_R_s5</td>
+<td>R15C28[0][A]</td>
+<td>rotateCLK_s1</td>
 </tr>
 </table>
 <p><b>Path Statistics:</b></p>
 <table class="summary_table">
 <tr>
 <td class="label">Clock Skew</td>
-<td>0.000</td>
+<td>1.036</td>
 </tr>
 <tr>
 <td class="label">Hold Relationship </td>
@@ -7691,15 +7853,15 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Arrival Clock Path Delay</td>
-<td>cell: 0.000, 0.000%; route: 0.994, 100.000%</td>
+<td>cell: 0.000, 0.000%; route: 0.000, 0.000%</td>
 </tr>
 <tr>
 <td class="label">Arrival Data Path Delay</td>
-<td>cell: 0.372, 52.565%; route: 0.002, 0.334%; tC2Q: 0.333, 47.101%</td>
+<td>cell: 0.372, 99.369%; route: 0.000, 0.000%; tC2Q: 0.002, 0.631%</td>
 </tr>
 <tr>
 <td class="label">Required Clock Path Delay</td>
-<td>cell: 0.000, 0.000%; route: 0.994, 100.000%</td>
+<td>cell: 0.000, 0.000%; route: 1.036, 100.000%</td>
 </tr>
 </table>
 <h3>Path2</h3>
@@ -7711,19 +7873,419 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Data Arrival Time</td>
-<td>1.702</td>
+<td>1.684</td>
 </tr>
 <tr>
 <td class="label">Data Required Time</td>
-<td>0.994</td>
+<td>0.977</td>
 </tr>
 <tr>
 <td class="label">From</td>
-<td>_LIN_S_s5</td>
+<td>_LT_s3</td>
 </tr>
 <tr>
 <td class="label">To</td>
-<td>_LIN_S_s5</td>
+<td>_LT_s3</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>rotateCLK_4:[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>rotateCLK_4:[R]</td>
+</tr>
+</table>
+<p><b>Data Arrival Path:</b></p>
+<table class="detail_table">
+<tr>
+<th class="label">AT</th>
+<th class="label">DELAY</th>
+<th class="label">TYPE</th>
+<th class="label">RF</th>
+<th class="label">FANOUT</th>
+<th class="label">LOC</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>rotateCLK_4</td>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>10</td>
+<td>R15C28[0][A]</td>
+<td>rotateCLK_s1/Q</td>
+</tr>
+<tr>
+<td>0.977</td>
+<td>0.977</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>R15C28[1][A]</td>
+<td>_LT_s3/CLK</td>
+</tr>
+<tr>
+<td>1.310</td>
+<td>0.333</td>
+<td>tC2Q</td>
+<td>RR</td>
+<td>2</td>
+<td>R15C28[1][A]</td>
+<td style=" font-weight:bold;">_LT_s3/Q</td>
+</tr>
+<tr>
+<td>1.312</td>
+<td>0.002</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>R15C28[1][A]</td>
+<td>n30_s14/I3</td>
+</tr>
+<tr>
+<td>1.684</td>
+<td>0.372</td>
+<td>tINS</td>
+<td>RF</td>
+<td>1</td>
+<td>R15C28[1][A]</td>
+<td style=" background: #97FFFF;">n30_s14/F</td>
+</tr>
+<tr>
+<td>1.684</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>R15C28[1][A]</td>
+<td style=" font-weight:bold;">_LT_s3/D</td>
+</tr>
+</table>
+<p><b>Data Required Path:</b></p>
+<table class="detail_table">
+<tr>
+<th class="label">AT</th>
+<th class="label">DELAY</th>
+<th class="label">TYPE</th>
+<th class="label">RF</th>
+<th class="label">FANOUT</th>
+<th class="label">LOC</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>rotateCLK_4</td>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>10</td>
+<td>R15C28[0][A]</td>
+<td>rotateCLK_s1/Q</td>
+</tr>
+<tr>
+<td>0.977</td>
+<td>0.977</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>R15C28[1][A]</td>
+<td>_LT_s3/CLK</td>
+</tr>
+<tr>
+<td>0.977</td>
+<td>0.000</td>
+<td>tHld</td>
+<td></td>
+<td>1</td>
+<td>R15C28[1][A]</td>
+<td>_LT_s3</td>
+</tr>
+</table>
+<p><b>Path Statistics:</b></p>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Hold Relationship </td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Logic Level</td>
+<td>2</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay</td>
+<td>cell: 0.000, 0.000%; route: 0.977, 100.000%</td>
+</tr>
+<tr>
+<td class="label">Arrival Data Path Delay</td>
+<td>cell: 0.372, 52.565%; route: 0.002, 0.334%; tC2Q: 0.333, 47.101%</td>
+</tr>
+<tr>
+<td class="label">Required Clock Path Delay</td>
+<td>cell: 0.000, 0.000%; route: 0.977, 100.000%</td>
+</tr>
+</table>
+<h3>Path3</h3>
+<p><b>Path Summary:</b></p>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>0.708</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>1.684</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>0.977</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>_LR_s3</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>_LR_s3</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>rotateCLK_4:[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>rotateCLK_4:[R]</td>
+</tr>
+</table>
+<p><b>Data Arrival Path:</b></p>
+<table class="detail_table">
+<tr>
+<th class="label">AT</th>
+<th class="label">DELAY</th>
+<th class="label">TYPE</th>
+<th class="label">RF</th>
+<th class="label">FANOUT</th>
+<th class="label">LOC</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>rotateCLK_4</td>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>10</td>
+<td>R15C28[0][A]</td>
+<td>rotateCLK_s1/Q</td>
+</tr>
+<tr>
+<td>0.977</td>
+<td>0.977</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>R15C29[0][A]</td>
+<td>_LR_s3/CLK</td>
+</tr>
+<tr>
+<td>1.310</td>
+<td>0.333</td>
+<td>tC2Q</td>
+<td>RR</td>
+<td>2</td>
+<td>R15C29[0][A]</td>
+<td style=" font-weight:bold;">_LR_s3/Q</td>
+</tr>
+<tr>
+<td>1.312</td>
+<td>0.002</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>R15C29[0][A]</td>
+<td>n26_s13/I2</td>
+</tr>
+<tr>
+<td>1.684</td>
+<td>0.372</td>
+<td>tINS</td>
+<td>RF</td>
+<td>1</td>
+<td>R15C29[0][A]</td>
+<td style=" background: #97FFFF;">n26_s13/F</td>
+</tr>
+<tr>
+<td>1.684</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>R15C29[0][A]</td>
+<td style=" font-weight:bold;">_LR_s3/D</td>
+</tr>
+</table>
+<p><b>Data Required Path:</b></p>
+<table class="detail_table">
+<tr>
+<th class="label">AT</th>
+<th class="label">DELAY</th>
+<th class="label">TYPE</th>
+<th class="label">RF</th>
+<th class="label">FANOUT</th>
+<th class="label">LOC</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>rotateCLK_4</td>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>10</td>
+<td>R15C28[0][A]</td>
+<td>rotateCLK_s1/Q</td>
+</tr>
+<tr>
+<td>0.977</td>
+<td>0.977</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>R15C29[0][A]</td>
+<td>_LR_s3/CLK</td>
+</tr>
+<tr>
+<td>0.977</td>
+<td>0.000</td>
+<td>tHld</td>
+<td></td>
+<td>1</td>
+<td>R15C29[0][A]</td>
+<td>_LR_s3</td>
+</tr>
+</table>
+<p><b>Path Statistics:</b></p>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Hold Relationship </td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Logic Level</td>
+<td>2</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay</td>
+<td>cell: 0.000, 0.000%; route: 0.977, 100.000%</td>
+</tr>
+<tr>
+<td class="label">Arrival Data Path Delay</td>
+<td>cell: 0.372, 52.565%; route: 0.002, 0.334%; tC2Q: 0.333, 47.101%</td>
+</tr>
+<tr>
+<td class="label">Required Clock Path Delay</td>
+<td>cell: 0.000, 0.000%; route: 0.977, 100.000%</td>
+</tr>
+</table>
+<h3>Path4</h3>
+<p><b>Path Summary:</b></p>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>0.708</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>1.744</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>1.036</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>rotateCounter_3_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>rotateCounter_3_s0</td>
 </tr>
 <tr>
 <td class="label">Launch Clk</td>
@@ -7768,54 +8330,54 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>0.000</td>
 <td>tCL</td>
 <td>RR</td>
-<td>9</td>
-<td>R15C24[1][A]</td>
+<td>6</td>
+<td>R15C23[1][A]</td>
 <td>inst_1/overflow_s0/Q</td>
 </tr>
 <tr>
-<td>0.994</td>
-<td>0.994</td>
+<td>1.036</td>
+<td>1.036</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R14C28[1][A]</td>
-<td>_LIN_S_s5/CLK</td>
+<td>R15C27[0][A]</td>
+<td>rotateCounter_3_s0/CLK</td>
 </tr>
 <tr>
-<td>1.328</td>
+<td>1.370</td>
 <td>0.333</td>
 <td>tC2Q</td>
 <td>RR</td>
 <td>2</td>
-<td>R14C28[1][A]</td>
-<td style=" font-weight:bold;">_LIN_S_s5/Q</td>
+<td>R15C27[0][A]</td>
+<td style=" font-weight:bold;">rotateCounter_3_s0/Q</td>
 </tr>
 <tr>
-<td>1.330</td>
+<td>1.372</td>
 <td>0.002</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R14C28[1][A]</td>
-<td>n9_s13/I3</td>
+<td>R15C27[0][A]</td>
+<td>n10_s1/I3</td>
 </tr>
 <tr>
-<td>1.702</td>
+<td>1.744</td>
 <td>0.372</td>
 <td>tINS</td>
 <td>RF</td>
 <td>1</td>
-<td>R14C28[1][A]</td>
-<td style=" background: #97FFFF;">n9_s13/F</td>
+<td>R15C27[0][A]</td>
+<td style=" background: #97FFFF;">n10_s1/F</td>
 </tr>
 <tr>
-<td>1.702</td>
+<td>1.744</td>
 <td>0.000</td>
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>R14C28[1][A]</td>
-<td style=" font-weight:bold;">_LIN_S_s5/D</td>
+<td>R15C27[0][A]</td>
+<td style=" font-weight:bold;">rotateCounter_3_s0/D</td>
 </tr>
 </table>
 <p><b>Data Required Path:</b></p>
@@ -7852,27 +8414,27 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>0.000</td>
 <td>tCL</td>
 <td>RR</td>
-<td>9</td>
-<td>R15C24[1][A]</td>
+<td>6</td>
+<td>R15C23[1][A]</td>
 <td>inst_1/overflow_s0/Q</td>
 </tr>
 <tr>
-<td>0.994</td>
-<td>0.994</td>
+<td>1.036</td>
+<td>1.036</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R14C28[1][A]</td>
-<td>_LIN_S_s5/CLK</td>
+<td>R15C27[0][A]</td>
+<td>rotateCounter_3_s0/CLK</td>
 </tr>
 <tr>
-<td>0.994</td>
+<td>1.036</td>
 <td>0.000</td>
 <td>tHld</td>
 <td></td>
 <td>1</td>
-<td>R14C28[1][A]</td>
-<td>_LIN_S_s5</td>
+<td>R15C27[0][A]</td>
+<td>rotateCounter_3_s0</td>
 </tr>
 </table>
 <p><b>Path Statistics:</b></p>
@@ -7891,7 +8453,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Arrival Clock Path Delay</td>
-<td>cell: 0.000, 0.000%; route: 0.994, 100.000%</td>
+<td>cell: 0.000, 0.000%; route: 1.036, 100.000%</td>
 </tr>
 <tr>
 <td class="label">Arrival Data Path Delay</td>
@@ -7899,10 +8461,10 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Required Clock Path Delay</td>
-<td>cell: 0.000, 0.000%; route: 0.994, 100.000%</td>
+<td>cell: 0.000, 0.000%; route: 1.036, 100.000%</td>
 </tr>
 </table>
-<h3>Path3</h3>
+<h3>Path5</h3>
 <p><b>Path Summary:</b></p>
 <table class="summary_table">
 <tr>
@@ -7987,7 +8549,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C24[0][A]</td>
+<td>R15C23[0][A]</td>
 <td>inst_1/counter_0_s0/CLK</td>
 </tr>
 <tr>
@@ -7996,7 +8558,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tC2Q</td>
 <td>RR</td>
 <td>3</td>
-<td>R15C24[0][A]</td>
+<td>R15C23[0][A]</td>
 <td style=" font-weight:bold;">inst_1/counter_0_s0/Q</td>
 </tr>
 <tr>
@@ -8005,7 +8567,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C24[0][A]</td>
+<td>R15C23[0][A]</td>
 <td>inst_1/n33_s2/I0</td>
 </tr>
 <tr>
@@ -8014,7 +8576,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>RF</td>
 <td>1</td>
-<td>R15C24[0][A]</td>
+<td>R15C23[0][A]</td>
 <td style=" background: #97FFFF;">inst_1/n33_s2/F</td>
 </tr>
 <tr>
@@ -8023,7 +8585,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C24[0][A]</td>
+<td>R15C23[0][A]</td>
 <td style=" font-weight:bold;">inst_1/counter_0_s0/D</td>
 </tr>
 </table>
@@ -8080,7 +8642,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C24[0][A]</td>
+<td>R15C23[0][A]</td>
 <td>inst_1/counter_0_s0/CLK</td>
 </tr>
 <tr>
@@ -8089,7 +8651,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tHld</td>
 <td></td>
 <td>1</td>
-<td>R15C24[0][A]</td>
+<td>R15C23[0][A]</td>
 <td>inst_1/counter_0_s0</td>
 </tr>
 </table>
@@ -8120,7 +8682,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>cell: 0.844, 82.061%; route: 0.185, 17.939%</td>
 </tr>
 </table>
-<h3>Path4</h3>
+<h3>Path6</h3>
 <p><b>Path Summary:</b></p>
 <table class="summary_table">
 <tr>
@@ -8129,27 +8691,27 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Data Arrival Time</td>
-<td>1.705</td>
+<td>1.687</td>
 </tr>
 <tr>
 <td class="label">Data Required Time</td>
-<td>0.994</td>
+<td>0.977</td>
 </tr>
 <tr>
 <td class="label">From</td>
-<td>rotateState_1_s0</td>
+<td>rotateState_0_s0</td>
 </tr>
 <tr>
 <td class="label">To</td>
-<td>rotateState_1_s0</td>
+<td>rotateState_0_s0</td>
 </tr>
 <tr>
 <td class="label">Launch Clk</td>
-<td>controlCLK:[R]</td>
+<td>rotateCLK_4:[R]</td>
 </tr>
 <tr>
 <td class="label">Latch Clk</td>
-<td>controlCLK:[R]</td>
+<td>rotateCLK_4:[R]</td>
 </tr>
 </table>
 <p><b>Data Arrival Path:</b></p>
@@ -8179,61 +8741,61 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td></td>
 <td></td>
 <td></td>
-<td>controlCLK</td>
+<td>rotateCLK_4</td>
 </tr>
 <tr>
 <td>0.000</td>
 <td>0.000</td>
 <td>tCL</td>
 <td>RR</td>
-<td>9</td>
-<td>R15C24[1][A]</td>
-<td>inst_1/overflow_s0/Q</td>
+<td>10</td>
+<td>R15C28[0][A]</td>
+<td>rotateCLK_s1/Q</td>
 </tr>
 <tr>
-<td>0.994</td>
-<td>0.994</td>
+<td>0.977</td>
+<td>0.977</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C28[0][A]</td>
-<td>rotateState_1_s0/CLK</td>
+<td>R15C29[1][A]</td>
+<td>rotateState_0_s0/CLK</td>
 </tr>
 <tr>
-<td>1.328</td>
+<td>1.310</td>
 <td>0.333</td>
 <td>tC2Q</td>
 <td>RR</td>
-<td>9</td>
-<td>R15C28[0][A]</td>
-<td style=" font-weight:bold;">rotateState_1_s0/Q</td>
+<td>7</td>
+<td>R15C29[1][A]</td>
+<td style=" font-weight:bold;">rotateState_0_s0/Q</td>
 </tr>
 <tr>
-<td>1.333</td>
+<td>1.315</td>
 <td>0.005</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C28[0][A]</td>
-<td>n23_s0/I1</td>
+<td>R15C29[1][A]</td>
+<td>n43_s2/I0</td>
 </tr>
 <tr>
-<td>1.705</td>
+<td>1.687</td>
 <td>0.372</td>
 <td>tINS</td>
 <td>RF</td>
 <td>1</td>
-<td>R15C28[0][A]</td>
-<td style=" background: #97FFFF;">n23_s0/F</td>
+<td>R15C29[1][A]</td>
+<td style=" background: #97FFFF;">n43_s2/F</td>
 </tr>
 <tr>
-<td>1.705</td>
+<td>1.687</td>
 <td>0.000</td>
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C28[0][A]</td>
-<td style=" font-weight:bold;">rotateState_1_s0/D</td>
+<td>R15C29[1][A]</td>
+<td style=" font-weight:bold;">rotateState_0_s0/D</td>
 </tr>
 </table>
 <p><b>Data Required Path:</b></p>
@@ -8263,34 +8825,34 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td></td>
 <td></td>
 <td></td>
-<td>controlCLK</td>
+<td>rotateCLK_4</td>
 </tr>
 <tr>
 <td>0.000</td>
 <td>0.000</td>
 <td>tCL</td>
 <td>RR</td>
-<td>9</td>
-<td>R15C24[1][A]</td>
-<td>inst_1/overflow_s0/Q</td>
+<td>10</td>
+<td>R15C28[0][A]</td>
+<td>rotateCLK_s1/Q</td>
 </tr>
 <tr>
-<td>0.994</td>
-<td>0.994</td>
+<td>0.977</td>
+<td>0.977</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C28[0][A]</td>
-<td>rotateState_1_s0/CLK</td>
+<td>R15C29[1][A]</td>
+<td>rotateState_0_s0/CLK</td>
 </tr>
 <tr>
-<td>0.994</td>
+<td>0.977</td>
 <td>0.000</td>
 <td>tHld</td>
 <td></td>
 <td>1</td>
-<td>R15C28[0][A]</td>
-<td>rotateState_1_s0</td>
+<td>R15C29[1][A]</td>
+<td>rotateState_0_s0</td>
 </tr>
 </table>
 <p><b>Path Statistics:</b></p>
@@ -8309,7 +8871,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Arrival Clock Path Delay</td>
-<td>cell: 0.000, 0.000%; route: 0.994, 100.000%</td>
+<td>cell: 0.000, 0.000%; route: 0.977, 100.000%</td>
 </tr>
 <tr>
 <td class="label">Arrival Data Path Delay</td>
@@ -8317,10 +8879,10 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Required Clock Path Delay</td>
-<td>cell: 0.000, 0.000%; route: 0.994, 100.000%</td>
+<td>cell: 0.000, 0.000%; route: 0.977, 100.000%</td>
 </tr>
 </table>
-<h3>Path5</h3>
+<h3>Path7</h3>
 <p><b>Path Summary:</b></p>
 <table class="summary_table">
 <tr>
@@ -8405,7 +8967,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C25[1][A]</td>
+<td>R15C24[1][A]</td>
 <td>inst_1/counter_3_s0/CLK</td>
 </tr>
 <tr>
@@ -8414,7 +8976,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tC2Q</td>
 <td>RR</td>
 <td>2</td>
-<td>R15C25[1][A]</td>
+<td>R15C24[1][A]</td>
 <td style=" font-weight:bold;">inst_1/counter_3_s0/Q</td>
 </tr>
 <tr>
@@ -8423,7 +8985,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>2</td>
-<td>R15C25[1][A]</td>
+<td>R15C24[1][A]</td>
 <td>inst_1/n30_s/I1</td>
 </tr>
 <tr>
@@ -8432,7 +8994,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>RF</td>
 <td>1</td>
-<td>R15C25[1][A]</td>
+<td>R15C24[1][A]</td>
 <td style=" background: #97FFFF;">inst_1/n30_s/SUM</td>
 </tr>
 <tr>
@@ -8441,7 +9003,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C25[1][A]</td>
+<td>R15C24[1][A]</td>
 <td style=" font-weight:bold;">inst_1/counter_3_s0/D</td>
 </tr>
 </table>
@@ -8498,7 +9060,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C25[1][A]</td>
+<td>R15C24[1][A]</td>
 <td>inst_1/counter_3_s0/CLK</td>
 </tr>
 <tr>
@@ -8507,7 +9069,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tHld</td>
 <td></td>
 <td>1</td>
-<td>R15C25[1][A]</td>
+<td>R15C24[1][A]</td>
 <td>inst_1/counter_3_s0</td>
 </tr>
 </table>
@@ -8538,7 +9100,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>cell: 0.844, 82.061%; route: 0.185, 17.939%</td>
 </tr>
 </table>
-<h3>Path6</h3>
+<h3>Path8</h3>
 <p><b>Path Summary:</b></p>
 <table class="summary_table">
 <tr>
@@ -8623,7 +9185,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C26[0][A]</td>
+<td>R15C25[0][A]</td>
 <td>inst_1/counter_7_s0/CLK</td>
 </tr>
 <tr>
@@ -8632,7 +9194,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tC2Q</td>
 <td>RR</td>
 <td>2</td>
-<td>R15C26[0][A]</td>
+<td>R15C25[0][A]</td>
 <td style=" font-weight:bold;">inst_1/counter_7_s0/Q</td>
 </tr>
 <tr>
@@ -8641,7 +9203,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>2</td>
-<td>R15C26[0][A]</td>
+<td>R15C25[0][A]</td>
 <td>inst_1/n26_s/I1</td>
 </tr>
 <tr>
@@ -8650,7 +9212,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>RF</td>
 <td>1</td>
-<td>R15C26[0][A]</td>
+<td>R15C25[0][A]</td>
 <td style=" background: #97FFFF;">inst_1/n26_s/SUM</td>
 </tr>
 <tr>
@@ -8659,7 +9221,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C26[0][A]</td>
+<td>R15C25[0][A]</td>
 <td style=" font-weight:bold;">inst_1/counter_7_s0/D</td>
 </tr>
 </table>
@@ -8716,7 +9278,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C26[0][A]</td>
+<td>R15C25[0][A]</td>
 <td>inst_1/counter_7_s0/CLK</td>
 </tr>
 <tr>
@@ -8725,7 +9287,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tHld</td>
 <td></td>
 <td>1</td>
-<td>R15C26[0][A]</td>
+<td>R15C25[0][A]</td>
 <td>inst_1/counter_7_s0</td>
 </tr>
 </table>
@@ -8756,7 +9318,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>cell: 0.844, 82.061%; route: 0.185, 17.939%</td>
 </tr>
 </table>
-<h3>Path7</h3>
+<h3>Path9</h3>
 <p><b>Path Summary:</b></p>
 <table class="summary_table">
 <tr>
@@ -8841,7 +9403,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C26[1][A]</td>
+<td>R15C25[1][A]</td>
 <td>inst_1/counter_9_s0/CLK</td>
 </tr>
 <tr>
@@ -8850,7 +9412,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tC2Q</td>
 <td>RR</td>
 <td>2</td>
-<td>R15C26[1][A]</td>
+<td>R15C25[1][A]</td>
 <td style=" font-weight:bold;">inst_1/counter_9_s0/Q</td>
 </tr>
 <tr>
@@ -8859,7 +9421,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>2</td>
-<td>R15C26[1][A]</td>
+<td>R15C25[1][A]</td>
 <td>inst_1/n24_s/I1</td>
 </tr>
 <tr>
@@ -8868,7 +9430,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>RF</td>
 <td>1</td>
-<td>R15C26[1][A]</td>
+<td>R15C25[1][A]</td>
 <td style=" background: #97FFFF;">inst_1/n24_s/SUM</td>
 </tr>
 <tr>
@@ -8877,7 +9439,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C26[1][A]</td>
+<td>R15C25[1][A]</td>
 <td style=" font-weight:bold;">inst_1/counter_9_s0/D</td>
 </tr>
 </table>
@@ -8934,7 +9496,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C26[1][A]</td>
+<td>R15C25[1][A]</td>
 <td>inst_1/counter_9_s0/CLK</td>
 </tr>
 <tr>
@@ -8943,7 +9505,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tHld</td>
 <td></td>
 <td>1</td>
-<td>R15C26[1][A]</td>
+<td>R15C25[1][A]</td>
 <td>inst_1/counter_9_s0</td>
 </tr>
 </table>
@@ -8974,7 +9536,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>cell: 0.844, 82.061%; route: 0.185, 17.939%</td>
 </tr>
 </table>
-<h3>Path8</h3>
+<h3>Path10</h3>
 <p><b>Path Summary:</b></p>
 <table class="summary_table">
 <tr>
@@ -9059,7 +9621,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C27[0][A]</td>
+<td>R15C26[0][A]</td>
 <td>inst_1/counter_13_s0/CLK</td>
 </tr>
 <tr>
@@ -9068,7 +9630,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tC2Q</td>
 <td>RR</td>
 <td>2</td>
-<td>R15C27[0][A]</td>
+<td>R15C26[0][A]</td>
 <td style=" font-weight:bold;">inst_1/counter_13_s0/Q</td>
 </tr>
 <tr>
@@ -9077,7 +9639,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>2</td>
-<td>R15C27[0][A]</td>
+<td>R15C26[0][A]</td>
 <td>inst_1/n20_s/I1</td>
 </tr>
 <tr>
@@ -9086,7 +9648,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>RF</td>
 <td>1</td>
-<td>R15C27[0][A]</td>
+<td>R15C26[0][A]</td>
 <td style=" background: #97FFFF;">inst_1/n20_s/SUM</td>
 </tr>
 <tr>
@@ -9095,7 +9657,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C27[0][A]</td>
+<td>R15C26[0][A]</td>
 <td style=" font-weight:bold;">inst_1/counter_13_s0/D</td>
 </tr>
 </table>
@@ -9152,7 +9714,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C27[0][A]</td>
+<td>R15C26[0][A]</td>
 <td>inst_1/counter_13_s0/CLK</td>
 </tr>
 <tr>
@@ -9161,7 +9723,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tHld</td>
 <td></td>
 <td>1</td>
-<td>R15C27[0][A]</td>
+<td>R15C26[0][A]</td>
 <td>inst_1/counter_13_s0</td>
 </tr>
 </table>
@@ -9192,7 +9754,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>cell: 0.844, 82.061%; route: 0.185, 17.939%</td>
 </tr>
 </table>
-<h3>Path9</h3>
+<h3>Path11</h3>
 <p><b>Path Summary:</b></p>
 <table class="summary_table">
 <tr>
@@ -9277,7 +9839,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C27[1][A]</td>
+<td>R15C26[1][A]</td>
 <td>inst_1/counter_15_s0/CLK</td>
 </tr>
 <tr>
@@ -9286,7 +9848,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tC2Q</td>
 <td>RR</td>
 <td>2</td>
-<td>R15C27[1][A]</td>
+<td>R15C26[1][A]</td>
 <td style=" font-weight:bold;">inst_1/counter_15_s0/Q</td>
 </tr>
 <tr>
@@ -9295,7 +9857,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>2</td>
-<td>R15C27[1][A]</td>
+<td>R15C26[1][A]</td>
 <td>inst_1/n18_s/I1</td>
 </tr>
 <tr>
@@ -9304,7 +9866,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>RF</td>
 <td>1</td>
-<td>R15C27[1][A]</td>
+<td>R15C26[1][A]</td>
 <td style=" background: #97FFFF;">inst_1/n18_s/SUM</td>
 </tr>
 <tr>
@@ -9313,7 +9875,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C27[1][A]</td>
+<td>R15C26[1][A]</td>
 <td style=" font-weight:bold;">inst_1/counter_15_s0/D</td>
 </tr>
 </table>
@@ -9370,7 +9932,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C27[1][A]</td>
+<td>R15C26[1][A]</td>
 <td>inst_1/counter_15_s0/CLK</td>
 </tr>
 <tr>
@@ -9379,7 +9941,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tHld</td>
 <td></td>
 <td>1</td>
-<td>R15C27[1][A]</td>
+<td>R15C26[1][A]</td>
 <td>inst_1/counter_15_s0</td>
 </tr>
 </table>
@@ -9410,7 +9972,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>cell: 0.844, 82.061%; route: 0.185, 17.939%</td>
 </tr>
 </table>
-<h3>Path10</h3>
+<h3>Path12</h3>
 <p><b>Path Summary:</b></p>
 <table class="summary_table">
 <tr>
@@ -9419,19 +9981,19 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Data Arrival Time</td>
-<td>1.887</td>
+<td>1.929</td>
 </tr>
 <tr>
 <td class="label">Data Required Time</td>
-<td>0.994</td>
+<td>1.036</td>
 </tr>
 <tr>
 <td class="label">From</td>
-<td>rotateState_0_s0</td>
+<td>rotateCounter_2_s0</td>
 </tr>
 <tr>
 <td class="label">To</td>
-<td>rotateState_0_s0</td>
+<td>rotateCounter_2_s0</td>
 </tr>
 <tr>
 <td class="label">Launch Clk</td>
@@ -9476,54 +10038,54 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>0.000</td>
 <td>tCL</td>
 <td>RR</td>
-<td>9</td>
-<td>R15C24[1][A]</td>
+<td>6</td>
+<td>R15C23[1][A]</td>
 <td>inst_1/overflow_s0/Q</td>
 </tr>
 <tr>
-<td>0.994</td>
-<td>0.994</td>
+<td>1.036</td>
+<td>1.036</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R14C28[2][A]</td>
-<td>rotateState_0_s0/CLK</td>
+<td>R15C28[2][A]</td>
+<td>rotateCounter_2_s0/CLK</td>
 </tr>
 <tr>
-<td>1.328</td>
+<td>1.370</td>
 <td>0.333</td>
 <td>tC2Q</td>
 <td>RR</td>
-<td>7</td>
-<td>R14C28[2][A]</td>
-<td style=" font-weight:bold;">rotateState_0_s0/Q</td>
+<td>3</td>
+<td>R15C28[2][A]</td>
+<td style=" font-weight:bold;">rotateCounter_2_s0/Q</td>
 </tr>
 <tr>
-<td>1.331</td>
+<td>1.373</td>
 <td>0.004</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R14C28[2][A]</td>
-<td>n24_s2/I0</td>
+<td>R15C28[2][A]</td>
+<td>n11_s1/I0</td>
 </tr>
 <tr>
-<td>1.887</td>
+<td>1.929</td>
 <td>0.556</td>
 <td>tINS</td>
 <td>RR</td>
 <td>1</td>
-<td>R14C28[2][A]</td>
-<td style=" background: #97FFFF;">n24_s2/F</td>
+<td>R15C28[2][A]</td>
+<td style=" background: #97FFFF;">n11_s1/F</td>
 </tr>
 <tr>
-<td>1.887</td>
+<td>1.929</td>
 <td>0.000</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R14C28[2][A]</td>
-<td style=" font-weight:bold;">rotateState_0_s0/D</td>
+<td>R15C28[2][A]</td>
+<td style=" font-weight:bold;">rotateCounter_2_s0/D</td>
 </tr>
 </table>
 <p><b>Data Required Path:</b></p>
@@ -9560,27 +10122,27 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>0.000</td>
 <td>tCL</td>
 <td>RR</td>
-<td>9</td>
-<td>R15C24[1][A]</td>
+<td>6</td>
+<td>R15C23[1][A]</td>
 <td>inst_1/overflow_s0/Q</td>
 </tr>
 <tr>
-<td>0.994</td>
-<td>0.994</td>
+<td>1.036</td>
+<td>1.036</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R14C28[2][A]</td>
-<td>rotateState_0_s0/CLK</td>
+<td>R15C28[2][A]</td>
+<td>rotateCounter_2_s0/CLK</td>
 </tr>
 <tr>
-<td>0.994</td>
+<td>1.036</td>
 <td>0.000</td>
 <td>tHld</td>
 <td></td>
 <td>1</td>
-<td>R14C28[2][A]</td>
-<td>rotateState_0_s0</td>
+<td>R15C28[2][A]</td>
+<td>rotateCounter_2_s0</td>
 </tr>
 </table>
 <p><b>Path Statistics:</b></p>
@@ -9599,7 +10161,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Arrival Clock Path Delay</td>
-<td>cell: 0.000, 0.000%; route: 0.994, 100.000%</td>
+<td>cell: 0.000, 0.000%; route: 1.036, 100.000%</td>
 </tr>
 <tr>
 <td class="label">Arrival Data Path Delay</td>
@@ -9607,10 +10169,210 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Required Clock Path Delay</td>
-<td>cell: 0.000, 0.000%; route: 0.994, 100.000%</td>
+<td>cell: 0.000, 0.000%; route: 1.036, 100.000%</td>
 </tr>
 </table>
-<h3>Path11</h3>
+<h3>Path13</h3>
+<p><b>Path Summary:</b></p>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>0.895</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>1.872</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>0.977</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>rotateState_2_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>rotateState_2_s0</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>rotateCLK_4:[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>rotateCLK_4:[R]</td>
+</tr>
+</table>
+<p><b>Data Arrival Path:</b></p>
+<table class="detail_table">
+<tr>
+<th class="label">AT</th>
+<th class="label">DELAY</th>
+<th class="label">TYPE</th>
+<th class="label">RF</th>
+<th class="label">FANOUT</th>
+<th class="label">LOC</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>rotateCLK_4</td>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>10</td>
+<td>R15C28[0][A]</td>
+<td>rotateCLK_s1/Q</td>
+</tr>
+<tr>
+<td>0.977</td>
+<td>0.977</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>R15C29[2][A]</td>
+<td>rotateState_2_s0/CLK</td>
+</tr>
+<tr>
+<td>1.310</td>
+<td>0.333</td>
+<td>tC2Q</td>
+<td>RR</td>
+<td>8</td>
+<td>R15C29[2][A]</td>
+<td style=" font-weight:bold;">rotateState_2_s0/Q</td>
+</tr>
+<tr>
+<td>1.316</td>
+<td>0.006</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>R15C29[2][A]</td>
+<td>n41_s1/I2</td>
+</tr>
+<tr>
+<td>1.872</td>
+<td>0.556</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>R15C29[2][A]</td>
+<td style=" background: #97FFFF;">n41_s1/F</td>
+</tr>
+<tr>
+<td>1.872</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>R15C29[2][A]</td>
+<td style=" font-weight:bold;">rotateState_2_s0/D</td>
+</tr>
+</table>
+<p><b>Data Required Path:</b></p>
+<table class="detail_table">
+<tr>
+<th class="label">AT</th>
+<th class="label">DELAY</th>
+<th class="label">TYPE</th>
+<th class="label">RF</th>
+<th class="label">FANOUT</th>
+<th class="label">LOC</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>rotateCLK_4</td>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>10</td>
+<td>R15C28[0][A]</td>
+<td>rotateCLK_s1/Q</td>
+</tr>
+<tr>
+<td>0.977</td>
+<td>0.977</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>R15C29[2][A]</td>
+<td>rotateState_2_s0/CLK</td>
+</tr>
+<tr>
+<td>0.977</td>
+<td>0.000</td>
+<td>tHld</td>
+<td></td>
+<td>1</td>
+<td>R15C29[2][A]</td>
+<td>rotateState_2_s0</td>
+</tr>
+</table>
+<p><b>Path Statistics:</b></p>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Hold Relationship </td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Logic Level</td>
+<td>2</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay</td>
+<td>cell: 0.000, 0.000%; route: 0.977, 100.000%</td>
+</tr>
+<tr>
+<td class="label">Arrival Data Path Delay</td>
+<td>cell: 0.556, 62.107%; route: 0.006, 0.659%; tC2Q: 0.333, 37.234%</td>
+</tr>
+<tr>
+<td class="label">Required Clock Path Delay</td>
+<td>cell: 0.000, 0.000%; route: 0.977, 100.000%</td>
+</tr>
+</table>
+<h3>Path14</h3>
 <p><b>Path Summary:</b></p>
 <table class="summary_table">
 <tr>
@@ -9619,27 +10381,27 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Data Arrival Time</td>
-<td>1.945</td>
+<td>1.926</td>
 </tr>
 <tr>
 <td class="label">Data Required Time</td>
-<td>0.994</td>
+<td>0.977</td>
 </tr>
 <tr>
 <td class="label">From</td>
-<td>rotateState_0_s0</td>
+<td>rotateState_2_s0</td>
 </tr>
 <tr>
 <td class="label">To</td>
-<td>_LIN_R_s6</td>
+<td>HIN_R_s6</td>
 </tr>
 <tr>
 <td class="label">Launch Clk</td>
-<td>controlCLK:[R]</td>
+<td>rotateCLK_4:[R]</td>
 </tr>
 <tr>
 <td class="label">Latch Clk</td>
-<td>controlCLK:[R]</td>
+<td>rotateCLK_4:[R]</td>
 </tr>
 </table>
 <p><b>Data Arrival Path:</b></p>
@@ -9669,61 +10431,61 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td></td>
 <td></td>
 <td></td>
-<td>controlCLK</td>
+<td>rotateCLK_4</td>
 </tr>
 <tr>
 <td>0.000</td>
 <td>0.000</td>
 <td>tCL</td>
 <td>RR</td>
-<td>9</td>
-<td>R15C24[1][A]</td>
-<td>inst_1/overflow_s0/Q</td>
+<td>10</td>
+<td>R15C28[0][A]</td>
+<td>rotateCLK_s1/Q</td>
 </tr>
 <tr>
-<td>0.994</td>
-<td>0.994</td>
+<td>0.977</td>
+<td>0.977</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R14C28[2][A]</td>
-<td>rotateState_0_s0/CLK</td>
+<td>R15C29[2][A]</td>
+<td>rotateState_2_s0/CLK</td>
 </tr>
 <tr>
-<td>1.328</td>
+<td>1.310</td>
 <td>0.333</td>
 <td>tC2Q</td>
-<td>RR</td>
-<td>7</td>
-<td>R14C28[2][A]</td>
-<td style=" font-weight:bold;">rotateState_0_s0/Q</td>
+<td>RF</td>
+<td>8</td>
+<td>R15C29[2][A]</td>
+<td style=" font-weight:bold;">rotateState_2_s0/Q</td>
 </tr>
 <tr>
-<td>1.573</td>
-<td>0.245</td>
+<td>1.554</td>
+<td>0.244</td>
 <td>tNET</td>
-<td>RR</td>
+<td>FF</td>
 <td>1</td>
-<td>R14C28[1][B]</td>
-<td>n7_s13/I3</td>
+<td>R15C29[0][B]</td>
+<td>n25_s7/I2</td>
 </tr>
 <tr>
-<td>1.945</td>
+<td>1.926</td>
 <td>0.372</td>
 <td>tINS</td>
-<td>RF</td>
+<td>FF</td>
 <td>1</td>
-<td>R14C28[1][B]</td>
-<td style=" background: #97FFFF;">n7_s13/F</td>
+<td>R15C29[0][B]</td>
+<td style=" background: #97FFFF;">n25_s7/F</td>
 </tr>
 <tr>
-<td>1.945</td>
+<td>1.926</td>
 <td>0.000</td>
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>R14C28[1][B]</td>
-<td style=" font-weight:bold;">_LIN_R_s6/D</td>
+<td>R15C29[0][B]</td>
+<td style=" font-weight:bold;">HIN_R_s6/D</td>
 </tr>
 </table>
 <p><b>Data Required Path:</b></p>
@@ -9753,34 +10515,34 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td></td>
 <td></td>
 <td></td>
-<td>controlCLK</td>
+<td>rotateCLK_4</td>
 </tr>
 <tr>
 <td>0.000</td>
 <td>0.000</td>
 <td>tCL</td>
 <td>RR</td>
-<td>9</td>
-<td>R15C24[1][A]</td>
-<td>inst_1/overflow_s0/Q</td>
+<td>10</td>
+<td>R15C28[0][A]</td>
+<td>rotateCLK_s1/Q</td>
 </tr>
 <tr>
-<td>0.994</td>
-<td>0.994</td>
+<td>0.977</td>
+<td>0.977</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R14C28[1][B]</td>
-<td>_LIN_R_s6/CLK</td>
+<td>R15C29[0][B]</td>
+<td>HIN_R_s6/CLK</td>
 </tr>
 <tr>
-<td>0.994</td>
+<td>0.977</td>
 <td>0.000</td>
 <td>tHld</td>
 <td></td>
 <td>1</td>
-<td>R14C28[1][B]</td>
-<td>_LIN_R_s6</td>
+<td>R15C29[0][B]</td>
+<td>HIN_R_s6</td>
 </tr>
 </table>
 <p><b>Path Statistics:</b></p>
@@ -9799,18 +10561,18 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Arrival Clock Path Delay</td>
-<td>cell: 0.000, 0.000%; route: 0.994, 100.000%</td>
+<td>cell: 0.000, 0.000%; route: 0.977, 100.000%</td>
 </tr>
 <tr>
 <td class="label">Arrival Data Path Delay</td>
-<td>cell: 0.372, 39.146%; route: 0.245, 25.778%; tC2Q: 0.333, 35.077%</td>
+<td>cell: 0.372, 39.178%; route: 0.244, 25.716%; tC2Q: 0.333, 35.106%</td>
 </tr>
 <tr>
 <td class="label">Required Clock Path Delay</td>
-<td>cell: 0.000, 0.000%; route: 0.994, 100.000%</td>
+<td>cell: 0.000, 0.000%; route: 0.977, 100.000%</td>
 </tr>
 </table>
-<h3>Path12</h3>
+<h3>Path15</h3>
 <p><b>Path Summary:</b></p>
 <table class="summary_table">
 <tr>
@@ -9819,11 +10581,11 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Data Arrival Time</td>
-<td>1.948</td>
+<td>1.929</td>
 </tr>
 <tr>
 <td class="label">Data Required Time</td>
-<td>0.994</td>
+<td>0.977</td>
 </tr>
 <tr>
 <td class="label">From</td>
@@ -9831,15 +10593,15 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">To</td>
-<td>_LIN_T_s5</td>
+<td>_LS_s3</td>
 </tr>
 <tr>
 <td class="label">Launch Clk</td>
-<td>controlCLK:[R]</td>
+<td>rotateCLK_4:[R]</td>
 </tr>
 <tr>
 <td class="label">Latch Clk</td>
-<td>controlCLK:[R]</td>
+<td>rotateCLK_4:[R]</td>
 </tr>
 </table>
 <p><b>Data Arrival Path:</b></p>
@@ -9869,61 +10631,61 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td></td>
 <td></td>
 <td></td>
-<td>controlCLK</td>
+<td>rotateCLK_4</td>
 </tr>
 <tr>
 <td>0.000</td>
 <td>0.000</td>
 <td>tCL</td>
 <td>RR</td>
-<td>9</td>
-<td>R15C24[1][A]</td>
-<td>inst_1/overflow_s0/Q</td>
+<td>10</td>
+<td>R15C28[0][A]</td>
+<td>rotateCLK_s1/Q</td>
 </tr>
 <tr>
-<td>0.994</td>
-<td>0.994</td>
+<td>0.977</td>
+<td>0.977</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C28[0][A]</td>
+<td>R15C29[1][B]</td>
 <td>rotateState_1_s0/CLK</td>
 </tr>
 <tr>
-<td>1.328</td>
+<td>1.310</td>
 <td>0.333</td>
 <td>tC2Q</td>
 <td>RF</td>
 <td>9</td>
-<td>R15C28[0][A]</td>
+<td>R15C29[1][B]</td>
 <td style=" font-weight:bold;">rotateState_1_s0/Q</td>
 </tr>
 <tr>
-<td>1.576</td>
-<td>0.248</td>
+<td>1.557</td>
+<td>0.247</td>
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>R14C28[0][B]</td>
-<td>n11_s14/I0</td>
+<td>R15C28[1][B]</td>
+<td>n28_s13/I0</td>
 </tr>
 <tr>
-<td>1.948</td>
+<td>1.929</td>
 <td>0.372</td>
 <td>tINS</td>
 <td>FF</td>
 <td>1</td>
-<td>R14C28[0][B]</td>
-<td style=" background: #97FFFF;">n11_s14/F</td>
+<td>R15C28[1][B]</td>
+<td style=" background: #97FFFF;">n28_s13/F</td>
 </tr>
 <tr>
-<td>1.948</td>
+<td>1.929</td>
 <td>0.000</td>
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>R14C28[0][B]</td>
-<td style=" font-weight:bold;">_LIN_T_s5/D</td>
+<td>R15C28[1][B]</td>
+<td style=" font-weight:bold;">_LS_s3/D</td>
 </tr>
 </table>
 <p><b>Data Required Path:</b></p>
@@ -9953,34 +10715,34 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td></td>
 <td></td>
 <td></td>
-<td>controlCLK</td>
+<td>rotateCLK_4</td>
 </tr>
 <tr>
 <td>0.000</td>
 <td>0.000</td>
 <td>tCL</td>
 <td>RR</td>
-<td>9</td>
-<td>R15C24[1][A]</td>
-<td>inst_1/overflow_s0/Q</td>
+<td>10</td>
+<td>R15C28[0][A]</td>
+<td>rotateCLK_s1/Q</td>
 </tr>
 <tr>
-<td>0.994</td>
-<td>0.994</td>
+<td>0.977</td>
+<td>0.977</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R14C28[0][B]</td>
-<td>_LIN_T_s5/CLK</td>
+<td>R15C28[1][B]</td>
+<td>_LS_s3/CLK</td>
 </tr>
 <tr>
-<td>0.994</td>
+<td>0.977</td>
 <td>0.000</td>
 <td>tHld</td>
 <td></td>
 <td>1</td>
-<td>R14C28[0][B]</td>
-<td>_LIN_T_s5</td>
+<td>R15C28[1][B]</td>
+<td>_LS_s3</td>
 </tr>
 </table>
 <p><b>Path Statistics:</b></p>
@@ -9999,18 +10761,18 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Arrival Clock Path Delay</td>
-<td>cell: 0.000, 0.000%; route: 0.994, 100.000%</td>
+<td>cell: 0.000, 0.000%; route: 0.977, 100.000%</td>
 </tr>
 <tr>
 <td class="label">Arrival Data Path Delay</td>
-<td>cell: 0.372, 39.022%; route: 0.248, 26.011%; tC2Q: 0.333, 34.966%</td>
+<td>cell: 0.372, 39.046%; route: 0.247, 25.967%; tC2Q: 0.333, 34.987%</td>
 </tr>
 <tr>
 <td class="label">Required Clock Path Delay</td>
-<td>cell: 0.000, 0.000%; route: 0.994, 100.000%</td>
+<td>cell: 0.000, 0.000%; route: 0.977, 100.000%</td>
 </tr>
 </table>
-<h3>Path13</h3>
+<h3>Path16</h3>
 <p><b>Path Summary:</b></p>
 <table class="summary_table">
 <tr>
@@ -10095,7 +10857,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C25[0][B]</td>
+<td>R15C24[0][B]</td>
 <td>inst_1/counter_2_s0/CLK</td>
 </tr>
 <tr>
@@ -10104,7 +10866,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tC2Q</td>
 <td>RF</td>
 <td>2</td>
-<td>R15C25[0][B]</td>
+<td>R15C24[0][B]</td>
 <td style=" font-weight:bold;">inst_1/counter_2_s0/Q</td>
 </tr>
 <tr>
@@ -10113,7 +10875,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>2</td>
-<td>R15C25[0][B]</td>
+<td>R15C24[0][B]</td>
 <td>inst_1/n31_s/I1</td>
 </tr>
 <tr>
@@ -10122,7 +10884,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C25[0][B]</td>
+<td>R15C24[0][B]</td>
 <td style=" background: #97FFFF;">inst_1/n31_s/SUM</td>
 </tr>
 <tr>
@@ -10131,7 +10893,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C25[0][B]</td>
+<td>R15C24[0][B]</td>
 <td style=" font-weight:bold;">inst_1/counter_2_s0/D</td>
 </tr>
 </table>
@@ -10188,7 +10950,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C25[0][B]</td>
+<td>R15C24[0][B]</td>
 <td>inst_1/counter_2_s0/CLK</td>
 </tr>
 <tr>
@@ -10197,7 +10959,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tHld</td>
 <td></td>
 <td>1</td>
-<td>R15C25[0][B]</td>
+<td>R15C24[0][B]</td>
 <td>inst_1/counter_2_s0</td>
 </tr>
 </table>
@@ -10228,7 +10990,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>cell: 0.844, 82.061%; route: 0.185, 17.939%</td>
 </tr>
 </table>
-<h3>Path14</h3>
+<h3>Path17</h3>
 <p><b>Path Summary:</b></p>
 <table class="summary_table">
 <tr>
@@ -10313,7 +11075,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C26[2][B]</td>
+<td>R15C25[2][B]</td>
 <td>inst_1/counter_12_s0/CLK</td>
 </tr>
 <tr>
@@ -10322,7 +11084,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tC2Q</td>
 <td>RR</td>
 <td>2</td>
-<td>R15C26[2][B]</td>
+<td>R15C25[2][B]</td>
 <td style=" font-weight:bold;">inst_1/counter_12_s0/Q</td>
 </tr>
 <tr>
@@ -10331,7 +11093,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>2</td>
-<td>R15C26[2][B]</td>
+<td>R15C25[2][B]</td>
 <td>inst_1/n21_s/I1</td>
 </tr>
 <tr>
@@ -10340,7 +11102,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>RF</td>
 <td>1</td>
-<td>R15C26[2][B]</td>
+<td>R15C25[2][B]</td>
 <td style=" background: #97FFFF;">inst_1/n21_s/SUM</td>
 </tr>
 <tr>
@@ -10349,7 +11111,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C26[2][B]</td>
+<td>R15C25[2][B]</td>
 <td style=" font-weight:bold;">inst_1/counter_12_s0/D</td>
 </tr>
 </table>
@@ -10406,7 +11168,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C26[2][B]</td>
+<td>R15C25[2][B]</td>
 <td>inst_1/counter_12_s0/CLK</td>
 </tr>
 <tr>
@@ -10415,7 +11177,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tHld</td>
 <td></td>
 <td>1</td>
-<td>R15C26[2][B]</td>
+<td>R15C25[2][B]</td>
 <td>inst_1/counter_12_s0</td>
 </tr>
 </table>
@@ -10446,7 +11208,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>cell: 0.844, 82.061%; route: 0.185, 17.939%</td>
 </tr>
 </table>
-<h3>Path15</h3>
+<h3>Path18</h3>
 <p><b>Path Summary:</b></p>
 <table class="summary_table">
 <tr>
@@ -10531,7 +11293,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C24[0][A]</td>
+<td>R15C23[0][A]</td>
 <td>inst_1/counter_0_s0/CLK</td>
 </tr>
 <tr>
@@ -10540,7 +11302,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tC2Q</td>
 <td>RF</td>
 <td>3</td>
-<td>R15C24[0][A]</td>
+<td>R15C23[0][A]</td>
 <td style=" font-weight:bold;">inst_1/counter_0_s0/Q</td>
 </tr>
 <tr>
@@ -10549,7 +11311,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>2</td>
-<td>R15C25[0][A]</td>
+<td>R15C24[0][A]</td>
 <td>inst_1/n32_s/I1</td>
 </tr>
 <tr>
@@ -10558,7 +11320,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C25[0][A]</td>
+<td>R15C24[0][A]</td>
 <td style=" background: #97FFFF;">inst_1/n32_s/SUM</td>
 </tr>
 <tr>
@@ -10567,7 +11329,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C25[0][A]</td>
+<td>R15C24[0][A]</td>
 <td style=" font-weight:bold;">inst_1/counter_1_s0/D</td>
 </tr>
 </table>
@@ -10624,7 +11386,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C25[0][A]</td>
+<td>R15C24[0][A]</td>
 <td>inst_1/counter_1_s0/CLK</td>
 </tr>
 <tr>
@@ -10633,7 +11395,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tHld</td>
 <td></td>
 <td>1</td>
-<td>R15C25[0][A]</td>
+<td>R15C24[0][A]</td>
 <td>inst_1/counter_1_s0</td>
 </tr>
 </table>
@@ -10664,7 +11426,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>cell: 0.844, 82.061%; route: 0.185, 17.939%</td>
 </tr>
 </table>
-<h3>Path16</h3>
+<h3>Path19</h3>
 <p><b>Path Summary:</b></p>
 <table class="summary_table">
 <tr>
@@ -10749,7 +11511,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C27[2][B]</td>
+<td>R15C26[2][B]</td>
 <td>inst_1/counter_18_s0/CLK</td>
 </tr>
 <tr>
@@ -10758,7 +11520,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tC2Q</td>
 <td>RR</td>
 <td>2</td>
-<td>R15C27[2][B]</td>
+<td>R15C26[2][B]</td>
 <td style=" font-weight:bold;">inst_1/counter_18_s0/Q</td>
 </tr>
 <tr>
@@ -10767,7 +11529,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>2</td>
-<td>R15C27[2][B]</td>
+<td>R15C26[2][B]</td>
 <td>inst_1/n15_s/I1</td>
 </tr>
 <tr>
@@ -10776,7 +11538,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>RF</td>
 <td>1</td>
-<td>R15C27[2][B]</td>
+<td>R15C26[2][B]</td>
 <td style=" background: #97FFFF;">inst_1/n15_s/SUM</td>
 </tr>
 <tr>
@@ -10785,7 +11547,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C27[2][B]</td>
+<td>R15C26[2][B]</td>
 <td style=" font-weight:bold;">inst_1/counter_18_s0/D</td>
 </tr>
 </table>
@@ -10842,7 +11604,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C27[2][B]</td>
+<td>R15C26[2][B]</td>
 <td>inst_1/counter_18_s0/CLK</td>
 </tr>
 <tr>
@@ -10851,7 +11613,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tHld</td>
 <td></td>
 <td>1</td>
-<td>R15C27[2][B]</td>
+<td>R15C26[2][B]</td>
 <td>inst_1/counter_18_s0</td>
 </tr>
 </table>
@@ -10882,7 +11644,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>cell: 0.844, 82.061%; route: 0.185, 17.939%</td>
 </tr>
 </table>
-<h3>Path17</h3>
+<h3>Path20</h3>
 <p><b>Path Summary:</b></p>
 <table class="summary_table">
 <tr>
@@ -10967,7 +11729,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C25[1][B]</td>
+<td>R15C24[1][B]</td>
 <td>inst_1/counter_4_s0/CLK</td>
 </tr>
 <tr>
@@ -10976,7 +11738,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tC2Q</td>
 <td>RR</td>
 <td>2</td>
-<td>R15C25[1][B]</td>
+<td>R15C24[1][B]</td>
 <td style=" font-weight:bold;">inst_1/counter_4_s0/Q</td>
 </tr>
 <tr>
@@ -10985,7 +11747,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>2</td>
-<td>R15C25[1][B]</td>
+<td>R15C24[1][B]</td>
 <td>inst_1/n29_s/I1</td>
 </tr>
 <tr>
@@ -10994,7 +11756,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>RF</td>
 <td>1</td>
-<td>R15C25[1][B]</td>
+<td>R15C24[1][B]</td>
 <td style=" background: #97FFFF;">inst_1/n29_s/SUM</td>
 </tr>
 <tr>
@@ -11003,7 +11765,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C25[1][B]</td>
+<td>R15C24[1][B]</td>
 <td style=" font-weight:bold;">inst_1/counter_4_s0/D</td>
 </tr>
 </table>
@@ -11060,7 +11822,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C25[1][B]</td>
+<td>R15C24[1][B]</td>
 <td>inst_1/counter_4_s0/CLK</td>
 </tr>
 <tr>
@@ -11069,7 +11831,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tHld</td>
 <td></td>
 <td>1</td>
-<td>R15C25[1][B]</td>
+<td>R15C24[1][B]</td>
 <td>inst_1/counter_4_s0</td>
 </tr>
 </table>
@@ -11100,7 +11862,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>cell: 0.844, 82.061%; route: 0.185, 17.939%</td>
 </tr>
 </table>
-<h3>Path18</h3>
+<h3>Path21</h3>
 <p><b>Path Summary:</b></p>
 <table class="summary_table">
 <tr>
@@ -11185,7 +11947,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C25[2][A]</td>
+<td>R15C24[2][A]</td>
 <td>inst_1/counter_5_s0/CLK</td>
 </tr>
 <tr>
@@ -11194,7 +11956,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tC2Q</td>
 <td>RR</td>
 <td>2</td>
-<td>R15C25[2][A]</td>
+<td>R15C24[2][A]</td>
 <td style=" font-weight:bold;">inst_1/counter_5_s0/Q</td>
 </tr>
 <tr>
@@ -11203,7 +11965,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>2</td>
-<td>R15C25[2][A]</td>
+<td>R15C24[2][A]</td>
 <td>inst_1/n28_s/I1</td>
 </tr>
 <tr>
@@ -11212,7 +11974,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>RF</td>
 <td>1</td>
-<td>R15C25[2][A]</td>
+<td>R15C24[2][A]</td>
 <td style=" background: #97FFFF;">inst_1/n28_s/SUM</td>
 </tr>
 <tr>
@@ -11221,7 +11983,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C25[2][A]</td>
+<td>R15C24[2][A]</td>
 <td style=" font-weight:bold;">inst_1/counter_5_s0/D</td>
 </tr>
 </table>
@@ -11278,7 +12040,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C25[2][A]</td>
+<td>R15C24[2][A]</td>
 <td>inst_1/counter_5_s0/CLK</td>
 </tr>
 <tr>
@@ -11287,7 +12049,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tHld</td>
 <td></td>
 <td>1</td>
-<td>R15C25[2][A]</td>
+<td>R15C24[2][A]</td>
 <td>inst_1/counter_5_s0</td>
 </tr>
 </table>
@@ -11318,7 +12080,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>cell: 0.844, 82.061%; route: 0.185, 17.939%</td>
 </tr>
 </table>
-<h3>Path19</h3>
+<h3>Path22</h3>
 <p><b>Path Summary:</b></p>
 <table class="summary_table">
 <tr>
@@ -11403,7 +12165,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C25[2][B]</td>
+<td>R15C24[2][B]</td>
 <td>inst_1/counter_6_s0/CLK</td>
 </tr>
 <tr>
@@ -11412,7 +12174,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tC2Q</td>
 <td>RR</td>
 <td>2</td>
-<td>R15C25[2][B]</td>
+<td>R15C24[2][B]</td>
 <td style=" font-weight:bold;">inst_1/counter_6_s0/Q</td>
 </tr>
 <tr>
@@ -11421,7 +12183,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>2</td>
-<td>R15C25[2][B]</td>
+<td>R15C24[2][B]</td>
 <td>inst_1/n27_s/I1</td>
 </tr>
 <tr>
@@ -11430,7 +12192,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>RF</td>
 <td>1</td>
-<td>R15C25[2][B]</td>
+<td>R15C24[2][B]</td>
 <td style=" background: #97FFFF;">inst_1/n27_s/SUM</td>
 </tr>
 <tr>
@@ -11439,7 +12201,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C25[2][B]</td>
+<td>R15C24[2][B]</td>
 <td style=" font-weight:bold;">inst_1/counter_6_s0/D</td>
 </tr>
 </table>
@@ -11496,7 +12258,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C25[2][B]</td>
+<td>R15C24[2][B]</td>
 <td>inst_1/counter_6_s0/CLK</td>
 </tr>
 <tr>
@@ -11505,7 +12267,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tHld</td>
 <td></td>
 <td>1</td>
-<td>R15C25[2][B]</td>
+<td>R15C24[2][B]</td>
 <td>inst_1/counter_6_s0</td>
 </tr>
 </table>
@@ -11536,7 +12298,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>cell: 0.844, 82.061%; route: 0.185, 17.939%</td>
 </tr>
 </table>
-<h3>Path20</h3>
+<h3>Path23</h3>
 <p><b>Path Summary:</b></p>
 <table class="summary_table">
 <tr>
@@ -11621,7 +12383,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C26[1][B]</td>
+<td>R15C25[1][B]</td>
 <td>inst_1/counter_10_s0/CLK</td>
 </tr>
 <tr>
@@ -11630,7 +12392,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tC2Q</td>
 <td>RR</td>
 <td>2</td>
-<td>R15C26[1][B]</td>
+<td>R15C25[1][B]</td>
 <td style=" font-weight:bold;">inst_1/counter_10_s0/Q</td>
 </tr>
 <tr>
@@ -11639,7 +12401,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>2</td>
-<td>R15C26[1][B]</td>
+<td>R15C25[1][B]</td>
 <td>inst_1/n23_s/I1</td>
 </tr>
 <tr>
@@ -11648,7 +12410,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>RF</td>
 <td>1</td>
-<td>R15C26[1][B]</td>
+<td>R15C25[1][B]</td>
 <td style=" background: #97FFFF;">inst_1/n23_s/SUM</td>
 </tr>
 <tr>
@@ -11657,7 +12419,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C26[1][B]</td>
+<td>R15C25[1][B]</td>
 <td style=" font-weight:bold;">inst_1/counter_10_s0/D</td>
 </tr>
 </table>
@@ -11714,7 +12476,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C26[1][B]</td>
+<td>R15C25[1][B]</td>
 <td>inst_1/counter_10_s0/CLK</td>
 </tr>
 <tr>
@@ -11723,7 +12485,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tHld</td>
 <td></td>
 <td>1</td>
-<td>R15C26[1][B]</td>
+<td>R15C25[1][B]</td>
 <td>inst_1/counter_10_s0</td>
 </tr>
 </table>
@@ -11754,7 +12516,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>cell: 0.844, 82.061%; route: 0.185, 17.939%</td>
 </tr>
 </table>
-<h3>Path21</h3>
+<h3>Path24</h3>
 <p><b>Path Summary:</b></p>
 <table class="summary_table">
 <tr>
@@ -11839,7 +12601,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C26[2][A]</td>
+<td>R15C25[2][A]</td>
 <td>inst_1/counter_11_s0/CLK</td>
 </tr>
 <tr>
@@ -11848,7 +12610,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tC2Q</td>
 <td>RR</td>
 <td>2</td>
-<td>R15C26[2][A]</td>
+<td>R15C25[2][A]</td>
 <td style=" font-weight:bold;">inst_1/counter_11_s0/Q</td>
 </tr>
 <tr>
@@ -11857,7 +12619,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>2</td>
-<td>R15C26[2][A]</td>
+<td>R15C25[2][A]</td>
 <td>inst_1/n22_s/I1</td>
 </tr>
 <tr>
@@ -11866,7 +12628,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>RF</td>
 <td>1</td>
-<td>R15C26[2][A]</td>
+<td>R15C25[2][A]</td>
 <td style=" background: #97FFFF;">inst_1/n22_s/SUM</td>
 </tr>
 <tr>
@@ -11875,7 +12637,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C26[2][A]</td>
+<td>R15C25[2][A]</td>
 <td style=" font-weight:bold;">inst_1/counter_11_s0/D</td>
 </tr>
 </table>
@@ -11932,7 +12694,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C26[2][A]</td>
+<td>R15C25[2][A]</td>
 <td>inst_1/counter_11_s0/CLK</td>
 </tr>
 <tr>
@@ -11941,7 +12703,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tHld</td>
 <td></td>
 <td>1</td>
-<td>R15C26[2][A]</td>
+<td>R15C25[2][A]</td>
 <td>inst_1/counter_11_s0</td>
 </tr>
 </table>
@@ -11972,7 +12734,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>cell: 0.844, 82.061%; route: 0.185, 17.939%</td>
 </tr>
 </table>
-<h3>Path22</h3>
+<h3>Path25</h3>
 <p><b>Path Summary:</b></p>
 <table class="summary_table">
 <tr>
@@ -12057,7 +12819,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C27[1][B]</td>
+<td>R15C26[1][B]</td>
 <td>inst_1/counter_16_s0/CLK</td>
 </tr>
 <tr>
@@ -12066,7 +12828,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tC2Q</td>
 <td>RR</td>
 <td>2</td>
-<td>R15C27[1][B]</td>
+<td>R15C26[1][B]</td>
 <td style=" font-weight:bold;">inst_1/counter_16_s0/Q</td>
 </tr>
 <tr>
@@ -12075,7 +12837,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>2</td>
-<td>R15C27[1][B]</td>
+<td>R15C26[1][B]</td>
 <td>inst_1/n17_s/I1</td>
 </tr>
 <tr>
@@ -12084,7 +12846,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tINS</td>
 <td>RF</td>
 <td>1</td>
-<td>R15C27[1][B]</td>
+<td>R15C26[1][B]</td>
 <td style=" background: #97FFFF;">inst_1/n17_s/SUM</td>
 </tr>
 <tr>
@@ -12093,7 +12855,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>R15C27[1][B]</td>
+<td>R15C26[1][B]</td>
 <td style=" font-weight:bold;">inst_1/counter_16_s0/D</td>
 </tr>
 </table>
@@ -12150,7 +12912,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R15C27[1][B]</td>
+<td>R15C26[1][B]</td>
 <td>inst_1/counter_16_s0/CLK</td>
 </tr>
 <tr>
@@ -12159,7 +12921,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tHld</td>
 <td></td>
 <td>1</td>
-<td>R15C27[1][B]</td>
+<td>R15C26[1][B]</td>
 <td>inst_1/counter_16_s0</td>
 </tr>
 </table>
@@ -12190,660 +12952,6 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>cell: 0.844, 82.061%; route: 0.185, 17.939%</td>
 </tr>
 </table>
-<h3>Path23</h3>
-<p><b>Path Summary:</b></p>
-<table class="summary_table">
-<tr>
-<td class="label">Slack</td>
-<td>0.970</td>
-</tr>
-<tr>
-<td class="label">Data Arrival Time</td>
-<td>1.999</td>
-</tr>
-<tr>
-<td class="label">Data Required Time</td>
-<td>1.029</td>
-</tr>
-<tr>
-<td class="label">From</td>
-<td>inst_1/counter_17_s0</td>
-</tr>
-<tr>
-<td class="label">To</td>
-<td>inst_1/counter_17_s0</td>
-</tr>
-<tr>
-<td class="label">Launch Clk</td>
-<td>clk:[R]</td>
-</tr>
-<tr>
-<td class="label">Latch Clk</td>
-<td>clk:[R]</td>
-</tr>
-</table>
-<p><b>Data Arrival Path:</b></p>
-<table class="detail_table">
-<tr>
-<th class="label">AT</th>
-<th class="label">DELAY</th>
-<th class="label">TYPE</th>
-<th class="label">RF</th>
-<th class="label">FANOUT</th>
-<th class="label">LOC</th>
-<th>NODE</th>
-</tr>
-<tr>
-<td>0.000</td>
-<td>0.000</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>active clock edge time</td>
-</tr>
-<tr>
-<td>0.000</td>
-<td>0.000</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>clk</td>
-</tr>
-<tr>
-<td>0.000</td>
-<td>0.000</td>
-<td>tCL</td>
-<td>RR</td>
-<td>1</td>
-<td>IOR17[A]</td>
-<td>clk_ibuf/I</td>
-</tr>
-<tr>
-<td>0.844</td>
-<td>0.844</td>
-<td>tINS</td>
-<td>RR</td>
-<td>20</td>
-<td>IOR17[A]</td>
-<td>clk_ibuf/O</td>
-</tr>
-<tr>
-<td>1.029</td>
-<td>0.185</td>
-<td>tNET</td>
-<td>RR</td>
-<td>1</td>
-<td>R15C27[2][A]</td>
-<td>inst_1/counter_17_s0/CLK</td>
-</tr>
-<tr>
-<td>1.362</td>
-<td>0.333</td>
-<td>tC2Q</td>
-<td>RR</td>
-<td>2</td>
-<td>R15C27[2][A]</td>
-<td style=" font-weight:bold;">inst_1/counter_17_s0/Q</td>
-</tr>
-<tr>
-<td>1.605</td>
-<td>0.243</td>
-<td>tNET</td>
-<td>RR</td>
-<td>2</td>
-<td>R15C27[2][A]</td>
-<td>inst_1/n16_s/I1</td>
-</tr>
-<tr>
-<td>1.999</td>
-<td>0.394</td>
-<td>tINS</td>
-<td>RF</td>
-<td>1</td>
-<td>R15C27[2][A]</td>
-<td style=" background: #97FFFF;">inst_1/n16_s/SUM</td>
-</tr>
-<tr>
-<td>1.999</td>
-<td>0.000</td>
-<td>tNET</td>
-<td>FF</td>
-<td>1</td>
-<td>R15C27[2][A]</td>
-<td style=" font-weight:bold;">inst_1/counter_17_s0/D</td>
-</tr>
-</table>
-<p><b>Data Required Path:</b></p>
-<table class="detail_table">
-<tr>
-<th class="label">AT</th>
-<th class="label">DELAY</th>
-<th class="label">TYPE</th>
-<th class="label">RF</th>
-<th class="label">FANOUT</th>
-<th class="label">LOC</th>
-<th>NODE</th>
-</tr>
-<tr>
-<td>0.000</td>
-<td>0.000</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>active clock edge time</td>
-</tr>
-<tr>
-<td>0.000</td>
-<td>0.000</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>clk</td>
-</tr>
-<tr>
-<td>0.000</td>
-<td>0.000</td>
-<td>tCL</td>
-<td>RR</td>
-<td>1</td>
-<td>IOR17[A]</td>
-<td>clk_ibuf/I</td>
-</tr>
-<tr>
-<td>0.844</td>
-<td>0.844</td>
-<td>tINS</td>
-<td>RR</td>
-<td>20</td>
-<td>IOR17[A]</td>
-<td>clk_ibuf/O</td>
-</tr>
-<tr>
-<td>1.029</td>
-<td>0.185</td>
-<td>tNET</td>
-<td>RR</td>
-<td>1</td>
-<td>R15C27[2][A]</td>
-<td>inst_1/counter_17_s0/CLK</td>
-</tr>
-<tr>
-<td>1.029</td>
-<td>0.000</td>
-<td>tHld</td>
-<td></td>
-<td>1</td>
-<td>R15C27[2][A]</td>
-<td>inst_1/counter_17_s0</td>
-</tr>
-</table>
-<p><b>Path Statistics:</b></p>
-<table class="summary_table">
-<tr>
-<td class="label">Clock Skew</td>
-<td>0.000</td>
-</tr>
-<tr>
-<td class="label">Hold Relationship </td>
-<td>0.000</td>
-</tr>
-<tr>
-<td class="label">Logic Level</td>
-<td>2</td>
-</tr>
-<tr>
-<td class="label">Arrival Clock Path Delay</td>
-<td>cell: 0.844, 82.061%; route: 0.185, 17.939%</td>
-</tr>
-<tr>
-<td class="label">Arrival Data Path Delay</td>
-<td>cell: 0.394, 40.621%; route: 0.243, 25.012%; tC2Q: 0.333, 34.366%</td>
-</tr>
-<tr>
-<td class="label">Required Clock Path Delay</td>
-<td>cell: 0.844, 82.061%; route: 0.185, 17.939%</td>
-</tr>
-</table>
-<h3>Path24</h3>
-<p><b>Path Summary:</b></p>
-<table class="summary_table">
-<tr>
-<td class="label">Slack</td>
-<td>1.062</td>
-</tr>
-<tr>
-<td class="label">Data Arrival Time</td>
-<td>2.057</td>
-</tr>
-<tr>
-<td class="label">Data Required Time</td>
-<td>0.994</td>
-</tr>
-<tr>
-<td class="label">From</td>
-<td>rotateState_2_s0</td>
-</tr>
-<tr>
-<td class="label">To</td>
-<td>rotateState_2_s0</td>
-</tr>
-<tr>
-<td class="label">Launch Clk</td>
-<td>controlCLK:[R]</td>
-</tr>
-<tr>
-<td class="label">Latch Clk</td>
-<td>controlCLK:[R]</td>
-</tr>
-</table>
-<p><b>Data Arrival Path:</b></p>
-<table class="detail_table">
-<tr>
-<th class="label">AT</th>
-<th class="label">DELAY</th>
-<th class="label">TYPE</th>
-<th class="label">RF</th>
-<th class="label">FANOUT</th>
-<th class="label">LOC</th>
-<th>NODE</th>
-</tr>
-<tr>
-<td>0.000</td>
-<td>0.000</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>active clock edge time</td>
-</tr>
-<tr>
-<td>0.000</td>
-<td>0.000</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>controlCLK</td>
-</tr>
-<tr>
-<td>0.000</td>
-<td>0.000</td>
-<td>tCL</td>
-<td>RR</td>
-<td>9</td>
-<td>R15C24[1][A]</td>
-<td>inst_1/overflow_s0/Q</td>
-</tr>
-<tr>
-<td>0.994</td>
-<td>0.994</td>
-<td>tNET</td>
-<td>RR</td>
-<td>1</td>
-<td>R15C28[0][B]</td>
-<td>rotateState_2_s0/CLK</td>
-</tr>
-<tr>
-<td>1.328</td>
-<td>0.333</td>
-<td>tC2Q</td>
-<td>RR</td>
-<td>8</td>
-<td>R15C28[0][B]</td>
-<td style=" font-weight:bold;">rotateState_2_s0/Q</td>
-</tr>
-<tr>
-<td>1.333</td>
-<td>0.005</td>
-<td>tNET</td>
-<td>RR</td>
-<td>1</td>
-<td>R15C28[0][B]</td>
-<td>n22_s1/I2</td>
-</tr>
-<tr>
-<td>2.057</td>
-<td>0.724</td>
-<td>tINS</td>
-<td>RR</td>
-<td>1</td>
-<td>R15C28[0][B]</td>
-<td style=" background: #97FFFF;">n22_s1/F</td>
-</tr>
-<tr>
-<td>2.057</td>
-<td>0.000</td>
-<td>tNET</td>
-<td>RR</td>
-<td>1</td>
-<td>R15C28[0][B]</td>
-<td style=" font-weight:bold;">rotateState_2_s0/D</td>
-</tr>
-</table>
-<p><b>Data Required Path:</b></p>
-<table class="detail_table">
-<tr>
-<th class="label">AT</th>
-<th class="label">DELAY</th>
-<th class="label">TYPE</th>
-<th class="label">RF</th>
-<th class="label">FANOUT</th>
-<th class="label">LOC</th>
-<th>NODE</th>
-</tr>
-<tr>
-<td>0.000</td>
-<td>0.000</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>active clock edge time</td>
-</tr>
-<tr>
-<td>0.000</td>
-<td>0.000</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>controlCLK</td>
-</tr>
-<tr>
-<td>0.000</td>
-<td>0.000</td>
-<td>tCL</td>
-<td>RR</td>
-<td>9</td>
-<td>R15C24[1][A]</td>
-<td>inst_1/overflow_s0/Q</td>
-</tr>
-<tr>
-<td>0.994</td>
-<td>0.994</td>
-<td>tNET</td>
-<td>RR</td>
-<td>1</td>
-<td>R15C28[0][B]</td>
-<td>rotateState_2_s0/CLK</td>
-</tr>
-<tr>
-<td>0.994</td>
-<td>0.000</td>
-<td>tHld</td>
-<td></td>
-<td>1</td>
-<td>R15C28[0][B]</td>
-<td>rotateState_2_s0</td>
-</tr>
-</table>
-<p><b>Path Statistics:</b></p>
-<table class="summary_table">
-<tr>
-<td class="label">Clock Skew</td>
-<td>0.000</td>
-</tr>
-<tr>
-<td class="label">Hold Relationship </td>
-<td>0.000</td>
-</tr>
-<tr>
-<td class="label">Logic Level</td>
-<td>2</td>
-</tr>
-<tr>
-<td class="label">Arrival Clock Path Delay</td>
-<td>cell: 0.000, 0.000%; route: 0.994, 100.000%</td>
-</tr>
-<tr>
-<td class="label">Arrival Data Path Delay</td>
-<td>cell: 0.724, 68.170%; route: 0.005, 0.445%; tC2Q: 0.333, 31.386%</td>
-</tr>
-<tr>
-<td class="label">Required Clock Path Delay</td>
-<td>cell: 0.000, 0.000%; route: 0.994, 100.000%</td>
-</tr>
-</table>
-<h3>Path25</h3>
-<p><b>Path Summary:</b></p>
-<table class="summary_table">
-<tr>
-<td class="label">Slack</td>
-<td>1.064</td>
-</tr>
-<tr>
-<td class="label">Data Arrival Time</td>
-<td>2.093</td>
-</tr>
-<tr>
-<td class="label">Data Required Time</td>
-<td>1.029</td>
-</tr>
-<tr>
-<td class="label">From</td>
-<td>inst_1/counter_7_s0</td>
-</tr>
-<tr>
-<td class="label">To</td>
-<td>inst_1/counter_8_s0</td>
-</tr>
-<tr>
-<td class="label">Launch Clk</td>
-<td>clk:[R]</td>
-</tr>
-<tr>
-<td class="label">Latch Clk</td>
-<td>clk:[R]</td>
-</tr>
-</table>
-<p><b>Data Arrival Path:</b></p>
-<table class="detail_table">
-<tr>
-<th class="label">AT</th>
-<th class="label">DELAY</th>
-<th class="label">TYPE</th>
-<th class="label">RF</th>
-<th class="label">FANOUT</th>
-<th class="label">LOC</th>
-<th>NODE</th>
-</tr>
-<tr>
-<td>0.000</td>
-<td>0.000</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>active clock edge time</td>
-</tr>
-<tr>
-<td>0.000</td>
-<td>0.000</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>clk</td>
-</tr>
-<tr>
-<td>0.000</td>
-<td>0.000</td>
-<td>tCL</td>
-<td>RR</td>
-<td>1</td>
-<td>IOR17[A]</td>
-<td>clk_ibuf/I</td>
-</tr>
-<tr>
-<td>0.844</td>
-<td>0.844</td>
-<td>tINS</td>
-<td>RR</td>
-<td>20</td>
-<td>IOR17[A]</td>
-<td>clk_ibuf/O</td>
-</tr>
-<tr>
-<td>1.029</td>
-<td>0.185</td>
-<td>tNET</td>
-<td>RR</td>
-<td>1</td>
-<td>R15C26[0][A]</td>
-<td>inst_1/counter_7_s0/CLK</td>
-</tr>
-<tr>
-<td>1.362</td>
-<td>0.333</td>
-<td>tC2Q</td>
-<td>RR</td>
-<td>2</td>
-<td>R15C26[0][A]</td>
-<td style=" font-weight:bold;">inst_1/counter_7_s0/Q</td>
-</tr>
-<tr>
-<td>1.365</td>
-<td>0.002</td>
-<td>tNET</td>
-<td>RR</td>
-<td>2</td>
-<td>R15C26[0][A]</td>
-<td>inst_1/n26_s/I1</td>
-</tr>
-<tr>
-<td>1.667</td>
-<td>0.302</td>
-<td>tINS</td>
-<td>RR</td>
-<td>1</td>
-<td>R15C26[0][A]</td>
-<td style=" background: #97FFFF;">inst_1/n26_s/COUT</td>
-</tr>
-<tr>
-<td>1.667</td>
-<td>0.000</td>
-<td>tNET</td>
-<td>RR</td>
-<td>2</td>
-<td>R15C26[0][B]</td>
-<td>inst_1/n25_s/CIN</td>
-</tr>
-<tr>
-<td>2.093</td>
-<td>0.426</td>
-<td>tINS</td>
-<td>RF</td>
-<td>1</td>
-<td>R15C26[0][B]</td>
-<td style=" background: #97FFFF;">inst_1/n25_s/SUM</td>
-</tr>
-<tr>
-<td>2.093</td>
-<td>0.000</td>
-<td>tNET</td>
-<td>FF</td>
-<td>1</td>
-<td>R15C26[0][B]</td>
-<td style=" font-weight:bold;">inst_1/counter_8_s0/D</td>
-</tr>
-</table>
-<p><b>Data Required Path:</b></p>
-<table class="detail_table">
-<tr>
-<th class="label">AT</th>
-<th class="label">DELAY</th>
-<th class="label">TYPE</th>
-<th class="label">RF</th>
-<th class="label">FANOUT</th>
-<th class="label">LOC</th>
-<th>NODE</th>
-</tr>
-<tr>
-<td>0.000</td>
-<td>0.000</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>active clock edge time</td>
-</tr>
-<tr>
-<td>0.000</td>
-<td>0.000</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>clk</td>
-</tr>
-<tr>
-<td>0.000</td>
-<td>0.000</td>
-<td>tCL</td>
-<td>RR</td>
-<td>1</td>
-<td>IOR17[A]</td>
-<td>clk_ibuf/I</td>
-</tr>
-<tr>
-<td>0.844</td>
-<td>0.844</td>
-<td>tINS</td>
-<td>RR</td>
-<td>20</td>
-<td>IOR17[A]</td>
-<td>clk_ibuf/O</td>
-</tr>
-<tr>
-<td>1.029</td>
-<td>0.185</td>
-<td>tNET</td>
-<td>RR</td>
-<td>1</td>
-<td>R15C26[0][B]</td>
-<td>inst_1/counter_8_s0/CLK</td>
-</tr>
-<tr>
-<td>1.029</td>
-<td>0.000</td>
-<td>tHld</td>
-<td></td>
-<td>1</td>
-<td>R15C26[0][B]</td>
-<td>inst_1/counter_8_s0</td>
-</tr>
-</table>
-<p><b>Path Statistics:</b></p>
-<table class="summary_table">
-<tr>
-<td class="label">Clock Skew</td>
-<td>0.000</td>
-</tr>
-<tr>
-<td class="label">Hold Relationship </td>
-<td>0.000</td>
-</tr>
-<tr>
-<td class="label">Logic Level</td>
-<td>3</td>
-</tr>
-<tr>
-<td class="label">Arrival Clock Path Delay</td>
-<td>cell: 0.844, 82.061%; route: 0.185, 17.939%</td>
-</tr>
-<tr>
-<td class="label">Arrival Data Path Delay</td>
-<td>cell: 0.728, 68.441%; route: 0.002, 0.222%; tC2Q: 0.333, 31.337%</td>
-</tr>
-<tr>
-<td class="label">Required Clock Path Delay</td>
-<td>cell: 0.844, 82.061%; route: 0.185, 17.939%</td>
-</tr>
-</table>
 <h3><a name="Recovery_Analysis">Recovery Analysis Report</a></h3>
 <h4>Report Command:report_timing -recovery -max_paths 25 -max_common_paths 1</h4>
 <h4>No recovery paths to report!</h4>
@@ -12857,11 +12965,11 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <table class="summary_table">
 <tr>
 <td class="label">Slack:</td>
-<td>7.865</td>
+<td>8.008</td>
 </tr>
 <tr>
 <td class="label">Actual Width:</td>
-<td>9.115</td>
+<td>9.258</td>
 </tr>
 <tr>
 <td class="label">Required Width:</td>
@@ -12873,7 +12981,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Clock:</td>
-<td>controlCLK</td>
+<td>rotateCLK_4</td>
 </tr>
 <tr>
 <td class="label"> Objects:</td>
@@ -12901,18 +13009,18 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>0.000</td>
 <td></td>
 <td></td>
-<td>controlCLK</td>
+<td>rotateCLK_4</td>
 </tr>
 <tr>
 <td>10.000</td>
 <td>0.000</td>
 <td>tCL</td>
 <td>FF</td>
-<td>inst_1/overflow_s0/Q</td>
+<td>rotateCLK_s1/Q</td>
 </tr>
 <tr>
-<td>11.879</td>
-<td>1.879</td>
+<td>11.719</td>
+<td>1.719</td>
 <td>tNET</td>
 <td>FF</td>
 <td>rotateState_2_s0/CLK</td>
@@ -12939,18 +13047,18 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>0.000</td>
 <td></td>
 <td></td>
-<td>controlCLK</td>
+<td>rotateCLK_4</td>
 </tr>
 <tr>
 <td>20.000</td>
 <td>0.000</td>
 <td>tCL</td>
 <td>RR</td>
-<td>inst_1/overflow_s0/Q</td>
+<td>rotateCLK_s1/Q</td>
 </tr>
 <tr>
-<td>20.994</td>
-<td>0.994</td>
+<td>20.977</td>
+<td>0.977</td>
 <td>tNET</td>
 <td>RR</td>
 <td>rotateState_2_s0/CLK</td>
@@ -12961,11 +13069,11 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <table class="summary_table">
 <tr>
 <td class="label">Slack:</td>
-<td>7.865</td>
+<td>8.008</td>
 </tr>
 <tr>
 <td class="label">Actual Width:</td>
-<td>9.115</td>
+<td>9.258</td>
 </tr>
 <tr>
 <td class="label">Required Width:</td>
@@ -12977,7 +13085,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Clock:</td>
-<td>controlCLK</td>
+<td>rotateCLK_4</td>
 </tr>
 <tr>
 <td class="label"> Objects:</td>
@@ -13005,18 +13113,18 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>0.000</td>
 <td></td>
 <td></td>
-<td>controlCLK</td>
+<td>rotateCLK_4</td>
 </tr>
 <tr>
 <td>10.000</td>
 <td>0.000</td>
 <td>tCL</td>
 <td>FF</td>
-<td>inst_1/overflow_s0/Q</td>
+<td>rotateCLK_s1/Q</td>
 </tr>
 <tr>
-<td>11.879</td>
-<td>1.879</td>
+<td>11.719</td>
+<td>1.719</td>
 <td>tNET</td>
 <td>FF</td>
 <td>HIN_S_s3/CLK</td>
@@ -13043,18 +13151,18 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>0.000</td>
 <td></td>
 <td></td>
-<td>controlCLK</td>
+<td>rotateCLK_4</td>
 </tr>
 <tr>
 <td>20.000</td>
 <td>0.000</td>
 <td>tCL</td>
 <td>RR</td>
-<td>inst_1/overflow_s0/Q</td>
+<td>rotateCLK_s1/Q</td>
 </tr>
 <tr>
-<td>20.994</td>
-<td>0.994</td>
+<td>20.977</td>
+<td>0.977</td>
 <td>tNET</td>
 <td>RR</td>
 <td>HIN_S_s3/CLK</td>
@@ -13065,11 +13173,11 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <table class="summary_table">
 <tr>
 <td class="label">Slack:</td>
-<td>7.865</td>
+<td>8.008</td>
 </tr>
 <tr>
 <td class="label">Actual Width:</td>
-<td>9.115</td>
+<td>9.258</td>
 </tr>
 <tr>
 <td class="label">Required Width:</td>
@@ -13081,11 +13189,11 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Clock:</td>
-<td>controlCLK</td>
+<td>rotateCLK_4</td>
 </tr>
 <tr>
 <td class="label"> Objects:</td>
-<td>_LIN_T_s5</td>
+<td>_LS_s3</td>
 </tr>
 </table>
 <p><b>Late clock Path:</b></p>
@@ -13109,21 +13217,21 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>0.000</td>
 <td></td>
 <td></td>
-<td>controlCLK</td>
+<td>rotateCLK_4</td>
 </tr>
 <tr>
 <td>10.000</td>
 <td>0.000</td>
 <td>tCL</td>
 <td>FF</td>
-<td>inst_1/overflow_s0/Q</td>
+<td>rotateCLK_s1/Q</td>
 </tr>
 <tr>
-<td>11.879</td>
-<td>1.879</td>
+<td>11.719</td>
+<td>1.719</td>
 <td>tNET</td>
 <td>FF</td>
-<td>_LIN_T_s5/CLK</td>
+<td>_LS_s3/CLK</td>
 </tr>
 </table>
 <p><b>Early clock Path:</b></p>
@@ -13147,21 +13255,21 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>0.000</td>
 <td></td>
 <td></td>
-<td>controlCLK</td>
+<td>rotateCLK_4</td>
 </tr>
 <tr>
 <td>20.000</td>
 <td>0.000</td>
 <td>tCL</td>
 <td>RR</td>
-<td>inst_1/overflow_s0/Q</td>
+<td>rotateCLK_s1/Q</td>
 </tr>
 <tr>
-<td>20.994</td>
-<td>0.994</td>
+<td>20.977</td>
+<td>0.977</td>
 <td>tNET</td>
 <td>RR</td>
-<td>_LIN_T_s5/CLK</td>
+<td>_LS_s3/CLK</td>
 </tr>
 </table>
 <h3>MPW4</h3>
@@ -13169,11 +13277,11 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <table class="summary_table">
 <tr>
 <td class="label">Slack:</td>
-<td>7.865</td>
+<td>8.008</td>
 </tr>
 <tr>
 <td class="label">Actual Width:</td>
-<td>9.115</td>
+<td>9.258</td>
 </tr>
 <tr>
 <td class="label">Required Width:</td>
@@ -13185,11 +13293,11 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Clock:</td>
-<td>controlCLK</td>
+<td>rotateCLK_4</td>
 </tr>
 <tr>
 <td class="label"> Objects:</td>
-<td>HIN_R_s5</td>
+<td>_LT_s3</td>
 </tr>
 </table>
 <p><b>Late clock Path:</b></p>
@@ -13213,21 +13321,21 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>0.000</td>
 <td></td>
 <td></td>
-<td>controlCLK</td>
+<td>rotateCLK_4</td>
 </tr>
 <tr>
 <td>10.000</td>
 <td>0.000</td>
 <td>tCL</td>
 <td>FF</td>
-<td>inst_1/overflow_s0/Q</td>
+<td>rotateCLK_s1/Q</td>
 </tr>
 <tr>
-<td>11.879</td>
-<td>1.879</td>
+<td>11.719</td>
+<td>1.719</td>
 <td>tNET</td>
 <td>FF</td>
-<td>HIN_R_s5/CLK</td>
+<td>_LT_s3/CLK</td>
 </tr>
 </table>
 <p><b>Early clock Path:</b></p>
@@ -13251,21 +13359,21 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>0.000</td>
 <td></td>
 <td></td>
-<td>controlCLK</td>
+<td>rotateCLK_4</td>
 </tr>
 <tr>
 <td>20.000</td>
 <td>0.000</td>
 <td>tCL</td>
 <td>RR</td>
-<td>inst_1/overflow_s0/Q</td>
+<td>rotateCLK_s1/Q</td>
 </tr>
 <tr>
-<td>20.994</td>
-<td>0.994</td>
+<td>20.977</td>
+<td>0.977</td>
 <td>tNET</td>
 <td>RR</td>
-<td>HIN_R_s5/CLK</td>
+<td>_LT_s3/CLK</td>
 </tr>
 </table>
 <h3>MPW5</h3>
@@ -13273,11 +13381,11 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <table class="summary_table">
 <tr>
 <td class="label">Slack:</td>
-<td>7.865</td>
+<td>8.008</td>
 </tr>
 <tr>
 <td class="label">Actual Width:</td>
-<td>9.115</td>
+<td>9.258</td>
 </tr>
 <tr>
 <td class="label">Required Width:</td>
@@ -13289,7 +13397,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Clock:</td>
-<td>controlCLK</td>
+<td>rotateCLK_4</td>
 </tr>
 <tr>
 <td class="label"> Objects:</td>
@@ -13317,18 +13425,18 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>0.000</td>
 <td></td>
 <td></td>
-<td>controlCLK</td>
+<td>rotateCLK_4</td>
 </tr>
 <tr>
 <td>10.000</td>
 <td>0.000</td>
 <td>tCL</td>
 <td>FF</td>
-<td>inst_1/overflow_s0/Q</td>
+<td>rotateCLK_s1/Q</td>
 </tr>
 <tr>
-<td>11.879</td>
-<td>1.879</td>
+<td>11.719</td>
+<td>1.719</td>
 <td>tNET</td>
 <td>FF</td>
 <td>HIN_T_s3/CLK</td>
@@ -13355,18 +13463,18 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>0.000</td>
 <td></td>
 <td></td>
-<td>controlCLK</td>
+<td>rotateCLK_4</td>
 </tr>
 <tr>
 <td>20.000</td>
 <td>0.000</td>
 <td>tCL</td>
 <td>RR</td>
-<td>inst_1/overflow_s0/Q</td>
+<td>rotateCLK_s1/Q</td>
 </tr>
 <tr>
-<td>20.994</td>
-<td>0.994</td>
+<td>20.977</td>
+<td>0.977</td>
 <td>tNET</td>
 <td>RR</td>
 <td>HIN_T_s3/CLK</td>
@@ -13377,11 +13485,11 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <table class="summary_table">
 <tr>
 <td class="label">Slack:</td>
-<td>7.865</td>
+<td>8.008</td>
 </tr>
 <tr>
 <td class="label">Actual Width:</td>
-<td>9.115</td>
+<td>9.258</td>
 </tr>
 <tr>
 <td class="label">Required Width:</td>
@@ -13393,11 +13501,11 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Clock:</td>
-<td>controlCLK</td>
+<td>rotateCLK_4</td>
 </tr>
 <tr>
 <td class="label"> Objects:</td>
-<td>_LIN_R_s6</td>
+<td>HIN_R_s6</td>
 </tr>
 </table>
 <p><b>Late clock Path:</b></p>
@@ -13421,21 +13529,21 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>0.000</td>
 <td></td>
 <td></td>
-<td>controlCLK</td>
+<td>rotateCLK_4</td>
 </tr>
 <tr>
 <td>10.000</td>
 <td>0.000</td>
 <td>tCL</td>
 <td>FF</td>
-<td>inst_1/overflow_s0/Q</td>
+<td>rotateCLK_s1/Q</td>
 </tr>
 <tr>
-<td>11.879</td>
-<td>1.879</td>
+<td>11.719</td>
+<td>1.719</td>
 <td>tNET</td>
 <td>FF</td>
-<td>_LIN_R_s6/CLK</td>
+<td>HIN_R_s6/CLK</td>
 </tr>
 </table>
 <p><b>Early clock Path:</b></p>
@@ -13459,21 +13567,21 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>0.000</td>
 <td></td>
 <td></td>
-<td>controlCLK</td>
+<td>rotateCLK_4</td>
 </tr>
 <tr>
 <td>20.000</td>
 <td>0.000</td>
 <td>tCL</td>
 <td>RR</td>
-<td>inst_1/overflow_s0/Q</td>
+<td>rotateCLK_s1/Q</td>
 </tr>
 <tr>
-<td>20.994</td>
-<td>0.994</td>
+<td>20.977</td>
+<td>0.977</td>
 <td>tNET</td>
 <td>RR</td>
-<td>_LIN_R_s6/CLK</td>
+<td>HIN_R_s6/CLK</td>
 </tr>
 </table>
 <h3>MPW7</h3>
@@ -13481,11 +13589,11 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <table class="summary_table">
 <tr>
 <td class="label">Slack:</td>
-<td>7.865</td>
+<td>8.008</td>
 </tr>
 <tr>
 <td class="label">Actual Width:</td>
-<td>9.115</td>
+<td>9.258</td>
 </tr>
 <tr>
 <td class="label">Required Width:</td>
@@ -13497,11 +13605,11 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Clock:</td>
-<td>controlCLK</td>
+<td>rotateCLK_4</td>
 </tr>
 <tr>
 <td class="label"> Objects:</td>
-<td>_LIN_S_s5</td>
+<td>_LR_s3</td>
 </tr>
 </table>
 <p><b>Late clock Path:</b></p>
@@ -13525,21 +13633,21 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>0.000</td>
 <td></td>
 <td></td>
-<td>controlCLK</td>
+<td>rotateCLK_4</td>
 </tr>
 <tr>
 <td>10.000</td>
 <td>0.000</td>
 <td>tCL</td>
 <td>FF</td>
-<td>inst_1/overflow_s0/Q</td>
+<td>rotateCLK_s1/Q</td>
 </tr>
 <tr>
-<td>11.879</td>
-<td>1.879</td>
+<td>11.719</td>
+<td>1.719</td>
 <td>tNET</td>
 <td>FF</td>
-<td>_LIN_S_s5/CLK</td>
+<td>_LR_s3/CLK</td>
 </tr>
 </table>
 <p><b>Early clock Path:</b></p>
@@ -13563,21 +13671,21 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>0.000</td>
 <td></td>
 <td></td>
-<td>controlCLK</td>
+<td>rotateCLK_4</td>
 </tr>
 <tr>
 <td>20.000</td>
 <td>0.000</td>
 <td>tCL</td>
 <td>RR</td>
-<td>inst_1/overflow_s0/Q</td>
+<td>rotateCLK_s1/Q</td>
 </tr>
 <tr>
-<td>20.994</td>
-<td>0.994</td>
+<td>20.977</td>
+<td>0.977</td>
 <td>tNET</td>
 <td>RR</td>
-<td>_LIN_S_s5/CLK</td>
+<td>_LR_s3/CLK</td>
 </tr>
 </table>
 <h3>MPW8</h3>
@@ -13585,11 +13693,11 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <table class="summary_table">
 <tr>
 <td class="label">Slack:</td>
-<td>7.865</td>
+<td>8.008</td>
 </tr>
 <tr>
 <td class="label">Actual Width:</td>
-<td>9.115</td>
+<td>9.258</td>
 </tr>
 <tr>
 <td class="label">Required Width:</td>
@@ -13601,7 +13709,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Clock:</td>
-<td>controlCLK</td>
+<td>rotateCLK_4</td>
 </tr>
 <tr>
 <td class="label"> Objects:</td>
@@ -13629,18 +13737,18 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>0.000</td>
 <td></td>
 <td></td>
-<td>controlCLK</td>
+<td>rotateCLK_4</td>
 </tr>
 <tr>
 <td>10.000</td>
 <td>0.000</td>
 <td>tCL</td>
 <td>FF</td>
-<td>inst_1/overflow_s0/Q</td>
+<td>rotateCLK_s1/Q</td>
 </tr>
 <tr>
-<td>11.879</td>
-<td>1.879</td>
+<td>11.719</td>
+<td>1.719</td>
 <td>tNET</td>
 <td>FF</td>
 <td>rotateState_1_s0/CLK</td>
@@ -13667,18 +13775,18 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>0.000</td>
 <td></td>
 <td></td>
-<td>controlCLK</td>
+<td>rotateCLK_4</td>
 </tr>
 <tr>
 <td>20.000</td>
 <td>0.000</td>
 <td>tCL</td>
 <td>RR</td>
-<td>inst_1/overflow_s0/Q</td>
+<td>rotateCLK_s1/Q</td>
 </tr>
 <tr>
-<td>20.994</td>
-<td>0.994</td>
+<td>20.977</td>
+<td>0.977</td>
 <td>tNET</td>
 <td>RR</td>
 <td>rotateState_1_s0/CLK</td>
@@ -13689,11 +13797,11 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <table class="summary_table">
 <tr>
 <td class="label">Slack:</td>
-<td>7.865</td>
+<td>8.008</td>
 </tr>
 <tr>
 <td class="label">Actual Width:</td>
-<td>9.115</td>
+<td>9.258</td>
 </tr>
 <tr>
 <td class="label">Required Width:</td>
@@ -13705,7 +13813,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Clock:</td>
-<td>controlCLK</td>
+<td>rotateCLK_4</td>
 </tr>
 <tr>
 <td class="label"> Objects:</td>
@@ -13733,18 +13841,18 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>0.000</td>
 <td></td>
 <td></td>
-<td>controlCLK</td>
+<td>rotateCLK_4</td>
 </tr>
 <tr>
 <td>10.000</td>
 <td>0.000</td>
 <td>tCL</td>
 <td>FF</td>
-<td>inst_1/overflow_s0/Q</td>
+<td>rotateCLK_s1/Q</td>
 </tr>
 <tr>
-<td>11.879</td>
-<td>1.879</td>
+<td>11.719</td>
+<td>1.719</td>
 <td>tNET</td>
 <td>FF</td>
 <td>rotateState_0_s0/CLK</td>
@@ -13771,18 +13879,18 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>0.000</td>
 <td></td>
 <td></td>
-<td>controlCLK</td>
+<td>rotateCLK_4</td>
 </tr>
 <tr>
 <td>20.000</td>
 <td>0.000</td>
 <td>tCL</td>
 <td>RR</td>
-<td>inst_1/overflow_s0/Q</td>
+<td>rotateCLK_s1/Q</td>
 </tr>
 <tr>
-<td>20.994</td>
-<td>0.994</td>
+<td>20.977</td>
+<td>0.977</td>
 <td>tNET</td>
 <td>RR</td>
 <td>rotateState_0_s0/CLK</td>
@@ -13793,11 +13901,11 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <table class="summary_table">
 <tr>
 <td class="label">Slack:</td>
-<td>8.532</td>
+<td>8.077</td>
 </tr>
 <tr>
 <td class="label">Actual Width:</td>
-<td>9.782</td>
+<td>9.327</td>
 </tr>
 <tr>
 <td class="label">Required Width:</td>
@@ -13809,11 +13917,11 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Clock:</td>
-<td>clk</td>
+<td>controlCLK</td>
 </tr>
 <tr>
 <td class="label"> Objects:</td>
-<td>inst_1/counter_3_s0</td>
+<td>rotateCounter_3_s0</td>
 </tr>
 </table>
 <p><b>Late clock Path:</b></p>
@@ -13837,28 +13945,21 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>0.000</td>
 <td></td>
 <td></td>
-<td>clk</td>
+<td>controlCLK</td>
 </tr>
 <tr>
 <td>10.000</td>
 <td>0.000</td>
 <td>tCL</td>
 <td>FF</td>
-<td>clk_ibuf/I</td>
+<td>inst_1/overflow_s0/Q</td>
 </tr>
 <tr>
-<td>10.984</td>
-<td>0.984</td>
-<td>tINS</td>
-<td>FF</td>
-<td>clk_ibuf/O</td>
-</tr>
-<tr>
-<td>11.247</td>
-<td>0.262</td>
+<td>11.709</td>
+<td>1.709</td>
 <td>tNET</td>
 <td>FF</td>
-<td>inst_1/counter_3_s0/CLK</td>
+<td>rotateCounter_3_s0/CLK</td>
 </tr>
 </table>
 <p><b>Early clock Path:</b></p>
@@ -13882,28 +13983,21 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>0.000</td>
 <td></td>
 <td></td>
-<td>clk</td>
+<td>controlCLK</td>
 </tr>
 <tr>
 <td>20.000</td>
 <td>0.000</td>
 <td>tCL</td>
 <td>RR</td>
-<td>clk_ibuf/I</td>
+<td>inst_1/overflow_s0/Q</td>
 </tr>
 <tr>
-<td>20.844</td>
-<td>0.844</td>
-<td>tINS</td>
-<td>RR</td>
-<td>clk_ibuf/O</td>
-</tr>
-<tr>
-<td>21.029</td>
-<td>0.185</td>
+<td>21.036</td>
+<td>1.036</td>
 <td>tNET</td>
 <td>RR</td>
-<td>inst_1/counter_3_s0/CLK</td>
+<td>rotateCounter_3_s0/CLK</td>
 </tr>
 </table>
 <h2><a name="High_Fanout_Nets_Report">High Fanout Nets Report:</a></h2>
@@ -13928,52 +14022,52 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>1.447</td>
 </tr>
 <tr>
-<td>9</td>
-<td>controlCLK</td>
-<td>15.749</td>
-<td>1.879</td>
+<td>10</td>
+<td>rotateCLK_4</td>
+<td>10.379</td>
+<td>1.719</td>
 </tr>
 <tr>
 <td>9</td>
 <td>rotateState[1]</td>
-<td>15.960</td>
-<td>2.462</td>
+<td>16.448</td>
+<td>2.122</td>
 </tr>
 <tr>
 <td>8</td>
 <td>rotateState[2]</td>
-<td>15.749</td>
-<td>2.159</td>
+<td>16.010</td>
+<td>2.140</td>
 </tr>
 <tr>
 <td>7</td>
 <td>rotateState[0]</td>
-<td>17.034</td>
-<td>0.434</td>
+<td>16.623</td>
+<td>0.815</td>
+</tr>
+<tr>
+<td>6</td>
+<td>controlCLK</td>
+<td>17.619</td>
+<td>1.709</td>
+</tr>
+<tr>
+<td>6</td>
+<td>rotateCounter[0]</td>
+<td>17.619</td>
+<td>0.436</td>
+</tr>
+<tr>
+<td>5</td>
+<td>rotateCounter[1]</td>
+<td>17.713</td>
+<td>0.423</td>
 </tr>
 <tr>
 <td>4</td>
-<td>n20_4</td>
-<td>17.034</td>
-<td>0.832</td>
-</tr>
-<tr>
-<td>3</td>
-<td>counter[0]</td>
-<td>14.808</td>
-<td>0.422</td>
-</tr>
-<tr>
-<td>2</td>
-<td>counter[16]</td>
-<td>14.888</td>
-<td>0.345</td>
-</tr>
-<tr>
-<td>2</td>
-<td>counter[17]</td>
-<td>14.821</td>
-<td>0.345</td>
+<td>n39_3</td>
+<td>16.623</td>
+<td>0.352</td>
 </tr>
 </table>
 <h2><a name="Route_Congestions_Report">Route Congestions Report:</a></h2>
@@ -13984,11 +14078,11 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <th class="label">ROUTE CONGESTIONS</th>
 </tr>
 <tr>
-<td>R15C25</td>
+<td>R15C24</td>
 <td>80.56%</td>
 </tr>
 <tr>
-<td>R15C27</td>
+<td>R15C25</td>
 <td>76.39%</td>
 </tr>
 <tr>
@@ -13996,31 +14090,31 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>76.39%</td>
 </tr>
 <tr>
-<td>R14C28</td>
-<td>65.28%</td>
+<td>R15C29</td>
+<td>70.83%</td>
 </tr>
 <tr>
 <td>R15C28</td>
-<td>48.61%</td>
+<td>65.28%</td>
 </tr>
 <tr>
-<td>R15C24</td>
+<td>R15C27</td>
+<td>47.22%</td>
+</tr>
+<tr>
+<td>R15C23</td>
 <td>34.72%</td>
 </tr>
 <tr>
-<td>R14C46</td>
-<td>5.56%</td>
-</tr>
-<tr>
 <td>R29C29</td>
+<td>6.94%</td>
+</tr>
+<tr>
+<td>R10C31</td>
 <td>5.56%</td>
 </tr>
 <tr>
-<td>R29C11</td>
-<td>5.56%</td>
-</tr>
-<tr>
-<td>R29C23</td>
+<td>R15C45</td>
 <td>5.56%</td>
 </tr>
 </table>
