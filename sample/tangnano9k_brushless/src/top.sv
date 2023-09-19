@@ -42,7 +42,7 @@ module top (
     end
     rotateCounter <= rotateCounter + 'b1;
 
-    if(rotateCounter[1:0] == 2'b11)begin
+    if(rotateCounter[2:0] == 3'b111)begin
       duty <= 'b1;
     end else begin
       duty <= 'b0;
@@ -61,7 +61,7 @@ module top (
         3'd5: begin HIN_R <= 0; _LR <= 1; HIN_S <= 0; _LS <= 0; HIN_T <= 1; _LT <= 1; end
       endcase
     end else begin
-      HIN_R <= 0; _LR <= 0; HIN_S <= 0; _LS <= 0; HIN_T <= 0; _LT <= 0;
+      HIN_R <= 0; _LR <= 1; HIN_S <= 0; _LS <= 1; HIN_T <= 0; _LT <= 1;
     end
     if(rotateState == 3'd5)begin
       rotateState <= 3'd0;
@@ -79,13 +79,16 @@ module top (
   assign _LIN_T = ~(~_LT * duty);
 
 //test
-  assign anode = 8'b00010100;
+//  assign anode = 8'b00010100;
+  assign anode[6] = HIN_R;
+  assign anode[7] = HIN_S;
+  assign anode[5] = HIN_T;
   assign cathode = 4'b0001;
 
 endmodule
 
 module timer #(
-  parameter COUNT_MAX = 270000
+  parameter COUNT_MAX = 27000
 ) (
   input  wire  clk,
   output logic overflow

@@ -9,7 +9,7 @@ module gw_gao(
     _LIN_R,
     _LIN_S,
     _LIN_T,
-    \inst_1/counter[16] ,
+    \inst_1/counter[12] ,
     tms_pad_i,
     tck_pad_i,
     tdi_pad_i,
@@ -26,7 +26,7 @@ input HIN_T;
 input _LIN_R;
 input _LIN_S;
 input _LIN_T;
-input \inst_1/counter[16] ;
+input \inst_1/counter[12] ;
 input tms_pad_i;
 input tck_pad_i;
 input tdi_pad_i;
@@ -42,7 +42,7 @@ wire HIN_T;
 wire _LIN_R;
 wire _LIN_S;
 wire _LIN_T;
-wire \inst_1/counter[16] ;
+wire \inst_1/counter[12] ;
 wire tms_pad_i;
 wire tck_pad_i;
 wire tdi_pad_i;
@@ -117,7 +117,7 @@ gw_con_top  u_icon_top(
 ao_top u_ao_top(
     .control(control0[9:0]),
     .data_i({duty,\rotateState[2] ,\rotateState[1] ,\rotateState[0] ,HIN_R,HIN_S,HIN_T,_LIN_R,_LIN_S,_LIN_T}),
-    .clk_i(\inst_1/counter[16] )
+    .clk_i(\inst_1/counter[12] )
 );
 
 endmodule

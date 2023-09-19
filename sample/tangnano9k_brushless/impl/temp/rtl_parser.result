@@ -12,7 +12,7 @@
     "InstLine" : 34,
     "InstName" : "inst_1",
     "ModuleFile" : "C:/Git/tangnano9k_brushless_driver/sample/tangnano9k_brushless/src/top.sv",
-    "ModuleLine" : 87,
+    "ModuleLine" : 90,
     "ModuleName" : "timer"
    }
   ]

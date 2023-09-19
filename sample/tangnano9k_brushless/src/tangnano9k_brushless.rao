@@ -2,7 +2,7 @@
 <GAO_CONFIG>
     <Version>3.0</Version>
     <Mode>Lite</Mode>
-    <AoCore_Lite index="0" sample_clock="inst_1/counter[16]" trig_type="0" capture_amount="2048" implemention="0" input_register_enabled="0" capture_init_data_enabled="0" module_name="top">
+    <AoCore_Lite index="0" sample_clock="inst_1/counter[12]" trig_type="0" capture_amount="8192" implemention="0" input_register_enabled="0" capture_init_data_enabled="0" module_name="top">
         <SignalList>
             <Signal>duty</Signal>
             <Bus name="rotateState[2:0]">
@@ -18,5 +18,5 @@
             <Signal>_LIN_T</Signal>
         </SignalList>
     </AoCore_Lite>
-    <GAO_ID>0000010010110011</GAO_ID>
+    <GAO_ID>0110000001010101</GAO_ID>
 </GAO_CONFIG>
