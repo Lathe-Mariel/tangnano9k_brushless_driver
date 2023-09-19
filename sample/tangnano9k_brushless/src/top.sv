@@ -21,9 +21,10 @@ module top (
 
   logic  controlCLK;
   logic rotateCLK;
-  logic[3:0] rotateCounter;
+  logic[6:0] rotateCounter;
   logic[2:0]  rotateState;
   logic duty;
+  logic[3:0] dutyCounter;
   logic _LR;
   logic _LS;
   logic _LT;
@@ -37,12 +38,16 @@ module top (
   );
 
   always @(posedge controlCLK)begin
-    if(rotateCounter == 0)begin
+    if(rotateCounter == 7'd90)begin
       rotateCLK <= ~rotateCLK;
+      rotateCounter <= 5'd0;
+    end else begin
+      rotateCounter <= rotateCounter + 'b1;
     end
-    rotateCounter <= rotateCounter + 'b1;
 
-    if(rotateCounter[2:0] == 3'b111)begin
+    if(dutyCounter[1:0] == 3'b11)begin
+      duty <= 'b1;
+    end else if(tacSW[0] == 0 && dutyCounter[0] == 1)begin
       duty <= 'b1;
     end else begin
       duty <= 'b0;
@@ -88,7 +93,7 @@ module top (
 endmodule
 
 module timer #(
-  parameter COUNT_MAX = 27000
+  parameter COUNT_MAX = 2700
 ) (
   input  wire  clk,
   output logic overflow
