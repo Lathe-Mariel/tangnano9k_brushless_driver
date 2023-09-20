@@ -28,7 +28,10 @@ module top (
   logic _LR;
   logic _LS;
   logic _LT;
-
+  logic[15:0] processCounter;
+  logic[7:0] HSCounter;
+  logic continuous;
+  logic[2:0] oldHS;
 
   timer #(
     .COUNT_MAX()
@@ -38,11 +41,31 @@ module top (
   );
 
   always @(posedge controlCLK)begin
-    if(rotateCounter == 7'd90)begin
-      rotateCLK <= ~rotateCLK;
-      rotateCounter <= 5'd0;
+
+    if(continuous == 0)begin
+      if(rotateCounter == 7'd90)begin
+        rotateState <= (rotateState + 1) % 6;
+        rotateCounter <= 5'd0;
+      end else begin
+        rotateCounter <= rotateCounter + 1;
+      end
     end else begin
-      rotateCounter <= rotateCounter + 'b1;
+//changing rotateState by hall sensor 
+    end
+
+    if(processCounter == 'd1024)begin
+      if(HSCounter > 10)begin
+        continuous <= 'b1;
+      end else begin
+        continuous <= 'b0;
+      end
+      HSCounter <= 0;
+      processCounter <= 0;
+    end else begin
+      processCounter <= processCounter + 1;
+      if(oldHS != HS)begin
+        HSCounter <= HSCounter + 1;
+      end
     end
 
     if(dutyCounter[1:0] == 3'b11)begin
@@ -68,11 +91,6 @@ module top (
     end else begin
       HIN_R <= 0; _LR <= 1; HIN_S <= 0; _LS <= 1; HIN_T <= 0; _LT <= 1;
     end
-    if(rotateState == 3'd5)begin
-      rotateState <= 3'd0;
-    end else begin
-      rotateState <= rotateState + 3'd1;
-    end
 
   end
 
@@ -88,6 +106,7 @@ module top (
   assign anode[6] = HIN_R;
   assign anode[7] = HIN_S;
   assign anode[5] = HIN_T;
+  assign anode[2] = tacSW[0];
   assign cathode = 4'b0001;
 
 endmodule

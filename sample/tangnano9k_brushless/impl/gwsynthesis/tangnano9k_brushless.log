@@ -1,20 +1,24 @@
 GowinSynthesis start
 Running parser ...
-Analyzing Verilog file 'E:\git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv'
-Compiling module 'top'("E:\git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":3)
-Compiling module 'timer'("E:\git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":93)
-WARN  (EX3791) : Expression size 13 truncated to fit in target size 12("E:\git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":107)
-WARN  (EX3791) : Expression size 8 truncated to fit in target size 7("E:\git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":44)
+Analyzing Verilog file 'C:\Git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv'
+Compiling module 'top'("C:\Git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":3)
+Compiling module 'timer'("C:\Git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":114)
+WARN  (EX3791) : Expression size 13 truncated to fit in target size 12("C:\Git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":128)
+WARN  (EX3791) : Expression size 8 truncated to fit in target size 7("C:\Git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":50)
+WARN  (EX3791) : Expression size 17 truncated to fit in target size 16("C:\Git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":65)
+WARN  (EX3791) : Expression size 9 truncated to fit in target size 8("C:\Git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":67)
+WARN  (EX1998) : Net 'rotateCLK' does not have a driver("C:\Git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":23)
+WARN  (EX1998) : Net 'dutyCounter[1]' does not have a driver("C:\Git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":27)
+WARN  (EX1998) : Net 'oldHS[2]' does not have a driver("C:\Git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":34)
 NOTE  (EX0101) : Current top module is "top"
-WARN  (EX0211) : The output port "anode[4]" of module "top" has no driver, assigning undriven bits to Z, simulation mismatch possible("E:\git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":17)
-WARN  (EX0211) : The output port "anode[3]" of module "top" has no driver, assigning undriven bits to Z, simulation mismatch possible("E:\git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":17)
-WARN  (EX0211) : The output port "anode[2]" of module "top" has no driver, assigning undriven bits to Z, simulation mismatch possible("E:\git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":17)
-WARN  (EX0211) : The output port "anode[1]" of module "top" has no driver, assigning undriven bits to Z, simulation mismatch possible("E:\git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":17)
-WARN  (EX0211) : The output port "anode[0]" of module "top" has no driver, assigning undriven bits to Z, simulation mismatch possible("E:\git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":17)
+WARN  (EX0211) : The output port "anode[4]" of module "top" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":17)
+WARN  (EX0211) : The output port "anode[3]" of module "top" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":17)
+WARN  (EX0211) : The output port "anode[1]" of module "top" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":17)
+WARN  (EX0211) : The output port "anode[0]" of module "top" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":17)
 [5%] Running netlist conversion ...
-WARN  (CV0016) : Input sw1 is unused("E:\git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":6)
-WARN  (CV0016) : Input sw2 is unused("E:\git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":7)
-WARN  (CV0020) : Input tacSW[3:1] is unused("E:\git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":8)
+WARN  (CV0016) : Input sw1 is unused("C:\Git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":6)
+WARN  (CV0016) : Input sw2 is unused("C:\Git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":7)
+WARN  (CV0020) : Input tacSW[3:1] is unused("C:\Git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":8)
 Running device independent optimization ...
 [10%] Optimizing Phase 0 completed
 [15%] Optimizing Phase 1 completed
@@ -30,6 +34,7 @@ Running technical mapping ...
 [75%] Tech-Mapping Phase 2 completed
 [80%] Tech-Mapping Phase 3 completed
 [90%] Tech-Mapping Phase 4 completed
-[95%] Generate netlist file "E:\git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\impl\gwsynthesis\tangnano9k_brushless.vg" completed
-[100%] Generate report file "E:\git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\impl\gwsynthesis\tangnano9k_brushless_syn.rpt.html" completed
+WARN  (NL0002) : The module "timer" instantiated to "inst_1" is swept in optimizing("C:\Git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":41)
+[95%] Generate netlist file "C:\Git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\impl\gwsynthesis\tangnano9k_brushless.vg" completed
+[100%] Generate report file "C:\Git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\impl\gwsynthesis\tangnano9k_brushless_syn.rpt.html" completed
 GowinSynthesis finish
