@@ -30,7 +30,7 @@ module top (
   logic _LT;
   logic[15:0] processCounter;
   logic[7:0] HSCounter;
-  logic continuous;
+  logic isRotate;
   logic[2:0] oldHS;
 
   timer #(
@@ -42,7 +42,7 @@ module top (
 
   always @(posedge controlCLK)begin
 
-    if(continuous == 0)begin
+    if(isRotate == 0)begin
       if(rotateCounter == 7'd90)begin
         rotateState <= (rotateState + 1) % 6;
         rotateCounter <= 5'd0;
@@ -55,9 +55,9 @@ module top (
 
     if(processCounter == 'd1024)begin
       if(HSCounter > 10)begin
-        continuous <= 'b1;
+        isRotate <= 'b1;
       end else begin
-        continuous <= 'b0;
+        isRotate <= 'b0;
       end
       HSCounter <= 0;
       processCounter <= 0;
@@ -109,6 +109,28 @@ module top (
   assign anode[2] = tacSW[0];
   assign cathode = 4'b0001;
 
+  function [7:0] decode7seg;
+  input [3:0] in;
+    case(in)
+      4'h0:  decode7seg = 8'b00000000;
+      4'h1:  decode7seg = 8'b01100000;
+      4'h2:  decode7seg = 8'b11011010;
+      4'h3:  decode7seg = 8'b11110010;
+      4'h4:  decode7seg = 8'b01100110;
+      4'h5:  decode7seg = 8'b10110110;
+      4'h6:  decode7seg = 8'b10111110;
+      4'h7:  decode7seg = 8'b11100000;
+      4'h8:  decode7seg = 8'b11111110;
+      4'h9:  decode7seg = 8'b11110110;
+      4'ha:  decode7seg = 8'b11101110;
+      4'hb:  decode7seg = 8'b00111110;
+      4'hc:  decode7seg = 8'b10011100;
+      4'hd:  decode7seg = 8'b01111010;
+      4'he:  decode7seg = 8'b10011110;
+      4'hf:  decode7seg = 8'b10001110;
+      default:decode7seg = 8'b00000000;
+    endcase
+  endfunction
 endmodule
 
 module timer #(
