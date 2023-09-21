@@ -21,7 +21,7 @@ module top (
 
   logic  controlCLK;
   logic rotateCLK;
-  logic[6:0] rotateCounter;
+  logic[6:0] forcedRotationCounter;  //強制転流用インターバルカウンタ
   logic[2:0]  rotateState;
   logic duty;
   logic[3:0] dutyCounter;
@@ -43,11 +43,11 @@ module top (
   always @(posedge controlCLK)begin
 
     if(isRotate == 0)begin
-      if(rotateCounter == 7'd90)begin
+      if(forcedRotationCounter == 7'd110)begin
         rotateState <= (rotateState + 1) % 6;
-        rotateCounter <= 5'd0;
+        forcedRotationCounter <= 5'd0;
       end else begin
-        rotateCounter <= rotateCounter + 1;
+        forcedRotationCounter <= forcedRotationCounter + 1;
       end
     end else begin
 //changing rotateState by hall sensor
@@ -72,15 +72,14 @@ module top (
       end
     end
 
-    if(processCounter == 'd1024)begin
-      anode[2] <= ~anode[2];
-      if(HSCounter > 1)begin
+    if(processCounter[10] == 1)begin
+      anode[2] <= ~anode[2];  // pilot lamp
+      if(HSCounter > 3)begin
         isRotate <= 'b1;
       end else begin
         isRotate <= 'b0;
       end
       HSCounter <= 0;
-      processCounter <= 0;
     end else begin
       processCounter <= processCounter + 1;
       if(oldHS != HS)begin
@@ -96,7 +95,7 @@ module top (
     end else begin
       duty <= 'b0;
     end
-    dutyCounter <= dutyCounter + 1;
+    dutyCounter <= dutyCounter + 'd1;
 
   end
 

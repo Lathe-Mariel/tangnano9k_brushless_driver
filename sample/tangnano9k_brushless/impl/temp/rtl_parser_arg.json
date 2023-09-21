@@ -1,7 +1,7 @@
 {
  "Files" : [
   {
-   "Path" : "E:/git/tangnano9k_brushless_driver/sample/tangnano9k_brushless/src/top.sv",
+   "Path" : "H:/git/tangnano9k_brushless_driver/sample/tangnano9k_brushless/src/top.sv",
    "Type" : "verilog"
   }
  ],
@@ -9,7 +9,7 @@
 
  ],
  "LoopLimit" : 2000,
- "ResultFile" : "E:/git/tangnano9k_brushless_driver/sample/tangnano9k_brushless/impl/temp/rtl_parser.result",
+ "ResultFile" : "H:/git/tangnano9k_brushless_driver/sample/tangnano9k_brushless/impl/temp/rtl_parser.result",
  "Top" : "top",
  "VerilogStd" : "sysv",
  "VhdlStd" : "vhdl_93"
