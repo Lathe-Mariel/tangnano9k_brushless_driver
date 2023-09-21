@@ -51,6 +51,7 @@ module top (
       end
     end else begin
 //changing rotateState by hall sensor 
+      
     end
 
     if(processCounter == 'd1024)begin
@@ -78,7 +79,8 @@ module top (
 
   end
 
-  always @(posedge rotateCLK)begin
+  function motorPhase;
+  input[2:0] rotateState;
     if(toggleSW[2])begin
       case(rotateState)
         3'd0: begin HIN_R <= 1; _LR <= 1; HIN_S <= 0; _LS <= 0; HIN_T <= 0; _LT <= 1; end
@@ -91,8 +93,7 @@ module top (
     end else begin
       HIN_R <= 0; _LR <= 1; HIN_S <= 0; _LS <= 1; HIN_T <= 0; _LT <= 1;
     end
-
-  end
+  endfunction
 
   assign boardLED[2:0] = HS;
   assign boardLED[5:3] = toggleSW;
