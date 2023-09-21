@@ -50,12 +50,31 @@ module top (
         rotateCounter <= rotateCounter + 1;
       end
     end else begin
-//changing rotateState by hall sensor 
-      
+//changing rotateState by hall sensor
+      if(toggleSW[0])begin 
+        case(HS)
+          3'd1: rotateState = 3'd4;
+          3'd2: rotateState = 3'd0;
+          3'd3: rotateState = 3'd5;
+          3'd4: rotateState = 3'd2;
+          3'd5: rotateState = 3'd3;
+          3'd6: rotateState = 3'd1;
+        endcase
+      end else begin
+        case(HS)
+          3'd1: rotateState = 3'd1;
+          3'd2: rotateState = 3'd3;
+          3'd3: rotateState = 3'd2;
+          3'd4: rotateState = 3'd5;
+          3'd5: rotateState = 3'd0;
+          3'd6: rotateState = 3'd4;
+        endcase
+      end
     end
 
     if(processCounter == 'd1024)begin
-      if(HSCounter > 10)begin
+      anode[2] <= ~anode[2];
+      if(HSCounter > 1)begin
         isRotate <= 'b1;
       end else begin
         isRotate <= 'b0;
@@ -66,6 +85,7 @@ module top (
       processCounter <= processCounter + 1;
       if(oldHS != HS)begin
         HSCounter <= HSCounter + 1;
+        oldHS <= HS;
       end
     end
 
@@ -76,11 +96,11 @@ module top (
     end else begin
       duty <= 'b0;
     end
+    dutyCounter <= dutyCounter + 1;
 
   end
 
-  function motorPhase;
-  input[2:0] rotateState;
+  always @(rotateState)begin
     if(toggleSW[2])begin
       case(rotateState)
         3'd0: begin HIN_R <= 1; _LR <= 1; HIN_S <= 0; _LS <= 0; HIN_T <= 0; _LT <= 1; end
@@ -93,10 +113,13 @@ module top (
     end else begin
       HIN_R <= 0; _LR <= 1; HIN_S <= 0; _LS <= 1; HIN_T <= 0; _LT <= 1;
     end
-  endfunction
+  end
 
   assign boardLED[2:0] = HS;
-  assign boardLED[5:3] = toggleSW;
+  assign boardLED[5] = toggleSW[0];
+  assign boardLED[4] = toggleSW[1];
+  assign boardLED[3] = toggleSW[2];
+  assign anode[0] = isRotate;
 
   assign _LIN_R = ~(~_LR * duty);
   assign _LIN_S = ~(~_LS * duty);
@@ -107,7 +130,7 @@ module top (
   assign anode[6] = HIN_R;
   assign anode[7] = HIN_S;
   assign anode[5] = HIN_T;
-  assign anode[2] = tacSW[0];
+  assign anode[1] = tacSW[0];
   assign cathode = 4'b0001;
 
   function [7:0] decode7seg;

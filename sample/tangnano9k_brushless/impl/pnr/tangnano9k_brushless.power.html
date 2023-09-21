@@ -59,11 +59,11 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Design File</td>
-<td>C:\Git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\impl\gwsynthesis\tangnano9k_brushless.vg</td>
+<td>E:\git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\impl\gwsynthesis\tangnano9k_brushless.vg</td>
 </tr>
 <tr>
 <td class="label">Physical Constraints File</td>
-<td>C:\Git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.cst</td>
+<td>E:\git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.cst</td>
 </tr>
 <tr>
 <td class="label">Timing Constraints File</td>
@@ -71,7 +71,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Version</td>
-<td>V1.9.8.11 Education</td>
+<td>V1.9.8.09 Education</td>
 </tr>
 <tr>
 <td class="label">Part Number</td>
@@ -79,20 +79,16 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Device</td>
-<td>GW1NR-9</td>
-</tr>
-<tr>
-<td class="label">Device Version</td>
-<td>C</td>
+<td>GW1NR-9C</td>
 </tr>
 <tr>
 <td class="label">Created Time</td>
-<td>Thu Sep 21 19:12:00 2023
+<td>Thu Sep 21 20:28:02 2023
 </td>
 </tr>
 <tr>
 <td class="label">Legal Announcement</td>
-<td>Copyright (C)2014-2023 Gowin Semiconductor Corporation. All rights reserved.</td>
+<td>Copyright (C)2014-2022 Gowin Semiconductor Corporation. All rights reserved.</td>
 </tr>
 </table>
 <h1><a name="Summary">Power Summary</a></h1>
@@ -100,15 +96,15 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <table class="summary_table">
 <tr>
 <td class="label">Total Power (mW)</td>
-<td>10.003</td>
+<td>11.070</td>
 </tr>
 <tr>
 <td class="label">Quiescent Power (mW)</td>
-<td>9.574</td>
+<td>9.585</td>
 </tr>
 <tr>
 <td class="label">Dynamic Power (mW)</td>
-<td>0.429</td>
+<td>1.485</td>
 </tr>
 <tr>
 <td class="label">Psram Power (mW)</td>
@@ -119,7 +115,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <table class="summary_table">
 <tr>
 <td class="label">Junction Temperature</td>
-<td>25.215</td>
+<td>25.238</td>
 </tr>
 <tr>
 <td class="label">Theta JA</td>
@@ -127,7 +123,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Max Allowed Ambient Temperature</td>
-<td>84.785</td>
+<td>84.762</td>
 </tr>
 </table>
 <h2><a name="Configure_Info">Configure Information:</a></h2>
@@ -196,23 +192,23 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <tr>
 <td>VCC</td>
 <td>1.200</td>
-<td>0.061</td>
-<td>2.162</td>
-<td>2.668</td>
+<td>0.252</td>
+<td>2.165</td>
+<td>2.900</td>
 </tr>
 <tr>
 <td>VCCX</td>
 <td>2.500</td>
-<td>0.061</td>
+<td>0.204</td>
 <td>2.424</td>
-<td>6.214</td>
+<td>6.571</td>
 </tr>
 <tr>
-<td>VCCIO33</td>
+<td>VCCO33</td>
 <td>3.300</td>
-<td>0.061</td>
-<td>0.278</td>
-<td>1.121</td>
+<td>0.204</td>
+<td>0.281</td>
+<td>1.600</td>
 </tr>
 </table>
 <h1><a name="Detail">Power Details</a></h1>
@@ -225,10 +221,16 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <th class="label">Average Toggle Rate(millions of transitions/sec)</th>
 </tr>
 <tr>
+<td>Logic</td>
+<td>0.053</td>
+<td>NA</td>
+<td>7.104</td>
+</tr>
+<tr>
 <td>IO</td>
-<td>2.378
-<td>1.948
-<td>2.823
+<td>3.394
+<td>1.966
+<td>5.469
 </tr>
 </table>
 <h2><a name="By_Hierarchy">Power By Hierarchy:</a></h2>
@@ -240,8 +242,12 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td>top</td>
-<td>0.000</td>
-<td>0.000(0.000)</td>
+<td>0.053</td>
+<td>0.053(0.013)</td>
+<tr>
+<td>top/inst_1/</td>
+<td>0.013</td>
+<td>0.013(0.000)</td>
 </table>
 <h2><a name="By_Clock_Domain">Power By Clock Domain:</a></h2>
 <table class="detail_table">
@@ -249,6 +255,26 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <th class="label">Clock Domain</th>
 <th class="label">Clock Frequency(Mhz)</th>
 <th class="label">Total Dynamic Power(mW)</th>
+</tr>
+<tr>
+<td>clk</td>
+<td>50.000</td>
+<td>0.013</td>
+</tr>
+<tr>
+<td>controlCLK</td>
+<td>50.000</td>
+<td>0.041</td>
+</tr>
+<tr>
+<td>n204_15</td>
+<td>50.000</td>
+<td>0.003</td>
+</tr>
+<tr>
+<td>NO CLOCK DOMAIN</td>
+<td>0.000</td>
+<td>0.000</td>
 </tr>
 </table>
 </div><!-- content -->
