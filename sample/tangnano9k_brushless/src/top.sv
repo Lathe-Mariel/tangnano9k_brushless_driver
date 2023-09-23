@@ -33,6 +33,10 @@ module top (
   logic isRotate;
   logic[2:0] oldHS;
 
+  logic[15:0] display7seg='d8086; //0000-9999
+  logic[1:0] disp_digit;
+
+
   timer #(
     .COUNT_MAX()
   ) inst_1 (
@@ -51,7 +55,7 @@ module top (
       end
     end else begin
 //changing rotateState by hall sensor
-      if(toggleSW[0])begin 
+      if(toggleSW[0])begin   //CW
         case(HS)
           3'd1: rotateState = 3'd4;
           3'd2: rotateState = 3'd0;
@@ -60,7 +64,7 @@ module top (
           3'd5: rotateState = 3'd3;
           3'd6: rotateState = 3'd1;
         endcase
-      end else begin
+      end else begin         //CCW
         case(HS)
           3'd1: rotateState = 3'd1;
           3'd2: rotateState = 3'd3;
@@ -72,8 +76,9 @@ module top (
       end
     end
 
-    if(processCounter[10] == 1)begin
-      anode[2] <= ~anode[2];  // pilot lamp
+    if(processCounter[10] == 1)begin  // measure speed
+//      anode[2] <= ~anode[2];  // pilot lamp blink
+      processCounter <= processCounter + 1;
       if(HSCounter > 3)begin
         isRotate <= 'b1;
       end else begin
@@ -88,7 +93,7 @@ module top (
       end
     end
 
-    if(dutyCounter[1:0] == 3'b11)begin
+    if(dutyCounter[1:0] == 3'b11)begin  //duty control
       duty <= 'b1;
     end else if(tacSW[0] == 0 && dutyCounter[0] == 1)begin
       duty <= 'b1;
@@ -97,6 +102,24 @@ module top (
     end
     dutyCounter <= dutyCounter + 'd1;
 
+    
+
+  end
+
+  logic[9:0] divider;
+  always @(posedge processCounter[2])begin  //7seg control
+
+    disp_digit <= disp_digit + 1;
+    cathode <= 4'b0001 << disp_digit;
+
+    case(disp_digit)
+      2'd0: divider = 1;
+      2'd1: divider = 10;
+      2'd2: divider = 100;
+      2'd3: divider = 1000;
+    endcase
+
+    anode <= decode7seg((display7seg/divider) % 10);
   end
 
   always @(rotateState)begin
@@ -118,7 +141,7 @@ module top (
   assign boardLED[5] = toggleSW[0];
   assign boardLED[4] = toggleSW[1];
   assign boardLED[3] = toggleSW[2];
-  assign anode[0] = isRotate;
+//  assign anode[0] = isRotate;
 
   assign _LIN_R = ~(~_LR * duty);
   assign _LIN_S = ~(~_LS * duty);
@@ -126,32 +149,32 @@ module top (
 
 //test
 //  assign anode = 8'b00010100;
-  assign anode[6] = HIN_R;
-  assign anode[7] = HIN_S;
-  assign anode[5] = HIN_T;
-  assign anode[1] = tacSW[0];
-  assign cathode = 4'b0001;
+//  assign anode[6] = HIN_R;
+//  assign anode[7] = HIN_S;
+//  assign anode[5] = HIN_T;
+//  assign anode[1] = tacSW[0];
+//  assign cathode = 4'b0001;
 
   function [7:0] decode7seg;
   input [3:0] in;
     case(in)
-      4'h0:  decode7seg = 8'b00000000;
-      4'h1:  decode7seg = 8'b01100000;
-      4'h2:  decode7seg = 8'b11011010;
-      4'h3:  decode7seg = 8'b11110010;
-      4'h4:  decode7seg = 8'b01100110;
-      4'h5:  decode7seg = 8'b10110110;
-      4'h6:  decode7seg = 8'b10111110;
-      4'h7:  decode7seg = 8'b11100000;
-      4'h8:  decode7seg = 8'b11111110;
-      4'h9:  decode7seg = 8'b11110110;
-      4'ha:  decode7seg = 8'b11101110;
-      4'hb:  decode7seg = 8'b00111110;
-      4'hc:  decode7seg = 8'b10011100;
-      4'hd:  decode7seg = 8'b01111010;
-      4'he:  decode7seg = 8'b10011110;
-      4'hf:  decode7seg = 8'b10001110;
-      default:decode7seg = 8'b00000000;
+      4'h0:  decode7seg = 8'b00000011;
+      4'h1:  decode7seg = 8'b10011111;
+      4'h2:  decode7seg = 8'b00100101;
+      4'h3:  decode7seg = 8'b00001101;
+      4'h4:  decode7seg = 8'b10011001;
+      4'h5:  decode7seg = 8'b01001001;
+      4'h6:  decode7seg = 8'b01000001;
+      4'h7:  decode7seg = 8'b00011111;
+      4'h8:  decode7seg = 8'b00000001;
+      4'h9:  decode7seg = 8'b00001001;
+      4'ha:  decode7seg = 8'b00010001;
+      4'hb:  decode7seg = 8'b11000001;
+      4'hc:  decode7seg = 8'b01100011;
+      4'hd:  decode7seg = 8'b10000101;
+      4'he:  decode7seg = 8'b01100001;
+      4'hf:  decode7seg = 8'b01110001;
+      default:decode7seg = 8'b11111111;
     endcase
   endfunction
 endmodule
