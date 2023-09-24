@@ -1,0 +1,99 @@
+Communication with the MCP3004/3008 devices is
+accomplished using a standard SPI-compatible serial
+interface. Initiating communication with either device is
+done by bringing the CS line low (see Figure 5-1). If the
+device was powered up with the CS pin low, it must be
+brought high and back low to initiate communication.
+MCP3004/3008デバイスとの通信インターフェイスは
+標準のSPI互換シリアルを使用して実現。
+いずれかのデバイスとの通信の開始はCSラインをローにすることによって行われます(図5-1を参照)。
+もしCSピンがローの状態でデバイスの電源が投入されたら，通信を開始するためにハイにした後，、ローにする必要があります．
+
+
+
+The first clock received with CS low and DIN high will
+constitute a start bit. The SGL/DIFF bit follows the start
+bit and will determine if the conversion will be done
+using single-ended or differential input mode. 
+CSローとDINハイで受信した最初のクロックは、
+開始ビットを構成します。SGL/DIFF ビットは開始後に続きます
+ビットであり、変換が行われるかどうかを決定します
+シングルエンドまたは差動入力モードを使用。
+
+
+The next
+three bits (D0, D1 and D2) are used to select the input
+channel configuration. Table 5-1 and Table 5-2 show
+the configuration bits for the MCP3004 and MCP3008,
+respectively. The device will begin to sample the
+analog input on the fourth rising edge of the clock after
+the start bit has been received. The sample period will
+end on the falling edge of the fifth clock following the
+start bit.
+次の
+3ビット(D0、D1、D2)を使用して入力を選択します
+チャネル構成。表 5-1 および 表 5-2 を示します
+MCP3004とMCP3008の構成ビット、
+それぞれ。デバイスはサンプリングを開始します
+後のクロックの4番目の立ち上がりエッジのアナログ入力
+開始ビットが受信されました。サンプル期間は
+に続く5番目のクロックの立ち下がりエッジで終了します
+スタートビット。
+
+
+Once the D0 bit is input, one more clock is required to
+complete the sample and hold period (DIN is a “don’t
+care” for this clock). On the falling edge of the next
+clock, the device will output a low null bit. The next 10
+clocks will output the result of the conversion with MSB
+first, as shown in Figure 5-1. 
+D0ビットが入力されると、もう1つのクロックが必要です。
+サンプルとホールド期間を完了します(DINは「禁止事項」です
+この時計の「ケア」)。次の下りエッジで
+クロックの場合、デバイスは低いヌルビットを出力します。次の10
+クロックはMSBで変換結果を出力します
+まず、図5-1に示すように。
+
+
+Data is always output from
+the device on the falling edge of the clock. If all 10 data
+bits have been transmitted and the device continues to
+receive clocks while the CS is held low, the device will
+output the conversion result LSB first, as is shown in
+Figure 5-2. 
+データは常に
+クロックの立ち下がりエッジにあるデバイス。全10データの場合
+ビットが送信され、デバイスが続行されます
+CSがローに保持されている間にクロックを受信すると、デバイスは
+次に示すように、変換結果LSBを最初に出力します。
+図 5-2.
+
+
+If more clocks are provided to the device
+while CS is still low (after the LSB first data has been
+transmitted), the device will clock out zeros indefinitely.
+より多くのクロックがデバイスに提供される場合
+CSがまだ低い間(LSBの最初のデータが
+送信)、デバイスはゼロを無期限にクロックアウトします。
+
+
+If necessary, it is possible to bring CS low and clock in
+leading zeros on the DIN line before the start bit. This is
+often done when dealing with microcontroller-based
+SPI ports that must send 8 bits at a time. 
+必要に応じて、CSをローにしてクロックインすることができます
+開始ビットの前のDINラインの先行ゼロ。これは
+マイクロコントローラベースを扱うときによく行われます
+一度に 8 ビットを送信する必要がある SPI ポート。
+
+Refer to
+Section 6.1 “Using the MCP3004/3008 with Microcontroller (MCU) SPI Ports”, “Using the MCP3004/
+3008 with Microcontroller (MCU) SPI Ports”, for more
+details on using the MCP3004/3008 devices with
+hardware SPI ports.
+
+言い及ぶ
+6.1項「マイクロコントローラ(MCU)SPIポートでのMCP3004/3008の使用」、「MCP3004の使用/
+3008 マイクロコントローラ (MCU) SPI ポート付き」、詳細
+MCP3004/3008 デバイスでの使用の詳細
+ハードウェア SPI ポート。
