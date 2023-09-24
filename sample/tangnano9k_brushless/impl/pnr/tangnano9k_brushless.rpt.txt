@@ -11,26 +11,26 @@
   <PnR Version>: V1.9.8.09 Education
   <Part Number>: GW1NR-LV9QN88PC6/I5
   <Device>: GW1NR-9C
-  <Created Time>:Sun Sep 24 00:53:24 2023
+  <Created Time>:Sun Sep 24 22:45:17 2023
 
 
 2. PnR Details
 
   Running placement:
-    Placement Phase 0: CPU time = 0h 0m 0.011s, Elapsed time = 0h 0m 0.01s
-    Placement Phase 1: CPU time = 0h 0m 0.101s, Elapsed time = 0h 0m 0.102s
-    Placement Phase 2: CPU time = 0h 0m 0.012s, Elapsed time = 0h 0m 0.013s
-    Placement Phase 3: CPU time = 0h 0m 1s, Elapsed time = 0h 0m 1s
-    Total Placement: CPU time = 0h 0m 1s, Elapsed time = 0h 0m 1s
+    Placement Phase 0: CPU time = 0h 0m 0.131s, Elapsed time = 0h 0m 0.13s
+    Placement Phase 1: CPU time = 0h 0m 0.114s, Elapsed time = 0h 0m 0.114s
+    Placement Phase 2: CPU time = 0h 0m 0.076s, Elapsed time = 0h 0m 0.077s
+    Placement Phase 3: CPU time = 0h 0m 2s, Elapsed time = 0h 0m 2s
+    Total Placement: CPU time = 0h 0m 2s, Elapsed time = 0h 0m 2s
  Running routing:
-    Routing Phase 0: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s
-    Routing Phase 1: CPU time = 0h 0m 0.18s, Elapsed time = 0h 0m 0.18s
-    Routing Phase 2: CPU time = 0h 0m 0.1s, Elapsed time = 0h 0m 0.1s
-    Total Routing: CPU time = 0h 0m 0.28s, Elapsed time = 0h 0m 0.28s
+    Routing Phase 0: CPU time = 0h 0m 0.001s, Elapsed time = 0h 0m 0s
+    Routing Phase 1: CPU time = 0h 0m 0.232s, Elapsed time = 0h 0m 0.232s
+    Routing Phase 2: CPU time = 0h 0m 0.525s, Elapsed time = 0h 0m 0.525s
+    Total Routing: CPU time = 0h 0m 0.758s, Elapsed time = 0h 0m 0.757s
  Generate output files:
-    CPU time = 0h 0m 1s, Elapsed time = 0h 0m 1s
+    CPU time = 0h 0m 3s, Elapsed time = 0h 0m 3s
 
- Total Time and Memory Usage: CPU time = 0h 0m 3s, Elapsed time = 0h 0m 3s, Peak memory usage = 227MB
+ Total Time and Memory Usage: CPU time = 0h 0m 6s, Elapsed time = 0h 0m 6s, Peak memory usage = 222MB
 
 
 3. Resource Usage Summary
@@ -38,22 +38,23 @@
   ----------------------------------------------------------
   Resources                   | Usage
   ----------------------------------------------------------
-  Logic                       | 86/8640  1%
-    --LUT,ALU,ROM16           | 86(43 LUT, 43 ALU, 0 ROM16)
+  Logic                       | 403/8640  4%
+    --LUT,ALU,ROM16           | 403(355 LUT, 48 ALU, 0 ROM16)
     --SSRAM(RAM16)            | 0
-  Register                    | 63/6693  1%
-    --Logic Register as Latch | 3/6480  1%
-    --Logic Register as FF    | 47/6480  1%
-    --I/O Register as Latch   | 3/213  1%
-    --I/O Register as FF      | 10/213  4%
-  CLS                         | 53/4320  1%
-  I/O Port                    | 37
-  I/O Buf                     | 32
-    --Input Buf               | 8
-    --Output Buf              | 24
+  Register                    | 253/6693  3%
+    --Logic Register as Latch | 6/6480  1%
+    --Logic Register as FF    | 233/6480  3%
+    --I/O Register as Latch   | 0/213  0%
+    --I/O Register as FF      | 14/213  6%
+  CLS                         | 289/4320  6%
+  I/O Port                    | 45
+  I/O Buf                     | 40
+    --Input Buf               | 12
+    --Output Buf              | 28
     --Inout Buf               | 0
   IOLOGIC                     | 0%
-  BSRAM                       | 0%
+  BSRAM                       | 15%
+    --SDPB                    | 4
   DSP                         | 0%
   PLL                         | 0/2  0%
   DCS                         | 0/8  0%
@@ -73,9 +74,9 @@
   -----------------------
   I/O Bank  | Usage       
   -----------------------
-  bank 1   | 14/25(56%)  
-  bank 2   | 15/23(65%)  
-  bank 3   | 8/23(34%)   
+  bank 1   | 16/25(64%)  
+  bank 2   | 17/23(73%)  
+  bank 3   | 12/23(52%)  
   =======================
 
 
@@ -85,7 +86,7 @@
   Global Clock  | Usage       
   -------------------------------
   PRIMARY       | 4/8(50%)
-  LW            | 0/8(0%)
+  LW            | 2/8(25%)
   GCLK_PIN      | 3/4(75%)
   PLL           | 0/2(0%)
   CLKDIV        | 0/8(0%)
@@ -99,9 +100,11 @@
   Signal         | Global Clock   | Location
   -------------------------------------------
   clk_d          | PRIMARY        |  BL
-  n299_17        | PRIMARY        |  BR BL
-  controlCLK     | PRIMARY        |  TR BR BL
-  processCounter[2]| PRIMARY        |  BR BL
+  n444_15        | PRIMARY        |  BR
+  processCounter[3]| PRIMARY        |  TL BR BL
+  control0[0]    | PRIMARY        |  TL BL
+  AD_CLK_d       | LW             |  -
+  gao_jtag_reset | LW             |  -
   ===========================================
 
 
@@ -123,6 +126,13 @@ toggleSW[2]  |           | 75/1          | Y          | in    | IOT38[A] | LVCMO
 HS[0]        |           | 63/1          | Y          | in    | IOR5[A]  | LVCMOS33   | NA    | DOWN      | ON        | NONE       | NA         | NA        | NA         | OFF             | NA            | 3.3       
 HS[1]        |           | 41/2          | Y          | in    | IOB41[A] | LVCMOS33   | NA    | DOWN      | ON        | NONE       | NA         | NA        | NA         | NA              | NA            | 3.3       
 HS[2]        |           | 42/2          | Y          | in    | IOB41[B] | LVCMOS33   | NA    | UP        | ON        | NONE       | NA         | NA        | NA         | NA              | NA            | 3.3       
+DOUT         |           | 31/2          | Y          | in    | IOB15[A] | LVCMOS33   | NA    | UP        | ON        | NONE       | NA         | NA        | NA         | NA              | NA            | 3.3       
+tms_pad_i    |           | 5/3           | N          | in    | IOL11[A] | LVCMOS33   | NA    | UP        | ON        | NONE       | NA         | NA        | NA         | OFF             | NA            | 3.3       
+tck_pad_i    |           | 6/3           | N          | in    | IOL11[B] | LVCMOS33   | NA    | UP        | ON        | NONE       | NA         | NA        | NA         | OFF             | NA            | 3.3       
+tdi_pad_i    |           | 7/3           | N          | in    | IOL12[B] | LVCMOS33   | NA    | UP        | ON        | NONE       | NA         | NA        | NA         | OFF             | NA            | 3.3       
+AD_CLK       |           | 32/2          | Y          | out   | IOB15[B] | LVCMOS33   | 8     | UP        | NA        | NA         | OFF        | FAST      | NA         | NA              | NA            | 3.3       
+CS           |           | 48/1          | Y          | out   | IOR24[B] | LVCMOS33   | 8     | UP        | NA        | NA         | OFF        | FAST      | NA         | OFF             | NA            | 3.3       
+DIN          |           | 49/1          | Y          | out   | IOR24[A] | LVCMOS33   | 8     | UP        | NA        | NA         | OFF        | FAST      | NA         | OFF             | NA            | 3.3       
 HIN_R        |           | 54/1          | Y          | out   | IOR15[A] | LVCMOS33   | 8     | UP        | NA        | NA         | OFF        | FAST      | NA         | OFF             | NA            | 3.3       
 HIN_S        |           | 55/1          | Y          | out   | IOR14[B] | LVCMOS33   | 8     | UP        | NA        | NA         | OFF        | FAST      | NA         | OFF             | NA            | 3.3       
 HIN_T        |           | 53/1          | Y          | out   | IOR15[B] | LVCMOS33   | 8     | UP        | NA        | NA         | OFF        | FAST      | NA         | OFF             | NA            | 3.3       
@@ -147,6 +157,7 @@ boardLED[2]  |           | 13/3          | Y          | out   | IOL21[B] | LVCMO
 boardLED[3]  |           | 14/3          | Y          | out   | IOL22[B] | LVCMOS33   | 8     | UP        | NA        | NA         | OFF        | FAST      | NA         | OFF             | NA            | 3.3       
 boardLED[4]  |           | 15/3          | Y          | out   | IOL25[B] | LVCMOS33   | 8     | UP        | NA        | NA         | OFF        | FAST      | NA         | OFF             | NA            | 3.3       
 boardLED[5]  |           | 16/3          | Y          | out   | IOL26[B] | LVCMOS33   | 8     | UP        | NA        | NA         | OFF        | FAST      | NA         | OFF             | NA            | 3.3       
+tdo_pad_o    |           | 8/3           | N          | out   | IOL13[A] | LVCMOS33   | 8     | UP        | NA        | NA         | OFF        | FAST      | NA         | OFF             | NA            | 3.3       
 ====================================================================================================================================================================================================================
 
 
@@ -189,8 +200,8 @@ Loc./Bank| Signal       | Dir.  | Site     | IO Type  | Drive | Pull Mode | PCI 
 28/2     | anode[5]     | out   | IOB11[B] | LVCMOS33 | 8     | UP        | NA        | NA         | OFF        | FAST      | NA         | NA              | NA            | 3.3  
 29/2     | anode[1]     | out   | IOB13[A] | LVCMOS33 | 8     | UP        | NA        | NA         | OFF        | FAST      | NA         | NA              | NA            | 3.3  
 30/2     | cathode[0]   | out   | IOB13[B] | LVCMOS33 | 8     | UP        | NA        | NA         | OFF        | FAST      | NA         | NA              | NA            | 3.3  
-31/2     | -            | in    | IOB15[A] | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA        | NA         | NA              | NA            | 3.3  
-32/2     | -            | in    | IOB15[B] | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA        | NA         | NA              | NA            | 3.3  
+31/2     | DOUT         | in    | IOB15[A] | LVCMOS33 | NA    | UP        | ON        | NONE       | NA         | NA        | NA         | NA              | NA            | 3.3  
+32/2     | AD_CLK       | out   | IOB15[B] | LVCMOS33 | 8     | UP        | NA        | NA         | OFF        | FAST      | NA         | NA              | NA            | 3.3  
 33/2     | anode[6]     | out   | IOB23[A] | LVCMOS33 | 8     | UP        | NA        | NA         | OFF        | FAST      | NA         | NA              | NA            | 3.3  
 34/2     | cathode[1]   | out   | IOB23[B] | LVCMOS33 | 8     | UP        | NA        | NA         | OFF        | FAST      | NA         | NA              | NA            | 3.3  
 35/2     | anode[2]     | out   | IOB29[A] | LVCMOS33 | 8     | UP        | NA        | NA         | OFF        | FAST      | NA         | NA              | NA            | 3.3  
@@ -204,10 +215,10 @@ Loc./Bank| Signal       | Dir.  | Site     | IO Type  | Drive | Pull Mode | PCI 
 47/2     | -            | in    | IOB43[B] | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA        | NA         | NA              | NA            | 3.3  
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 4/3      | sw1          | in    | IOL5[A]  | LVCMOS33 | NA    | UP        | ON        | NONE       | NA         | NA        | NA         | OFF             | NA            | 3.3  
-5/3      | -            | in    | IOL11[A] | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA        | NA         | NA              | NA            | 3.3  
-6/3      | -            | in    | IOL11[B] | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA        | NA         | NA              | NA            | 3.3  
-7/3      | -            | in    | IOL12[B] | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA        | NA         | NA              | NA            | 3.3  
-8/3      | -            | out   | IOL13[A] | LVCMOS18 | 8     | UP        | NA        | NA         | OFF        | FAST      | NA         | NA              | NA            | 3.3  
+5/3      | tms_pad_i    | in    | IOL11[A] | LVCMOS33 | NA    | UP        | ON        | NONE       | NA         | NA        | NA         | OFF             | NA            | 3.3  
+6/3      | tck_pad_i    | in    | IOL11[B] | LVCMOS33 | NA    | UP        | ON        | NONE       | NA         | NA        | NA         | OFF             | NA            | 3.3  
+7/3      | tdi_pad_i    | in    | IOL12[B] | LVCMOS33 | NA    | UP        | ON        | NONE       | NA         | NA        | NA         | OFF             | NA            | 3.3  
+8/3      | tdo_pad_o    | out   | IOL13[A] | LVCMOS33 | 8     | UP        | NA        | NA         | OFF        | FAST      | NA         | OFF             | NA            | 3.3  
 9/3      | -            | in    | IOL13[B] | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA        | NA         | NA              | NA            | 3.3  
 10/3     | boardLED[0]  | out   | IOL15[A] | LVCMOS33 | 8     | UP        | NA        | NA         | OFF        | FAST      | NA         | OFF             | NA            | 3.3  
 11/3     | boardLED[1]  | out   | IOL16[B] | LVCMOS33 | 8     | UP        | NA        | NA         | OFF        | FAST      | NA         | OFF             | NA            | 3.3  
@@ -229,8 +240,8 @@ Loc./Bank| Signal       | Dir.  | Site     | IO Type  | Drive | Pull Mode | PCI 
 52/1     | clk          | in    | IOR17[A] | LVCMOS33 | NA    | UP        | ON        | NONE       | NA         | NA        | NA         | OFF             | NA            | 3.3  
 51/1     | -            | in    | IOR17[B] | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA        | NA         | NA              | NA            | 3.3  
 50/1     | -            | in    | IOR22[B] | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA        | NA         | NA              | NA            | 3.3  
-49/1     | -            | in    | IOR24[A] | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA        | NA         | NA              | NA            | 3.3  
-48/1     | -            | in    | IOR24[B] | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA        | NA         | NA              | NA            | 3.3  
+49/1     | DIN          | out   | IOR24[A] | LVCMOS33 | 8     | UP        | NA        | NA         | OFF        | FAST      | NA         | OFF             | NA            | 3.3  
+48/1     | CS           | out   | IOR24[B] | LVCMOS33 | 8     | UP        | NA        | NA         | OFF        | FAST      | NA         | OFF             | NA            | 3.3  
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 =========================================================================================================================================================================================
 

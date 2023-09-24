@@ -5,10 +5,17 @@
     <Device id="GW1NR-9C" package="QFN88P" speed="6" partNumber="GW1NR-LV9QN88PC6/I5"/>
     <FileList>
         <File path="H:\git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv" type="verilog"/>
+        <File path="H:\Gowin\Gowin_V1.9.8.09_Education\IDE\data\ipcores\GAO_LITE\GW_AO_0\gw_ao_mem_ctrl.v" type="gao"/>
+        <File path="H:\Gowin\Gowin_V1.9.8.09_Education\IDE\data\ipcores\GAO_LITE\GW_AO_0\gw_ao_top.v" type="gao"/>
+        <File path="H:\Gowin\Gowin_V1.9.8.09_Education\IDE\data\ipcores\GAO_LITE\GW_CON\gw_con_top.v" type="gao"/>
+        <File path="H:\Gowin\Gowin_V1.9.8.09_Education\IDE\data\ipcores\gw_jtag.v" type="gao"/>
+        <File path="H:\git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\impl\gwsynthesis\RTL_GAO\gw_gao_top.v" type="gao"/>
     </FileList>
     <OptionList>
         <Option type="disable_insert_pad" value="0"/>
         <Option type="dsp_balance" value="0"/>
+        <Option type="include_path" value="H:/Gowin/Gowin_V1.9.8.09_Education/IDE/data/ipcores/GAO_LITE"/>
+        <Option type="include_path" value="H:/git/tangnano9k_brushless_driver/sample/tangnano9k_brushless/impl/gwsynthesis/RTL_GAO"/>
         <Option type="looplimit" value="2000"/>
         <Option type="output_file" value="H:\git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\impl\gwsynthesis\tangnano9k_brushless.vg"/>
         <Option type="print_all_synthesis_warning" value="0"/>

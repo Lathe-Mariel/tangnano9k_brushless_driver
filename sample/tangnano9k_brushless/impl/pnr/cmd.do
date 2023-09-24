@@ -3,9 +3,11 @@
 -pn GW1NR-LV9QN88PC6/I5
 -cst H:\git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.cst
 -cfg H:\git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\impl\pnr\device.cfg
+-gao_crc 0101010111011111
 -bit
 -tr
 -ph
 -timing
 -cst_error
 -route_maxfan 23
+-rtl_gao

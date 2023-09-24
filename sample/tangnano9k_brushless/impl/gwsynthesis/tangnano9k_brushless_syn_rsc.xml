@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Module name="top" Register="50" Alu="26" Lut="41">
-    <SubModule name="inst_1" Register="13" Alu="11" Lut="5"/>
+<Module name="top" Register="77" Alu="31" Lut="183">
+    <SubModule name="inst_1" Register="13" Alu="11" Lut="10"/>
+    <SubModule name="gw_gao_inst_0" Register="163" Lut="166" Bsram="4"/>
 </Module>

@@ -8,6 +8,10 @@ module top (
   input wire[3:0] tacSW,
   input wire[2:0] toggleSW,
   input  wire[2:0] HS,  //HallSensor
+  output wire AD_CLK,
+  output logic CS,
+  output logic DIN,
+  input reg DOUT,
   output logic HIN_R,
   output logic HIN_S,
   output logic HIN_T,
@@ -33,8 +37,10 @@ module top (
   logic isRotate;
   logic[2:0] oldHS;
 
-  logic[15:0] display7seg='d8086; //0000-9999
+  logic[15:0] display7seg; //0000-9999
   logic[1:0] disp_digit;
+
+  logic[9:0] recieveADC;
 
 
   timer #(
@@ -76,9 +82,10 @@ module top (
       end
     end
 
-    if(processCounter[10] == 1)begin  // measure speed
+// measure speed
+    processCounter <= processCounter + 1;
+    if(processCounter == 1024)begin
 //      anode[2] <= ~anode[2];  // pilot lamp blink
-      processCounter <= processCounter + 1;
       if(HSCounter > 3)begin
         isRotate <= 'b1;
       end else begin
@@ -86,11 +93,42 @@ module top (
       end
       HSCounter <= 0;
     end else begin
-      processCounter <= processCounter + 1;
       if(oldHS != HS)begin
         HSCounter <= HSCounter + 1;
         oldHS <= HS;
       end
+    end
+
+//ADC
+    if(processCounter[4:0] == 5'd0)begin
+      CS <= 0;
+      DIN <= 0;
+    end else if(processCounter[4:0] < 5'd9)begin
+      CS <=0;
+    end else if(processCounter[4:0] == 5'd9)begin  // START(always: 1)
+      DIN <= 1;
+      CS <= 0;
+    end else if(processCounter[4:0] == 5'd10)begin  //SINGLE or DIFFERENTIAL(SGL: 1)
+      DIN <= 1;
+      CS <= 0;
+    end else if(processCounter[4:0] == 5'd11)begin  // D2
+      DIN <= 1;
+      CS <= 0;
+    end else if(processCounter[4:0] == 5'd12)begin  // D1
+      DIN <= 0;
+      CS <= 0;
+    end else if(processCounter[4:0] == 5'd13)begin  // D0
+      DIN <= 0;
+      CS <= 0;
+    end else if(processCounter[4:0] < 5'd15)begin  // D0
+      CS <= 0;
+    end else if(processCounter[4:0] > 5'd14 && processCounter[4:0] < 25)begin
+      recieveADC[9 - processCounter[2:0]] <= DOUT;
+      DIN <= 0;
+      CS <= 0;
+    end else begin
+      DIN <= 0;
+      CS <= 1;
     end
 
     if(dutyCounter[1:0] == 3'b11)begin  //duty control
@@ -102,13 +140,12 @@ module top (
     end
     dutyCounter <= dutyCounter + 'd1;
 
-    
-
   end
 
+  //7seg control
   logic[9:0] divider;
-  always @(posedge processCounter[2])begin  //7seg control
-
+  always @(posedge processCounter[3])begin
+    display7seg <= recieveADC;
     disp_digit <= disp_digit + 1;
     cathode <= 4'b0001 << disp_digit;
 
@@ -137,6 +174,7 @@ module top (
     end
   end
 
+  assign AD_CLK = controlCLK;
   assign boardLED[2:0] = HS;
   assign boardLED[5] = toggleSW[0];
   assign boardLED[4] = toggleSW[1];
@@ -180,7 +218,7 @@ module top (
 endmodule
 
 module timer #(
-  parameter COUNT_MAX = 2700
+  parameter COUNT_MAX = 2700  //100us
 ) (
   input  wire  clk,
   output logic overflow
@@ -189,9 +227,11 @@ module timer #(
   logic [$clog2(COUNT_MAX+1)-1:0] counter = 'd0;
 
   always_ff @ (posedge clk) begin
-    if (counter == COUNT_MAX) begin
+    if(counter == COUNT_MAX)begin
       counter  <= 'd0;
+    end else if (counter < COUNT_MAX/2) begin
       overflow <= 'd1;
+      counter  <= counter + 'd1;
     end else begin
       counter  <= counter + 'd1;
       overflow <= 'd0;
