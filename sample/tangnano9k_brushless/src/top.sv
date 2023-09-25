@@ -85,7 +85,7 @@ module top (
 
 // measure speed
     processCounter <= processCounter + 1;
-    if(processCounter % 1024 == 0)begin
+    if(processCounter % 2024 == 0)begin
 //      anode[2] <= ~anode[2];  // pilot lamp blink
       if(HSCounter > 1)begin
         isRotate <= 'b1;
