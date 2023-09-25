@@ -1,23 +1,23 @@
 GowinSynthesis start
 Running parser ...
-Analyzing Verilog file 'C:\Git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv'
-Compiling module 'top'("C:\Git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":3)
-Compiling module 'timer'("C:\Git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":226)
-WARN  (EX3791) : Expression size 13 truncated to fit in target size 12("C:\Git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":240)
-WARN  (EX3791) : Expression size 13 truncated to fit in target size 12("C:\Git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":242)
-WARN  (EX3791) : Expression size 8 truncated to fit in target size 7("C:\Git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":61)
-WARN  (EX3791) : Expression size 17 truncated to fit in target size 16("C:\Git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":87)
-WARN  (EX3791) : Expression size 9 truncated to fit in target size 8("C:\Git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":98)
-WARN  (EX3791) : Expression size 27 truncated to fit in target size 10("C:\Git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":131)
-WARN  (EX3791) : Expression size 5 truncated to fit in target size 4("C:\Git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":142)
-WARN  (EX3791) : Expression size 3 truncated to fit in target size 2("C:\Git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":155)
-WARN  (EX3779) : 'toggleSW' should be on the sensitivity list. Signal missing is added and assuming complete sensitivity list specified. RTL design and post-synthesis netlist simulations may differ as a result("C:\Git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":169)
-WARN  (EX2420) : Latch inferred for net 'HIN_R'; We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("C:\Git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":181)
+Analyzing Verilog file 'E:\git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv'
+Compiling module 'top'("E:\git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":3)
+Compiling module 'timer'("E:\git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":237)
+WARN  (EX3791) : Expression size 13 truncated to fit in target size 12("E:\git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":251)
+WARN  (EX3791) : Expression size 13 truncated to fit in target size 12("E:\git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":253)
+WARN  (EX3791) : Expression size 8 truncated to fit in target size 7("E:\git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":61)
+WARN  (EX3791) : Expression size 17 truncated to fit in target size 16("E:\git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":87)
+WARN  (EX3791) : Expression size 9 truncated to fit in target size 8("E:\git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":98)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 10("E:\git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":136)
+WARN  (EX3791) : Expression size 5 truncated to fit in target size 4("E:\git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":149)
+WARN  (EX3791) : Expression size 3 truncated to fit in target size 2("E:\git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":166)
+WARN  (EX3779) : 'toggleSW' should be on the sensitivity list("E:\git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":180)
+WARN  (EX2420) : Latch inferred for net 'HIN_R'; We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("E:\git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":192)
 NOTE  (EX0101) : Current top module is "top"
 [5%] Running netlist conversion ...
-WARN  (CV0016) : Input sw1 is unused("C:\Git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":6)
-WARN  (CV0016) : Input sw2 is unused("C:\Git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":7)
-WARN  (CV0020) : Input tacSW[2:0] is unused("C:\Git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":8)
+WARN  (CV0016) : Input sw1 is unused("E:\git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":6)
+WARN  (CV0016) : Input sw2 is unused("E:\git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":7)
+WARN  (CV0018) : Input tacSW[0] is unused("E:\git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":8)
 Running device independent optimization ...
 [10%] Optimizing Phase 0 completed
 [15%] Optimizing Phase 1 completed
@@ -33,6 +33,6 @@ Running technical mapping ...
 [75%] Tech-Mapping Phase 2 completed
 [80%] Tech-Mapping Phase 3 completed
 [90%] Tech-Mapping Phase 4 completed
-[95%] Generate netlist file "C:\Git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\impl\gwsynthesis\tangnano9k_brushless.vg" completed
-[100%] Generate report file "C:\Git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\impl\gwsynthesis\tangnano9k_brushless_syn.rpt.html" completed
+[95%] Generate netlist file "E:\git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\impl\gwsynthesis\tangnano9k_brushless.vg" completed
+[100%] Generate report file "E:\git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\impl\gwsynthesis\tangnano9k_brushless_syn.rpt.html" completed
 GowinSynthesis finish

@@ -104,37 +104,44 @@ module top (
     if(processCounter[4:0] == 5'd0)begin
       CS <= 0;
       DIN <= 0;
-    end else if(processCounter[4:0] < 5'd9)begin
+    end else if(processCounter[4:0] < 5'd8)begin
       CS <=0;
-    end else if(processCounter[4:0] == 5'd9)begin  // START(always: 1)
+    end else if(processCounter[4:0] == 5'd8)begin  // START(always: 1)
       DIN <= 1;
       CS <= 0;
-    end else if(processCounter[4:0] == 5'd10)begin  //SINGLE or DIFFERENTIAL(SGL: 1)
+    end else if(processCounter[4:0] == 5'd9)begin  //SINGLE or DIFFERENTIAL(SGL: 1)
       DIN <= 1;
       CS <= 0;
-    end else if(processCounter[4:0] == 5'd11)begin  // D2
+    end else if(processCounter[4:0] == 5'd10)begin  // D2
       DIN <= 1;
       CS <= 0;
-    end else if(processCounter[4:0] == 5'd12)begin  // D1
+    end else if(processCounter[4:0] == 5'd11)begin  // D1
       DIN <= 0;
       CS <= 0;
-    end else if(processCounter[4:0] == 5'd13)begin  // D0
+    end else if(processCounter[4:0] == 5'd12)begin  // D0
       DIN <= 0;
       CS <= 0;
-    end else if(processCounter[4:0] < 5'd15)begin  // D0
+    end else if(processCounter[4:0] < 5'd15)begin  // 0
       CS <= 0;
     end else if(processCounter[4:0] > 5'd14 && processCounter[4:0] < 25)begin
-      recieveADC[9 - processCounter[2:0]] <= DOUT;
+      recieveADC[24 - processCounter[4:0]] <= DOUT;
       DIN <= 0;
       CS <= 0;
     end else begin
-      accel <= (recieveADC - 'd280) / 'd32;  // for Mini Cart Accel     //origin 270 - 780  to 0 - 16
+      if(recieveADC < 'd280)begin
+        accel <= 'd0;
+      end else if(recieveADC > 'd780) begin
+        accel <= 'd1000;
+      end else begin
+        accel <= (recieveADC - 'd280) * 2;  // for Mini Cart Accel     //origin 270 - 780  to 0 - 16
+      end
+
       DIN <= 0;
       CS <= 1;
     end
 
 //duty control
-    if(dutyCounter[3:0] < accel)begin
+    if(dutyCounter[3:0] < (accel/'d64))begin
       duty <= 'b1;
     end else begin
       duty <= 'b0;
@@ -147,6 +154,10 @@ module top (
   logic[9:0] divider;
   always @(posedge processCounter[3])begin
     if(tacSW[3] == 0)begin
+      display7seg <= accel;
+    end else if(tacSW[2] == 0)begin
+      display7seg <= accel/'d64;
+    end else if(tacSW[1] == 0)begin
       display7seg <= recieveADC;
     end else begin
       display7seg <= 0;
