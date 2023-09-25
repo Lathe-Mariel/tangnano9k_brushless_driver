@@ -41,6 +41,7 @@ module top (
   logic[1:0] disp_digit;
 
   logic[9:0] recieveADC;
+  logic[9:0] accel;
 
 
   timer #(
@@ -127,13 +128,13 @@ module top (
       DIN <= 0;
       CS <= 0;
     end else begin
+      accel <= (recieveADC - 'd280) / 'd32;  // for Mini Cart Accel     //origin 270 - 780  to 0 - 16
       DIN <= 0;
       CS <= 1;
     end
 
-    if(dutyCounter[1:0] == 3'b11)begin  //duty control
-      duty <= 'b1;
-    end else if(tacSW[0] == 0 && dutyCounter[0] == 1)begin
+//duty control
+    if(dutyCounter[3:0] < accel)begin
       duty <= 'b1;
     end else begin
       duty <= 'b0;
@@ -145,8 +146,11 @@ module top (
   //7seg control
   logic[9:0] divider;
   always @(posedge processCounter[3])begin
-    display7seg <= (recieveADC - 'd280) * 'd2;
-    //270 - 780
+    if(tacSW[3] == 0)begin
+      display7seg <= recieveADC;
+    end else begin
+      display7seg <= 0;
+    end
 
     disp_digit <= disp_digit + 1;
     cathode <= 4'b0001 << disp_digit;
