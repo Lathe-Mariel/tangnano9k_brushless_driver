@@ -84,9 +84,9 @@ module top (
 
 // measure speed
     processCounter <= processCounter + 1;
-    if(processCounter == 1024)begin
+    if(processCounter % 1024 == 0)begin
 //      anode[2] <= ~anode[2];  // pilot lamp blink
-      if(HSCounter > 3)begin
+      if(HSCounter > 1)begin
         isRotate <= 'b1;
       end else begin
         isRotate <= 'b0;
@@ -145,7 +145,9 @@ module top (
   //7seg control
   logic[9:0] divider;
   always @(posedge processCounter[3])begin
-    display7seg <= recieveADC;
+    display7seg <= (recieveADC - 'd280) * 'd2;
+    //270 - 780
+
     disp_digit <= disp_digit + 1;
     cathode <= 4'b0001 << disp_digit;
 
