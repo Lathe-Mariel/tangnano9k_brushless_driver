@@ -28,7 +28,7 @@ module top (
   logic[6:0] forcedRotationCounter;  //強制転流用インターバルカウンタ
   logic[2:0]  rotateState;
   logic duty;
-  logic[3:0] dutyCounter;
+  logic[4:0] dutyCounter;
   logic _LR;
   logic _LS;
   logic _LT;
@@ -59,7 +59,7 @@ module top (
     if(isRotate == 0)begin
       if(forcedRotationCounter == 7'd110)begin
         rotateState <= (rotateState + 1) % 6;
-        forcedRotationCounter <= 5'd0;
+        forcedRotationCounter <= 7'd0;
       end else begin
         forcedRotationCounter <= forcedRotationCounter + 1;
       end
@@ -130,7 +130,7 @@ module top (
       CS <= 0;
     end else if(processCounter[4:0] < 5'd15)begin  // 0
       CS <= 0;
-    end else if(processCounter[4:0] > 5'd14 && processCounter[4:0] < 25)begin
+    end else if(processCounter[4:0] > 5'd14 && processCounter[4:0] < 25)begin  // recieve data
       recieveADC[24 - processCounter[4:0]] <= DOUT;
       DIN <= 0;
       CS <= 0;
@@ -148,7 +148,7 @@ module top (
     end
 
 // duty control
-    if(dutyCounter[3:0] < (accel/'d64))begin
+    if(dutyCounter[4:0] < (accel/'d32))begin
       duty <= 'b1;
     end else begin
       duty <= 'b0;
@@ -163,7 +163,7 @@ module top (
     case(disp_state)
       2'd0: display7seg <= accel;
       2'd1: display7seg <= accel/'d64; // duty
-      2'd2: display7seg <= 0;
+      2'd2: display7seg <= HSCounter;
       2'd3: display7seg <= 0;
     endcase
 
