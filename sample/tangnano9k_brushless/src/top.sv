@@ -39,6 +39,8 @@ module top (
 
   logic[15:0] display7seg; //0000-9999
   logic[1:0] disp_digit;
+  logic[1:0] disp_state;  //0:accel, 1:duty
+  logic sw1pushed;
 
   logic[9:0] recieveADC;
   logic[9:0] accel;
@@ -53,6 +55,7 @@ module top (
 
   always @(posedge controlCLK)begin
 
+// forcedrotation
     if(isRotate == 0)begin
       if(forcedRotationCounter == 7'd110)begin
         rotateState <= (rotateState + 1) % 6;
@@ -61,7 +64,7 @@ module top (
         forcedRotationCounter <= forcedRotationCounter + 1;
       end
     end else begin
-//changing rotateState by hall sensor
+// rotation by hall sensor
       if(toggleSW[0])begin   //CW
         case(HS)
           3'd1: rotateState = 3'd4;
@@ -81,6 +84,10 @@ module top (
           3'd6: rotateState = 3'd4;
         endcase
       end
+    end
+// check sw1
+    if(processCounter == 8192)begin
+        sw1pushed <= sw1;
     end
 
 // measure speed
@@ -140,7 +147,7 @@ module top (
       CS <= 1;
     end
 
-//duty control
+// duty control
     if(dutyCounter[3:0] < (accel/'d64))begin
       duty <= 'b1;
     end else begin
@@ -150,18 +157,15 @@ module top (
 
   end
 
-  //7seg control
+// 7seg control
   logic[9:0] divider;
   always @(posedge processCounter[3])begin
-    if(tacSW[3] == 0)begin
-      display7seg <= accel;
-    end else if(tacSW[2] == 0)begin
-      display7seg <= accel/'d64;
-    end else if(tacSW[1] == 0)begin
-      display7seg <= recieveADC;
-    end else begin
-      display7seg <= 0;
-    end
+    case(disp_state)
+      2'd0: display7seg <= accel;
+      2'd1: display7seg <= accel/'d64; // duty
+      2'd2: display7seg <= 0;
+      2'd3: display7seg <= 0;
+    endcase
 
     disp_digit <= disp_digit + 1;
     cathode <= 4'b0001 << disp_digit;
@@ -174,6 +178,11 @@ module top (
     endcase
 
     anode <= decode7seg((display7seg/divider) % 10);
+  end
+
+//button() input check
+  always @(negedge sw1pushed)begin
+    disp_state <= disp_state + 'd1;
   end
 
   always @(rotateState)begin

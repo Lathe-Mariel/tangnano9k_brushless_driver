@@ -11,26 +11,26 @@
   <PnR Version>: V1.9.8.09 Education
   <Part Number>: GW1NR-LV9QN88PC6/I5
   <Device>: GW1NR-9C
-  <Created Time>:Mon Sep 25 18:14:01 2023
+  <Created Time>:Tue Sep 26 09:08:55 2023
 
 
 2. PnR Details
 
   Running placement:
-    Placement Phase 0: CPU time = 0h 0m 0.021s, Elapsed time = 0h 0m 0.022s
-    Placement Phase 1: CPU time = 0h 0m 0.06s, Elapsed time = 0h 0m 0.06s
-    Placement Phase 2: CPU time = 0h 0m 0.019s, Elapsed time = 0h 0m 0.019s
-    Placement Phase 3: CPU time = 0h 0m 1s, Elapsed time = 0h 0m 1s
-    Total Placement: CPU time = 0h 0m 1s, Elapsed time = 0h 0m 1s
+    Placement Phase 0: CPU time = 0h 0m 0.041s, Elapsed time = 0h 0m 0.039s
+    Placement Phase 1: CPU time = 0h 0m 0.081s, Elapsed time = 0h 0m 0.081s
+    Placement Phase 2: CPU time = 0h 0m 0.024s, Elapsed time = 0h 0m 0.028s
+    Placement Phase 3: CPU time = 0h 0m 2s, Elapsed time = 0h 0m 2s
+    Total Placement: CPU time = 0h 0m 2s, Elapsed time = 0h 0m 2s
  Running routing:
-    Routing Phase 0: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s
-    Routing Phase 1: CPU time = 0h 0m 0.096s, Elapsed time = 0h 0m 0.097s
-    Routing Phase 2: CPU time = 0h 0m 0.231s, Elapsed time = 0h 0m 0.231s
-    Total Routing: CPU time = 0h 0m 0.327s, Elapsed time = 0h 0m 0.328s
+    Routing Phase 0: CPU time = 0h 0m 0.007s, Elapsed time = 0h 0m 0s
+    Routing Phase 1: CPU time = 0h 0m 0.111s, Elapsed time = 0h 0m 0.113s
+    Routing Phase 2: CPU time = 0h 0m 0.201s, Elapsed time = 0h 0m 0.2s
+    Total Routing: CPU time = 0h 0m 0.319s, Elapsed time = 0h 0m 0.313s
  Generate output files:
-    CPU time = 0h 0m 0.821s, Elapsed time = 0h 0m 0.82s
+    CPU time = 0h 0m 0.828s, Elapsed time = 0h 0m 0.829s
 
- Total Time and Memory Usage: CPU time = 0h 0m 2s, Elapsed time = 0h 0m 2s, Peak memory usage = 210MB
+ Total Time and Memory Usage: CPU time = 0h 0m 3s, Elapsed time = 0h 0m 3s, Peak memory usage = 181MB
 
 
 3. Resource Usage Summary
@@ -38,18 +38,18 @@
   ----------------------------------------------------------
   Resources                   | Usage
   ----------------------------------------------------------
-  Logic                       | 318/8640  3%
-    --LUT,ALU,ROM16           | 318(264 LUT, 54 ALU, 0 ROM16)
+  Logic                       | 319/8640  3%
+    --LUT,ALU,ROM16           | 319(265 LUT, 54 ALU, 0 ROM16)
     --SSRAM(RAM16)            | 0
-  Register                    | 105/6693  1%
+  Register                    | 108/6693  1%
     --Logic Register as Latch | 3/6480  1%
-    --Logic Register as FF    | 82/6480  1%
+    --Logic Register as FF    | 85/6480  1%
     --I/O Register as Latch   | 3/213  1%
     --I/O Register as FF      | 17/213  7%
-  CLS                         | 186/4320  4%
+  CLS                         | 188/4320  4%
   I/O Port                    | 41
-  I/O Buf                     | 38
-    --Input Buf               | 11
+  I/O Buf                     | 36
+    --Input Buf               | 9
     --Output Buf              | 27
     --Inout Buf               | 0
   IOLOGIC                     | 0%
@@ -84,7 +84,7 @@
   -------------------------------
   Global Clock  | Usage       
   -------------------------------
-  PRIMARY       | 3/8(37%)
+  PRIMARY       | 4/8(50%)
   LW            | 1/8(12%)
   GCLK_PIN      | 3/4(75%)
   PLL           | 0/2(0%)
@@ -99,8 +99,9 @@
   Signal         | Global Clock   | Location
   -------------------------------------------
   clk_d          | PRIMARY        |  BL
-  n672_29        | PRIMARY        |  BR
-  processCounter[3]| PRIMARY        |  TR BR BL
+  n660_37        | PRIMARY        |  BR
+  sw1pushed      | PRIMARY        |  BL
+  processCounter[3]| PRIMARY        |  BR BL
   AD_CLK_d       | LW             |  -
   ===========================================
 
