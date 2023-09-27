@@ -44,7 +44,7 @@ module top (
 
   logic[9:0] recieveADC;
   logic[9:0] accel;
-  logic[8:0] disp_speed;
+  logic[9:0] disp_speed;
 
 
   timer #(
@@ -151,7 +151,7 @@ module top (
     end
 
 // duty control
-    if(dutyCounter < (accel/'d64))begin
+    if(dutyCounter < (accel/'d16))begin
       duty <= 'b1;
     end else begin
       duty <= 'b0;
@@ -165,7 +165,7 @@ module top (
   always @(posedge processCounter[3])begin
     case(disp_state)
       2'd0: display7seg <= accel;
-      2'd1: display7seg <= accel/'d64; // duty
+      2'd1: display7seg <= accel/'d16; // duty
       2'd2: display7seg <= disp_speed;
       2'd3: display7seg <= 0;
     endcase
@@ -242,7 +242,7 @@ module top (
 endmodule
 
 module timer #(
-  parameter COUNT_MAX = 5400  //100us
+  parameter COUNT_MAX = 1350  //100us
 ) (
   input  wire  clk,
   output logic overflow
