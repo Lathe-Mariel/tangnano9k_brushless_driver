@@ -26,26 +26,25 @@ module top (
   logic  controlCLK;
   logic rotateCLK;
   logic[10:0] forcedRotationCounter;  //強制転流用インターバルカウンタ
-  logic[2:0]  rotateState;
-  logic duty;
-  logic[5:0] dutyCounter;
+  logic[2:0]  rotateState;  // 120°矩形波のmode
+  logic duty;  // current duty state
+  logic[5:0] dutyCounter;  // for duty control(relate to accel)
   logic _LR;
   logic _LS;
   logic _LT;
-  logic[15:0] processCounter;
-  logic[9:0] HSCounter;
-  logic isRotate;
-  logic[2:0] oldHS;
+  logic[15:0] processCounter;  // general counter 
+  logic[9:0] HSCounter;  // measurement hall sensor pulse
+  logic isRotate;  // for control forcedRotation
+  logic[2:0] oldHS;  // old Hall Sensor value
 
   logic[15:0] display7seg; //0000-9999
-  logic[1:0] disp_digit;
-  logic[1:0] disp_state;  //0:accel, 1:duty
+  logic[1:0] disp_digit;  // display digit of 7seg LED
+  logic[1:0] disp_state;  //0:volume, 1:duty, 2:HS speed, 3:
   logic sw1pushed;
 
   logic[9:0] recieveADC;
   logic[9:0] accel;
-  logic[9:0] disp_speed;
-
+  logic[9:0] disp_speed;  // store rotation speed for display
 
   timer #(
     .COUNT_MAX()
@@ -87,7 +86,7 @@ module top (
 
     processCounter <= processCounter + 1;
 
-// check sw1 //change disp
+// check sw1 //change something to display
     if(processCounter % 2048 == 0)begin
       if(sw1 != sw1pushed && sw1pushed == 1)begin
         disp_state <= disp_state + 1;
