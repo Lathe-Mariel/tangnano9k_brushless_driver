@@ -25,15 +25,15 @@ module top (
 
   logic  controlCLK;
   logic rotateCLK;
-  logic[6:0] forcedRotationCounter;  //強制転流用インターバルカウンタ
+  logic[10:0] forcedRotationCounter;  //強制転流用インターバルカウンタ
   logic[2:0]  rotateState;
   logic duty;
-  logic[4:0] dutyCounter;
+  logic[5:0] dutyCounter;
   logic _LR;
   logic _LS;
   logic _LT;
   logic[15:0] processCounter;
-  logic[7:0] HSCounter;
+  logic[9:0] HSCounter;
   logic isRotate;
   logic[2:0] oldHS;
 
@@ -44,6 +44,7 @@ module top (
 
   logic[9:0] recieveADC;
   logic[9:0] accel;
+  logic[8:0] disp_speed;
 
 
   timer #(
@@ -57,12 +58,10 @@ module top (
 
 // forcedrotation
     if(isRotate == 0)begin
-      if(forcedRotationCounter == 7'd110)begin
+      if(forcedRotationCounter == 0)begin
         rotateState <= (rotateState + 1) % 6;
-        forcedRotationCounter <= 7'd0;
-      end else begin
-        forcedRotationCounter <= forcedRotationCounter + 1;
       end
+        forcedRotationCounter <= forcedRotationCounter + 1;
     end else begin
 // rotation by hall sensor
       if(toggleSW[0])begin   //CW
@@ -85,20 +84,24 @@ module top (
         endcase
       end
     end
-// check sw1
-    if(processCounter == 8192)begin
-        sw1pushed <= sw1;
-    end
+
+    processCounter <= processCounter + 1;
+
+// check sw1 //change disp
+    if(processCounter % 2048 == 0)begin
+      if(sw1 != sw1pushed && sw1pushed == 1)begin
+        disp_state <= disp_state + 1;
+      end
+      sw1pushed <= sw1;
 
 // measure speed
-    processCounter <= processCounter + 1;
-    if(processCounter % 2024 == 0)begin
-//      anode[2] <= ~anode[2];  // pilot lamp blink
-      if(HSCounter > 1)begin
+
+      if(HSCounter > 0)begin
         isRotate <= 'b1;
       end else begin
         isRotate <= 'b0;
       end
+      disp_speed <= HSCounter;
       HSCounter <= 0;
     end else begin
       if(oldHS != HS)begin
@@ -148,7 +151,7 @@ module top (
     end
 
 // duty control
-    if(dutyCounter[4:0] < (accel/'d32))begin
+    if(dutyCounter < (accel/'d64))begin
       duty <= 'b1;
     end else begin
       duty <= 'b0;
@@ -163,7 +166,7 @@ module top (
     case(disp_state)
       2'd0: display7seg <= accel;
       2'd1: display7seg <= accel/'d64; // duty
-      2'd2: display7seg <= HSCounter;
+      2'd2: display7seg <= disp_speed;
       2'd3: display7seg <= 0;
     endcase
 
@@ -178,11 +181,6 @@ module top (
     endcase
 
     anode <= decode7seg((display7seg/divider) % 10);
-  end
-
-//button() input check
-  always @(negedge sw1pushed)begin
-    disp_state <= disp_state + 'd1;
   end
 
   always @(rotateState)begin
@@ -244,7 +242,7 @@ module top (
 endmodule
 
 module timer #(
-  parameter COUNT_MAX = 2700  //100us
+  parameter COUNT_MAX = 5400  //100us
 ) (
   input  wire  clk,
   output logic overflow

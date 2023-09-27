@@ -1,18 +1,18 @@
 [
  {
-  "InstFile" : "H:/git/tangnano9k_brushless_driver/sample/tangnano9k_brushless/src/top.sv",
+  "InstFile" : "E:/git/tangnano9k_brushless_driver/sample/tangnano9k_brushless/src/top.sv",
   "InstLine" : 3,
   "InstName" : "top",
-  "ModuleFile" : "H:/git/tangnano9k_brushless_driver/sample/tangnano9k_brushless/src/top.sv",
+  "ModuleFile" : "E:/git/tangnano9k_brushless_driver/sample/tangnano9k_brushless/src/top.sv",
   "ModuleLine" : 3,
   "ModuleName" : "top",
   "SubInsts" : [
    {
-    "InstFile" : "H:/git/tangnano9k_brushless_driver/sample/tangnano9k_brushless/src/top.sv",
-    "InstLine" : 51,
+    "InstFile" : "E:/git/tangnano9k_brushless_driver/sample/tangnano9k_brushless/src/top.sv",
+    "InstLine" : 52,
     "InstName" : "inst_1",
-    "ModuleFile" : "H:/git/tangnano9k_brushless_driver/sample/tangnano9k_brushless/src/top.sv",
-    "ModuleLine" : 246,
+    "ModuleFile" : "E:/git/tangnano9k_brushless_driver/sample/tangnano9k_brushless/src/top.sv",
+    "ModuleLine" : 244,
     "ModuleName" : "timer"
    }
   ]
