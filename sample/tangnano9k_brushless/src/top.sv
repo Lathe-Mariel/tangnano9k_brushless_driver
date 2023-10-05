@@ -162,7 +162,7 @@ module top (
     endcase
 
     disp_digit <= disp_digit + 1;
-    cathode <= 4'b0001 << disp_digit;
+    cathode <= toggleSW[1] * 4'b0001 << disp_digit;
 
     case(disp_digit)
       2'd0: divider = 1;
@@ -201,13 +201,6 @@ module top (
   assign _LIN_S = ~(~_LS * duty);
   assign _LIN_T = ~(~_LT * duty);
 
-//test
-//  assign anode = 8'b00010100;
-//  assign anode[6] = HIN_R;
-//  assign anode[7] = HIN_S;
-//  assign anode[5] = HIN_T;
-//  assign anode[1] = tacSW[0];
-//  assign cathode = 4'b0001;
 
   function [7:0] decode7seg;
   input [3:0] in;
