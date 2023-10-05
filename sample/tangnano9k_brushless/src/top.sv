@@ -47,10 +47,8 @@ module top (
   logic[9:0] accel;
   logic[9:0] disp_speed;  // store rotation speed for display
 
-  logic dutyCLK;
-  logic[11:0] dutyCycle='d620;
   logic[11:0] dutyList[8]={'d1400, 'd1000, 'd800, 'd700, 'd620, 'd560, 'd520, 'd500};
-  logic dutyPara;
+  logic[2:0] dutyPara;
 
   always @(posedge controlCLK)begin
 
@@ -88,12 +86,12 @@ module top (
 // check sw //change something to display
     if(processCounter % 2048 == 0)begin
       if(sw1 != sw1pushed && sw1pushed == 1)begin
-        disp_state <= disp_state + 1;
+        disp_state <= disp_state + 'd1;
       end else if(tacSW[3] != tacSWpushed[3] && tacSWpushed[3] == 1)begin
         dutyPara <= dutyPara + 'd1;
       end
       sw1pushed <= sw1;
-      tacSWpushed <= tacSW[3];
+      tacSWpushed[3] <= tacSW[3];
 
 // measure speed
 
@@ -260,8 +258,10 @@ module top (
         duty <= 'b0;
       end
       dutyCounter <= dutyCounter + 'd1;
+      counterB <= 'd0;
+    end else begin
+      counterB <= counterB + 'd1;
     end
-
   end
 
 endmodule

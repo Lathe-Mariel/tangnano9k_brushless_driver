@@ -1,7 +1,7 @@
-Reading netlist file: "C:\Git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\impl\gwsynthesis\tangnano9k_brushless.vg"
-Parsing netlist file "C:\Git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\impl\gwsynthesis\tangnano9k_brushless.vg" completed
+Reading netlist file: "E:\git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\impl\gwsynthesis\tangnano9k_brushless.vg"
+Parsing netlist file "E:\git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\impl\gwsynthesis\tangnano9k_brushless.vg" completed
 Processing netlist completed
-Reading constraint file: "C:\Git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.cst"
+Reading constraint file: "E:\git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.cst"
 Physical Constraint parsed completed
 Running placement......
 [10%] Placement Phase 0 completed
@@ -20,10 +20,10 @@ Bitstream generation in progress......
 Bitstream generation completed
 Running power analysis......
 [100%] Power analysis completed
-Generate file "C:\Git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\impl\pnr\tangnano9k_brushless.power.html" completed
-Generate file "C:\Git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\impl\pnr\tangnano9k_brushless.pin.html" completed
-Generate file "C:\Git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\impl\pnr\tangnano9k_brushless.rpt.html" completed
-Generate file "C:\Git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\impl\pnr\tangnano9k_brushless.rpt.txt" completed
-Generate file "C:\Git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\impl\pnr\tangnano9k_brushless.tr.html" completed
-Thu Oct 05 19:26:05 2023
+Generate file "E:\git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\impl\pnr\tangnano9k_brushless.power.html" completed
+Generate file "E:\git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\impl\pnr\tangnano9k_brushless.pin.html" completed
+Generate file "E:\git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\impl\pnr\tangnano9k_brushless.rpt.html" completed
+Generate file "E:\git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\impl\pnr\tangnano9k_brushless.rpt.txt" completed
+Generate file "E:\git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\impl\pnr\tangnano9k_brushless.tr.html" completed
+Thu Oct 05 19:47:34 2023
 
