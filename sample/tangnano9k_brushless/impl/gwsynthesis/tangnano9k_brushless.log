@@ -1,23 +1,26 @@
 GowinSynthesis start
 Running parser ...
-Analyzing Verilog file 'E:\git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv'
-Compiling module 'top'("E:\git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":3)
-Compiling module 'timer'("E:\git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":244)
-WARN  (EX3791) : Expression size 12 truncated to fit in target size 11("E:\git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":258)
-WARN  (EX3791) : Expression size 12 truncated to fit in target size 11("E:\git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":260)
-WARN  (EX3791) : Expression size 12 truncated to fit in target size 11("E:\git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":64)
-WARN  (EX3791) : Expression size 17 truncated to fit in target size 16("E:\git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":88)
-WARN  (EX3791) : Expression size 3 truncated to fit in target size 2("E:\git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":93)
-WARN  (EX3791) : Expression size 11 truncated to fit in target size 10("E:\git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":108)
-WARN  (EX3791) : Expression size 32 truncated to fit in target size 10("E:\git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":146)
-WARN  (EX3791) : Expression size 7 truncated to fit in target size 6("E:\git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":159)
-WARN  (EX3791) : Expression size 3 truncated to fit in target size 2("E:\git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":173)
-WARN  (EX3779) : 'toggleSW' should be on the sensitivity list("E:\git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":187)
-WARN  (EX2420) : Latch inferred for net 'HIN_R'; We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("E:\git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":199)
+Analyzing Verilog file 'C:\Git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv'
+Compiling module 'top'("C:\Git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":3)
+Compiling module 'timer'("C:\Git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":256)
+WARN  (EX3791) : Expression size 12 truncated to fit in target size 11("C:\Git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":270)
+WARN  (EX3791) : Expression size 12 truncated to fit in target size 11("C:\Git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":272)
+Compiling module 'timer(COUNT_MAX=675)'("C:\Git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":256)
+WARN  (EX3791) : Expression size 11 truncated to fit in target size 10("C:\Git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":270)
+WARN  (EX3791) : Expression size 11 truncated to fit in target size 10("C:\Git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":272)
+WARN  (EX3791) : Expression size 12 truncated to fit in target size 11("C:\Git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":73)
+WARN  (EX3791) : Expression size 17 truncated to fit in target size 16("C:\Git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":97)
+WARN  (EX3791) : Expression size 3 truncated to fit in target size 2("C:\Git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":102)
+WARN  (EX3791) : Expression size 11 truncated to fit in target size 10("C:\Git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":117)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 10("C:\Git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":155)
+WARN  (EX3791) : Expression size 7 truncated to fit in target size 6("C:\Git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":171)
+WARN  (EX3791) : Expression size 3 truncated to fit in target size 2("C:\Git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":184)
+WARN  (EX3779) : 'toggleSW' should be on the sensitivity list. Signal missing is added and assuming complete sensitivity list specified. RTL design and post-synthesis netlist simulations may differ as a result("C:\Git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":199)
+WARN  (EX2420) : Latch inferred for net 'HIN_R'; We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("C:\Git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":211)
 NOTE  (EX0101) : Current top module is "top"
 [5%] Running netlist conversion ...
-WARN  (CV0016) : Input sw2 is unused("E:\git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":7)
-WARN  (CV0016) : Input tacSW is unused("E:\git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":8)
+WARN  (CV0016) : Input sw2 is unused("C:\Git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":7)
+WARN  (CV0016) : Input tacSW is unused("C:\Git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\src\top.sv":8)
 Running device independent optimization ...
 [10%] Optimizing Phase 0 completed
 [15%] Optimizing Phase 1 completed
@@ -33,6 +36,6 @@ Running technical mapping ...
 [75%] Tech-Mapping Phase 2 completed
 [80%] Tech-Mapping Phase 3 completed
 [90%] Tech-Mapping Phase 4 completed
-[95%] Generate netlist file "E:\git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\impl\gwsynthesis\tangnano9k_brushless.vg" completed
-[100%] Generate report file "E:\git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\impl\gwsynthesis\tangnano9k_brushless_syn.rpt.html" completed
+[95%] Generate netlist file "C:\Git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\impl\gwsynthesis\tangnano9k_brushless.vg" completed
+[100%] Generate report file "C:\Git\tangnano9k_brushless_driver\sample\tangnano9k_brushless\impl\gwsynthesis\tangnano9k_brushless_syn.rpt.html" completed
 GowinSynthesis finish

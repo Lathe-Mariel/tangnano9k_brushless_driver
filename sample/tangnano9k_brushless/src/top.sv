@@ -46,12 +46,22 @@ module top (
   logic[9:0] accel;
   logic[9:0] disp_speed;  // store rotation speed for display
 
+  logic dutyCLK;
+
   timer #(
     .COUNT_MAX()
   ) inst_1 (
     .clk (clk),
     .overflow(controlCLK)
   );
+
+  timer #(
+    675
+  ) inst_2 (
+    .clk(clk),
+    .overflow(dutyCLK)
+  );
+
 
   always @(posedge controlCLK)begin
 
@@ -149,6 +159,9 @@ module top (
       CS <= 1;
     end
 
+  end
+
+  always @(posedge dutyCLK)begin
 // duty control
     if(dutyCounter < (accel/'d16))begin
       duty <= 'b1;
@@ -156,7 +169,6 @@ module top (
       duty <= 'b0;
     end
     dutyCounter <= dutyCounter + 'd1;
-
   end
 
 // 7seg control
@@ -182,6 +194,7 @@ module top (
     anode <= decode7seg((display7seg/divider) % 10);
   end
 
+//120 square pulse drive
   always @(rotateState)begin
     if(toggleSW[2])begin
       case(rotateState)
