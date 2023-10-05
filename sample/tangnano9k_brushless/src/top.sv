@@ -41,27 +41,16 @@ module top (
   logic[1:0] disp_digit;  // display digit of 7seg LED
   logic[1:0] disp_state;  //0:volume, 1:duty, 2:HS speed, 3:
   logic sw1pushed;
+  logic[3:0] tacSWpushed;
 
   logic[9:0] recieveADC;
   logic[9:0] accel;
   logic[9:0] disp_speed;  // store rotation speed for display
 
   logic dutyCLK;
-
-  timer #(
-    .COUNT_MAX()
-  ) inst_1 (
-    .clk (clk),
-    .overflow(controlCLK)
-  );
-
-  timer #(
-    675
-  ) inst_2 (
-    .clk(clk),
-    .overflow(dutyCLK)
-  );
-
+  logic[11:0] dutyCycle='d620;
+  logic[11:0] dutyList[8]={'d1400, 'd1000, 'd800, 'd700, 'd620, 'd560, 'd520, 'd500};
+  logic dutyPara;
 
   always @(posedge controlCLK)begin
 
@@ -96,12 +85,15 @@ module top (
 
     processCounter <= processCounter + 1;
 
-// check sw1 //change something to display
+// check sw //change something to display
     if(processCounter % 2048 == 0)begin
       if(sw1 != sw1pushed && sw1pushed == 1)begin
         disp_state <= disp_state + 1;
+      end else if(tacSW[3] != tacSWpushed[3] && tacSWpushed[3] == 1)begin
+        dutyPara <= dutyPara + 'd1;
       end
       sw1pushed <= sw1;
+      tacSWpushed <= tacSW[3];
 
 // measure speed
 
@@ -159,16 +151,6 @@ module top (
       CS <= 1;
     end
 
-  end
-
-  always @(posedge dutyCLK)begin
-// duty control
-    if(dutyCounter < (accel/'d16))begin
-      duty <= 'b1;
-    end else begin
-      duty <= 'b0;
-    end
-    dutyCounter <= dutyCounter + 'd1;
   end
 
 // 7seg control
@@ -251,27 +233,35 @@ module top (
       default:decode7seg = 8'b11111111;
     endcase
   endfunction
-endmodule
 
-module timer #(
-  parameter COUNT_MAX = 1350  //100us
-) (
-  input  wire  clk,
-  output logic overflow
-);
 
-  logic [$clog2(COUNT_MAX+1)-1:0] counter = 'd0;
+// generate pulse
+  parameter COUNT_MAX = 1350;  //100us for controllCLK
+
+  logic [11:0] counter = 'd0;
+  logic [11:0] counterB = 'd0;
 
   always_ff @ (posedge clk) begin
     if(counter == COUNT_MAX)begin
       counter  <= 'd0;
     end else if (counter < COUNT_MAX/2) begin
-      overflow <= 'd1;
+      controlCLK <= 'd1;
       counter  <= counter + 'd1;
     end else begin
       counter  <= counter + 'd1;
-      overflow <= 'd0;
+      controlCLK <= 'd0;
     end
+
+// duty control
+    if(counterB == dutyList[dutyPara])begin
+      if(dutyCounter < (accel/'d16))begin
+        duty <= 'b1;
+      end else begin
+        duty <= 'b0;
+      end
+      dutyCounter <= dutyCounter + 'd1;
+    end
+
   end
 
 endmodule
