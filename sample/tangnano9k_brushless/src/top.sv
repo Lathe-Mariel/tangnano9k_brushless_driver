@@ -59,6 +59,7 @@ module top (
       end
         forcedRotationCounter <= forcedRotationCounter + 1;
     end else begin
+
 // rotation by hall sensor
       if(toggleSW[0])begin   //CW
         case(HS)
@@ -89,6 +90,25 @@ module top (
         disp_state <= disp_state + 'd1;
       end else if(tacSW[3] != tacSWpushed[3] && tacSWpushed[3] == 1)begin
         dutyPara <= dutyPara + 'd1;
+      end else begin
+        if(HSCounter > 30)begin
+          dutyPara <= 'd7;
+        end else if(HSCounter > 24)begin
+          dutyPara <= 'd6;
+        end else if(HSCounter > 20)begin
+          dutyPara <= 'd5;
+        end else if(HSCounter > 16)begin
+          dutyPara <= 'd4;
+        end else if(HSCounter > 12)begin
+          dutyPara <= 'd3;
+        end else if(HSCounter > 8)begin
+          dutyPara <= 'd2;
+        end else if(HSCounter > 3)begin
+          dutyPara <= 'd1;
+        end else begin
+          dutyPara <= 'd0;
+        end
+
       end
       sw1pushed <= sw1;
       tacSWpushed[3] <= tacSW[3];
@@ -158,7 +178,7 @@ module top (
       2'd0: display7seg <= accel;
       2'd1: display7seg <= accel/'d16; // duty
       2'd2: display7seg <= disp_speed;
-      2'd3: display7seg <= 0;
+      2'd3: display7seg <= dutyPara;
     endcase
 
     disp_digit <= disp_digit + 1;
