@@ -91,19 +91,19 @@ module top (
       end else if(tacSW[3] != tacSWpushed[3] && tacSWpushed[3] == 1)begin
         dutyPara <= dutyPara + 'd1;
       end else begin
-        if(HSCounter > 30)begin
+        if(HSCounter > 42)begin
           dutyPara <= 'd7;
-        end else if(HSCounter > 24)begin
+        end else if(HSCounter > 34)begin
           dutyPara <= 'd6;
-        end else if(HSCounter > 20)begin
+        end else if(HSCounter > 27)begin
           dutyPara <= 'd5;
-        end else if(HSCounter > 16)begin
+        end else if(HSCounter > 20)begin
           dutyPara <= 'd4;
-        end else if(HSCounter > 12)begin
+        end else if(HSCounter > 14)begin
           dutyPara <= 'd3;
-        end else if(HSCounter > 8)begin
+        end else if(HSCounter > 9)begin
           dutyPara <= 'd2;
-        end else if(HSCounter > 3)begin
+        end else if(HSCounter > 5)begin
           dutyPara <= 'd1;
         end else begin
           dutyPara <= 'd0;
