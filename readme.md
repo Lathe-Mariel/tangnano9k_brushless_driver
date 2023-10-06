@@ -2,7 +2,7 @@
  This PCB board was made as a conversion board for Inverter Kit2 that is selling by CQ pub.
  Using this board, you can attach Tang Nano 9K(Sipeed) as an alternative to NUCLEO.
 
-![](references/brushless.png)
+![system overview](references/brushless.png)
 
 # BoM
 型名 | アイテム（Item）|個数（Quantity）
