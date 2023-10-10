@@ -3,24 +3,24 @@
 module top (
   input  wire       clk,
 
-  input  wire sw1,
-  input  wire sw2,
-  input wire[3:0] tacSW,
-  input wire[2:0] toggleSW,
+  input  wire sw1,  //on board SW
+  input  wire sw2,  //on board SW
+  input wire[3:0] tacSW,  // tac SW1-4
+  input wire[2:0] toggleSW,  //toggle SW 1-3
   input  wire[2:0] HS,  //HallSensor
-  output wire AD_CLK,
-  output logic CS,
-  output logic DIN,
-  input reg DOUT,
-  output logic HIN_R,
+  output wire AD_CLK,  // for MCP3008(ADC)
+  output logic CS,  // for MCP3008
+  output logic DIN,  //for MCP3008
+  input reg DOUT,  //for MCP3008
+  output logic HIN_R,  // Upper arm
   output logic HIN_S,
   output logic HIN_T,
-  output logic _LIN_R,
+  output logic _LIN_R,  //Lower arm
   output logic _LIN_S,
   output logic _LIN_T,
-  output logic[7:0] anode,
-  output logic[3:0] cathode,
-  output wire[5:0] boardLED
+  output logic[7:0] anode,  //7seg LED
+  output logic[3:0] cathode,  //7seg LED
+  output wire[5:0] boardLED  //on board_LED
 );
 
   logic  controlCLK;
@@ -29,7 +29,7 @@ module top (
   logic[2:0]  rotateState;  // 120°矩形波のmode
   logic duty;  // current duty state
   logic[5:0] dutyCounter;  // for duty control(relate to accel)
-  logic _LR;
+  logic _LR;  // tmp value for lower arm value
   logic _LS;
   logic _LT;
   logic[15:0] processCounter;  // general counter 
@@ -40,11 +40,11 @@ module top (
   logic[15:0] display7seg; //0000-9999
   logic[1:0] disp_digit;  // display digit of 7seg LED
   logic[1:0] disp_state;  //0:volume, 1:duty, 2:HS speed, 3:
-  logic sw1pushed;
-  logic[3:0] tacSWpushed;
+  logic sw1pushed;  // flag for on_board_sw1 pushed
+  logic[3:0] tacSWpushed; // flag for tac_SW1-4
 
-  logic[9:0] recieveADC;
-  logic[9:0] accel;
+  logic[9:0] recieveADC;  // adc data from MCP3008
+  logic[9:0] accel;  // accel value, that is transformed from recieveADC
   logic[9:0] disp_speed;  // store rotation speed for display
 
   logic[11:0] dutyList[8]={'d1400, 'd1000, 'd800, 'd700, 'd620, 'd560, 'd520, 'd500};
@@ -52,7 +52,7 @@ module top (
 
   always @(posedge controlCLK)begin
 
-// forcedrotation
+// forced rotation
     if(isRotate == 0)begin
       if(forcedRotationCounter == 0)begin
         rotateState <= (rotateState + 1) % 6;
@@ -177,8 +177,8 @@ module top (
     case(disp_state)
       2'd0: display7seg <= accel;
       2'd1: display7seg <= accel/'d16; // duty
-      2'd2: display7seg <= disp_speed;
-      2'd3: display7seg <= dutyPara;
+      2'd2: display7seg <= disp_speed;  // to show motor rotation speed
+      2'd3: display7seg <= dutyPara;  // to show number of current pwm frequency
     endcase
 
     disp_digit <= disp_digit + 1;
@@ -215,7 +215,6 @@ module top (
   assign boardLED[5] = toggleSW[0];
   assign boardLED[4] = toggleSW[1];
   assign boardLED[3] = toggleSW[2];
-//  assign anode[0] = isRotate;
 
   assign _LIN_R = ~(~_LR * duty);
   assign _LIN_S = ~(~_LS * duty);
