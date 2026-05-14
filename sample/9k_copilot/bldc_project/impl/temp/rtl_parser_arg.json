@@ -1,0 +1,41 @@
+{
+ "Device" : "GW1NR-9",
+ "Files" : [
+  {
+   "Path" : "C:/Git/tangnano9k_brushless_driver/sample/9k_copilot/bldc_project/src/top.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Git/tangnano9k_brushless_driver/sample/9k_copilot/bldc_project/src/mcp3008_if.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Git/tangnano9k_brushless_driver/sample/9k_copilot/bldc_project/src/duty_slew.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Git/tangnano9k_brushless_driver/sample/9k_copilot/bldc_project/src/pwm_gen.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Git/tangnano9k_brushless_driver/sample/9k_copilot/bldc_project/src/bldc_commutation.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Git/tangnano9k_brushless_driver/sample/9k_copilot/bldc_project/src/rpm_counter.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Git/tangnano9k_brushless_driver/sample/9k_copilot/bldc_project/src/seg7_driver.v",
+   "Type" : "verilog"
+  }
+ ],
+ "IncludePath" : [
+
+ ],
+ "LoopLimit" : 2000,
+ "ResultFile" : "C:/Git/tangnano9k_brushless_driver/sample/9k_copilot/bldc_project/impl/temp/rtl_parser.result",
+ "Top" : "top",
+ "VerilogStd" : "sysv",
+ "VhdlStd" : "vhdl_93"
+}

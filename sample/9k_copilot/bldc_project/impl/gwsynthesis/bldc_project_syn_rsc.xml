@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module name="top" Register="26" Lut="1" T_Register="169(26)" T_Alu="111(0)" T_Lut="86(1)">
+ <SubModule name="u_adc" Register="42" Alu="5" Lut="16" T_Register="42(42)" T_Alu="5(5)" T_Lut="16(16)"/>
+ <SubModule name="u_slew" Register="10" Alu="38" Lut="30" T_Register="10(10)" T_Alu="38(38)" T_Lut="30(30)"/>
+ <SubModule name="u_pwm" Register="11" Alu="19" Lut="1" T_Register="11(11)" T_Alu="19(19)" T_Lut="1(1)"/>
+ <SubModule name="u_comm" Lut="12" T_Lut="12(12)"/>
+ <SubModule name="u_rpm" Register="52" Alu="34" Lut="9" T_Register="52(52)" T_Alu="34(34)" T_Lut="9(9)"/>
+ <SubModule name="u_seg" Register="28" Alu="15" Lut="17" T_Register="28(28)" T_Alu="15(15)" T_Lut="17(17)"/>
+</Module>

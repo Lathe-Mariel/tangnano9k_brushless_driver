@@ -1,0 +1,16 @@
+<?xml version="1" encoding="UTF-8"?>
+<!DOCTYPE gowin-fpga-project>
+<Project>
+    <Template>FPGA</Template>
+    <Version>5</Version>
+    <Device name="GW1NR-9" pn="GW1NR-LV9QN88PC6/I5">gw1nr9-012</Device>
+    <FileList>
+        <File path="src/bldc_commutation.v" type="file.verilog" enable="1"/>
+        <File path="src/duty_slew.v" type="file.verilog" enable="1"/>
+        <File path="src/mcp3008_if.v" type="file.verilog" enable="1"/>
+        <File path="src/pwm_gen.v" type="file.verilog" enable="1"/>
+        <File path="src/rpm_counter.v" type="file.verilog" enable="1"/>
+        <File path="src/seg7_driver.v" type="file.verilog" enable="1"/>
+        <File path="src/top.v" type="file.verilog" enable="1"/>
+    </FileList>
+</Project>

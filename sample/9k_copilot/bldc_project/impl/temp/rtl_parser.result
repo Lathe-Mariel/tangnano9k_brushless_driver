@@ -1,0 +1,60 @@
+[
+ {
+  "InstFile" : "C:/Git/tangnano9k_brushless_driver/sample/9k_copilot/bldc_project/src/top.v",
+  "InstLine" : 1,
+  "InstName" : "top",
+  "ModuleFile" : "C:/Git/tangnano9k_brushless_driver/sample/9k_copilot/bldc_project/src/top.v",
+  "ModuleLine" : 1,
+  "ModuleName" : "top",
+  "SubInsts" : [
+   {
+    "InstFile" : "C:/Git/tangnano9k_brushless_driver/sample/9k_copilot/bldc_project/src/top.v",
+    "InstLine" : 44,
+    "InstName" : "u_adc",
+    "ModuleFile" : "C:/Git/tangnano9k_brushless_driver/sample/9k_copilot/bldc_project/src/mcp3008_if.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "mcp3008_if"
+   },
+   {
+    "InstFile" : "C:/Git/tangnano9k_brushless_driver/sample/9k_copilot/bldc_project/src/top.v",
+    "InstLine" : 80,
+    "InstName" : "u_slew",
+    "ModuleFile" : "C:/Git/tangnano9k_brushless_driver/sample/9k_copilot/bldc_project/src/duty_slew.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "duty_slew"
+   },
+   {
+    "InstFile" : "C:/Git/tangnano9k_brushless_driver/sample/9k_copilot/bldc_project/src/top.v",
+    "InstLine" : 93,
+    "InstName" : "u_pwm",
+    "ModuleFile" : "C:/Git/tangnano9k_brushless_driver/sample/9k_copilot/bldc_project/src/pwm_gen.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "pwm_gen"
+   },
+   {
+    "InstFile" : "C:/Git/tangnano9k_brushless_driver/sample/9k_copilot/bldc_project/src/top.v",
+    "InstLine" : 112,
+    "InstName" : "u_comm",
+    "ModuleFile" : "C:/Git/tangnano9k_brushless_driver/sample/9k_copilot/bldc_project/src/bldc_commutation.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "bldc_commutation"
+   },
+   {
+    "InstFile" : "C:/Git/tangnano9k_brushless_driver/sample/9k_copilot/bldc_project/src/top.v",
+    "InstLine" : 139,
+    "InstName" : "u_rpm",
+    "ModuleFile" : "C:/Git/tangnano9k_brushless_driver/sample/9k_copilot/bldc_project/src/rpm_counter.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "rpm_counter"
+   },
+   {
+    "InstFile" : "C:/Git/tangnano9k_brushless_driver/sample/9k_copilot/bldc_project/src/top.v",
+    "InstLine" : 154,
+    "InstName" : "u_seg",
+    "ModuleFile" : "C:/Git/tangnano9k_brushless_driver/sample/9k_copilot/bldc_project/src/seg7_driver.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "seg7_driver"
+   }
+  ]
+ }
+]

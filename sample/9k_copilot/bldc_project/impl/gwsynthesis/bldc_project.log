@@ -1,0 +1,45 @@
+GowinSynthesis start
+Running parser ...
+Analyzing Verilog file 'C:\Git\tangnano9k_brushless_driver\sample\9k_copilot\bldc_project\src\top.v'
+Analyzing Verilog file 'C:\Git\tangnano9k_brushless_driver\sample\9k_copilot\bldc_project\src\mcp3008_if.v'
+Analyzing Verilog file 'C:\Git\tangnano9k_brushless_driver\sample\9k_copilot\bldc_project\src\duty_slew.v'
+Analyzing Verilog file 'C:\Git\tangnano9k_brushless_driver\sample\9k_copilot\bldc_project\src\pwm_gen.v'
+Analyzing Verilog file 'C:\Git\tangnano9k_brushless_driver\sample\9k_copilot\bldc_project\src\bldc_commutation.v'
+Analyzing Verilog file 'C:\Git\tangnano9k_brushless_driver\sample\9k_copilot\bldc_project\src\rpm_counter.v'
+Analyzing Verilog file 'C:\Git\tangnano9k_brushless_driver\sample\9k_copilot\bldc_project\src\seg7_driver.v'
+Compiling module 'top'("C:\Git\tangnano9k_brushless_driver\sample\9k_copilot\bldc_project\src\top.v":1)
+Compiling module 'mcp3008_if'("C:\Git\tangnano9k_brushless_driver\sample\9k_copilot\bldc_project\src\mcp3008_if.v":1)
+WARN  (EX3791) : Expression size 5 truncated to fit in target size 4("C:\Git\tangnano9k_brushless_driver\sample\9k_copilot\bldc_project\src\mcp3008_if.v":38)
+WARN  (EX3791) : Expression size 7 truncated to fit in target size 6("C:\Git\tangnano9k_brushless_driver\sample\9k_copilot\bldc_project\src\mcp3008_if.v":90)
+Compiling module 'duty_slew'("C:\Git\tangnano9k_brushless_driver\sample\9k_copilot\bldc_project\src\duty_slew.v":1)
+WARN  (EX3791) : Expression size 11 truncated to fit in target size 10("C:\Git\tangnano9k_brushless_driver\sample\9k_copilot\bldc_project\src\duty_slew.v":13)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 10("C:\Git\tangnano9k_brushless_driver\sample\9k_copilot\bldc_project\src\duty_slew.v":18)
+Compiling module 'pwm_gen'("C:\Git\tangnano9k_brushless_driver\sample\9k_copilot\bldc_project\src\pwm_gen.v":1)
+WARN  (EX3791) : Expression size 11 truncated to fit in target size 10("C:\Git\tangnano9k_brushless_driver\sample\9k_copilot\bldc_project\src\pwm_gen.v":12)
+Compiling module 'bldc_commutation'("C:\Git\tangnano9k_brushless_driver\sample\9k_copilot\bldc_project\src\bldc_commutation.v":1)
+WARN  (EX3005) : Unique/priority if/case is not full("C:\Git\tangnano9k_brushless_driver\sample\9k_copilot\bldc_project\src\bldc_commutation.v":71)
+Compiling module 'rpm_counter'("C:\Git\tangnano9k_brushless_driver\sample\9k_copilot\bldc_project\src\rpm_counter.v":1)
+WARN  (EX3791) : Expression size 21 truncated to fit in target size 20("C:\Git\tangnano9k_brushless_driver\sample\9k_copilot\bldc_project\src\rpm_counter.v":23)
+WARN  (EX3791) : Expression size 17 truncated to fit in target size 16("C:\Git\tangnano9k_brushless_driver\sample\9k_copilot\bldc_project\src\rpm_counter.v":26)
+Compiling module 'seg7_driver'("C:\Git\tangnano9k_brushless_driver\sample\9k_copilot\bldc_project\src\seg7_driver.v":1)
+WARN  (EX3791) : Expression size 17 truncated to fit in target size 16("C:\Git\tangnano9k_brushless_driver\sample\9k_copilot\bldc_project\src\seg7_driver.v":11)
+NOTE  (EX0101) : Current top module is "top"
+[5%] Running netlist conversion ...
+Running device independent optimization ...
+[10%] Optimizing Phase 0 completed
+[15%] Optimizing Phase 1 completed
+[25%] Optimizing Phase 2 completed
+Running inference ...
+[30%] Inferring Phase 0 completed
+[40%] Inferring Phase 1 completed
+[50%] Inferring Phase 2 completed
+[55%] Inferring Phase 3 completed
+Running technical mapping ...
+[60%] Tech-Mapping Phase 0 completed
+[65%] Tech-Mapping Phase 1 completed
+[75%] Tech-Mapping Phase 2 completed
+[80%] Tech-Mapping Phase 3 completed
+[90%] Tech-Mapping Phase 4 completed
+[95%] Generate netlist file "C:\Git\tangnano9k_brushless_driver\sample\9k_copilot\bldc_project\impl\gwsynthesis\bldc_project.vg" completed
+[100%] Generate report file "C:\Git\tangnano9k_brushless_driver\sample\9k_copilot\bldc_project\impl\gwsynthesis\bldc_project_syn.rpt.html" completed
+GowinSynthesis finish
