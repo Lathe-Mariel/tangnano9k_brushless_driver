@@ -1,12 +1,12 @@
 GowinSynthesis start
 Running parser ...
-Analyzing Verilog file 'C:\Git\tangnano9k_brushless_driver\sample\9k_copilot\bldc_project\src\top.v'
-Analyzing Verilog file 'C:\Git\tangnano9k_brushless_driver\sample\9k_copilot\bldc_project\src\mcp3008_if.v'
-Analyzing Verilog file 'C:\Git\tangnano9k_brushless_driver\sample\9k_copilot\bldc_project\src\duty_slew.v'
-Analyzing Verilog file 'C:\Git\tangnano9k_brushless_driver\sample\9k_copilot\bldc_project\src\pwm_gen.v'
 Analyzing Verilog file 'C:\Git\tangnano9k_brushless_driver\sample\9k_copilot\bldc_project\src\bldc_commutation.v'
+Analyzing Verilog file 'C:\Git\tangnano9k_brushless_driver\sample\9k_copilot\bldc_project\src\duty_slew.v'
+Analyzing Verilog file 'C:\Git\tangnano9k_brushless_driver\sample\9k_copilot\bldc_project\src\mcp3008_if.v'
+Analyzing Verilog file 'C:\Git\tangnano9k_brushless_driver\sample\9k_copilot\bldc_project\src\pwm_gen.v'
 Analyzing Verilog file 'C:\Git\tangnano9k_brushless_driver\sample\9k_copilot\bldc_project\src\rpm_counter.v'
 Analyzing Verilog file 'C:\Git\tangnano9k_brushless_driver\sample\9k_copilot\bldc_project\src\seg7_driver.v'
+Analyzing Verilog file 'C:\Git\tangnano9k_brushless_driver\sample\9k_copilot\bldc_project\src\top.v'
 Compiling module 'top'("C:\Git\tangnano9k_brushless_driver\sample\9k_copilot\bldc_project\src\top.v":1)
 Compiling module 'mcp3008_if'("C:\Git\tangnano9k_brushless_driver\sample\9k_copilot\bldc_project\src\mcp3008_if.v":1)
 WARN  (EX3791) : Expression size 5 truncated to fit in target size 4("C:\Git\tangnano9k_brushless_driver\sample\9k_copilot\bldc_project\src\mcp3008_if.v":38)

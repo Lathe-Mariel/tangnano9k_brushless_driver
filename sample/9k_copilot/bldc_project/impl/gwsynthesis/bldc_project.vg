@@ -1,16 +1,16 @@
 //
 //Written by GowinSynthesis
 //Tool Version "V1.9.12 (64-bit)"
-//Thu May 14 20:12:42 2026
+//Tue Jun 30 18:41:28 2026
 
 //Source file index table:
-//file0 "\C:/Git/tangnano9k_brushless_driver/sample/9k_copilot/bldc_project/src/top.v"
-//file1 "\C:/Git/tangnano9k_brushless_driver/sample/9k_copilot/bldc_project/src/mcp3008_if.v"
-//file2 "\C:/Git/tangnano9k_brushless_driver/sample/9k_copilot/bldc_project/src/duty_slew.v"
+//file0 "\C:/Git/tangnano9k_brushless_driver/sample/9k_copilot/bldc_project/src/bldc_commutation.v"
+//file1 "\C:/Git/tangnano9k_brushless_driver/sample/9k_copilot/bldc_project/src/duty_slew.v"
+//file2 "\C:/Git/tangnano9k_brushless_driver/sample/9k_copilot/bldc_project/src/mcp3008_if.v"
 //file3 "\C:/Git/tangnano9k_brushless_driver/sample/9k_copilot/bldc_project/src/pwm_gen.v"
-//file4 "\C:/Git/tangnano9k_brushless_driver/sample/9k_copilot/bldc_project/src/bldc_commutation.v"
-//file5 "\C:/Git/tangnano9k_brushless_driver/sample/9k_copilot/bldc_project/src/rpm_counter.v"
-//file6 "\C:/Git/tangnano9k_brushless_driver/sample/9k_copilot/bldc_project/src/seg7_driver.v"
+//file4 "\C:/Git/tangnano9k_brushless_driver/sample/9k_copilot/bldc_project/src/rpm_counter.v"
+//file5 "\C:/Git/tangnano9k_brushless_driver/sample/9k_copilot/bldc_project/src/seg7_driver.v"
+//file6 "\C:/Git/tangnano9k_brushless_driver/sample/9k_copilot/bldc_project/src/top.v"
 `timescale 100 ps/100 ps
 module mcp3008_if (
   clk_d,

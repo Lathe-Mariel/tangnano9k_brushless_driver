@@ -12,5 +12,6 @@
         <File path="src/rpm_counter.v" type="file.verilog" enable="1"/>
         <File path="src/seg7_driver.v" type="file.verilog" enable="1"/>
         <File path="src/top.v" type="file.verilog" enable="1"/>
+        <File path="src/bldc_project.rao" type="file.gao" enable="0"/>
     </FileList>
 </Project>

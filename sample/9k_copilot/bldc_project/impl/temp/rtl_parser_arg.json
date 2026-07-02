@@ -2,11 +2,7 @@
  "Device" : "GW1NR-9",
  "Files" : [
   {
-   "Path" : "C:/Git/tangnano9k_brushless_driver/sample/9k_copilot/bldc_project/src/top.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "C:/Git/tangnano9k_brushless_driver/sample/9k_copilot/bldc_project/src/mcp3008_if.v",
+   "Path" : "C:/Git/tangnano9k_brushless_driver/sample/9k_copilot/bldc_project/src/bldc_commutation.v",
    "Type" : "verilog"
   },
   {
@@ -14,11 +10,11 @@
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Git/tangnano9k_brushless_driver/sample/9k_copilot/bldc_project/src/pwm_gen.v",
+   "Path" : "C:/Git/tangnano9k_brushless_driver/sample/9k_copilot/bldc_project/src/mcp3008_if.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Git/tangnano9k_brushless_driver/sample/9k_copilot/bldc_project/src/bldc_commutation.v",
+   "Path" : "C:/Git/tangnano9k_brushless_driver/sample/9k_copilot/bldc_project/src/pwm_gen.v",
    "Type" : "verilog"
   },
   {
@@ -27,6 +23,10 @@
   },
   {
    "Path" : "C:/Git/tangnano9k_brushless_driver/sample/9k_copilot/bldc_project/src/seg7_driver.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Git/tangnano9k_brushless_driver/sample/9k_copilot/bldc_project/src/top.v",
    "Type" : "verilog"
   }
  ],
