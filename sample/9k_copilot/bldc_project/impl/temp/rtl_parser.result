@@ -9,7 +9,7 @@
   "SubInsts" : [
    {
     "InstFile" : "C:/Git/tangnano9k_brushless_driver/sample/9k_copilot/bldc_project/src/top.v",
-    "InstLine" : 44,
+    "InstLine" : 46,
     "InstName" : "u_adc",
     "ModuleFile" : "C:/Git/tangnano9k_brushless_driver/sample/9k_copilot/bldc_project/src/mcp3008_if.v",
     "ModuleLine" : 1,
@@ -17,7 +17,7 @@
    },
    {
     "InstFile" : "C:/Git/tangnano9k_brushless_driver/sample/9k_copilot/bldc_project/src/top.v",
-    "InstLine" : 80,
+    "InstLine" : 82,
     "InstName" : "u_slew",
     "ModuleFile" : "C:/Git/tangnano9k_brushless_driver/sample/9k_copilot/bldc_project/src/duty_slew.v",
     "ModuleLine" : 1,
@@ -25,7 +25,7 @@
    },
    {
     "InstFile" : "C:/Git/tangnano9k_brushless_driver/sample/9k_copilot/bldc_project/src/top.v",
-    "InstLine" : 93,
+    "InstLine" : 95,
     "InstName" : "u_pwm",
     "ModuleFile" : "C:/Git/tangnano9k_brushless_driver/sample/9k_copilot/bldc_project/src/pwm_gen.v",
     "ModuleLine" : 1,
@@ -33,7 +33,7 @@
    },
    {
     "InstFile" : "C:/Git/tangnano9k_brushless_driver/sample/9k_copilot/bldc_project/src/top.v",
-    "InstLine" : 112,
+    "InstLine" : 114,
     "InstName" : "u_comm",
     "ModuleFile" : "C:/Git/tangnano9k_brushless_driver/sample/9k_copilot/bldc_project/src/bldc_commutation.v",
     "ModuleLine" : 1,
@@ -41,7 +41,7 @@
    },
    {
     "InstFile" : "C:/Git/tangnano9k_brushless_driver/sample/9k_copilot/bldc_project/src/top.v",
-    "InstLine" : 139,
+    "InstLine" : 141,
     "InstName" : "u_rpm",
     "ModuleFile" : "C:/Git/tangnano9k_brushless_driver/sample/9k_copilot/bldc_project/src/rpm_counter.v",
     "ModuleLine" : 1,
@@ -49,7 +49,7 @@
    },
    {
     "InstFile" : "C:/Git/tangnano9k_brushless_driver/sample/9k_copilot/bldc_project/src/top.v",
-    "InstLine" : 154,
+    "InstLine" : 156,
     "InstName" : "u_seg",
     "ModuleFile" : "C:/Git/tangnano9k_brushless_driver/sample/9k_copilot/bldc_project/src/seg7_driver.v",
     "ModuleLine" : 1,

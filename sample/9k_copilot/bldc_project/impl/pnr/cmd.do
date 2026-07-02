@@ -1,6 +1,7 @@
 -d C:\Git\tangnano9k_brushless_driver\sample\9k_copilot\bldc_project\impl\gwsynthesis\bldc_project.vg
 -p GW1NR-9C-QFN88P-6
 -pn GW1NR-UV9QN88PC6/I5
+-cst C:\Git\tangnano9k_brushless_driver\sample\9k_copilot\bldc_project\src\top.cst
 -cfg C:\Git\tangnano9k_brushless_driver\sample\9k_copilot\bldc_project\impl\pnr\device.cfg
 -bit
 -tr

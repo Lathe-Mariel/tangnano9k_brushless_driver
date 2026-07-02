@@ -1,7 +1,7 @@
 //
 //Written by GowinSynthesis
 //Tool Version "V1.9.12 (64-bit)"
-//Thu Jul  2 12:16:44 2026
+//Thu Jul  2 15:28:03 2026
 
 //Source file index table:
 //file0 "\C:/Git/tangnano9k_brushless_driver/sample/9k_copilot/bldc_project/src/bldc_commutation.v"
@@ -2990,7 +2990,9 @@ module top (
   _LIN_T,
   anode,
   cathode,
-  boardLED
+  boardLED,
+  toggleSW,
+  tacSW
 )
 ;
 input clk;
@@ -3010,6 +3012,8 @@ output _LIN_T;
 output [7:0] anode;
 output [3:0] cathode;
 output [5:0] boardLED;
+input [2:0] toggleSW;
+input [3:0] tacSW;
 wire clk_d;
 wire sw2_d;
 wire DOUT_d;

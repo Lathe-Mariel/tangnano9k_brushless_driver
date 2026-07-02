@@ -1,6 +1,8 @@
 Reading netlist file: "C:\Git\tangnano9k_brushless_driver\sample\9k_copilot\bldc_project\impl\gwsynthesis\bldc_project.vg"
 Parsing netlist file "C:\Git\tangnano9k_brushless_driver\sample\9k_copilot\bldc_project\impl\gwsynthesis\bldc_project.vg" completed
 Processing netlist completed
+Reading constraint file: "C:\Git\tangnano9k_brushless_driver\sample\9k_copilot\bldc_project\src\top.cst"
+Physical Constraint parsed completed
 Running placement......
 [10%] Placement Phase 0 completed
 [20%] Placement Phase 1 completed
@@ -24,5 +26,5 @@ Generate file "C:\Git\tangnano9k_brushless_driver\sample\9k_copilot\bldc_project
 Generate file "C:\Git\tangnano9k_brushless_driver\sample\9k_copilot\bldc_project\impl\pnr\bldc_project.rpt.html" completed
 Generate file "C:\Git\tangnano9k_brushless_driver\sample\9k_copilot\bldc_project\impl\pnr\bldc_project.rpt.txt" completed
 Generate file "C:\Git\tangnano9k_brushless_driver\sample\9k_copilot\bldc_project\impl\pnr\bldc_project.tr.html" completed
-Thu Jul  2 12:16:45 2026
+Thu Jul  2 15:28:05 2026
 

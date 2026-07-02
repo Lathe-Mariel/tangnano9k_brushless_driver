@@ -24,7 +24,9 @@ module top (
     output logic [3:0]  cathode,
 
     // debug LEDs
-    output logic [5:0]  boardLED
+    output logic [5:0]  boardLED,
+    input logic[2:0] toggleSW,
+    input logic[3:0] tacSW
 );
 
     //============================================================
