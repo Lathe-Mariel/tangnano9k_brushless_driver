@@ -9,29 +9,30 @@
   <Physical Constraints File>: ---
   <Timing Constraints File>: ---
   <Tool Version>: V1.9.12 (64-bit)
-  <Part Number>: GW1NR-LV9QN88PC6/I5
+  <Part Number>: GW1NR-UV9QN88PC6/I5
   <Device>: GW1NR-9
-  <Created Time>:Tue Jun 30 18:41:29 2026
+  <Device Version>: C
+  <Created Time>:Thu Jul  2 12:16:45 2026
 
 
 2. PnR Details
 
   Running placement:
     Placement Phase 0: CPU time = 0h 0m 0.011s, Elapsed time = 0h 0m 0.011s
-    Placement Phase 1: CPU time = 0h 0m 0.045s, Elapsed time = 0h 0m 0.045s
-    Placement Phase 2: CPU time = 0h 0m 0.005s, Elapsed time = 0h 0m 0.005s
-    Placement Phase 3: CPU time = 0h 0m 0.456s, Elapsed time = 0h 0m 0.456s
-    Total Placement: CPU time = 0h 0m 0.517s, Elapsed time = 0h 0m 0.517s
+    Placement Phase 1: CPU time = 0h 0m 0.046s, Elapsed time = 0h 0m 0.046s
+    Placement Phase 2: CPU time = 0h 0m 0.004s, Elapsed time = 0h 0m 0.004s
+    Placement Phase 3: CPU time = 0h 0m 0.446s, Elapsed time = 0h 0m 0.446s
+    Total Placement: CPU time = 0h 0m 0.507s, Elapsed time = 0h 0m 0.507s
  Running routing:
     Routing Phase 0: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s
-    Routing Phase 1: CPU time = 0h 0m 0.038s, Elapsed time = 0h 0m 0.038s
-    Routing Phase 2: CPU time = 0h 0m 0.076s, Elapsed time = 0h 0m 0.076s
+    Routing Phase 1: CPU time = 0h 0m 0.076s, Elapsed time = 0h 0m 0.076s
+    Routing Phase 2: CPU time = 0h 0m 0.085s, Elapsed time = 0h 0m 0.085s
     Routing Phase 3: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s
-    Total Routing: CPU time = 0h 0m 0.114s, Elapsed time = 0h 0m 0.114s
+    Total Routing: CPU time = 0h 0m 0.161s, Elapsed time = 0h 0m 0.161s
  Generate output files:
-    CPU time = 0h 0m 0.619s, Elapsed time = 0h 0m 0.619s
+    CPU time = 0h 0m 0.565s, Elapsed time = 0h 0m 0.565s
 
- Total Time and Memory Usage: CPU time = 0h 0m 1s, Elapsed time = 0h 0m 1s, Peak memory usage = 382MB
+ Total Time and Memory Usage: CPU time = 0h 0m 1s, Elapsed time = 0h 0m 1s, Peak memory usage = 383MB
 
 
 3. Resource Usage Summary
@@ -63,8 +64,8 @@
   I/O Bank  | Usage       | Utilization 
   --------------------------------------
   bank 1   | 15/25       | 60%         
-  bank 2   | 4/23        | 18%         
-  bank 3   | 15/23       | 66%         
+  bank 2   | 3/23        | 14%         
+  bank 3   | 16/23       | 70%         
   ======================================
 
 
@@ -75,7 +76,7 @@
   ------------------------------------------
   PRIMARY       | 1/8           | 13%
   LW            | 0/8           | 0%
-  GCLK_PIN      | 1/3           | 34%
+  GCLK_PIN      | 2/3           | 67%
   ==========================================
 
 
@@ -99,24 +100,24 @@ sw2          | -         | 70/1          | N          | in    | IOT41[B] | -    
 HS[0]        | -         | 76/1          | N          | in    | IOT37[B] | -               | LVCMOS18   | NA    | UP        | ON        | NONE       | NA         | NA         | OFF             | NA            | 1.8       
 HS[1]        | -         | 80/3          | N          | in    | IOT12[A] | -               | LVCMOS18   | NA    | UP        | ON        | NONE       | NA         | NA         | OFF             | NA            | 1.8       
 HS[2]        | -         | 75/1          | N          | in    | IOT38[A] | -               | LVCMOS18   | NA    | UP        | ON        | NONE       | NA         | NA         | OFF             | NA            | 1.8       
-DOUT         | -         | 62/1          | N          | in    | IOR11[A] | MI/D7           | LVCMOS18   | NA    | UP        | ON        | NONE       | NA         | NA         | OFF             | NA            | 1.8       
-AD_CLK       | -         | 60/1          | N          | out   | IOR12[A] | MCS_N/D5        | LVCMOS18   | 8     | UP        | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8       
-CS           | -         | 59/1          | N          | out   | IOR12[B] | MCLK/D4         | LVCMOS18   | 8     | UP        | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8       
-DIN          | -         | 61/1          | N          | out   | IOR11[B] | MO/D6           | LVCMOS18   | 8     | UP        | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8       
+DOUT         | -         | 57/1          | N          | in    | IOR13[A] | FASTRD_N/D3     | LVCMOS18   | NA    | UP        | ON        | NONE       | NA         | NA         | OFF             | NA            | 1.8       
+AD_CLK       | -         | 52/1          | N          | out   | IOR17[A] | GCLKT_3         | LVCMOS18   | 8     | UP        | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8       
+CS           | -         | 51/1          | N          | out   | IOR17[B] | GCLKC_3         | LVCMOS18   | 8     | UP        | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8       
+DIN          | -         | 53/1          | N          | out   | IOR15[B] | DOUT/WE_N       | LVCMOS18   | 8     | UP        | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8       
 HIN_R        | -         | 74/1          | N          | out   | IOT38[B] | -               | LVCMOS18   | 8     | UP        | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8       
 HIN_S        | -         | 84/3          | N          | out   | IOT10[A] | -               | LVCMOS18   | 8     | UP        | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8       
 HIN_T        | -         | 73/1          | N          | out   | IOT39[A] | -               | LVCMOS18   | 8     | UP        | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8       
 _LIN_R       | -         | 69/1          | N          | out   | IOT42[A] | -               | LVCMOS18   | 8     | UP        | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8       
 _LIN_S       | -         | 68/1          | N          | out   | IOT42[B] | -               | LVCMOS18   | 8     | UP        | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8       
 _LIN_T       | -         | 63/1          | N          | out   | IOR5[A]  | RPLL_T_in       | LVCMOS18   | 8     | UP        | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8       
-anode[0]     | -         | 14/3          | N          | out   | IOL22[B] | -               | LVCMOS18   | 8     | UP        | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8       
-anode[1]     | -         | 19/2          | N          | out   | IOB4[A]  | -               | LVCMOS18   | 8     | UP        | NA        | NA         | OFF        | NA         | NA              | NA            | 1.8       
-anode[2]     | -         | 20/2          | N          | out   | IOB4[B]  | -               | LVCMOS18   | 8     | UP        | NA        | NA         | OFF        | NA         | NA              | NA            | 1.8       
-anode[3]     | -         | 17/2          | N          | out   | IOB2[A]  | -               | LVCMOS18   | 8     | UP        | NA        | NA         | OFF        | NA         | NA              | NA            | 1.8       
-anode[4]     | -         | 18/2          | N          | out   | IOB2[B]  | -               | LVCMOS18   | 8     | UP        | NA        | NA         | OFF        | NA         | NA              | NA            | 1.8       
-anode[5]     | -         | 16/3          | N          | out   | IOL26[B] | -               | LVCMOS18   | 8     | UP        | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8       
-anode[6]     | -         | 15/3          | N          | out   | IOL25[B] | -               | LVCMOS18   | 8     | UP        | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8       
-anode[7]     | -         | 13/3          | N          | out   | IOL21[B] | -               | LVCMOS18   | 8     | UP        | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8       
+anode[0]     | -         | 13/3          | N          | out   | IOL21[B] | -               | LVCMOS18   | 8     | UP        | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8       
+anode[1]     | -         | 20/2          | N          | out   | IOB4[B]  | -               | LVCMOS18   | 8     | UP        | NA        | NA         | OFF        | NA         | NA              | NA            | 1.8       
+anode[2]     | -         | 17/2          | N          | out   | IOB2[A]  | -               | LVCMOS18   | 8     | UP        | NA        | NA         | OFF        | NA         | NA              | NA            | 1.8       
+anode[3]     | -         | 18/2          | N          | out   | IOB2[B]  | -               | LVCMOS18   | 8     | UP        | NA        | NA         | OFF        | NA         | NA              | NA            | 1.8       
+anode[4]     | -         | 16/3          | N          | out   | IOL26[B] | -               | LVCMOS18   | 8     | UP        | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8       
+anode[5]     | -         | 15/3          | N          | out   | IOL25[B] | -               | LVCMOS18   | 8     | UP        | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8       
+anode[6]     | -         | 14/3          | N          | out   | IOL22[B] | -               | LVCMOS18   | 8     | UP        | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8       
+anode[7]     | -         | 11/3          | N          | out   | IOL16[B] | -               | LVCMOS18   | 8     | UP        | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8       
 cathode[0]   | -         | 4/3           | N          | out   | IOL5[A]  | JTAGSEL_N/LPLL_T_in | LVCMOS18   | 8     | UP        | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8       
 cathode[1]   | -         | 3/3           | N          | out   | IOT2[A]  | -               | LVCMOS18   | 8     | UP        | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8       
 cathode[2]   | -         | 86/3          | N          | out   | IOT8[A]  | -               | LVCMOS18   | 8     | UP        | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8       
@@ -159,10 +160,10 @@ Loc./Bank| Signal       | Dir.  | Site     | CFG             | IO Type  | Drive 
 69/1     | _LIN_R       | out   | IOT42[A] | -               | LVCMOS18 | 8     | UP        | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8  
 68/1     | _LIN_S       | out   | IOT42[B] | -               | LVCMOS18 | 8     | UP        | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8  
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-17/2     | anode[3]     | out   | IOB2[A]  | -               | LVCMOS18 | 8     | UP        | NA        | NA         | OFF        | NA         | NA              | NA            | 1.8  
-18/2     | anode[4]     | out   | IOB2[B]  | -               | LVCMOS18 | 8     | UP        | NA        | NA         | OFF        | NA         | NA              | NA            | 1.8  
-19/2     | anode[1]     | out   | IOB4[A]  | -               | LVCMOS18 | 8     | UP        | NA        | NA         | OFF        | NA         | NA              | NA            | 1.8  
-20/2     | anode[2]     | out   | IOB4[B]  | -               | LVCMOS18 | 8     | UP        | NA        | NA         | OFF        | NA         | NA              | NA            | 1.8  
+17/2     | anode[2]     | out   | IOB2[A]  | -               | LVCMOS18 | 8     | UP        | NA        | NA         | OFF        | NA         | NA              | NA            | 1.8  
+18/2     | anode[3]     | out   | IOB2[B]  | -               | LVCMOS18 | 8     | UP        | NA        | NA         | OFF        | NA         | NA              | NA            | 1.8  
+19/2     | -            | in    | IOB4[A]  | -               | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA         | NA              | NA            | 1.8  
+20/2     | anode[1]     | out   | IOB4[B]  | -               | LVCMOS18 | 8     | UP        | NA        | NA         | OFF        | NA         | NA              | NA            | 1.8  
 25/2     | -            | in    | IOB8[A]  | -               | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA         | NA              | NA            | 1.8  
 26/2     | -            | in    | IOB8[B]  | -               | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA         | NA              | NA            | 1.8  
 27/2     | -            | in    | IOB11[A] | -               | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA         | NA              | NA            | 1.8  
@@ -201,7 +202,7 @@ p1-6/3   | -            | in    | IOL9[A]  | GCLKT_7         | LVCMOS18 | -     
 p1-5/3   | -            | in    | IOL14[A] | DONE            | LVCMOS18 | -     | UP        | -         | -          | -          | -          | -               | -             | -    
 10/3     | clk          | in    | IOL15[A] | GCLKT_6         | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA         | OFF             | NA            | 1.8  
 p1-4/3   | -            | in    | IOL16[A] | -               | LVCMOS18 | -     | UP        | -         | -          | -          | -          | -               | -             | -    
-11/3     | -            | in    | IOL16[B] | -               | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA         | NA              | NA            | 1.8  
+11/3     | anode[7]     | out   | IOL16[B] | -               | LVCMOS18 | 8     | UP        | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8  
 p1-2/3   | -            | in    | IOL17[A] | -               | LVCMOS18 | -     | UP        | -         | -          | -          | -          | -               | -             | -    
 p1-3/3   | -            | in    | IOL17[B] | -               | LVCMOS18 | -     | UP        | -         | -          | -          | -          | -               | -             | -    
 p2-14/3  | -            | in    | IOL18[A] | -               | LVCMOS18 | -     | UP        | -         | -          | -          | -          | -               | -             | -    
@@ -209,31 +210,31 @@ p2-13/3  | -            | in    | IOL18[B] | -               | LVCMOS18 | -     
 p2-12/3  | -            | in    | IOL20[A] | -               | LVCMOS18 | -     | UP        | -         | -          | -          | -          | -               | -             | -    
 p2-11/3  | -            | in    | IOL20[B] | -               | LVCMOS18 | -     | UP        | -         | -          | -          | -          | -               | -             | -    
 p2-10/3  | -            | in    | IOL21[A] | -               | LVCMOS18 | -     | UP        | -         | -          | -          | -          | -               | -             | -    
-13/3     | anode[7]     | out   | IOL21[B] | -               | LVCMOS18 | 8     | UP        | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8  
+13/3     | anode[0]     | out   | IOL21[B] | -               | LVCMOS18 | 8     | UP        | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8  
 p2-9/3   | -            | in    | IOL22[A] | -               | LVCMOS18 | -     | UP        | -         | -          | -          | -          | -               | -             | -    
-14/3     | anode[0]     | out   | IOL22[B] | -               | LVCMOS18 | 8     | UP        | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8  
+14/3     | anode[6]     | out   | IOL22[B] | -               | LVCMOS18 | 8     | UP        | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8  
 p2-8/3   | -            | in    | IOL23[A] | -               | LVCMOS18 | -     | UP        | -         | -          | -          | -          | -               | -             | -    
 p2-7/3   | -            | in    | IOL23[B] | -               | LVCMOS18 | -     | UP        | -         | -          | -          | -          | -               | -             | -    
 p2-6/3   | -            | in    | IOL24[B] | -               | LVCMOS18 | -     | UP        | -         | -          | -          | -          | -               | -             | -    
 p2-5/3   | -            | in    | IOL25[A] | -               | LVCMOS18 | -     | UP        | -         | -          | -          | -          | -               | -             | -    
-15/3     | anode[6]     | out   | IOL25[B] | -               | LVCMOS18 | 8     | UP        | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8  
+15/3     | anode[5]     | out   | IOL25[B] | -               | LVCMOS18 | 8     | UP        | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8  
 p2-4/3   | -            | in    | IOL26[A] | -               | LVCMOS18 | -     | UP        | -         | -          | -          | -          | -               | -             | -    
-16/3     | anode[5]     | out   | IOL26[B] | -               | LVCMOS18 | 8     | UP        | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8  
+16/3     | anode[4]     | out   | IOL26[B] | -               | LVCMOS18 | 8     | UP        | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8  
 p2-3/3   | -            | in    | IOL27[A] | -               | LVCMOS18 | -     | UP        | -         | -          | -          | -          | -               | -             | -    
 p2-2/3   | -            | in    | IOL27[B] | -               | LVCMOS18 | -     | UP        | -         | -          | -          | -          | -               | -             | -    
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 63/1     | _LIN_T       | out   | IOR5[A]  | RPLL_T_in       | LVCMOS18 | 8     | UP        | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8  
-62/1     | DOUT         | in    | IOR11[A] | MI/D7           | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA         | OFF             | NA            | 1.8  
-61/1     | DIN          | out   | IOR11[B] | MO/D6           | LVCMOS18 | 8     | UP        | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8  
-60/1     | AD_CLK       | out   | IOR12[A] | MCS_N/D5        | LVCMOS18 | 8     | UP        | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8  
-59/1     | CS           | out   | IOR12[B] | MCLK/D4         | LVCMOS18 | 8     | UP        | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8  
-57/1     | -            | in    | IOR13[A] | FASTRD_N/D3     | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA         | NA              | NA            | 1.8  
+62/1     | -            | in    | IOR11[A] | MI/D7           | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA         | NA              | NA            | 1.8  
+61/1     | -            | in    | IOR11[B] | MO/D6           | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA         | NA              | NA            | 1.8  
+60/1     | -            | in    | IOR12[A] | MCS_N/D5        | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA         | NA              | NA            | 1.8  
+59/1     | -            | in    | IOR12[B] | MCLK/D4         | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA         | NA              | NA            | 1.8  
+57/1     | DOUT         | in    | IOR13[A] | FASTRD_N/D3     | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA         | OFF             | NA            | 1.8  
 56/1     | -            | in    | IOR14[A] | SO/D1           | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA         | NA              | NA            | 1.8  
 55/1     | -            | in    | IOR14[B] | SSPI_CS_N/D0    | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA         | NA              | NA            | 1.8  
 54/1     | -            | in    | IOR15[A] | DIN/CLKHOLD_N   | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA         | NA              | NA            | 1.8  
-53/1     | -            | in    | IOR15[B] | DOUT/WE_N       | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA         | NA              | NA            | 1.8  
-52/1     | -            | in    | IOR17[A] | GCLKT_3         | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA         | NA              | NA            | 1.8  
-51/1     | -            | in    | IOR17[B] | GCLKC_3         | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA         | NA              | NA            | 1.8  
+53/1     | DIN          | out   | IOR15[B] | DOUT/WE_N       | LVCMOS18 | 8     | UP        | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8  
+52/1     | AD_CLK       | out   | IOR17[A] | GCLKT_3         | LVCMOS18 | 8     | UP        | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8  
+51/1     | CS           | out   | IOR17[B] | GCLKC_3         | LVCMOS18 | 8     | UP        | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8  
 50/1     | -            | in    | IOR22[B] | -               | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA         | NA              | NA            | 1.8  
 49/1     | -            | in    | IOR24[A] | -               | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA         | NA              | NA            | 1.8  
 48/1     | -            | in    | IOR24[B] | -               | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA         | NA              | NA            | 1.8  
